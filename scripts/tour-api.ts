@@ -10,6 +10,27 @@ import type { RawDetailCommon, RawDetailIntro, RawFestivalItem } from "../lib/ty
 export const BASE_URL = "https://apis.data.go.kr/B551011/KorService2";
 const APP_NAME = "FestivalCalendar";
 
+/**
+ * 연결 타임아웃을 넉넉하게 잡는다.
+ * 공공데이터포털 서버는 해외(GitHub Actions 러너 등)에서 접속할 때 느려서
+ * Node 기본값 10초로는 ConnectTimeoutError 가 난다. 실제 워크플로 실행에서 확인한 값.
+ */
+async function configureDispatcher(): Promise<void> {
+  try {
+    const undici = await import("undici");
+    undici.setGlobalDispatcher(
+      new undici.Agent({
+        connect: { timeout: 60_000 },
+        headersTimeout: 120_000,
+        bodyTimeout: 120_000,
+      }),
+    );
+  } catch {
+    // undici 를 못 불러와도 기본 fetch 로 계속 진행한다
+  }
+}
+const dispatcherReady = configureDispatcher();
+
 /** .env.local / .env 를 직접 읽어 process.env 에 채운다 (dotenv 의존성 없이) */
 export function loadEnv(root = process.cwd()): void {
   for (const name of [".env.local", ".env"]) {
@@ -64,8 +85,10 @@ export async function callApi<T>(
     if (v !== undefined && v !== "") url.searchParams.set(k, String(v));
   }
 
+  await dispatcherReady;
   let lastError: unknown;
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  const MAX_ATTEMPTS = 5;
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
       const res = await fetch(url, { headers: { Accept: "application/json" } });
       const text = await res.text();
@@ -89,7 +112,10 @@ export async function callApi<T>(
       const msg = err instanceof Error ? err.message : String(err);
       // 키/권한 오류는 재시도해도 소용없으므로 즉시 중단
       if (/SERVICE KEY|UNREGISTERED|LIMITED NUMBER OF SERVICE REQUESTS EXCEEDS/i.test(msg)) throw err;
-      if (attempt < 3) await sleep(500 * 2 ** attempt);
+      if (attempt < MAX_ATTEMPTS) {
+        console.warn(`[retry] ${operation} ${attempt}/${MAX_ATTEMPTS}회 실패: ${msg.slice(0, 120)}`);
+        await sleep(1000 * 2 ** attempt); // 2s, 4s, 8s, 16s
+      }
     }
   }
   throw lastError;
