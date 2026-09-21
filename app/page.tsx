@@ -34,7 +34,7 @@ export default function HomePage() {
       </section>
 
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-        {months.map(({ month, year, count, images, sample }) => {
+        {months.map(({ month, year, count, upcomingCount, pastYear, images, sample }) => {
           const isNow = month === nowMonth;
           return (
             <li key={month} id={`month-${month}`} className="scroll-mt-32">
@@ -61,8 +61,13 @@ export default function HomePage() {
                     <h2 className="text-lg font-extrabold group-hover:text-brand-600 dark:group-hover:text-brand-300">{month}월</h2>
                     <p className="text-[11px] text-zinc-500 dark:text-zinc-400">{year}년</p>
                   </div>
-                  <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">
+                  <p className="text-right text-sm font-semibold text-zinc-700 dark:text-zinc-200">
                     {count > 0 ? `축제 ${count}개` : "등록 예정"}
+                    {pastYear && (
+                      <span className="block text-[11px] font-normal text-zinc-500 dark:text-zinc-400">
+                        {upcomingCount > 0 ? `새 일정 ${upcomingCount}개` : `${pastYear}년 참고`}
+                      </span>
+                    )}
                   </p>
                 </div>
               </Link>

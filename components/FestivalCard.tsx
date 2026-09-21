@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Festival } from "@/lib/types";
-import { dDayLabel, formatPeriod, statusOf } from "@/lib/date";
+import { dDayLabel, formatPeriod, isLongRunning, statusOf } from "@/lib/date";
 import FestivalImage from "./FestivalImage";
 import TagChip from "./TagChip";
 
@@ -14,7 +14,8 @@ interface Props {
 /** 목록용 축제 카드: 이미지 · 축제명 · 기간(D-day) · 지역 · 태그 */
 export default function FestivalCard({ festival: f, today, priority }: Props) {
   const status = statusOf(f.startDate, f.endDate, today);
-  const dday = dDayLabel(f.startDate, f.endDate, today);
+  // 상설 행사는 "진행 중 · 300일 남음" 같은 표기 대신 "상설"로
+  const dday = status === "ongoing" && isLongRunning(f.startDate, f.endDate) ? "상설" : dDayLabel(f.startDate, f.endDate, today);
   const ddayStyle =
     status === "ongoing"
       ? "bg-brand-500 text-white"

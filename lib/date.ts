@@ -65,6 +65,14 @@ export function diffDays(a: string, b: string): number {
 
 export type FestivalStatus = "upcoming" | "ongoing" | "ended";
 
+/** 상설 공연·전시로 볼 기준 (일). 이보다 길게 이어지면 목록에서 뒤로 보내고 "상설" 표시 */
+export const LONG_RUNNING_DAYS = 120;
+
+/** 120일 이상 이어지는 상설성 행사 여부 */
+export function isLongRunning(start: string, end: string): boolean {
+  return diffDays(start, end) >= LONG_RUNNING_DAYS;
+}
+
 /** 오늘 기준 상태 */
 export function statusOf(start: string, end: string, today: string): FestivalStatus {
   if (today < start) return "upcoming";

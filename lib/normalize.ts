@@ -87,7 +87,7 @@ export function normalizeFestival(
     .filter(Boolean)
     .join(" ")
     .trim();
-  const { sido, sigungu } = parseAddress(item.addr1 ?? detail?.addr1, item.areacode);
+  const { sido, sigungu } = parseAddress(item.addr1 ?? detail?.addr1, item.areacode, item.lDongRegnCd);
 
   const overview = stripHtml(detail?.overview);
   const tags = classifyTags(title, overview, startDate);
@@ -116,11 +116,13 @@ export function normalizeFestival(
   const place = stripHtml(intro?.eventplace);
   const playtime = stripHtml(intro?.playtime);
   const fee = stripHtml(intro?.usetimefestival);
-  const sponsor = [stripHtml(intro?.sponsor1), stripHtml(intro?.sponsor2)].filter(Boolean).join(" / ");
+  const sponsor = [...new Set([stripHtml(intro?.sponsor1), stripHtml(intro?.sponsor2)].filter(Boolean))].join(" / ");
+  const program = stripHtml(intro?.program);
   if (place) festival.place = place;
   if (playtime) festival.playtime = playtime;
   if (fee) festival.fee = fee;
   if (sponsor) festival.sponsor = sponsor;
+  if (program) festival.program = program;
 
   return festival;
 }

@@ -75,9 +75,15 @@ describe("regions", () => {
     assert.deepEqual(parseAddress("전북특별자치도 전주시 완산구"), { sido: "전북", sigungu: "전주시" });
     assert.deepEqual(parseAddress("전라북도 김제시"), { sido: "전북", sigungu: "김제시" });
   });
+  it("통합특별시 주소는 시군구로 원래 시도를 판별", () => {
+    assert.deepEqual(parseAddress("전남광주통합특별시 남구 고싸움로 2"), { sido: "광주", sigungu: "남구" });
+    assert.deepEqual(parseAddress("전남광주통합특별시 여수시 선어시장길 6"), { sido: "전남", sigungu: "여수시" });
+  });
   it("주소가 없으면 areaCode 로 보완", () => {
     assert.deepEqual(parseAddress("", "39"), { sido: "제주", sigungu: "" });
     assert.deepEqual(parseAddress(undefined, "6"), { sido: "부산", sigungu: "" });
+    assert.deepEqual(parseAddress("", "", "48"), { sido: "경남", sigungu: "" });
+    assert.deepEqual(parseAddress("", "", "51"), { sido: "강원", sigungu: "" });
   });
 });
 

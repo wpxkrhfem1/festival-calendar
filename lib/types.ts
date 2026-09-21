@@ -99,6 +99,8 @@ export interface Festival {
   playtime?: string;
   fee?: string;
   sponsor?: string;
+  /** 프로그램 안내 (detailIntro2.program) */
+  program?: string;
   /** 지도 좌표 (WGS84) */
   lng?: number;
   lat?: number;

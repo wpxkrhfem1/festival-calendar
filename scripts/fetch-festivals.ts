@@ -171,6 +171,7 @@ async function main() {
         if (prev.playtime) normalized.playtime = prev.playtime;
         if (prev.fee) normalized.fee = prev.fee;
         if (prev.sponsor) normalized.sponsor = prev.sponsor;
+        if (prev.program) normalized.program = prev.program;
         // 개요가 있어야 태그가 정확하므로 다시 분류
         normalized.tags = normalizeFestival(it, { contentid: id, overview: prev.overview })!.tags;
       }

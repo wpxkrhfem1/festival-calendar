@@ -43,7 +43,7 @@ export default async function MonthPage({ params }: PageProps<"/month/[month]">)
   if (!month) notFound();
 
   const today = todayKST();
-  const { year, festivals } = getFestivalsByMonth(month, today);
+  const { year, festivals, upcomingCount, pastYear } = getFestivalsByMonth(month, today);
 
   return (
     <div>
@@ -53,6 +53,12 @@ export default async function MonthPage({ params }: PageProps<"/month/[month]">)
         <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
           {month}월에 열리거나 이어지는 전국 축제 {festivals.length}개
         </p>
+        {pastYear && (
+          <p className="mt-3 rounded-xl bg-brand-50 px-3 py-2 text-sm text-brand-800 dark:bg-brand-900/30 dark:text-brand-100">
+            {year}년 {month}월 일정은 아직 {upcomingCount}개만 등록됐어요. 매년 열리는 축제가 많아 {pastYear}년 {month}월 축제 {festivals.length - upcomingCount}개를
+            참고용으로 함께 보여드려요. 새 일정은 매주 갱신됩니다.
+          </p>
+        )}
       </div>
       <FestivalList festivals={festivals} today={today} emptyMessage={`${month}월에는 아직 등록된 축제가 없어요`} />
     </div>

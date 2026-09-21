@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import type { Festival, Tag } from "@/lib/types";
 import { CATEGORY_TAGS } from "@/lib/tags";
-import { statusOf } from "@/lib/date";
+import { isLongRunning, statusOf } from "@/lib/date";
 import FestivalCard from "./FestivalCard";
 import EmptyState from "./EmptyState";
 
@@ -41,7 +41,12 @@ export default function FestivalList({ festivals, today, showRegionFilter = true
     if (ongoingOnly) list = list.filter((f) => statusOf(f.startDate, f.endDate, today) === "ongoing");
     const sorted = [...list];
     if (sort === "start") {
-      sorted.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.endDate.localeCompare(b.endDate));
+      // 시작일 순. 다만 120일 이상 이어지는 상설 행사는 매달 맨 위를 차지하므로 뒤로 보낸다
+      sorted.sort((a, b) => {
+        const la = isLongRunning(a.startDate, a.endDate) ? 1 : 0;
+        const lb = isLongRunning(b.startDate, b.endDate) ? 1 : 0;
+        return la - lb || a.startDate.localeCompare(b.startDate) || a.endDate.localeCompare(b.endDate);
+      });
     } else {
       // 종료 임박 순: 아직 안 끝난 것 중 종료일이 빠른 순, 끝난 것은 뒤로
       sorted.sort((a, b) => {

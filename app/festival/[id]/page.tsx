@@ -188,6 +188,13 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
         </section>
       )}
 
+      {f.program && (
+        <section className="mt-8">
+          <h2 className="mb-2 text-lg font-bold">프로그램</h2>
+          <p className="whitespace-pre-line text-[15px] leading-relaxed text-zinc-700 dark:text-zinc-300">{f.program}</p>
+        </section>
+      )}
+
       {/* 추천 */}
       {related.length > 0 && (
         <section className="mt-10">

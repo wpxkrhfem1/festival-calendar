@@ -7,7 +7,7 @@
 import festivalsFile from "@/data/festivals.json";
 import overridesFile from "@/data/overrides.json";
 import type { Festival, FestivalDataFile, FestivalOverride, Tag } from "./types";
-import { monthKey, monthsBetween, targetYearForMonth, todayKST } from "./date";
+import { isLongRunning, monthKey, monthsBetween, targetYearForMonth, todayKST } from "./date";
 import { classifyTags } from "./tags";
 import { regionBySlug } from "./regions";
 
@@ -100,26 +100,54 @@ export function getFestivalsByMonthKey(key: string): Festival[] {
   return BY_MONTH.get(key) ?? [];
 }
 
+/** 이 개수 미만이면 "아직 등록 중"으로 보고 지난해 같은 달을 참고용으로 함께 보여준다 */
+const SPARSE_THRESHOLD = 5;
+
+export interface MonthResult {
+  /** 기준 연도 (오늘 기준 가장 가까운 앞의 해) */
+  year: number;
+  key: string;
+  /** 기준 연도 축제 + (부족할 때) 지난해 같은 달 축제 */
+  festivals: Festival[];
+  /** 기준 연도에 등록된 건수 */
+  upcomingCount: number;
+  /** 지난해 축제를 참고용으로 합쳤는지 */
+  pastYear: number | null;
+}
+
 /**
  * 1~12 월 번호로 조회. 연도는 오늘 기준으로 "가장 가까운 앞의" 해를 고른다.
- * 반환값에 실제 연도를 포함해 UI 에서 "2027년 1월" 처럼 표기할 수 있게 한다.
+ * 내년 달은 API 에 아직 일정이 거의 없으므로, 등록 건수가 적으면 올해 같은 달 축제를
+ * 참고용으로 뒤에 붙인다 (매년 열리는 축제가 많아 실제로 유용하다).
  */
-export function getFestivalsByMonth(month: number, today = todayKST()): { year: number; key: string; festivals: Festival[] } {
+export function getFestivalsByMonth(month: number, today = todayKST()): MonthResult {
   const year = targetYearForMonth(month, today);
   const key = monthKey(year, month);
-  return { year, key, festivals: getFestivalsByMonthKey(key) };
+  const upcoming = getFestivalsByMonthKey(key);
+  const nowYear = Number(today.slice(0, 4));
+
+  if (year > nowYear && upcoming.length < SPARSE_THRESHOLD) {
+    const pastKey = monthKey(year - 1, month);
+    const ids = new Set(upcoming.map((f) => f.id));
+    const past = getFestivalsByMonthKey(pastKey).filter((f) => !ids.has(f.id));
+    if (past.length > 0) {
+      return { year, key, festivals: [...upcoming, ...past], upcomingCount: upcoming.length, pastYear: year - 1 };
+    }
+  }
+  return { year, key, festivals: upcoming, upcomingCount: upcoming.length, pastYear: null };
 }
 
 /** 12개월 요약 (홈 카드용) */
 export function getMonthSummaries(today = todayKST()) {
   return Array.from({ length: 12 }, (_, i) => {
     const month = i + 1;
-    const { year, key, festivals } = getFestivalsByMonth(month, today);
-    const images = festivals
-      .map((f) => f.thumbnail || f.image)
-      .filter(Boolean)
-      .slice(0, 4);
-    return { month, year, key, count: festivals.length, images, sample: festivals.slice(0, 3) };
+    const { year, key, festivals, upcomingCount, pastYear } = getFestivalsByMonth(month, today);
+    // 콜라주용 대표 축제 4개: 이미지 있음 > 상설 아님(매달 같은 상설 공연이 반복되지 않게) > 기준 연도 순
+    const score = (f: Festival) =>
+      (f.thumbnail || f.image ? 0 : 4) + (isLongRunning(f.startDate, f.endDate) ? 2 : 0) + (f.months.includes(key) ? 0 : 1);
+    const sample = [...festivals].sort((a, b) => score(a) - score(b)).slice(0, 4);
+    const images = sample.map((f) => f.thumbnail || f.image);
+    return { month, year, key, count: festivals.length, upcomingCount, pastYear, images, sample };
   });
 }
 
