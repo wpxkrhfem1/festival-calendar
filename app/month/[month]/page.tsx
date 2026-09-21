@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getFestivalsByMonth } from "@/lib/festivals";
+import { getFestivalsByMonth, pickMonthYear } from "@/lib/festivals";
 import { todayKST } from "@/lib/date";
 import { monthPageTitle, SITE_NAME } from "@/lib/site";
-import FestivalList from "@/components/FestivalList";
+import MonthYearTabs from "@/components/MonthYearTabs";
 
-// 하루 1회 재검증 (ISR). 오늘 날짜에 따라 연도 해석이 바뀌므로 필요
+// 하루 1회 재검증 (ISR). 오늘 날짜에 따라 기본 연도가 바뀌므로 필요
 export const revalidate = 86400;
 // 1~12 외의 경로는 404
 export const dynamicParams = false;
@@ -23,16 +23,18 @@ export async function generateMetadata({ params }: PageProps<"/month/[month]">):
   const { month: raw } = await params;
   const month = parseMonth(raw);
   if (!month) return {};
-  const { year, festivals } = getFestivalsByMonth(month, todayKST());
+  const result = getFestivalsByMonth(month, todayKST());
+  const chosen = pickMonthYear(result, result.defaultYear);
+  const festivals = chosen?.festivals ?? [];
   const top = festivals.slice(0, 3).map((f) => f.title).join(", ");
   const description = festivals.length
-    ? `${year}년 ${month}월 전국 축제 ${festivals.length}개. ${top} 등 지역별·카테고리별로 한눈에 확인하세요.`
-    : `${year}년 ${month}월 전국 축제 일정을 달별로 정리했어요.`;
+    ? `${result.defaultYear}년 ${month}월 전국 축제 ${festivals.length}개. ${top} 등 지역별·카테고리별로 한눈에 확인하세요.`
+    : `${result.defaultYear}년 ${month}월 전국 축제 일정을 달별로 정리했어요.`;
   return {
-    title: { absolute: monthPageTitle(month, year) },
+    title: { absolute: monthPageTitle(month, result.defaultYear) },
     description,
     alternates: { canonical: `/month/${month}` },
-    openGraph: { title: monthPageTitle(month, year), description, siteName: SITE_NAME, type: "website" },
+    openGraph: { title: monthPageTitle(month, result.defaultYear), description, siteName: SITE_NAME, type: "website" },
   };
 }
 
@@ -43,24 +45,25 @@ export default async function MonthPage({ params }: PageProps<"/month/[month]">)
   if (!month) notFound();
 
   const today = todayKST();
-  const { year, festivals, upcomingCount, pastYear } = getFestivalsByMonth(month, today);
+  const result = getFestivalsByMonth(month, today);
+  const total = result.years.reduce((n, y) => n + y.festivals.length, 0);
 
   return (
     <div>
       <div className="mb-4 pt-2">
-        <p className="text-sm font-medium text-brand-600 dark:text-brand-300">{year}년</p>
         <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">{month}월 축제</h1>
         <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-300">
-          {month}월에 열리거나 이어지는 전국 축제 {festivals.length}개
+          {result.years.length > 1
+            ? `${result.years.map((y) => `${y.year}년 ${y.festivals.length}개`).join(" · ")} — 연도를 골라 보세요`
+            : `${month}월에 열리거나 이어지는 전국 축제 ${total}개`}
         </p>
-        {pastYear && (
-          <p className="mt-3 rounded-xl bg-brand-50 px-3 py-2 text-sm text-brand-800 dark:bg-brand-900/30 dark:text-brand-100">
-            {year}년 {month}월 일정은 아직 {upcomingCount}개만 등록됐어요. 매년 열리는 축제가 많아 {pastYear}년 {month}월 축제 {festivals.length - upcomingCount}개를
-            참고용으로 함께 보여드려요. 새 일정은 매주 갱신됩니다.
-          </p>
-        )}
       </div>
-      <FestivalList festivals={festivals} today={today} emptyMessage={`${month}월에는 아직 등록된 축제가 없어요`} />
+      <MonthYearTabs
+        month={month}
+        today={today}
+        defaultYear={result.defaultYear}
+        years={result.years.map((y) => ({ year: y.year, count: y.festivals.length, past: y.past, festivals: y.festivals }))}
+      />
     </div>
   );
 }

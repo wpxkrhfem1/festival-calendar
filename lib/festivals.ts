@@ -7,7 +7,7 @@
 import festivalsFile from "@/data/festivals.json";
 import overridesFile from "@/data/overrides.json";
 import type { Festival, FestivalDataFile, FestivalOverride, Tag } from "./types";
-import { isLongRunning, monthKey, monthsBetween, targetYearForMonth, todayKST } from "./date";
+import { isLongRunning, monthsBetween, targetYearForMonth, todayKST } from "./date";
 import { classifyTags } from "./tags";
 import { regionBySlug } from "./regions";
 
@@ -100,54 +100,88 @@ export function getFestivalsByMonthKey(key: string): Festival[] {
   return BY_MONTH.get(key) ?? [];
 }
 
-/** 이 개수 미만이면 "아직 등록 중"으로 보고 지난해 같은 달을 참고용으로 함께 보여준다 */
-const SPARSE_THRESHOLD = 5;
+/** 한 달에 대한 연도별 묶음 */
+export interface MonthYear {
+  year: number;
+  /** "YYYY-MM" */
+  key: string;
+  festivals: Festival[];
+  /** 이 연·월이 이미 지났는지 (오늘 기준) */
+  past: boolean;
+}
 
 export interface MonthResult {
-  /** 기준 연도 (오늘 기준 가장 가까운 앞의 해) */
-  year: number;
-  key: string;
-  /** 기준 연도 축제 + (부족할 때) 지난해 같은 달 축제 */
-  festivals: Festival[];
-  /** 기준 연도에 등록된 건수 */
-  upcomingCount: number;
-  /** 지난해 축제를 참고용으로 합쳤는지 */
-  pastYear: number | null;
+  month: number;
+  /** 데이터에 존재하는 연도 묶음 (오름차순). 축제가 0건인 해는 제외 */
+  years: MonthYear[];
+  /** 처음에 열어 보여줄 연도 */
+  defaultYear: number;
 }
 
 /**
- * 1~12 월 번호로 조회. 연도는 오늘 기준으로 "가장 가까운 앞의" 해를 고른다.
- * 내년 달은 API 에 아직 일정이 거의 없으므로, 등록 건수가 적으면 올해 같은 달 축제를
- * 참고용으로 뒤에 붙인다 (매년 열리는 축제가 많아 실제로 유용하다).
+ * 다가오는 해를 기본으로 열려면 이 개수 이상은 등록돼 있어야 한다.
+ * 내년 일정은 아직 거의 안 올라와서, 무조건 내년을 열면 빈 화면처럼 보인다.
+ */
+const ENOUGH_FOR_DEFAULT = 5;
+
+/**
+ * 1~12 월 번호로 조회.
+ * 연도를 섞지 않고 연도별로 나눠서 돌려준다. 화면에서 연도 탭으로 고르게 한다.
+ *
+ * 기본 선택은 "아직 지나지 않은 가장 이른 해" 다. 다만 그 해에 등록된 축제가
+ * ENOUGH_FOR_DEFAULT 미만이면 축제가 가장 많은 해를 연다.
+ * 내년 일정이 쌓이면 자연히 내년이 기본이 된다.
  */
 export function getFestivalsByMonth(month: number, today = todayKST()): MonthResult {
-  const year = targetYearForMonth(month, today);
-  const key = monthKey(year, month);
-  const upcoming = getFestivalsByMonthKey(key);
   const nowYear = Number(today.slice(0, 4));
+  const nowMonth = Number(today.slice(5, 7));
 
-  if (year > nowYear && upcoming.length < SPARSE_THRESHOLD) {
-    const pastKey = monthKey(year - 1, month);
-    const ids = new Set(upcoming.map((f) => f.id));
-    const past = getFestivalsByMonthKey(pastKey).filter((f) => !ids.has(f.id));
-    if (past.length > 0) {
-      return { year, key, festivals: [...upcoming, ...past], upcomingCount: upcoming.length, pastYear: year - 1 };
-    }
+  // 데이터에 존재하는 연도 중 올해 이후만 모은다.
+  // 여러 해에 걸친 상설 공연 때문에 지난 해들이 1건씩 딸려오는데, 목록에 쓸모가 없다.
+  const years: MonthYear[] = [];
+  for (const key of BY_MONTH.keys()) {
+    const [y, m] = key.split("-").map(Number);
+    if (m !== month || y < nowYear) continue;
+    const festivals = getFestivalsByMonthKey(key);
+    if (festivals.length === 0) continue;
+    years.push({ year: y, key, festivals, past: y === nowYear && month < nowMonth });
   }
-  return { year, key, festivals: upcoming, upcomingCount: upcoming.length, pastYear: null };
+  years.sort((a, b) => a.year - b.year);
+
+  if (years.length === 0) {
+    return { month, years: [], defaultYear: targetYearForMonth(month, today) };
+  }
+
+  const upcoming = years.find((y) => !y.past);
+  const biggest = years.reduce((a, b) => (b.festivals.length > a.festivals.length ? b : a));
+  const chosen = upcoming && upcoming.festivals.length >= ENOUGH_FOR_DEFAULT ? upcoming : biggest;
+  return { month, years, defaultYear: chosen.year };
 }
 
-/** 12개월 요약 (홈 카드용) */
+/** 특정 연·월 묶음 꺼내기 (없으면 undefined) */
+export function pickMonthYear(result: MonthResult, year: number): MonthYear | undefined {
+  return result.years.find((y) => y.year === year);
+}
+
+/** 12개월 요약 (홈 카드용). 기본 연도 기준으로 집계한다 */
 export function getMonthSummaries(today = todayKST()) {
   return Array.from({ length: 12 }, (_, i) => {
     const month = i + 1;
-    const { year, key, festivals, upcomingCount, pastYear } = getFestivalsByMonth(month, today);
-    // 콜라주용 대표 축제 4개: 이미지 있음 > 상설 아님(매달 같은 상설 공연이 반복되지 않게) > 기준 연도 순
-    const score = (f: Festival) =>
-      (f.thumbnail || f.image ? 0 : 4) + (isLongRunning(f.startDate, f.endDate) ? 2 : 0) + (f.months.includes(key) ? 0 : 1);
+    const result = getFestivalsByMonth(month, today);
+    const chosen = pickMonthYear(result, result.defaultYear);
+    const festivals = chosen?.festivals ?? [];
+    // 콜라주용 대표 축제 4개: 이미지 있는 것 먼저, 상설 공연은 뒤로 (매달 같은 그림이 반복되지 않게)
+    const score = (f: Festival) => (f.image || f.thumbnail ? 0 : 4) + (isLongRunning(f.startDate, f.endDate) ? 2 : 0);
     const sample = [...festivals].sort((a, b) => score(a) - score(b)).slice(0, 4);
-    const images = sample.map((f) => f.thumbnail || f.image);
-    return { month, year, key, count: festivals.length, upcomingCount, pastYear, images, sample };
+    return {
+      month,
+      year: result.defaultYear,
+      count: festivals.length,
+      /** 다른 해에도 이 달 축제가 있는지 (카드에 "2027년도 보기" 같은 힌트를 줄 때 사용) */
+      otherYears: result.years.filter((y) => y.year !== result.defaultYear).map((y) => ({ year: y.year, count: y.festivals.length })),
+      images: sample.map((f) => f.image || f.thumbnail),
+      sample,
+    };
   });
 }
 
