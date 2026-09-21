@@ -12,7 +12,8 @@ interface Props {
  * 축제 수에 따라 1장(전체), 2장(좌우), 3장(좌 1 + 우 2), 4장(2x2) 레이아웃을 쓴다.
  */
 export default function MonthCollage({ images, sample }: Props) {
-  const cells = sample.slice(0, 4).map((f, i) => ({ src: images[i] ?? f.thumbnail ?? "", tags: f.tags, key: f.id }));
+  // 콜라주 칸은 작아서 잘려도 괜찮으므로 cover 를 쓰되, 해상도를 위해 원본을 먼저 쓴다
+  const cells = sample.slice(0, 4).map((f, i) => ({ src: f.image || images[i] || f.thumbnail || "", tags: f.tags, key: f.id }));
   const n = cells.length;
 
   if (n === 0) {

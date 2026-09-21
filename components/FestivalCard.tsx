@@ -31,7 +31,15 @@ export default function FestivalCard({ festival: f, today, priority }: Props) {
       className={`group flex overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 sm:flex-col ${status === "ended" ? "opacity-70" : ""}`}
     >
       <div className="relative aspect-square w-32 shrink-0 bg-zinc-100 dark:bg-zinc-800 sm:aspect-[4/3] sm:w-full">
-        <FestivalImage src={f.thumbnail || f.image} alt={f.title} tags={f.tags} priority={priority} sizes="(max-width: 640px) 128px, (max-width: 1024px) 50vw, 33vw" />
+        {/* 썸네일(firstimage2)은 300x200 고정이라 카드 크기에서 흐려진다. 원본(firstimage, 높이 627px)을 먼저 쓴다 */}
+        <FestivalImage
+          src={f.image || f.thumbnail}
+          alt={f.title}
+          tags={f.tags}
+          priority={priority}
+          fit="contain"
+          sizes="(max-width: 640px) 128px, (max-width: 1024px) 50vw, 33vw"
+        />
         <span className={`absolute left-2 top-2 rounded-full px-2 py-0.5 text-xs font-bold shadow-sm ${ddayStyle}`}>{dday}</span>
       </div>
       <div className="flex min-w-0 flex-1 flex-col gap-1.5 p-3 sm:p-4">

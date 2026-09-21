@@ -85,7 +85,7 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
 
       {/* 대표 이미지 */}
       <div className="relative -mx-4 aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-800 sm:mx-0 sm:aspect-[16/9] sm:rounded-3xl">
-        <FestivalImage src={f.image || f.thumbnail} alt={f.title} tags={f.tags} priority sizes="(max-width: 1024px) 100vw, 1024px" />
+        <FestivalImage src={f.image || f.thumbnail} alt={f.title} tags={f.tags} priority fit="contain" sizes="(max-width: 1024px) 100vw, 1024px" />
         <span
           className={`absolute left-4 top-4 rounded-full px-3 py-1 text-sm font-bold shadow ${
             status === "ongoing" ? "bg-brand-500 text-white" : status === "ended" ? "bg-zinc-700 text-white" : "bg-white text-zinc-900"
