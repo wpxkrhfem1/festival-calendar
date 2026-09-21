@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getAllFestivals, getMonthSummaries } from "@/lib/festivals";
 import { overlaps, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
 import { CATEGORY_TAGS } from "@/lib/tags";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import BrowseBar from "@/components/BrowseBar";
 import CategoryShortcuts from "@/components/CategoryShortcuts";
-import MonthCollage from "@/components/MonthCollage";
-import ScrollToCurrentMonth from "@/components/ScrollToCurrentMonth";
+import MonthGrid from "@/components/MonthGrid";
 
 // 하루 1회 재검증 (ISR)
 export const revalidate = 86400;
@@ -23,6 +21,8 @@ export default function HomePage() {
   const today = todayKST();
   const { month: nowMonth, year: nowYear } = parseDate(today);
   const months = getMonthSummaries(today);
+  const upcomingMonths = months.filter((m) => !m.past);
+  const pastMonths = months.filter((m) => m.past);
 
   // 바로가기에 붙일 건수. 앞으로 열리거나 진행 중인 축제만 센다
   const all = getAllFestivals();
@@ -40,7 +40,6 @@ export default function HomePage() {
 
   return (
     <div>
-      <ScrollToCurrentMonth month={nowMonth} />
       <section className="mb-5 pt-2">
         <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
           {nowYear}년 {nowMonth}월, 어디서 뭐 하지?
@@ -61,50 +60,19 @@ export default function HomePage() {
 
       <CategoryShortcuts counts={categoryCounts} whenCounts={whenCounts} />
 
-      <h2 className="mb-3 text-base font-bold">월별로 둘러보기</h2>
+      {/* 다가오는 달을 앞에, 이미 지난 달은 뒤에 따로 묶는다 */}
+      <h2 className="mb-3 text-base font-bold">다가오는 축제, 달별로 둘러보기</h2>
+      <MonthGrid months={upcomingMonths} nowMonth={nowMonth} />
 
-      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-        {months.map(({ month, year, count, otherYears, images, sample }) => {
-          const isNow = month === nowMonth;
-          return (
-            <li key={month} id={`month-${month}`} className="scroll-mt-32">
-              <Link
-                href={`/month/${month}`}
-                aria-label={`${year}년 ${month}월 축제 ${count}개 보기`}
-                className={`group block overflow-hidden rounded-2xl border bg-white transition hover:-translate-y-0.5 hover:shadow-md dark:bg-zinc-900 ${
-                  isNow
-                    ? "border-brand-500 ring-2 ring-brand-500/40"
-                    : "border-zinc-200 dark:border-zinc-800"
-                }`}
-              >
-                {/* 대표 이미지 콜라주 (최대 4장) */}
-                <div className="relative aspect-[4/3] bg-zinc-100 dark:bg-zinc-800">
-                  <MonthCollage images={images} sample={sample} />
-                  {isNow && (
-                    <span className="absolute left-2 top-2 rounded-full bg-brand-500 px-2 py-0.5 text-[11px] font-bold text-white shadow">
-                      이번 달
-                    </span>
-                  )}
-                </div>
-                <div className="flex items-baseline justify-between p-3">
-                  <div>
-                    <h2 className="text-lg font-extrabold group-hover:text-brand-600 dark:group-hover:text-brand-300">{month}월</h2>
-                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400">{year}년</p>
-                  </div>
-                  <p className="text-right text-sm font-semibold text-zinc-700 dark:text-zinc-200">
-                    {count > 0 ? `축제 ${count}개` : "등록 예정"}
-                    {otherYears.length > 0 && (
-                      <span className="block text-[11px] font-normal text-zinc-500 dark:text-zinc-400">
-                        {otherYears.map((o) => `${o.year}년 ${o.count}개`).join(" · ")}
-                      </span>
-                    )}
-                  </p>
-                </div>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      {pastMonths.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-base font-bold">지난 축제 둘러보기</h2>
+          <p className="mb-3 mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+            올해 이미 지난 달이에요. 대부분 매년 비슷한 시기에 열리니 다음 해 일정을 가늠하는 데 참고하세요.
+          </p>
+          <MonthGrid months={pastMonths} nowMonth={nowMonth} />
+        </section>
+      )}
     </div>
   );
 }

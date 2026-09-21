@@ -7,7 +7,7 @@
 import festivalsFile from "@/data/festivals.json";
 import overridesFile from "@/data/overrides.json";
 import type { Festival, FestivalDataFile, FestivalOverride, Tag } from "./types";
-import { isLongRunning, monthsBetween, targetYearForMonth, todayKST } from "./date";
+import { isLongRunning, monthsBetween, monthsFromCurrent, targetYearForMonth, todayKST } from "./date";
 import { classifyTags } from "./tags";
 import { regionBySlug } from "./regions";
 
@@ -163,19 +163,27 @@ export function pickMonthYear(result: MonthResult, year: number): MonthYear | un
   return result.years.find((y) => y.year === year);
 }
 
-/** 12개월 요약 (홈 카드용). 기본 연도 기준으로 집계한다 */
+/**
+ * 12개월 요약 (홈 카드용). 기본 연도 기준으로 집계한다.
+ * 현재 달부터 한 바퀴 돌려 다가오는 달이 앞에 오게 한다.
+ * past 는 그 카드가 가리키는 연·월이 이미 지났는지다 (화면에서 따로 묶어 보여준다).
+ */
 export function getMonthSummaries(today = todayKST()) {
-  return Array.from({ length: 12 }, (_, i) => {
-    const month = i + 1;
+  const nowYear = Number(today.slice(0, 4));
+  const nowMonth = Number(today.slice(5, 7));
+  return monthsFromCurrent(nowMonth).map((month) => {
     const result = getFestivalsByMonth(month, today);
     const chosen = pickMonthYear(result, result.defaultYear);
     const festivals = chosen?.festivals ?? [];
     // 콜라주용 대표 축제 4개: 이미지 있는 것 먼저, 상설 공연은 뒤로 (매달 같은 그림이 반복되지 않게)
     const score = (f: Festival) => (f.image || f.thumbnail ? 0 : 4) + (isLongRunning(f.startDate, f.endDate) ? 2 : 0);
     const sample = [...festivals].sort((a, b) => score(a) - score(b)).slice(0, 4);
+    const year = result.defaultYear;
     return {
       month,
-      year: result.defaultYear,
+      year,
+      // 이 카드가 가리키는 연·월이 이미 지났는지
+      past: year < nowYear || (year === nowYear && month < nowMonth),
       count: festivals.length,
       /** 다른 해에도 이 달 축제가 있는지 (카드에 "2027년도 보기" 같은 힌트를 줄 때 사용) */
       otherYears: result.years.filter((y) => y.year !== result.defaultYear).map((y) => ({ year: y.year, count: y.festivals.length })),
