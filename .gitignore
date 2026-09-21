@@ -34,11 +34,15 @@ yarn-error.log*
 .env*
 
 # vercel
-.vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
 
-# 예시 환경변수 파일은 커밋한다
+.env*
+
+# vercel CLI 로컬 설정
+.vercel
+
+# 예시 환경변수 파일은 커밋한다 (부정 규칙은 반드시 .env* 뒤에 와야 적용됨)
 !.env.example
