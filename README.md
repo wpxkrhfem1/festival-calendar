@@ -168,3 +168,11 @@ tests/                  node:test 단위 테스트
 ## 출처
 
 데이터 제공: **한국관광공사** (TourAPI 4.0). 축제 일정·요금은 주최 측 사정으로 변경될 수 있습니다.
+
+## 운영 메모 (실제 배포에서 확인한 것)
+
+- **GitHub Actions 에서는 `npm ci` 가 아니라 `npm install` 을 쓴다.** Windows 에서 만든 `package-lock.json` 에
+  리눅스 러너용 선택적 의존성(`@emnapi/*`)이 빠져 있어 `npm ci` 가 `Missing ... from lock file` 로 실패한다.
+- **해외 러너에서 `apis.data.go.kr` 접속이 느리다.** Node 기본 연결 타임아웃 10초로는 `ConnectTimeoutError` 가 난다.
+  `scripts/tour-api.ts` 가 undici Agent 로 연결 60초·헤더/본문 120초를 잡고 5회까지 재시도한다.
+- 이 두 가지를 고친 뒤 워크플로가 수집 → 커밋 → Vercel 자동 배포까지 정상 동작하는 것을 확인했다.
