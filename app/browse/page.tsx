@@ -64,7 +64,15 @@ export default async function BrowsePage({ searchParams }: PageProps<"/browse">)
         </p>
       </div>
 
-      <BrowseBar when={when} region={regionSlug} category={categoryRaw} />
+      <BrowseBar
+        action="/browse"
+        accent="brand"
+        submitLabel="축제 찾기"
+        third={{ name: "category", placeholder: "카테고리 전체", options: [...CATEGORY_TAGS] }}
+        when={when}
+        region={regionSlug}
+        thirdValue={categoryRaw}
+      />
 
       <p className="mb-3 mt-5 text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">
         {results.length}개 축제

@@ -21,7 +21,8 @@
 | `/concert` | 공연 홈. 12개월 카드 그리드 |
 | `/concert/month/[1-12]` | 해당 월 공연 목록. 장르·지역·공연중 필터 |
 | `/concert/[id]` | 공연 상세. 출연진, 가격, 러닝타임, 예매처 링크, JSON-LD Event |
-| `/browse?when=&region=&category=` | 시기·지역·카테고리로 찾기 |
+| `/browse?when=&region=&category=` | 시기·지역·카테고리로 축제 찾기 |
+| `/concert/browse?when=&region=&genre=` | 시기·지역·장르로 공연 찾기 |
 | `/search?q=` | 축제·공연 통합 검색 (구역별로 나눠 표시) |
 | `/sitemap.xml`, `/robots.txt` | 자동 생성 |
 

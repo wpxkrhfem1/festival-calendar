@@ -51,7 +51,12 @@ export default function HomePage() {
       </section>
 
       <div className="mb-6">
-        <BrowseBar />
+        <BrowseBar
+          action="/browse"
+          accent="brand"
+          submitLabel="축제 찾기"
+          third={{ name: "category", placeholder: "카테고리 전체", options: [...CATEGORY_TAGS] }}
+        />
       </div>
 
       <CategoryShortcuts counts={categoryCounts} whenCounts={whenCounts} />

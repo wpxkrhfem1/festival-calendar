@@ -3,49 +3,61 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { REGIONS } from "@/lib/regions";
-import { CATEGORY_TAGS } from "@/lib/tags";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
 
 const WHEN_ORDER: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming"];
 
+/** 구역별 강조색. Tailwind 가 클래스를 지우지 않도록 전체 문자열로 적어둔다 */
+const ACCENT = {
+  brand: {
+    focus: "focus:border-brand-500 focus:ring-brand-500/25",
+    button: "bg-brand-500 hover:bg-brand-600",
+  },
+  violet: {
+    focus: "focus:border-violet-600 focus:ring-violet-600/25",
+    button: "bg-violet-600 hover:bg-violet-700",
+  },
+} as const;
+
 interface Props {
-  /** 초기 선택값 (찾아보기 결과 페이지에서 되돌려줄 때 사용) */
+  /** 결과 페이지 경로 */
+  action: string;
+  accent: keyof typeof ACCENT;
+  /** 세 번째 선택칸 (축제는 카테고리, 공연은 장르) */
+  third: { name: string; placeholder: string; options: string[] };
+  submitLabel: string;
+  /** 초기 선택값 (결과 페이지에서 되돌려줄 때) */
   when?: WhenKey;
   region?: string;
-  category?: string;
+  thirdValue?: string;
 }
 
 /**
- * 시기 · 지역 · 카테고리로 찾아보는 바.
- * 고르고 누르면 /browse 로 넘어가 결과를 보여준다.
- * 자바스크립트가 꺼져 있어도 폼 제출로 동작하도록 form action 을 쓴다.
+ * 시기 · 지역 · 카테고리(장르)로 찾아보는 바.
+ * 축제와 공연이 같은 모양을 쓰되 강조색과 결과 경로만 다르다.
+ * 자바스크립트가 꺼져 있어도 폼 제출로 동작한다.
  */
-export default function BrowseBar({ when = "all", region = "", category = "" }: Props) {
+export default function BrowseBar({
+  action,
+  accent,
+  third,
+  submitLabel,
+  when = "all",
+  region = "",
+  thirdValue = "",
+}: Props) {
   const router = useRouter();
   const [w, setW] = useState<WhenKey>(when);
   const [r, setR] = useState(region);
-  const [c, setC] = useState(category);
+  const [t, setT] = useState(thirdValue);
+  const a = ACCENT[accent];
 
-  const selectClass =
-    "h-11 w-full appearance-none rounded-xl border border-zinc-300 bg-white pl-9 pr-8 text-sm font-medium outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/25 dark:border-zinc-700 dark:bg-zinc-900";
-
-  function reset() {
-    setW("all");
-    setR("");
-    setC("");
-    router.push("/browse");
-  }
-
-  const hasAny = w !== "all" || r !== "" || c !== "";
+  const selectClass = `h-11 w-full appearance-none rounded-xl border border-zinc-300 bg-white pl-9 pr-8 text-sm font-medium outline-none focus:ring-2 dark:border-zinc-700 dark:bg-zinc-900 ${a.focus}`;
+  const hasAny = w !== "all" || r !== "" || t !== "";
 
   return (
-    <form
-      action="/browse"
-      method="get"
-      className="rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm dark:border-zinc-800 dark:bg-zinc-900 sm:p-4"
-    >
+    <form action={action} method="get" className="rounded-2xl border border-zinc-200 bg-white p-3 shadow-sm dark:border-zinc-800 dark:bg-zinc-900 sm:p-4">
       <div className="grid gap-2 sm:grid-cols-[1fr_1fr_1fr_auto]">
-        {/* 시기 */}
         <label className="relative block">
           <span className="sr-only">시기</span>
           <CalendarIcon />
@@ -59,7 +71,6 @@ export default function BrowseBar({ when = "all", region = "", category = "" }: 
           <Chevron />
         </label>
 
-        {/* 지역 */}
         <label className="relative block">
           <span className="sr-only">지역</span>
           <PinIcon />
@@ -74,15 +85,14 @@ export default function BrowseBar({ when = "all", region = "", category = "" }: 
           <Chevron />
         </label>
 
-        {/* 카테고리 */}
         <label className="relative block">
-          <span className="sr-only">카테고리</span>
+          <span className="sr-only">{third.placeholder}</span>
           <TagIcon />
-          <select name="category" value={c} onChange={(e) => setC(e.target.value)} className={selectClass}>
-            <option value="">카테고리 전체</option>
-            {CATEGORY_TAGS.map((t) => (
-              <option key={t} value={t}>
-                {t}
+          <select name={third.name} value={t} onChange={(e) => setT(e.target.value)} className={selectClass}>
+            <option value="">{third.placeholder}</option>
+            {third.options.map((o) => (
+              <option key={o} value={o}>
+                {o}
               </option>
             ))}
           </select>
@@ -93,7 +103,12 @@ export default function BrowseBar({ when = "all", region = "", category = "" }: 
           {hasAny && (
             <button
               type="button"
-              onClick={reset}
+              onClick={() => {
+                setW("all");
+                setR("");
+                setT("");
+                router.push(action);
+              }}
               aria-label="조건 초기화"
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-zinc-300 text-zinc-500 hover:bg-zinc-50 dark:border-zinc-700 dark:hover:bg-zinc-800"
             >
@@ -105,9 +120,9 @@ export default function BrowseBar({ when = "all", region = "", category = "" }: 
           )}
           <button
             type="submit"
-            className="flex h-11 flex-1 items-center justify-center gap-1.5 rounded-xl bg-brand-500 px-6 text-sm font-bold text-white transition hover:bg-brand-600 sm:flex-none"
+            className={`flex h-11 flex-1 items-center justify-center gap-1.5 rounded-xl px-6 text-sm font-bold text-white transition sm:flex-none ${a.button}`}
           >
-            축제 찾기
+            {submitLabel}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <path d="M5 12h13" />
               <path d="m13 6 6 6-6 6" />

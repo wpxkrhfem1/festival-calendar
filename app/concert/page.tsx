@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getConcertMonthSummaries } from "@/lib/concerts";
-import { todayKST, parseDate } from "@/lib/date";
+import { getAllConcerts, getConcertMonthSummaries } from "@/lib/concerts";
+import { overlaps, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
 import { SITE_NAME } from "@/lib/site";
+import BrowseBar from "@/components/BrowseBar";
+import GenreShortcuts from "@/components/GenreShortcuts";
 import ConcertPoster from "@/components/ConcertPoster";
 
 export const revalidate = 86400;
@@ -20,6 +22,19 @@ export default function ConcertHomePage() {
   const { month: nowMonth, year: nowYear } = parseDate(today);
   const months = getConcertMonthSummaries(today);
 
+  // 바로가기에 붙일 건수
+  const all = getAllConcerts();
+  const upcoming = all.filter((c) => c.endDate >= today);
+  const genreCount = new Map<string, number>();
+  for (const c of upcoming) if (c.genre) genreCount.set(c.genre, (genreCount.get(c.genre) ?? 0) + 1);
+  const genres = [...genreCount.entries()].sort((a, b) => b[1] - a[1]);
+  const whenCounts = Object.fromEntries(
+    (["ongoing", "weekend", "thisMonth"] as WhenKey[]).map((k) => {
+      const range = whenRange(k, today);
+      return [k, all.filter((c) => overlaps(c.startDate, c.endDate, range)).length];
+    }),
+  ) as Partial<Record<WhenKey, number>>;
+
   return (
     <div>
       <section className="mb-6 pt-2">
@@ -27,9 +42,22 @@ export default function ConcertHomePage() {
           {nowYear}년 {nowMonth}월, 어떤 공연 볼까?
         </h1>
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300 sm:text-base">
-          콘서트부터 뮤지컬, 연극, 클래식까지 달별로 모았어요. 달을 고르면 장르와 지역으로 걸러볼 수 있어요.
+          전국 공연 {all.length.toLocaleString()}개를 달별로 모았어요. 시기·지역·장르로 바로 찾아보세요.
         </p>
       </section>
+
+      <div className="mb-6">
+        <BrowseBar
+          action="/concert/browse"
+          accent="violet"
+          submitLabel="공연 찾기"
+          third={{ name: "genre", placeholder: "장르 전체", options: genres.map(([g]) => g) }}
+        />
+      </div>
+
+      <GenreShortcuts genres={genres} whenCounts={whenCounts} />
+
+      <h2 className="mb-3 text-base font-bold">월별로 둘러보기</h2>
 
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
         {months.map(({ month, year, count, otherYears, sample }) => {
