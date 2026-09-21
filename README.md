@@ -76,6 +76,7 @@ npm run fetch:festivals -- --dry-run          # 저장하지 않고 앞 2건만 
 npm run fetch:festivals -- --no-detail        # 목록만 (상세 호출 없음)
 npm run fetch:festivals -- --max-detail=200   # 상세 호출 상한
 npx tsx scripts/reapply-rules.ts              # API 호출 없이 지역·태그 규칙만 다시 적용
+npm run add:photos -- --limit=250             # 축제 사진(detailImage2)만 따로 채우기
 
 npm run probe:kopis                           # KOPIS 응답 구조 확인
 npm run count:kopis                           # KOPIS 장르별 건수 측정
@@ -96,6 +97,8 @@ npm run fetch:concerts -- --max-detail=300    # 공연 상세 호출 상한
 - 실제 응답에서 `areacode` 는 비어 있고 `lDongRegnCd`(법정동 시도 코드)만 옵니다. 지역은 주소 첫 단어로 판별하고, 없으면 이 코드로 보완합니다.
 - 2026년 응답에 `전남광주통합특별시` 주소가 등장합니다. 시군구가 구(區)면 광주, 아니면 전남으로 분류합니다 (`lib/regions.ts`).
 - 120일 이상 이어지는 상설 공연·전시는 목록 뒤로 보내고 "상설"로 표시합니다.
+- `detailInfo2`(행사소개·행사내용)는 `detailCommon2`의 개요, `detailIntro2`의 프로그램과 **내용이 같습니다**. 18건 대조로 확인했으니 다시 붙이지 마세요.
+- 축제 사진은 `detailImage2`에서 옵니다. 742건 중 575건(77%)이 보유하며 평균 6.4장입니다.
 - 내년 달은 아직 등록이 적어(5개 미만) 올해 같은 달 축제를 참고용으로 함께 보여줍니다. 매년 열리는 축제가 많아 실제로 유용합니다.
 
 - 수집 범위: **올해 1/1 ~ 내년 12/31**

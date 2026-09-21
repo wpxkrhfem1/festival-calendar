@@ -12,7 +12,8 @@
     "probe:api": "tsx scripts/probe-api.ts",
     "probe:kopis": "tsx scripts/probe-kopis.ts",
     "fetch:concerts": "tsx scripts/fetch-concerts.ts",
-    "count:kopis": "tsx scripts/count-kopis.ts"
+    "count:kopis": "tsx scripts/count-kopis.ts",
+    "add:photos": "tsx scripts/add-photos.ts"
   },
   "dependencies": {
     "next": "16.3.5",

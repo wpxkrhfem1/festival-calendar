@@ -5,7 +5,8 @@
  *
  * 1. 올해 1/1 ~ 내년 12/31 범위로 searchFestival2 전체 페이지 순회
  * 2. 새로 생겼거나 modifiedtime 이 바뀐 축제만 detailCommon2 / detailIntro2 추가 호출
- *    (일일 트래픽 제한 보호: --max-detail 로 상한, 기본 600건. 나머지는 기존 상세 재사용)
+ *    상세 1건당 API 3회(공통+소개+사진) 호출한다.
+ *    (일일 트래픽 제한 보호: --max-detail 로 상한, 기본 300건. 나머지는 기존 상세 재사용)
  * 3. 정규화 + 태그 분류 → data/festivals.json 저장
  *
  * 실패 정책: 목록 수집이 실패하면 기존 festivals.json 을 건드리지 않고 exit 1.
@@ -15,7 +16,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Festival, FestivalDataFile, RawDetailCommon, RawDetailIntro, RawFestivalItem } from "../lib/types";
 import { normalizeFestival } from "../lib/normalize";
-import { fetchDetailCommon, fetchDetailIntro, loadEnv, searchFestivalPage } from "./tour-api";
+import { fetchDetailCommon, fetchDetailImages, fetchDetailIntro, loadEnv, searchFestivalPage } from "./tour-api";
 
 const ROOT = process.cwd();
 const OUT_PATH = path.join(ROOT, "data", "festivals.json");
@@ -29,7 +30,7 @@ interface Options {
 }
 
 function parseArgs(argv: string[]): Options {
-  const opts: Options = { detail: true, maxDetail: 600, dryRun: false };
+  const opts: Options = { detail: true, maxDetail: 300, dryRun: false };
   for (const a of argv) {
     if (a === "--no-detail") opts.detail = false;
     else if (a === "--dry-run") opts.dryRun = true;
@@ -134,14 +135,19 @@ async function main() {
   const detailTargets = opts.detail ? needsDetail.slice(0, opts.maxDetail) : [];
   console.log(`[info] 상세 갱신 필요 ${needsDetail.length}건, 이번 실행에서 ${detailTargets.length}건 호출`);
 
-  const details = new Map<string, { common: RawDetailCommon | null; intro: RawDetailIntro | null }>();
+  const details = new Map<string, { common: RawDetailCommon | null; intro: RawDetailIntro | null; photos: string[] }>();
   let detailFailures = 0;
   await runWithConcurrency(
     detailTargets.map((it) => async () => {
       const id = String(it.contentid);
       try {
-        const [common, intro] = await Promise.all([fetchDetailCommon(id), fetchDetailIntro(id)]);
-        details.set(id, { common, intro });
+        // 사진은 없는 축제도 많아 실패해도 나머지는 살린다
+        const [common, intro, photos] = await Promise.all([
+          fetchDetailCommon(id),
+          fetchDetailIntro(id),
+          fetchDetailImages(id).catch(() => []),
+        ]);
+        details.set(id, { common, intro, photos });
       } catch (err) {
         detailFailures += 1;
         console.warn(`[warn] 상세 실패 ${id} (${it.title}):`, err instanceof Error ? err.message : err);
@@ -157,7 +163,7 @@ async function main() {
   for (const it of items) {
     const id = String(it.contentid);
     const d = details.get(id);
-    const normalized = normalizeFestival(it, d?.common, d?.intro);
+    const normalized = normalizeFestival(it, d?.common, d?.intro, d?.photos);
     if (!normalized) {
       skipped += 1;
       continue;
@@ -172,6 +178,7 @@ async function main() {
         if (prev.fee) normalized.fee = prev.fee;
         if (prev.sponsor) normalized.sponsor = prev.sponsor;
         if (prev.program) normalized.program = prev.program;
+        if (prev.photos?.length) normalized.photos = prev.photos;
         // 개요가 있어야 태그가 정확하므로 다시 분류
         normalized.tags = normalizeFestival(it, { contentid: id, overview: prev.overview })!.tags;
       }

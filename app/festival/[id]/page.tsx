@@ -7,6 +7,7 @@ import { regionByName } from "@/lib/regions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import FestivalImage from "@/components/FestivalImage";
 import FestivalCard from "@/components/FestivalCard";
+import PhotoGallery from "@/components/PhotoGallery";
 import TagChip from "@/components/TagChip";
 
 export const revalidate = 86400;
@@ -187,6 +188,8 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
           <p className="whitespace-pre-line text-[15px] leading-relaxed text-zinc-700 dark:text-zinc-300">{f.overview}</p>
         </section>
       )}
+
+      {f.photos && f.photos.length > 0 && <PhotoGallery photos={f.photos} title={f.title} />}
 
       {f.program && (
         <section className="mt-8">

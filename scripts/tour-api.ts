@@ -148,3 +148,21 @@ export async function fetchDetailIntro(contentId: string): Promise<RawDetailIntr
   const { items } = await callApi<RawDetailIntro>("detailIntro2", { contentId, contentTypeId: 15 });
   return items[0] ?? null;
 }
+
+/** detailImage2 응답 항목 */
+export interface RawDetailImage {
+  contentid: string;
+  originimgurl?: string;
+  smallimageurl?: string;
+  imgname?: string;
+  serialnum?: string;
+}
+
+/** 추가 사진 목록. 축제마다 0~10장 정도 있고, 없는 축제도 많다 */
+export async function fetchDetailImages(contentId: string): Promise<string[]> {
+  const { items } = await callApi<RawDetailImage>("detailImage2", { contentId, imageYN: "Y" });
+  const urls = items
+    .map((it) => (it.originimgurl ?? it.smallimageurl ?? "").trim())
+    .filter((u) => /^https?:\/\//i.test(u));
+  return [...new Set(urls)];
+}

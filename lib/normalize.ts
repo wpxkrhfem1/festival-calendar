@@ -74,6 +74,7 @@ export function normalizeFestival(
   item: RawFestivalItem,
   detail?: RawDetailCommon | null,
   intro?: RawDetailIntro | null,
+  photos?: string[],
 ): Festival | null {
   const startDate = fromApiDate(item.eventstartdate);
   const endDate = fromApiDate(item.eventenddate) ?? startDate;
@@ -123,6 +124,10 @@ export function normalizeFestival(
   if (fee) festival.fee = fee;
   if (sponsor) festival.sponsor = sponsor;
   if (program) festival.program = program;
+
+  // 대표 이미지와 같은 사진은 갤러리에서 뺀다
+  const gallery = (photos ?? []).filter((u) => u !== festival.image && u !== festival.thumbnail);
+  if (gallery.length) festival.photos = gallery;
 
   return festival;
 }
