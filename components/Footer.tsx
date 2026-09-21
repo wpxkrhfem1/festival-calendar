@@ -17,10 +17,13 @@ export default function Footer() {
           ))}
         </nav>
         <p>
-          데이터 제공: <strong className="font-semibold text-zinc-700 dark:text-zinc-200">한국관광공사</strong> (TourAPI 4.0)
+          축제 데이터: <strong className="font-semibold text-zinc-700 dark:text-zinc-200">한국관광공사</strong> (TourAPI 4.0)
           {updated && <span className="ml-2">· 마지막 갱신 {updated}</span>}
         </p>
-        <p className="mt-1">일정은 주최 측 사정으로 변경될 수 있어요. 방문 전 공식 홈페이지를 확인해 주세요.</p>
+        <p className="mt-1">
+          공연 데이터: <strong className="font-semibold text-zinc-700 dark:text-zinc-200">예술경영지원센터</strong> 공연예술통합전산망(KOPIS)
+        </p>
+        <p className="mt-2">일정과 가격은 주최 측 사정으로 변경될 수 있어요. 방문 전 공식 홈페이지나 예매처를 확인해 주세요.</p>
       </div>
     </footer>
   );

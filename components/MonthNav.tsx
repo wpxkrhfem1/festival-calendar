@@ -11,15 +11,17 @@ const getServerNowMonth = () => null;
 
 /**
  * 1~12월 숫자 탭 (가로 스크롤)
- * - 현재 보고 있는 월 페이지는 브랜드색으로 강조
- * - 오늘이 속한 달은 점(•)으로 표시하고, 마운트 시 그 탭이 보이도록 스크롤
+ * - 축제 구역이면 /month/N, 공연 구역이면 /concert/month/N 로 연결한다
+ * - 현재 보고 있는 월은 구역 색으로 강조하고, 오늘이 속한 달에는 점을 찍는다
  */
 export default function MonthNav() {
   const pathname = usePathname();
   const nowMonth = useSyncExternalStore(subscribeNoop, getNowMonth, getServerNowMonth);
   const activeRef = useRef<HTMLAnchorElement>(null);
 
-  const match = pathname.match(/^\/month\/(\d{1,2})/);
+  const isConcert = pathname.startsWith("/concert");
+  const hrefBase = isConcert ? "/concert/month" : "/month";
+  const match = pathname.match(/^\/(?:concert\/)?month\/(\d{1,2})/);
   const activeMonth = match ? Number(match[1]) : null;
   const highlight = activeMonth ?? nowMonth;
 
@@ -29,7 +31,13 @@ export default function MonthNav() {
     const list = el?.parentElement?.parentElement;
     if (!el || !list) return;
     list.scrollLeft = el.offsetLeft - list.clientWidth / 2 + el.offsetWidth / 2;
-  }, [highlight]);
+  }, [highlight, isConcert]);
+
+  const activeClass = isConcert ? "bg-violet-600 text-white" : "bg-brand-500 text-white";
+  const nowClass = isConcert
+    ? "bg-violet-50 text-violet-700 dark:bg-violet-900/40 dark:text-violet-200"
+    : "bg-brand-50 text-brand-700 dark:bg-brand-900/40 dark:text-brand-200";
+  const dotClass = isConcert ? "bg-violet-600" : "bg-brand-500";
 
   return (
     <nav aria-label="월별 이동" className="mx-auto w-full max-w-5xl">
@@ -40,21 +48,21 @@ export default function MonthNav() {
           return (
             <li key={m} className="shrink-0">
               <Link
-                href={`/month/${m}`}
+                href={`${hrefBase}/${m}`}
                 ref={highlight === m ? activeRef : undefined}
                 aria-current={isActive ? "page" : undefined}
                 className={[
                   "relative flex h-9 min-w-11 items-center justify-center rounded-full px-3 text-sm font-semibold transition",
                   isActive
-                    ? "bg-brand-500 text-white"
+                    ? activeClass
                     : isNow
-                      ? "bg-brand-50 text-brand-700 dark:bg-brand-900/40 dark:text-brand-200"
+                      ? nowClass
                       : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
                 ].join(" ")}
               >
                 {m}월
                 {isNow && !isActive && (
-                  <span aria-label="이번 달" className="absolute -top-0.5 right-1 h-1.5 w-1.5 rounded-full bg-brand-500" />
+                  <span aria-label="이번 달" className={`absolute -top-0.5 right-1 h-1.5 w-1.5 rounded-full ${dotClass}`} />
                 )}
               </Link>
             </li>

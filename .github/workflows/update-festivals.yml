@@ -1,6 +1,6 @@
-# 매주 월요일 새벽(KST 04:00 = UTC 19:00 일요일) 축제 데이터를 다시 받아와
+# 매주 월요일 새벽(KST 04:00 = UTC 19:00 일요일) 축제·공연 데이터를 다시 받아와
 # 변경이 있으면 커밋한다. 커밋이 main 에 올라가면 Vercel 이 자동 배포한다.
-name: 축제 데이터 갱신
+name: 축제·공연 데이터 갱신
 
 on:
   schedule:
@@ -17,7 +17,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: 저장소 체크아웃
         uses: actions/checkout@v4
@@ -33,11 +33,18 @@ jobs:
         # 리눅스 러너에 필요한 플랫폼별 선택적 의존성(@emnapi 등)이 빠져 있어 ci 가 실패한다.
         run: npm install --no-audit --no-fund
 
-      - name: 축제 데이터 수집
+      - name: 축제 데이터 수집 (한국관광공사)
         # 실패하면(exit 1) festivals.json 은 그대로이므로 아래 단계에서 변경이 없어 커밋되지 않는다
         env:
           TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
         run: npm run fetch:festivals -- --max-detail=600
+
+      - name: 공연 데이터 수집 (KOPIS)
+        # 축제 수집이 실패해도 공연은 시도한다. 둘 다 실패하면 커밋할 변경이 없다.
+        if: always()
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+        run: npm run fetch:concerts -- --max-detail=1500
 
       - name: 단위 테스트
         run: npm test
@@ -46,11 +53,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/festivals.json
+          git add data/festivals.json data/concerts.json
           if git diff --cached --quiet; then
             echo "변경된 데이터가 없어 커밋하지 않습니다."
           else
-            COUNT=$(node -e "console.log(require('./data/festivals.json').meta.count)")
-            git commit -m "데이터: 축제 정보 자동 갱신 (${COUNT}건)"
+            FEST=$(node -e "console.log(require('./data/festivals.json').meta.count)")
+            CONC=$(node -e "try{console.log(require('./data/concerts.json').meta.count)}catch(e){console.log(0)}")
+            git commit -m "데이터: 자동 갱신 (축제 ${FEST}건, 공연 ${CONC}건)"
             git push
           fi

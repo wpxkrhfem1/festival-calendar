@@ -9,7 +9,10 @@
     "lint": "eslint",
     "test": "tsx --test tests/*.test.ts",
     "fetch:festivals": "tsx scripts/fetch-festivals.ts",
-    "probe:api": "tsx scripts/probe-api.ts"
+    "probe:api": "tsx scripts/probe-api.ts",
+    "probe:kopis": "tsx scripts/probe-kopis.ts",
+    "fetch:concerts": "tsx scripts/fetch-concerts.ts",
+    "count:kopis": "tsx scripts/count-kopis.ts"
   },
   "dependencies": {
     "next": "16.3.5",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "fast-xml-parser": "^5.11.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5",

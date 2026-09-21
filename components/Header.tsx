@@ -1,18 +1,20 @@
 import Link from "next/link";
 import MonthNav from "./MonthNav";
+import SectionNav from "./SectionNav";
 import ThemeToggle from "./ThemeToggle";
 import { SITE_NAME } from "@/lib/site";
 
-/** 상단 고정 헤더: 로고 · 검색 · 다크모드 토글 + 1~12월 탭 */
+/** 상단 고정 헤더: 로고 · 축제/공연 전환 · 검색 · 다크모드 + 1~12월 탭 */
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
-      <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-3 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
+      <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-2 px-4 sm:px-6">
+        <Link href="/" className="flex shrink-0 items-center gap-2 font-bold tracking-tight">
           <span aria-hidden className="text-xl">🎪</span>
-          <span className="text-base sm:text-lg">{SITE_NAME}</span>
+          <span className="hidden text-base sm:inline sm:text-lg">{SITE_NAME}</span>
         </Link>
-        <div className="flex items-center gap-1">
+        <SectionNav />
+        <div className="flex shrink-0 items-center gap-1">
           <Link
             href="/search"
             aria-label="축제 검색"

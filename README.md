@@ -6,7 +6,8 @@
 "이번 달에 어디서 뭐 하지?"를 5초 안에 알 수 있게 만드는 것이 목표입니다.
 
 - **기술 스택**: Next.js (App Router, TypeScript), Tailwind CSS v4, Vercel
-- **데이터**: 한국관광공사 TourAPI 4.0 (`KorService2` — `searchFestival2`, `detailCommon2`, `detailIntro2`)
+- **데이터**: 축제는 한국관광공사 TourAPI 4.0 (`KorService2`), 공연은 예술경영지원센터 KOPIS
+- **구성**: 상단에서 축제와 공연을 전환합니다. 출처와 성격이 달라 목록을 섞지 않습니다.
 - **갱신**: GitHub Actions 가 매주 월요일 새벽 데이터를 받아와 커밋 → Vercel 자동 배포
 
 ## 페이지
@@ -17,7 +18,10 @@
 | `/month/[1-12]` | 해당 월 축제 목록. 지역·카테고리·진행 중 필터, 시작일/종료 임박 정렬 |
 | `/festival/[id]` | 상세. 기간(D-day), 지도 링크, 문의, 홈페이지, 개요, 같은 시기 추천 4개, JSON-LD Event |
 | `/region/[slug]` | 지역별 보기 (월별 탭). slug 는 `seoul`, `busan`, `gyeonggi` 등 (`lib/regions.ts`) |
-| `/search?q=` | 축제명/지역/태그 검색 |
+| `/concert` | 공연 홈. 12개월 카드 그리드 |
+| `/concert/month/[1-12]` | 해당 월 공연 목록. 장르·지역·공연중 필터 |
+| `/concert/[id]` | 공연 상세. 출연진, 가격, 러닝타임, 예매처 링크, JSON-LD Event |
+| `/search?q=` | 축제·공연 통합 검색 (구역별로 나눠 표시) |
 | `/sitemap.xml`, `/robots.txt` | 자동 생성 |
 
 ## 1. API 키 발급
@@ -32,13 +36,28 @@
 > `--max-detail` (기본 600) 로 상한을 둡니다. 나머지는 다음 실행에서 이어서 처리됩니다.
 > 운영 전환 신청을 하면 제한이 크게 늘어납니다.
 
+
+### KOPIS 키 (공연 데이터)
+
+공연은 별도 데이터원이라 키도 따로 받습니다. 공공데이터포털이 아니라 KOPIS 자체 사이트에서 받는 편이 간단합니다.
+
+1. [KOPIS 인증키 발급신청](https://kopis.or.kr/por/cs/openapi/openApiUseSend.do?menuId=MNU_00074) 접속
+2. 이름·이메일, 서비스목적(웹/모바일 서비스 개발), 신청자 구분, 소재지 입력 후 제출
+3. 발급된 키를 `.env.local` 의 `KOPIS_API_KEY` 에 넣습니다
+
+KOPIS API 는 관광공사 API 와 세 가지가 다릅니다.
+
+- 엔드포인트가 `http://www.kopis.or.kr/openApi/restful/pblprfr` 이고, 키 파라미터 이름이 `serviceKey` 가 아니라 `service` 입니다.
+- 응답이 JSON 이 아니라 **XML** 입니다 (`fast-xml-parser` 로 파싱).
+- 한 번에 **최대 100건**만 조회됩니다 (관광공사는 500건).
 ## 2. 로컬 실행
 
 ```bash
 npm install
 cp .env.example .env.local   # TOUR_API_KEY, NEXT_PUBLIC_SITE_URL 채우기
 npm run probe:api            # (선택) API 응답 구조를 눈으로 확인
-npm run fetch:festivals      # data/festivals.json 생성
+npm run fetch:festivals      # data/festivals.json 생성 (축제)
+npm run fetch:concerts       # data/concerts.json 생성 (공연)
 npm test                     # 단위 테스트
 npm run dev                  # http://localhost:3000
 ```
@@ -56,6 +75,10 @@ npm run fetch:festivals -- --dry-run          # 저장하지 않고 앞 2건만 
 npm run fetch:festivals -- --no-detail        # 목록만 (상세 호출 없음)
 npm run fetch:festivals -- --max-detail=200   # 상세 호출 상한
 npx tsx scripts/reapply-rules.ts              # API 호출 없이 지역·태그 규칙만 다시 적용
+
+npm run probe:kopis                           # KOPIS 응답 구조 확인
+npm run count:kopis                           # KOPIS 장르별 건수 측정
+npm run fetch:concerts -- --max-detail=300    # 공연 상세 호출 상한
 ```
 
 ### 일일 트래픽 한도와 운영계정 전환
@@ -92,7 +115,7 @@ npx tsx scripts/reapply-rules.ts              # API 호출 없이 지역·태그
 `.github/workflows/update-festivals.yml` 이 매주 월요일 04:00 KST 에 실행됩니다.
 
 1. GitHub 저장소 → Settings → Secrets and variables → Actions → **New repository secret**
-2. 이름 `TOUR_API_KEY`, 값에 디코딩 키 입력
+2. `TOUR_API_KEY` (관광공사 디코딩 키) 와 `KOPIS_API_KEY` (KOPIS 키) 두 개를 등록
 3. Actions 탭에서 **축제 데이터 갱신** 워크플로를 `Run workflow` 로 한 번 수동 실행해 확인
 
 변경이 있으면 `데이터: 축제 정보 자동 갱신 (N건)` 커밋이 올라가고 Vercel 이 다시 배포합니다.

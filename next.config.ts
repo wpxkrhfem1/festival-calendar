@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: "http", hostname: "tong.visitkorea.or.kr" },
       { protocol: "https", hostname: "tong.visitkorea.or.kr" },
+      // KOPIS 공연 포스터
+      { protocol: "http", hostname: "www.kopis.or.kr" },
+      { protocol: "https", hostname: "www.kopis.or.kr" },
+      { protocol: "http", hostname: "kopis.or.kr" },
+      { protocol: "https", hostname: "kopis.or.kr" },
     ],
   },
 };
