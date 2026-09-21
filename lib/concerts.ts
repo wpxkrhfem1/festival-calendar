@@ -5,7 +5,7 @@
  */
 import concertsFile from "@/data/concerts.json";
 import type { Concert, ConcertDataFile } from "./types";
-import { isLongRunning, monthKey, targetYearForMonth, todayKST } from "./date";
+import { isLongRunning, monthKey, monthsFromCurrent, targetYearForMonth, todayKST } from "./date";
 import { REGIONS } from "./regions";
 
 const data = concertsFile as unknown as ConcertDataFile;
@@ -88,10 +88,14 @@ export function pickConcertMonthYear(result: ConcertMonthResult, year: number): 
   return result.years.find((y) => y.year === year);
 }
 
-/** 12개월 요약 (공연 홈 카드용) */
+/**
+ * 12개월 요약 (공연 홈 카드용).
+ * KOPIS 는 오늘 이후 1년치만 주므로 1월부터 늘어놓으면 공연 1~2개짜리 빈 달이 앞에 온다.
+ * 현재 달부터 시작하도록 순서를 돌린다.
+ */
 export function getConcertMonthSummaries(today = todayKST()) {
-  return Array.from({ length: 12 }, (_, i) => {
-    const month = i + 1;
+  const nowMonth = Number(today.slice(5, 7));
+  return monthsFromCurrent(nowMonth).map((month) => {
     const result = getConcertsByMonth(month, today);
     const chosen = pickConcertMonthYear(result, result.defaultYear);
     const concerts = chosen?.concerts ?? [];

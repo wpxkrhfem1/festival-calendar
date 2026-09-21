@@ -10,6 +10,7 @@ import {
   formatPeriod,
   fromApiDate,
   monthsBetween,
+  monthsFromCurrent,
   statusOf,
   targetYearForMonth,
   todayKST,
@@ -161,5 +162,25 @@ describe("normalize", () => {
       normalizeFestival({ contentid: "1", contenttypeid: "15", title: "x", eventstartdate: "", eventenddate: "" }),
       null,
     );
+  });
+});
+
+describe("현재 달부터 도는 월 순서", () => {
+  it("9월이면 9월부터 8월까지 한 바퀴", () => {
+    assert.deepEqual(monthsFromCurrent(9), [9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8]);
+  });
+  it("1월이면 그대로 1~12월", () => {
+    assert.deepEqual(monthsFromCurrent(1), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+  });
+  it("12월이면 12월이 맨 앞", () => {
+    assert.deepEqual(monthsFromCurrent(12), [12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+  });
+  it("항상 12개이고 중복이 없다", () => {
+    for (let m = 1; m <= 12; m++) {
+      const out = monthsFromCurrent(m);
+      assert.equal(out.length, 12);
+      assert.equal(new Set(out).size, 12);
+      assert.equal(out[0], m);
+    }
   });
 });

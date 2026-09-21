@@ -1,8 +1,8 @@
-# 전국 축제 달력
+# 전국축제자랑
 
 **배포 주소: https://festival-calendar.vercel.app**
 
-대한민국 전국 축제·페스티벌을 1월~12월 달별로 모아 보여주는 사이트입니다.
+대한민국 전국 축제·페스티벌과 공연을 달별로 모아 보여주는 사이트입니다.
 "이번 달에 어디서 뭐 하지?"를 5초 안에 알 수 있게 만드는 것이 목표입니다.
 
 - **기술 스택**: Next.js (App Router, TypeScript), Tailwind CSS v4, Vercel
@@ -21,6 +21,7 @@
 | `/concert` | 공연 홈. 12개월 카드 그리드 |
 | `/concert/month/[1-12]` | 해당 월 공연 목록. 장르·지역·공연중 필터 |
 | `/concert/[id]` | 공연 상세. 출연진, 가격, 러닝타임, 예매처 링크, JSON-LD Event |
+| `/browse?when=&region=&category=` | 시기·지역·카테고리로 찾기 |
 | `/search?q=` | 축제·공연 통합 검색 (구역별로 나눠 표시) |
 | `/sitemap.xml`, `/robots.txt` | 자동 생성 |
 

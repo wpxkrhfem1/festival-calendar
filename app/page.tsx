@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getMonthSummaries } from "@/lib/festivals";
-import { todayKST, parseDate } from "@/lib/date";
+import { getAllFestivals, getMonthSummaries } from "@/lib/festivals";
+import { overlaps, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
+import { CATEGORY_TAGS } from "@/lib/tags";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
+import BrowseBar from "@/components/BrowseBar";
+import CategoryShortcuts from "@/components/CategoryShortcuts";
 import MonthCollage from "@/components/MonthCollage";
 import ScrollToCurrentMonth from "@/components/ScrollToCurrentMonth";
 
@@ -21,17 +24,39 @@ export default function HomePage() {
   const { month: nowMonth, year: nowYear } = parseDate(today);
   const months = getMonthSummaries(today);
 
+  // 바로가기에 붙일 건수. 앞으로 열리거나 진행 중인 축제만 센다
+  const all = getAllFestivals();
+  const totalCount = all.length;
+  const upcoming = all.filter((f) => f.endDate >= today);
+  const categoryCounts = Object.fromEntries(
+    CATEGORY_TAGS.map((t) => [t, upcoming.filter((f) => f.tags.includes(t)).length]),
+  );
+  const whenCounts = Object.fromEntries(
+    (["ongoing", "weekend", "thisMonth"] as WhenKey[]).map((k) => {
+      const range = whenRange(k, today);
+      return [k, all.filter((f) => overlaps(f.startDate, f.endDate, range)).length];
+    }),
+  ) as Partial<Record<WhenKey, number>>;
+
   return (
     <div>
       <ScrollToCurrentMonth month={nowMonth} />
-      <section className="mb-6 pt-2">
+      <section className="mb-5 pt-2">
         <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
           {nowYear}년 {nowMonth}월, 어디서 뭐 하지?
         </h1>
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300 sm:text-base">
-          전국 축제를 달별로 모았어요. 달을 고르면 지역·카테고리로 바로 걸러볼 수 있어요.
+          전국 축제 {totalCount.toLocaleString()}개를 달별로 모았어요. 시기·지역·카테고리로 바로 찾아보세요.
         </p>
       </section>
+
+      <div className="mb-6">
+        <BrowseBar />
+      </div>
+
+      <CategoryShortcuts counts={categoryCounts} whenCounts={whenCounts} />
+
+      <h2 className="mb-3 text-base font-bold">월별로 둘러보기</h2>
 
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
         {months.map(({ month, year, count, otherYears, images, sample }) => {

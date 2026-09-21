@@ -1,17 +1,22 @@
 import Link from "next/link";
+import Logo from "./Logo";
 import MonthNav from "./MonthNav";
 import SectionNav from "./SectionNav";
 import ThemeToggle from "./ThemeToggle";
-import { SITE_NAME } from "@/lib/site";
 
 /** 상단 고정 헤더: 로고 · 축제/공연 전환 · 검색 · 다크모드 + 1~12월 탭 */
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
       <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-2 px-4 sm:px-6">
-        <Link href="/" className="flex shrink-0 items-center gap-2 font-bold tracking-tight">
-          <span aria-hidden className="text-xl">🎪</span>
-          <span className="hidden text-base sm:inline sm:text-lg">{SITE_NAME}</span>
+        <Link href="/" aria-label="전국축제자랑 홈" className="shrink-0">
+          {/* 좁은 화면에서는 아이콘만 남겨 구역 전환 버튼 자리를 확보한다 */}
+          <span className="sm:hidden">
+            <Logo compact />
+          </span>
+          <span className="hidden sm:block">
+            <Logo />
+          </span>
         </Link>
         <SectionNav />
         <div className="flex shrink-0 items-center gap-1">

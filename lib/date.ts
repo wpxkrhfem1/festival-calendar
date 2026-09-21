@@ -145,3 +145,73 @@ export function targetYearForMonth(month: number, today: string): number {
 export function monthKey(year: number, month: number): string {
   return `${year}-${String(month).padStart(2, "0")}`;
 }
+
+/** 날짜에 일수를 더한다 */
+export function addDays(iso: string, days: number): string {
+  const d = new Date(`${iso}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+/** 그 달의 마지막 날 */
+export function endOfMonth(iso: string): string {
+  const { year, month } = parseDate(iso);
+  const d = new Date(Date.UTC(year, month, 0));
+  return d.toISOString().slice(0, 10);
+}
+
+/** 찾아보기에서 고를 수 있는 시기 */
+export type WhenKey = "all" | "ongoing" | "weekend" | "thisMonth" | "nextMonth" | "upcoming";
+
+export const WHEN_LABELS: Record<WhenKey, string> = {
+  all: "시기 전체",
+  ongoing: "지금 진행 중",
+  weekend: "이번 주말",
+  thisMonth: "이번 달",
+  nextMonth: "다음 달",
+  upcoming: "앞으로 열려요",
+};
+
+/**
+ * 시기 → 날짜 구간 [시작, 끝]. null 이면 구간 제한 없음.
+ * 주말은 이번 주 금~일로 본다 (금요일 저녁부터 움직이는 사람이 많다).
+ */
+export function whenRange(when: WhenKey, today: string): { from: string; to: string } | null {
+  switch (when) {
+    case "ongoing":
+      return { from: today, to: today };
+    case "weekend": {
+      const dow = new Date(`${today}T00:00:00Z`).getUTCDay(); // 0=일 ... 6=토
+      // 일요일이면 오늘까지가 이번 주말, 그 외에는 다가오는 금~일
+      const toFriday = dow === 0 ? -2 : 5 - dow;
+      return { from: addDays(today, Math.max(toFriday, 0) === 0 && dow === 0 ? -2 : toFriday), to: addDays(today, dow === 0 ? 0 : 7 - dow) };
+    }
+    case "thisMonth":
+      return { from: today, to: endOfMonth(today) };
+    case "nextMonth": {
+      const first = addDays(endOfMonth(today), 1);
+      return { from: first, to: endOfMonth(first) };
+    }
+    case "upcoming":
+      return { from: today, to: "9999-12-31" };
+    default:
+      return null;
+  }
+}
+
+/** 기간이 구간과 겹치는지 */
+export function overlaps(start: string, end: string, range: { from: string; to: string } | null): boolean {
+  if (!range) return true;
+  return start <= range.to && end >= range.from;
+}
+
+/**
+ * 현재 달부터 한 바퀴 도는 월 번호 배열.
+ * 예) 9월이면 [9,10,11,12,1,2,3,4,5,6,7,8]
+ *
+ * 데이터가 오늘 이후만 있는 목록(공연)은 1월부터 늘어놓으면 빈 달이 앞에 오므로
+ * 이 순서로 보여준다.
+ */
+export function monthsFromCurrent(nowMonth: number): number[] {
+  return Array.from({ length: 12 }, (_, i) => ((nowMonth - 1 + i) % 12) + 1);
+}
