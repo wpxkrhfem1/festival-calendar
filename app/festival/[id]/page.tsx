@@ -1,0 +1,210 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getAllFestivals, getFestivalById, getRelatedFestivals } from "@/lib/festivals";
+import { dDayLabel, formatPeriod, statusOf, todayKST } from "@/lib/date";
+import { regionByName } from "@/lib/regions";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
+import FestivalImage from "@/components/FestivalImage";
+import FestivalCard from "@/components/FestivalCard";
+import TagChip from "@/components/TagChip";
+
+export const revalidate = 86400;
+
+export function generateStaticParams() {
+  return getAllFestivals().map((f) => ({ id: f.id }));
+}
+
+export async function generateMetadata({ params }: PageProps<"/festival/[id]">): Promise<Metadata> {
+  const { id } = await params;
+  const f = getFestivalById(id);
+  if (!f) return {};
+  const region = [f.sido, f.sigungu].filter(Boolean).join(" ");
+  const description = `${formatPeriod(f.startDate, f.endDate)} · ${region}. ${f.overview.slice(0, 120).replace(/\n/g, " ")}`.trim();
+  return {
+    title: f.title,
+    description,
+    alternates: { canonical: `/festival/${f.id}` },
+    openGraph: {
+      title: f.title,
+      description,
+      siteName: SITE_NAME,
+      type: "article",
+      ...(f.image ? { images: [{ url: f.image }] } : {}),
+    },
+  };
+}
+
+/** 지도 링크 (카카오맵 / 네이버지도) */
+function mapLinks(f: { title: string; address: string; lat?: number; lng?: number }) {
+  const q = encodeURIComponent(f.address || f.title);
+  const kakao = f.lat && f.lng ? `https://map.kakao.com/link/map/${encodeURIComponent(f.title)},${f.lat},${f.lng}` : `https://map.kakao.com/link/search/${q}`;
+  const naver = `https://map.naver.com/v5/search/${q}`;
+  return { kakao, naver };
+}
+
+/** 축제 상세 페이지 */
+export default async function FestivalPage({ params }: PageProps<"/festival/[id]">) {
+  const { id } = await params;
+  const f = getFestivalById(id);
+  if (!f) notFound();
+
+  const today = todayKST();
+  const status = statusOf(f.startDate, f.endDate, today);
+  const dday = dDayLabel(f.startDate, f.endDate, today);
+  const region = regionByName(f.sido);
+  const related = getRelatedFestivals(f, 4);
+  const { kakao, naver } = mapLinks(f);
+  const monthNum = Number(f.startDate.slice(5, 7));
+
+  // JSON-LD Event 스키마 (검색엔진 리치 결과용)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: f.title,
+    startDate: f.startDate,
+    endDate: f.endDate,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    description: f.overview.slice(0, 500),
+    url: `${SITE_URL}/festival/${f.id}`,
+    ...(f.image ? { image: [f.image] } : {}),
+    location: {
+      "@type": "Place",
+      name: f.place || f.address || f.title,
+      address: { "@type": "PostalAddress", streetAddress: f.address, addressCountry: "KR", addressRegion: f.sido, addressLocality: f.sigungu },
+      ...(f.lat && f.lng ? { geo: { "@type": "GeoCoordinates", latitude: f.lat, longitude: f.lng } } : {}),
+    },
+    ...(f.sponsor ? { organizer: { "@type": "Organization", name: f.sponsor } } : {}),
+    ...(f.fee ? { offers: { "@type": "Offer", description: f.fee, url: f.homepage || undefined } } : {}),
+  };
+
+  return (
+    <article>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      {/* 대표 이미지 */}
+      <div className="relative -mx-4 aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-800 sm:mx-0 sm:aspect-[16/9] sm:rounded-3xl">
+        <FestivalImage src={f.image || f.thumbnail} alt={f.title} tags={f.tags} priority sizes="(max-width: 1024px) 100vw, 1024px" />
+        <span
+          className={`absolute left-4 top-4 rounded-full px-3 py-1 text-sm font-bold shadow ${
+            status === "ongoing" ? "bg-brand-500 text-white" : status === "ended" ? "bg-zinc-700 text-white" : "bg-white text-zinc-900"
+          }`}
+        >
+          {dday}
+        </span>
+      </div>
+
+      <div className="mt-5">
+        <nav aria-label="경로" className="mb-2 flex flex-wrap gap-1 text-xs text-zinc-500 dark:text-zinc-400">
+          <Link href={`/month/${monthNum}`} className="hover:underline">
+            {monthNum}월 축제
+          </Link>
+          {region && (
+            <>
+              <span aria-hidden>·</span>
+              <Link href={`/region/${region.slug}`} className="hover:underline">
+                {region.name} 축제
+              </Link>
+            </>
+          )}
+        </nav>
+        <h1 className="text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl">{f.title}</h1>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {f.tags.map((t) => (
+            <TagChip key={t} tag={t} />
+          ))}
+        </div>
+      </div>
+
+      {/* 핵심 정보 */}
+      <dl className="mt-6 grid gap-3 rounded-2xl border border-zinc-200 bg-white p-4 text-sm dark:border-zinc-800 dark:bg-zinc-900 sm:grid-cols-2 sm:p-5">
+        <div className="sm:col-span-2">
+          <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">기간</dt>
+          <dd className="mt-0.5 text-base font-semibold">{formatPeriod(f.startDate, f.endDate)}</dd>
+        </div>
+        {(f.address || f.place) && (
+          <div className="sm:col-span-2">
+            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">장소</dt>
+            <dd className="mt-0.5">
+              {f.place && <p className="font-medium">{f.place}</p>}
+              {f.address && <p className="text-zinc-700 dark:text-zinc-300">{f.address}</p>}
+              <div className="mt-2 flex gap-2">
+                <a href={kakao} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#FEE500] px-3 py-1.5 text-xs font-bold text-[#191919]">
+                  카카오맵
+                </a>
+                <a href={naver} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#03C75A] px-3 py-1.5 text-xs font-bold text-white">
+                  네이버지도
+                </a>
+              </div>
+            </dd>
+          </div>
+        )}
+        {f.playtime && (
+          <div>
+            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">시간</dt>
+            <dd className="mt-0.5 whitespace-pre-line">{f.playtime}</dd>
+          </div>
+        )}
+        {f.fee && (
+          <div>
+            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">이용 요금</dt>
+            <dd className="mt-0.5 whitespace-pre-line">{f.fee}</dd>
+          </div>
+        )}
+        {f.tel && (
+          <div>
+            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">문의</dt>
+            <dd className="mt-0.5">
+              <a href={`tel:${f.tel.replace(/[^\d+]/g, "")}`} className="text-brand-600 underline-offset-2 hover:underline dark:text-brand-300">
+                {f.tel}
+              </a>
+            </dd>
+          </div>
+        )}
+        {f.homepage && (
+          <div>
+            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">홈페이지</dt>
+            <dd className="mt-0.5 truncate">
+              <a href={f.homepage} target="_blank" rel="noopener noreferrer" className="text-brand-600 underline-offset-2 hover:underline dark:text-brand-300">
+                {f.homepage.replace(/^https?:\/\//, "")}
+              </a>
+            </dd>
+          </div>
+        )}
+        {f.sponsor && (
+          <div>
+            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">주최/주관</dt>
+            <dd className="mt-0.5">{f.sponsor}</dd>
+          </div>
+        )}
+      </dl>
+
+      {/* 개요 전문 */}
+      {f.overview && (
+        <section className="mt-8">
+          <h2 className="mb-2 text-lg font-bold">축제 소개</h2>
+          <p className="whitespace-pre-line text-[15px] leading-relaxed text-zinc-700 dark:text-zinc-300">{f.overview}</p>
+        </section>
+      )}
+
+      {/* 추천 */}
+      {related.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-3 text-lg font-bold">같은 시기 다른 축제</h2>
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {related.map((r) => (
+              <li key={r.id}>
+                <FestivalCard festival={r} today={today} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <p className="mt-10 text-xs text-zinc-500 dark:text-zinc-400">
+        정보 출처: 한국관광공사 TourAPI. 일정·요금은 변경될 수 있으니 방문 전 공식 홈페이지나 문의처에서 확인해 주세요.
+      </p>
+    </article>
+  );
+}

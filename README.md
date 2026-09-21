@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 전국 축제 달력
 
-## Getting Started
+대한민국 전국 축제·페스티벌을 1월~12월 달별로 모아 보여주는 사이트입니다.
+"이번 달에 어디서 뭐 하지?"를 5초 안에 알 수 있게 만드는 것이 목표입니다.
 
-First, run the development server:
+- **기술 스택**: Next.js (App Router, TypeScript), Tailwind CSS v4, Vercel
+- **데이터**: 한국관광공사 TourAPI 4.0 (`KorService2` — `searchFestival2`, `detailCommon2`, `detailIntro2`)
+- **갱신**: GitHub Actions 가 매주 월요일 새벽 데이터를 받아와 커밋 → Vercel 자동 배포
+
+## 페이지
+
+| 경로 | 내용 |
+|---|---|
+| `/` | 12개월 카드 그리드. 현재 달 강조 + 자동 스크롤 |
+| `/month/[1-12]` | 해당 월 축제 목록. 지역·카테고리·진행 중 필터, 시작일/종료 임박 정렬 |
+| `/festival/[id]` | 상세. 기간(D-day), 지도 링크, 문의, 홈페이지, 개요, 같은 시기 추천 4개, JSON-LD Event |
+| `/region/[slug]` | 지역별 보기 (월별 탭). slug 는 `seoul`, `busan`, `gyeonggi` 등 (`lib/regions.ts`) |
+| `/search?q=` | 축제명/지역/태그 검색 |
+| `/sitemap.xml`, `/robots.txt` | 자동 생성 |
+
+## 1. API 키 발급
+
+1. [공공데이터포털](https://www.data.go.kr) 회원가입 후 로그인
+2. **한국관광공사_국문 관광정보 서비스_GW** 검색 → [활용신청](https://www.data.go.kr/data/15101578/openapi.do)
+3. 승인(보통 즉시~수 시간) 후 마이페이지 → 인증키 확인
+4. **일반 인증키(Decoding)** 값을 복사합니다. (Encoding 키를 넣으면 `%` 가 이중 인코딩되어 실패합니다)
+
+> 개발 계정은 일일 1,000회 트래픽 제한이 있습니다. 목록 조회는 페이지당 500건씩 몇 번이면 끝나지만,
+> 상세(개요·홈페이지)는 축제 1건당 2회 호출이라 스크립트가 **신규/변경 건만** 상세를 받고
+> `--max-detail` (기본 600) 로 상한을 둡니다. 나머지는 다음 실행에서 이어서 처리됩니다.
+> 운영 전환 신청을 하면 제한이 크게 늘어납니다.
+
+## 2. 로컬 실행
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # TOUR_API_KEY, NEXT_PUBLIC_SITE_URL 채우기
+npm run probe:api            # (선택) API 응답 구조를 눈으로 확인
+npm run fetch:festivals      # data/festivals.json 생성
+npm test                     # 단위 테스트
+npm run dev                  # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+API 키가 아직 없다면 샘플 데이터로 화면을 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npx tsx scripts/make-sample-data.ts
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> 저장소에 들어 있는 `data/festivals.json` 은 이 샘플입니다 (`meta.source` 에 표시). 실제 일정이 아니니 반드시 `fetch:festivals` 로 교체하세요.
 
-## Learn More
+### 수집 스크립트 옵션
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run fetch:festivals -- --dry-run          # 저장하지 않고 앞 2건만 출력
+npm run fetch:festivals -- --no-detail        # 목록만 (상세 호출 없음)
+npm run fetch:festivals -- --max-detail=200   # 상세 호출 상한
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 수집 범위: **올해 1/1 ~ 내년 12/31**
+- 한 축제가 여러 달에 걸치면(예: 12/20~1/5) `months: ["2026-12","2027-01"]` 로 저장되어 양쪽 달에 모두 노출됩니다.
+- 목록 수집이 실패하면 **기존 festivals.json 을 그대로 두고** 종료 코드 1 로 끝납니다. 사이트가 빈 상태로 배포되는 일은 없습니다.
+- 상세 호출이 개별로 실패하면 이전에 저장한 개요·홈페이지를 재사용합니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 3. 배포 (Vercel)
 
-## Deploy on Vercel
+1. GitHub 에 push 후 Vercel 에서 **Import Project**
+2. 환경변수 설정
+   - `NEXT_PUBLIC_SITE_URL` = 배포 도메인 (예: `https://festival-calendar.vercel.app`) — OG/sitemap 절대경로에 사용
+   - `TOUR_API_KEY` 는 **빌드에 필요 없습니다.** 데이터는 저장소의 JSON 을 읽습니다. (넣어도 클라이언트에 노출되지 않음)
+3. 배포. 페이지는 빌드 시 정적 생성(SSG)되고 하루 1회 재검증(ISR)됩니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 자동 갱신 (GitHub Actions)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`.github/workflows/update-festivals.yml` 이 매주 월요일 04:00 KST 에 실행됩니다.
+
+1. GitHub 저장소 → Settings → Secrets and variables → Actions → **New repository secret**
+2. 이름 `TOUR_API_KEY`, 값에 디코딩 키 입력
+3. Actions 탭에서 **축제 데이터 갱신** 워크플로를 `Run workflow` 로 한 번 수동 실행해 확인
+
+변경이 있으면 `데이터: 축제 정보 자동 갱신 (N건)` 커밋이 올라가고 Vercel 이 다시 배포합니다.
+
+## 4. overrides.json 편집법
+
+API 에 없는 축제를 추가하거나 잘못된 정보를 고칠 때 `data/overrides.json` 을 편집합니다.
+수집 스크립트가 festivals.json 을 덮어써도 overrides 는 유지되며, 빌드 시 병합됩니다.
+
+```json
+{
+  "festivals": [
+    {
+      "id": "2673464",
+      "endDate": "2026-10-12",
+      "homepage": "https://example.go.kr/festival"
+    },
+    {
+      "id": "manual-hongdae-busking",
+      "title": "홍대 거리 버스킹 위크",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-12",
+      "sido": "서울",
+      "sigungu": "마포구",
+      "address": "서울특별시 마포구 홍익로 일대",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/00/000000_image2_1.jpg",
+      "overview": "홍대 걷고싶은거리에서 열리는 버스킹 축제",
+      "tags": ["음악/공연", "가을"]
+    },
+    { "id": "1234567", "hidden": true }
+  ]
+}
+```
+
+규칙:
+
+- `id` 는 필수. festivals.json 에 같은 id 가 있으면 **적은 필드만** 덮어씁니다.
+- 없는 id 면 새 축제로 추가됩니다. 이때 `title`, `startDate` 는 필수, `endDate` 생략 시 시작일과 같게 처리.
+- `hidden: true` 면 목록에서 숨깁니다 (취소된 축제 등).
+- 날짜는 `YYYY-MM-DD`. 날짜를 바꾸면 걸치는 달과 계절 태그가 자동 재계산됩니다.
+- `tags` 를 직접 주면 자동 분류 대신 그 값을 씁니다. 사용 가능한 값: `먹거리`, `불꽃/야경`, `꽃/자연`, `문화/전통`, `음악/공연`, `봄`, `여름`, `가을`, `겨울`
+- 이미지는 `tong.visitkorea.or.kr` 도메인만 next/image 최적화를 거칩니다. 다른 도메인은 그대로 표시됩니다.
+
+## 프로젝트 구조
+
+```
+app/                    페이지 (App Router)
+  page.tsx              홈 (12개월 그리드)
+  month/[month]/        월별 목록 + OG 이미지
+  festival/[id]/        상세 + OG 이미지
+  region/[sido]/        지역별 + OG 이미지
+  search/               검색
+  sitemap.ts, robots.ts
+components/             UI 컴포넌트 (FestivalList 는 클라이언트 필터)
+lib/
+  types.ts              Festival / API 응답 타입
+  date.ts               KST 오늘, D-day, "9월 21일 (일)" 형식, 걸치는 달 계산
+  regions.ts            시도 매핑 · 주소 파싱
+  tags.ts               키워드 기반 카테고리 태그
+  normalize.ts          API 응답 → Festival 정규화
+  festivals.ts          festivals.json + overrides.json 병합, 조회 함수
+  og.tsx                OG 이미지 공용 (한글 폰트 로드)
+scripts/
+  fetch-festivals.ts    데이터 수집
+  probe-api.ts          API 응답 구조 확인
+  make-sample-data.ts   샘플 데이터
+data/
+  festivals.json        수집 결과 (자동 생성)
+  overrides.json        수동 보정
+tests/                  node:test 단위 테스트
+```
+
+## 출처
+
+데이터 제공: **한국관광공사** (TourAPI 4.0). 축제 일정·요금은 주최 측 사정으로 변경될 수 있습니다.

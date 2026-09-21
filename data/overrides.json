@@ -1,0 +1,4 @@
+{
+  "_설명": "API에 없거나 정보가 틀린 축제를 수동으로 추가/수정하는 파일입니다. festivals 배열의 각 항목은 id가 필수이며, 같은 id가 festivals.json에 있으면 여기 적은 필드만 덮어씁니다. 없는 id면 새 축제로 추가되며 이때 title/startDate는 필수입니다. hidden: true 를 주면 목록에서 숨깁니다. 날짜는 YYYY-MM-DD 형식입니다. 편집 방법은 README 참고.",
+  "festivals": []
+}

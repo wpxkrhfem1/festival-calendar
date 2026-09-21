@@ -1,69 +1,75 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { getMonthSummaries } from "@/lib/festivals";
+import { todayKST, parseDate } from "@/lib/date";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
+import MonthCollage from "@/components/MonthCollage";
+import ScrollToCurrentMonth from "@/components/ScrollToCurrentMonth";
 
-export default function Home() {
+// 하루 1회 재검증 (ISR)
+export const revalidate = 86400;
+
+export const metadata: Metadata = {
+  title: `${SITE_NAME} — 이번 달 전국 축제 한눈에`,
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
+};
+
+/** 홈: 12개월 카드 그리드 */
+export default function HomePage() {
+  const today = todayKST();
+  const { month: nowMonth, year: nowYear } = parseDate(today);
+  const months = getMonthSummaries(today);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div>
+      <ScrollToCurrentMonth month={nowMonth} />
+      <section className="mb-6 pt-2">
+        <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
+          {nowYear}년 {nowMonth}월, 어디서 뭐 하지?
+        </h1>
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300 sm:text-base">
+          전국 축제를 달별로 모았어요. 달을 고르면 지역·카테고리로 바로 걸러볼 수 있어요.
+        </p>
+      </section>
+
+      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+        {months.map(({ month, year, count, images, sample }) => {
+          const isNow = month === nowMonth;
+          return (
+            <li key={month} id={`month-${month}`} className="scroll-mt-32">
+              <Link
+                href={`/month/${month}`}
+                aria-label={`${year}년 ${month}월 축제 ${count}개 보기`}
+                className={`group block overflow-hidden rounded-2xl border bg-white transition hover:-translate-y-0.5 hover:shadow-md dark:bg-zinc-900 ${
+                  isNow
+                    ? "border-brand-500 ring-2 ring-brand-500/40"
+                    : "border-zinc-200 dark:border-zinc-800"
+                }`}
+              >
+                {/* 대표 이미지 콜라주 (최대 4장) */}
+                <div className="relative aspect-[4/3] bg-zinc-100 dark:bg-zinc-800">
+                  <MonthCollage images={images} sample={sample} />
+                  {isNow && (
+                    <span className="absolute left-2 top-2 rounded-full bg-brand-500 px-2 py-0.5 text-[11px] font-bold text-white shadow">
+                      이번 달
+                    </span>
+                  )}
+                </div>
+                <div className="flex items-baseline justify-between p-3">
+                  <div>
+                    <h2 className="text-lg font-extrabold group-hover:text-brand-600 dark:group-hover:text-brand-300">{month}월</h2>
+                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400">{year}년</p>
+                  </div>
+                  <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-200">
+                    {count > 0 ? `축제 ${count}개` : "등록 예정"}
+                  </p>
+                </div>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
