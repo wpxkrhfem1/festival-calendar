@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllConcerts, getConcertById, getRelatedConcerts } from "@/lib/concerts";
+import { getFestivalsNear } from "@/lib/festivals";
 import { dDayLabel, formatPeriod, statusOf, todayKST } from "@/lib/date";
 import { REGIONS } from "@/lib/regions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import ConcertPoster from "@/components/ConcertPoster";
 import ConcertCard from "@/components/ConcertCard";
+import FestivalCard from "@/components/FestivalCard";
 import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
@@ -50,6 +52,8 @@ export default async function ConcertPage({ params }: PageProps<"/concert/[id]">
   const badge = c.openRun && status === "ongoing" ? "상시 공연" : dDayLabel(c.startDate, c.endDate, today);
   const region = REGIONS.find((r) => r.name === c.sido);
   const related = getRelatedConcerts(c, 4);
+  const nearbyFestivals =
+    status === "ended" ? [] : getFestivalsNear({ sido: c.sido, startDate: c.startDate, endDate: c.endDate }, 4, today);
   const monthNum = Number(c.startDate.slice(5, 7));
   const mapQuery = encodeURIComponent(c.venue);
 
@@ -206,6 +210,21 @@ export default async function ConcertPage({ params }: PageProps<"/concert/[id]">
           </div>
         )}
       </dl>
+
+      {/* 같은 지역·같은 기간 축제. 공연 보러 간 김에 근처 축제도 보라는 뜻이다 */}
+      {nearbyFestivals.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-1 text-lg font-bold">이 공연 보러 가는 날, {c.sido}에서 하는 축제</h2>
+          <p className="mb-3 text-sm text-zinc-500 dark:text-zinc-400">공연 기간과 날짜가 겹치는 축제예요</p>
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
+            {nearbyFestivals.map((f) => (
+              <li key={f.id}>
+                <FestivalCard festival={f} today={today} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {related.length > 0 && (
         <section className="mt-10">

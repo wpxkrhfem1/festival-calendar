@@ -271,6 +271,26 @@ export function getAlternativeFestivals(f: Festival, n = 4, today = todayKST()):
   return [...live].sort((a, b) => rank(a) - rank(b) || a.startDate.localeCompare(b.startDate)).slice(0, n);
 }
 
+/**
+ * 공연 상세에서 보여줄 "그때 근처에서 하는 축제".
+ * 공연 쪽 getConcertsNear 와 짝을 이룬다 (같은 시도 + 날짜 겹침).
+ * 연중 상설 축제는 언제 가도 볼 수 있어 뒤로 보낸다.
+ */
+export function getFestivalsNear(
+  opts: { sido: string; startDate: string; endDate: string },
+  n = 4,
+  today = todayKST(),
+): Festival[] {
+  return ALL.filter((f) => f.sido === opts.sido)
+    .filter((f) => f.endDate >= today)
+    .filter((f) => f.startDate <= opts.endDate && f.endDate >= opts.startDate)
+    .sort((a, b) => {
+      const longRun = (f: Festival) => (isLongRunning(f.startDate, f.endDate) ? 1 : 0);
+      return longRun(a) - longRun(b) || a.startDate.localeCompare(b.startDate);
+    })
+    .slice(0, n);
+}
+
 export function hasTag(f: Festival, tag: Tag): boolean {
   return f.tags.includes(tag);
 }

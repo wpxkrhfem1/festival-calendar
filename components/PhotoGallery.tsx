@@ -57,7 +57,12 @@ export default function PhotoGallery({ photos, title }: Props) {
               aria-label={`${title} 사진 ${i + 1} 크게 보기`}
               className="relative block h-28 w-36 overflow-hidden rounded-xl bg-zinc-100 transition hover:opacity-90 dark:bg-zinc-800 sm:h-auto sm:w-full sm:aspect-square"
             >
-              <Image src={src} alt="" fill sizes="(max-width: 640px) 144px, 25vw" className="object-cover" />
+              {/*
+                썸네일은 모바일 144px, 데스크톱에서도 4칸이라 250px 남짓이다.
+                sizes 를 vw 로 두면 화면폭마다 다른 너비를 요청해 이미지 변환이
+                여러 벌 생긴다. 축제 사진만 수천 장이라 고정 폭 하나로 묶는다.
+              */}
+              <Image src={src} alt="" fill sizes="256px" className="object-cover" />
             </button>
           </li>
         ))}

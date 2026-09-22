@@ -161,7 +161,7 @@ export function endOfMonth(iso: string): string {
 }
 
 /** 찾아보기에서 고를 수 있는 시기 */
-export type WhenKey = "all" | "ongoing" | "weekend" | "thisMonth" | "nextMonth" | "upcoming";
+export type WhenKey = "all" | "ongoing" | "weekend" | "thisMonth" | "nextMonth" | "upcoming" | "custom";
 
 export const WHEN_LABELS: Record<WhenKey, string> = {
   all: "시기 전체",
@@ -170,7 +170,33 @@ export const WHEN_LABELS: Record<WhenKey, string> = {
   thisMonth: "이번 달",
   nextMonth: "다음 달",
   upcoming: "앞으로 열려요",
+  custom: "날짜 직접 고르기",
 };
+
+/** YYYY-MM-DD 이면서 실제로 존재하는 날인지 */
+export function isIsoDate(value: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const d = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === value;
+}
+
+/**
+ * 직접 고른 날짜 구간.
+ *
+ * 시기 필터가 "이번 주말", "다음 달" 같은 고정 선택지뿐이라
+ * "10월 3일~5일 연휴에 갈 곳" 처럼 날짜를 정해놓고 찾을 수가 없었다.
+ *
+ * 한쪽만 고르면 그날 하루로 본다. 거꾸로 골랐으면 뒤집어서 받아준다.
+ * 둘 다 비어 있거나 형식이 틀리면 null (구간 제한 없음).
+ */
+export function customRange(from: string, to: string): { from: string; to: string } | null {
+  const a = isIsoDate(from) ? from : "";
+  const b = isIsoDate(to) ? to : "";
+  if (!a && !b) return null;
+  if (a && !b) return { from: a, to: a };
+  if (!a && b) return { from: b, to: b };
+  return a <= b ? { from: a, to: b } : { from: b, to: a };
+}
 
 /**
  * 시기 → 날짜 구간 [시작, 끝]. null 이면 구간 제한 없음.
@@ -197,6 +223,25 @@ export function whenRange(when: WhenKey, today: string): { from: string; to: str
     default:
       return null;
   }
+}
+
+/** 주소창 파라미터(when/from/to) → 날짜 구간. 축제·공연 찾기 페이지가 같이 쓴다 */
+export function rangeFromParams(
+  when: WhenKey,
+  from: string,
+  to: string,
+  today: string,
+): { from: string; to: string } | null {
+  return when === "custom" ? customRange(from, to) : whenRange(when, today);
+}
+
+/** 화면에 적을 시기 이름. 직접 고른 구간은 날짜를 그대로 보여준다 */
+export function whenLabel(when: WhenKey, range: { from: string; to: string } | null): string | null {
+  if (when !== "custom") return when === "all" ? null : WHEN_LABELS[when];
+  if (!range) return null;
+  return range.from === range.to
+    ? formatKoreanDate(range.from)
+    : `${formatKoreanDate(range.from)} ~ ${formatKoreanDate(range.to)}`;
 }
 
 /** 기간이 구간과 겹치는지 */

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getLiveFestivals } from "@/lib/festivals";
 import { getLiveConcerts } from "@/lib/concerts";
 import { REGIONS } from "@/lib/regions";
+import { THEMES } from "@/lib/tags";
 import { SITE_URL } from "@/lib/site";
 import { todayKST } from "@/lib/date";
 
@@ -34,6 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly",
     priority: 0.7,
   }));
+  const themes: MetadataRoute.Sitemap = THEMES.map((t) => ({
+    url: `${SITE_URL}/theme/${t.slug}`,
+    lastModified: now,
+    changeFrequency: "daily",
+    priority: 0.8,
+  }));
   const festivals: MetadataRoute.Sitemap = getLiveFestivals(today).map((f) => ({
     url: `${SITE_URL}/festival/${f.id}`,
     lastModified: now,
@@ -53,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/nearby`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     ...months,
     ...concertMonths,
+    ...themes,
     ...regions,
     ...festivals,
     ...concerts,

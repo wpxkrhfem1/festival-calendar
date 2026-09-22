@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllConcerts, getAvailableGenres } from "@/lib/concerts";
-import { isLongRunning, overlaps, statusOf, todayKST, WHEN_LABELS, whenRange, type WhenKey } from "@/lib/date";
+import { isLongRunning, overlaps, rangeFromParams, statusOf, todayKST, whenLabel, type WhenKey } from "@/lib/date";
 import { regionBySlug } from "@/lib/regions";
 import { SITE_NAME } from "@/lib/site";
 import BrowseBar from "@/components/BrowseBar";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   robots: { index: false }, // 조합이 많아 색인 대상에서 제외
 };
 
-const WHEN_KEYS: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming"];
+const WHEN_KEYS: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
 
 function one(v: string | string[] | undefined): string {
   return (Array.isArray(v) ? v[0] : v) ?? "";
@@ -30,9 +30,11 @@ export default async function ConcertBrowsePage({ searchParams }: PageProps<"/co
   const genres = getAvailableGenres();
   const genreRaw = one(sp.genre);
   const genre = genres.includes(genreRaw) ? genreRaw : undefined;
+  const from = one(sp.from);
+  const to = one(sp.to);
 
   const today = todayKST();
-  const range = whenRange(when, today);
+  const range = rangeFromParams(when, from, to, today);
 
   const results = getAllConcerts()
     .filter((c) => overlaps(c.startDate, c.endDate, range))
@@ -49,7 +51,7 @@ export default async function ConcertBrowsePage({ searchParams }: PageProps<"/co
       );
     });
 
-  const conditions = [when !== "all" ? WHEN_LABELS[when] : null, region?.name, genre].filter(Boolean) as string[];
+  const conditions = [whenLabel(when, range), region?.name, genre].filter(Boolean) as string[];
 
   return (
     <div>
@@ -68,6 +70,8 @@ export default async function ConcertBrowsePage({ searchParams }: PageProps<"/co
         when={when}
         region={regionSlug}
         thirdValue={genreRaw}
+        from={from}
+        to={to}
       />
 
       <p className="mb-3 mt-5 text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">

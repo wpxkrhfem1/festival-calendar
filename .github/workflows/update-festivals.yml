@@ -1,10 +1,16 @@
-# 매주 월요일 새벽(KST 04:00 = UTC 19:00 일요일) 축제·공연 데이터를 다시 받아와
+# 매일 새벽(KST 04:00 = UTC 19:00) 축제·공연 데이터를 다시 받아와
 # 변경이 있으면 커밋한다. 커밋이 main 에 올라가면 Vercel 이 자동 배포한다.
+#
+# 주 1회였는데 매일로 바꿨다. 화요일에 새로 뜬 축제가 6일 뒤에야 올라왔다.
+# 두 수집 스크립트 모두 증분이라(수정시각이 바뀐 건만 상세 호출) 매일 돌려도
+# 평소 호출량은 목록 몇 건 + 바뀐 건뿐이다. --max-detail 은 변경이 몰린 날의
+# 상한이며, 공공데이터포털 개발계정 한도(1,000회/일)를 넘지 않게 잡았다.
+# 축제 상세는 1건당 3회 호출이므로 200건 = 600회 + 목록 약 10회.
 name: 축제·공연 데이터 갱신
 
 on:
   schedule:
-    - cron: "0 19 * * 0" # 일요일 19:00 UTC = 월요일 04:00 KST
+    - cron: "0 19 * * *" # 매일 19:00 UTC = 다음날 04:00 KST
   workflow_dispatch: # 수동 실행 허용
 
 permissions:
@@ -37,14 +43,14 @@ jobs:
         # 실패하면(exit 1) festivals.json 은 그대로이므로 아래 단계에서 변경이 없어 커밋되지 않는다
         env:
           TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
-        run: npm run fetch:festivals -- --max-detail=600
+        run: npm run fetch:festivals -- --max-detail=200
 
       - name: 공연 데이터 수집 (KOPIS)
         # 축제 수집이 실패해도 공연은 시도한다. 둘 다 실패하면 커밋할 변경이 없다.
         if: always()
         env:
           KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
-        run: npm run fetch:concerts -- --max-detail=1500
+        run: npm run fetch:concerts -- --max-detail=600
 
       - name: 단위 테스트
         run: npm test

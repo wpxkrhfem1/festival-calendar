@@ -5,7 +5,7 @@ import { useState } from "react";
 import { REGIONS } from "@/lib/regions";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
 
-const WHEN_ORDER: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming"];
+const WHEN_ORDER: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
 
 /** 구역별 강조색. Tailwind 가 클래스를 지우지 않도록 전체 문자열로 적어둔다 */
 const ACCENT = {
@@ -30,6 +30,9 @@ interface Props {
   when?: WhenKey;
   region?: string;
   thirdValue?: string;
+  /** 직접 고른 날짜 구간 (when="custom" 일 때) */
+  from?: string;
+  to?: string;
 }
 
 /**
@@ -45,14 +48,19 @@ export default function BrowseBar({
   when = "all",
   region = "",
   thirdValue = "",
+  from = "",
+  to = "",
 }: Props) {
   const router = useRouter();
   const [w, setW] = useState<WhenKey>(when);
   const [r, setR] = useState(region);
   const [t, setT] = useState(thirdValue);
+  const [f1, setF1] = useState(from);
+  const [f2, setF2] = useState(to);
   const a = ACCENT[accent];
 
   const selectClass = `h-11 w-full appearance-none rounded-xl border border-zinc-300 bg-white pl-9 pr-8 text-sm font-medium outline-none focus:ring-2 dark:border-zinc-700 dark:bg-zinc-900 ${a.focus}`;
+  const dateClass = `h-11 w-full rounded-xl border border-zinc-300 bg-white px-3 text-sm font-medium outline-none focus:ring-2 dark:border-zinc-700 dark:bg-zinc-900 ${a.focus}`;
   const hasAny = w !== "all" || r !== "" || t !== "";
 
   return (
@@ -107,6 +115,8 @@ export default function BrowseBar({
                 setW("all");
                 setR("");
                 setT("");
+                setF1("");
+                setF2("");
                 router.push(action);
               }}
               aria-label="조건 초기화"
@@ -130,6 +140,31 @@ export default function BrowseBar({
           </button>
         </div>
       </div>
+
+      {/*
+        "날짜 직접 고르기" 를 골랐을 때만 펼친다.
+        라이브러리 없이 <input type="date"> 를 쓴다. 모바일에서 기기 기본
+        날짜 선택창이 그대로 열려서 따로 만드는 것보다 손에 익다.
+        고르지 않은 쪽은 빈 값으로 넘어가고 서버가 하루짜리로 해석한다.
+      */}
+      {w === "custom" && (
+        <div className="mt-2 grid gap-2 sm:grid-cols-[1fr_auto_1fr_2fr]">
+          <label className="block">
+            <span className="sr-only">시작 날짜</span>
+            <input type="date" name="from" value={f1} onChange={(e) => setF1(e.target.value)} className={dateClass} />
+          </label>
+          <span className="hidden items-center justify-center text-sm text-zinc-400 sm:flex" aria-hidden>
+            ~
+          </span>
+          <label className="block">
+            <span className="sr-only">끝 날짜</span>
+            <input type="date" name="to" value={f2} onChange={(e) => setF2(e.target.value)} className={dateClass} />
+          </label>
+          <p className="self-center text-xs text-zinc-500 dark:text-zinc-400">
+            고른 기간에 하루라도 걸치는 축제를 찾아요
+          </p>
+        </div>
+      )}
     </form>
   );
 }

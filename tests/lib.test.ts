@@ -10,8 +10,12 @@ import {
   formatPeriod,
   fromApiDate,
   monthsBetween,
+  customRange,
+  isIsoDate,
   monthsFromCurrent,
+  overlaps,
   statusOf,
+  whenLabel,
   targetYearForMonth,
   todayKST,
 } from "../lib/date";
@@ -296,5 +300,47 @@ describe("추가된 분류 키워드", () => {
     ] as const) {
       assert.ok(cat(name).includes(tag), `${name} → ${tag}`);
     }
+  });
+});
+
+describe("날짜 직접 고르기", () => {
+  it("YYYY-MM-DD 검사", () => {
+    assert.ok(isIsoDate("2026-10-03"));
+    assert.ok(!isIsoDate("2026-02-30")); // 없는 날
+    assert.ok(!isIsoDate("2026-10-3"));
+    assert.ok(!isIsoDate(""));
+  });
+
+  it("둘 다 고르면 그 구간", () => {
+    assert.deepEqual(customRange("2026-10-03", "2026-10-05"), { from: "2026-10-03", to: "2026-10-05" });
+  });
+
+  it("거꾸로 골라도 받아준다", () => {
+    assert.deepEqual(customRange("2026-10-05", "2026-10-03"), { from: "2026-10-03", to: "2026-10-05" });
+  });
+
+  it("한쪽만 고르면 그날 하루", () => {
+    assert.deepEqual(customRange("2026-10-03", ""), { from: "2026-10-03", to: "2026-10-03" });
+    assert.deepEqual(customRange("", "2026-10-03"), { from: "2026-10-03", to: "2026-10-03" });
+  });
+
+  it("비었거나 형식이 틀리면 제한 없음", () => {
+    assert.equal(customRange("", ""), null);
+    assert.equal(customRange("어제", "오늘"), null);
+  });
+
+  it("고른 구간에 하루라도 걸치면 결과에 든다", () => {
+    const range = customRange("2026-10-03", "2026-10-05");
+    assert.ok(overlaps("2026-09-28", "2026-10-04", range)); // 앞에서 걸침
+    assert.ok(overlaps("2026-10-05", "2026-10-20", range)); // 뒤에서 걸침
+    assert.ok(!overlaps("2026-10-06", "2026-10-10", range)); // 하루 차이로 안 걸림
+  });
+
+  it("화면에 적을 시기 이름", () => {
+    assert.equal(whenLabel("all", null), null);
+    assert.equal(whenLabel("ongoing", null), "지금 진행 중");
+    assert.equal(whenLabel("custom", customRange("2026-10-03", "2026-10-05")), "10월 3일 (토) ~ 10월 5일 (월)");
+    assert.equal(whenLabel("custom", customRange("2026-10-03", "")), "10월 3일 (토)");
+    assert.equal(whenLabel("custom", null), null);
   });
 });

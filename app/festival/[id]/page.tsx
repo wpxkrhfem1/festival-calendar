@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllFestivals, getAlternativeFestivals, getFestivalById, getRelatedFestivals } from "@/lib/festivals";
+import { getConcertsNear } from "@/lib/concerts";
 import { dDayLabel, formatPeriod, statusOf, todayKST } from "@/lib/date";
 import { regionByName } from "@/lib/regions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import FestivalImage from "@/components/FestivalImage";
 import FestivalCard from "@/components/FestivalCard";
 import PhotoGallery from "@/components/PhotoGallery";
+import ConcertCard from "@/components/ConcertCard";
 import TagChip from "@/components/TagChip";
 import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
@@ -63,6 +65,8 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
   const ended = status === "ended";
   // 끝난 축제 옆에 또 끝난 축제를 늘어놓지 않는다
   const related = ended ? getAlternativeFestivals(f, 4, today) : getRelatedFestivals(f, 4);
+  // 끝난 축제에는 붙이지 않는다. 축제 기간과 겹치는 공연이 이미 다 지났다
+  const nearbyConcerts = ended ? [] : getConcertsNear({ sido: f.sido, startDate: f.startDate, endDate: f.endDate }, 4, today);
   const { kakao, naver } = mapLinks(f);
   const monthNum = Number(f.startDate.slice(5, 7));
 
@@ -230,6 +234,21 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
         <section className="mt-8">
           <h2 className="mb-2 text-lg font-bold">프로그램</h2>
           <p className="whitespace-pre-line text-[15px] leading-relaxed text-zinc-700 dark:text-zinc-300">{f.program}</p>
+        </section>
+      )}
+
+      {/* 같은 지역·같은 기간 공연. 축제 하나 보러 가는 김에 하나 더 보라는 뜻이다 */}
+      {nearbyConcerts.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-1 text-lg font-bold">이 축제 가는 날, {f.sido}에서 하는 공연</h2>
+          <p className="mb-3 text-sm text-zinc-500 dark:text-zinc-400">축제 기간과 날짜가 겹치는 공연이에요</p>
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+            {nearbyConcerts.map((c) => (
+              <li key={c.id}>
+                <ConcertCard concert={c} today={today} />
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

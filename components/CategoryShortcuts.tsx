@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CATEGORY_TAGS } from "@/lib/tags";
+import { THEMES } from "@/lib/tags";
 import IconTile, { TILE } from "./IconTile";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
 
@@ -43,17 +43,29 @@ export default function CategoryShortcuts({ counts, whenCounts }: Props) {
             <span className="text-xs font-medium text-zinc-400">{whenCounts[k] ?? 0}</span>
           </Link>
         ))}
+        {/* 연휴처럼 날짜를 정해놓고 찾는 사람을 위한 입구 */}
+        <Link
+          href="/browse?when=custom"
+          className="flex shrink-0 items-center gap-1.5 rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold transition hover:border-brand-400 hover:text-brand-600 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:text-brand-300"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" aria-hidden>
+            <rect x="3" y="5" width="18" height="16" rx="2" />
+            <path d="M8 3v4M16 3v4M3 10h18" />
+          </svg>
+          날짜 고르기
+        </Link>
       </div>
 
       {/* 카테고리 타일 */}
       <h2 className="mb-3 text-base font-bold">어떤 축제를 찾으세요?</h2>
       <ul className="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">
-        {CATEGORY_TAGS.map((t) => {
+        {/* 타일은 색인되는 테마 페이지로 보낸다. /browse 는 noindex 라 검색 유입 경로가 되지 못한다 */}
+        {THEMES.map(({ slug, tag: t }) => {
           if (!TILE[t]) return null;
           return (
-            <li key={t}>
+            <li key={slug}>
               <Link
-                href={`/browse?category=${encodeURIComponent(t)}&when=upcoming`}
+                href={`/theme/${slug}`}
                 className="group flex flex-col items-center gap-1.5 rounded-2xl border border-zinc-200 bg-white p-2 text-center transition hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 sm:p-3"
               >
                 <IconTile name={t} />

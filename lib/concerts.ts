@@ -144,6 +144,28 @@ export function searchConcerts(query: string): Concert[] {
   });
 }
 
+/**
+ * 축제 상세에서 보여줄 "그날 근처에서 하는 공연".
+ *
+ * 거리로 고르고 싶었지만 KOPIS 데이터에는 좌표가 없다(2,585건 전부 없음).
+ * 그래서 같은 시도 + 축제 기간과 날짜가 겹치는 공연으로 잇는다.
+ * 오픈런·장기 공연은 언제 가도 볼 수 있어서 추천 가치가 낮으니 뒤로 보낸다.
+ */
+export function getConcertsNear(
+  opts: { sido: string; startDate: string; endDate: string },
+  n = 4,
+  today = todayKST(),
+): Concert[] {
+  return ALL.filter((c) => c.sido === opts.sido)
+    .filter((c) => c.endDate >= today) // 이미 끝난 공연은 제외
+    .filter((c) => c.startDate <= opts.endDate && c.endDate >= opts.startDate)
+    .sort((a, b) => {
+      const longRun = (c: Concert) => (c.openRun || isLongRunning(c.startDate, c.endDate) ? 1 : 0);
+      return longRun(a) - longRun(b) || a.startDate.localeCompare(b.startDate);
+    })
+    .slice(0, n);
+}
+
 /** 상세 추천: 같은 달 + 같은 장르 우선, 부족하면 같은 달 다른 장르 (최대 n개) */
 export function getRelatedConcerts(c: Concert, n = 4): Concert[] {
   const sameMonth = new Set<Concert>();
