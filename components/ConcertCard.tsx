@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Concert } from "@/lib/types";
 import { dDayLabel, formatPeriod, isLongRunning, statusOf } from "@/lib/date";
 import ConcertPoster from "./ConcertPoster";
+import SaveButton from "./SaveButton";
 
 interface Props {
   concert: Concert;
@@ -31,6 +32,7 @@ export default function ConcertCard({ concert: c, today, priority }: Props) {
       <div className="relative aspect-square w-28 shrink-0 bg-zinc-100 dark:bg-zinc-800 sm:aspect-[3/4] sm:w-full">
         <ConcertPoster src={c.poster} alt={c.title} genre={c.genre} priority={priority} sizes="(max-width: 640px) 112px, (max-width: 1024px) 50vw, 25vw" />
         <span className={`absolute left-2 top-2 rounded-full px-2 py-0.5 text-xs font-bold shadow-sm ${badgeStyle}`}>{badge}</span>
+        <SaveButton kind="concert" id={c.id} title={c.title} />
       </div>
       <div className="flex min-w-0 flex-1 flex-col gap-1.5 p-3 sm:p-4">
         <h3 className="line-clamp-2 text-[15px] font-bold leading-snug group-hover:text-violet-600 dark:group-hover:text-violet-300">

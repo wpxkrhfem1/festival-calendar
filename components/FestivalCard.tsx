@@ -3,6 +3,7 @@ import type { Festival } from "@/lib/types";
 import { dDayLabel, formatPeriod, isLongRunning, statusOf } from "@/lib/date";
 import FestivalImage from "./FestivalImage";
 import TagChip from "./TagChip";
+import SaveButton from "./SaveButton";
 
 interface Props {
   festival: Festival;
@@ -41,6 +42,7 @@ export default function FestivalCard({ festival: f, today, priority }: Props) {
           sizes="(max-width: 640px) 128px, (max-width: 1024px) 50vw, 33vw"
         />
         <span className={`absolute left-2 top-2 rounded-full px-2 py-0.5 text-xs font-bold shadow-sm ${ddayStyle}`}>{dday}</span>
+        <SaveButton kind="festival" id={f.id} title={f.title} />
       </div>
       <div className="flex min-w-0 flex-1 flex-col gap-1.5 p-3 sm:p-4">
         <h3 className="line-clamp-2 text-[15px] font-bold leading-snug group-hover:text-brand-600 dark:group-hover:text-brand-300 sm:text-base">

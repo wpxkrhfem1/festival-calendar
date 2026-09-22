@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import MonthNav from "./MonthNav";
+import SavedLink from "./SavedLink";
 import SectionNav from "./SectionNav";
 import ThemeToggle from "./ThemeToggle";
 
@@ -30,6 +31,7 @@ export default function Header() {
               <path d="m20 20-3.5-3.5" />
             </svg>
           </Link>
+          <SavedLink />
           <ThemeToggle />
         </div>
       </div>

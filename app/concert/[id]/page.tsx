@@ -7,6 +7,8 @@ import { REGIONS } from "@/lib/regions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import ConcertPoster from "@/components/ConcertPoster";
 import ConcertCard from "@/components/ConcertCard";
+import SaveButton from "@/components/SaveButton";
+import ShareButton from "@/components/ShareButton";
 
 export const revalidate = 86400;
 
@@ -113,9 +115,15 @@ export default async function ConcertPage({ params }: PageProps<"/concert/[id]">
         </div>
       </div>
 
+      {/* 찜 · 공유 */}
+      <div className="mt-5 flex flex-wrap gap-2">
+        <SaveButton kind="concert" id={c.id} title={c.title} variant="detail" />
+        <ShareButton title={c.title} text={`${formatPeriod(c.startDate, c.endDate)} · ${c.venue}`} />
+      </div>
+
       {/* 예매 링크 */}
       {c.tickets && c.tickets.length > 0 && (
-        <div className="mt-5 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap gap-2">
           {c.tickets.map((t) => (
             <a
               key={t.url}

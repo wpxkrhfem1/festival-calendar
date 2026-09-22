@@ -9,6 +9,8 @@ import FestivalImage from "@/components/FestivalImage";
 import FestivalCard from "@/components/FestivalCard";
 import PhotoGallery from "@/components/PhotoGallery";
 import TagChip from "@/components/TagChip";
+import SaveButton from "@/components/SaveButton";
+import ShareButton from "@/components/ShareButton";
 
 export const revalidate = 86400;
 
@@ -116,6 +118,12 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
             <TagChip key={t} tag={t} />
           ))}
         </div>
+      </div>
+
+      {/* 찜 · 공유 */}
+      <div className="mt-5 flex flex-wrap gap-2">
+        <SaveButton kind="festival" id={f.id} title={f.title} variant="detail" />
+        <ShareButton title={f.title} text={`${formatPeriod(f.startDate, f.endDate)} · ${[f.sido, f.sigungu].filter(Boolean).join(" ")}`} />
       </div>
 
       {/* 핵심 정보 */}

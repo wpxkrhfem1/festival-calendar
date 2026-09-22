@@ -20,8 +20,18 @@ interface Props {
 export default function CategoryShortcuts({ counts, whenCounts }: Props) {
   return (
     <section className="mb-8">
-      {/* 시기 바로가기 */}
+      {/* 시기·위치 바로가기 */}
       <div className="no-scrollbar -mx-4 mb-4 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:px-0">
+        <Link
+          href="/nearby"
+          className="flex shrink-0 items-center gap-1.5 rounded-full border border-brand-300 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 dark:border-brand-800 dark:bg-brand-950/40 dark:text-brand-200"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+          내 주변
+        </Link>
         {QUICK_WHEN.map((k) => (
           <Link
             key={k}
