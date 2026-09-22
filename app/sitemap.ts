@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getLiveFestivals } from "@/lib/festivals";
+import { getFestivalsByMonth, getLiveFestivals } from "@/lib/festivals";
 import { getLiveConcerts } from "@/lib/concerts";
 import { REGIONS } from "@/lib/regions";
 import { THEMES } from "@/lib/tags";
@@ -17,12 +17,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const today = todayKST();
 
-  const months: MetadataRoute.Sitemap = Array.from({ length: 12 }, (_, i) => ({
-    url: `${SITE_URL}/month/${i + 1}`,
-    lastModified: now,
-    changeFrequency: "daily",
-    priority: 0.9,
-  }));
+  // 이미 지난 달은 넣지 않는다. 그 페이지는 noindex 이고 내용도 대부분 끝난 축제다.
+  // 다음 해 일정이 쌓이면 기본 연도가 넘어가면서 다시 들어온다.
+  const nowYear = Number(today.slice(0, 4));
+  const nowMonth = Number(today.slice(5, 7));
+  const months: MetadataRoute.Sitemap = Array.from({ length: 12 }, (_, i) => i + 1)
+    .filter((m) => {
+      const y = getFestivalsByMonth(m, today).defaultYear;
+      return !(y < nowYear || (y === nowYear && m < nowMonth));
+    })
+    .map((m) => ({
+      url: `${SITE_URL}/month/${m}`,
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    }));
   const concertMonths: MetadataRoute.Sitemap = Array.from({ length: 12 }, (_, i) => ({
     url: `${SITE_URL}/concert/month/${i + 1}`,
     lastModified: now,

@@ -5,6 +5,7 @@ import { getAllFestivals, getAlternativeFestivals, getFestivalById, getRelatedFe
 import { getConcertsNear } from "@/lib/concerts";
 import { dDayLabel, formatPeriod, statusOf, todayKST } from "@/lib/date";
 import { regionByName } from "@/lib/regions";
+import { dialNumber, displayTel, searchUrl } from "@/lib/contact";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import FestivalImage from "@/components/FestivalImage";
 import FestivalCard from "@/components/FestivalCard";
@@ -68,6 +69,7 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
   // 끝난 축제에는 붙이지 않는다. 축제 기간과 겹치는 공연이 이미 다 지났다
   const nearbyConcerts = ended ? [] : getConcertsNear({ sido: f.sido, startDate: f.startDate, endDate: f.endDate }, 4, today);
   const { kakao, naver } = mapLinks(f);
+  const dial = dialNumber(f.tel);
   const monthNum = Number(f.startDate.slice(5, 7));
 
   // JSON-LD Event 스키마 (검색엔진 리치 결과용)
@@ -196,22 +198,37 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
           <div>
             <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">문의</dt>
             <dd className="mt-0.5">
-              <a href={`tel:${f.tel.replace(/[^\d+]/g, "")}`} className="text-brand-600 underline-offset-2 hover:underline dark:text-brand-300">
-                {f.tel}
-              </a>
+              {/* 원본에 번호가 여럿 붙어 있는 경우가 있어 전화 걸기에는 맨 앞 번호만 쓴다 */}
+              {dial ? (
+                <a href={`tel:${dial}`} className="text-brand-600 underline-offset-2 hover:underline dark:text-brand-300">
+                  {displayTel(f.tel)}
+                </a>
+              ) : (
+                <span>{displayTel(f.tel)}</span>
+              )}
             </dd>
           </div>
         )}
-        {f.homepage && (
-          <div>
-            <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">홈페이지</dt>
-            <dd className="mt-0.5 truncate">
+        <div>
+          <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">홈페이지</dt>
+          <dd className="mt-0.5 truncate">
+            {f.homepage ? (
               <a href={f.homepage} target="_blank" rel="noopener noreferrer" className="text-brand-600 underline-offset-2 hover:underline dark:text-brand-300">
                 {f.homepage.replace(/^https?:\/\//, "")}
               </a>
-            </dd>
-          </div>
-        )}
+            ) : (
+              // 공식 홈페이지가 없는 축제가 33건 있다. 빈칸으로 두면 공식 정보로 가는 길이 여기서 끊긴다
+              <a
+                href={searchUrl(f.title, f.sigungu)}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="text-brand-600 underline-offset-2 hover:underline dark:text-brand-300"
+              >
+                네이버에서 찾아보기
+              </a>
+            )}
+          </dd>
+        </div>
         {f.sponsor && (
           <div>
             <dt className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">주최/주관</dt>

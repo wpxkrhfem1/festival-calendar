@@ -16,6 +16,15 @@ interface Props {
   showRegionFilter?: boolean;
   /** 빈 상태 문구 */
   emptyMessage?: string;
+  /**
+   * 이미 끝난 축제를 기본으로 접어둘지.
+   *
+   * 이번 달 페이지에서 시작일 순으로만 늘어놓으니 첫 20칸 중 10칸이
+   * 이미 끝난 축제였다. 달력이라 지난 것도 볼 수 있어야 하지만
+   * 기본 화면을 차지할 이유는 없다. 지난 연·월 탭처럼 전부 끝난 목록에서는
+   * 끄고 쓴다 (안 그러면 빈 화면이 된다).
+   */
+  hideEnded?: boolean;
 }
 
 /**
@@ -23,11 +32,12 @@ interface Props {
  * - 지역(시도) 드롭다운, 카테고리 칩 토글, "진행 중만 보기"
  * - 정렬: 시작일 순(기본) / 종료 임박 순
  */
-export default function FestivalList({ festivals, today, showRegionFilter = true, emptyMessage }: Props) {
+export default function FestivalList({ festivals, today, showRegionFilter = true, emptyMessage, hideEnded = false }: Props) {
   const [sido, setSido] = useState("");
   const [tags, setTags] = useState<Set<Tag>>(new Set());
   const [ongoingOnly, setOngoingOnly] = useState(false);
   const [sort, setSort] = useState<SortKey>("start");
+  const [showEnded, setShowEnded] = useState(false);
 
   const sidos = useMemo(
     () => [...new Set(festivals.map((f) => f.sido).filter(Boolean))].sort((a, b) => a.localeCompare(b, "ko")),
@@ -41,11 +51,14 @@ export default function FestivalList({ festivals, today, showRegionFilter = true
     if (ongoingOnly) list = list.filter((f) => statusOf(f.startDate, f.endDate, today) === "ongoing");
     const sorted = [...list];
     if (sort === "start") {
-      // 시작일 순. 다만 120일 이상 이어지는 상설 행사는 매달 맨 위를 차지하므로 뒤로 보낸다
+      // 끝난 축제가 먼저, 그다음 시작일 순 — 이 순서로 두면 안 된다.
+      // 끝난 것을 맨 뒤로 보내고, 120일 이상 이어지는 상설 행사는 그다음으로 미룬다.
       sorted.sort((a, b) => {
+        const ea = a.endDate < today ? 1 : 0;
+        const eb = b.endDate < today ? 1 : 0;
         const la = isLongRunning(a.startDate, a.endDate) ? 1 : 0;
         const lb = isLongRunning(b.startDate, b.endDate) ? 1 : 0;
-        return la - lb || a.startDate.localeCompare(b.startDate) || a.endDate.localeCompare(b.endDate);
+        return ea - eb || la - lb || a.startDate.localeCompare(b.startDate) || a.endDate.localeCompare(b.endDate);
       });
     } else {
       // 종료 임박 순: 아직 안 끝난 것 중 종료일이 빠른 순, 끝난 것은 뒤로
@@ -57,6 +70,9 @@ export default function FestivalList({ festivals, today, showRegionFilter = true
     }
     return sorted;
   }, [festivals, sido, tags, ongoingOnly, sort, today]);
+
+  const endedCount = useMemo(() => filtered.filter((f) => f.endDate < today).length, [filtered, today]);
+  const visible = hideEnded && !showEnded ? filtered.filter((f) => f.endDate >= today) : filtered;
 
   function toggleTag(t: Tag) {
     setTags((prev) => {
@@ -138,18 +154,42 @@ export default function FestivalList({ festivals, today, showRegionFilter = true
         </div>
       </div>
 
-      <p className="mb-3 text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">
-        {filtered.length}개 축제
-      </p>
+      <div className="mb-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+        <p aria-live="polite">{visible.length}개 축제</p>
+        {hideEnded && endedCount > 0 && (
+          <>
+            <span aria-hidden>·</span>
+            <button
+              type="button"
+              onClick={() => setShowEnded((v) => !v)}
+              className="underline underline-offset-2 hover:text-brand-600 dark:hover:text-brand-300"
+            >
+              {showEnded ? `지난 축제 ${endedCount}개 숨기기` : `지난 축제 ${endedCount}개 보기`}
+            </button>
+          </>
+        )}
+      </div>
 
-      {filtered.length === 0 ? (
+      {visible.length === 0 ? (
         <EmptyState
-          title={hasFilter ? "조건에 맞는 축제가 없어요" : (emptyMessage ?? "이 달에는 등록된 축제가 없어요")}
-          description={hasFilter ? "필터를 조금 풀어보면 더 많은 축제를 볼 수 있어요." : "데이터는 매주 새로 받아오니 조금 뒤에 다시 확인해 주세요."}
+          title={
+            endedCount > 0 && !hasFilter
+              ? "이 달 축제는 모두 끝났어요"
+              : hasFilter
+                ? "조건에 맞는 축제가 없어요"
+                : (emptyMessage ?? "이 달에는 등록된 축제가 없어요")
+          }
+          description={
+            endedCount > 0 && !hasFilter
+              ? `위의 "지난 축제 ${endedCount}개 보기"를 누르면 어떤 축제가 있었는지 볼 수 있어요.`
+              : hasFilter
+                ? "필터를 조금 풀어보면 더 많은 축제를 볼 수 있어요."
+                : "데이터는 매일 새벽에 새로 받아오니 조금 뒤에 다시 확인해 주세요."
+          }
         />
       ) : (
         <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
-          {filtered.map((f, i) => (
+          {visible.map((f, i) => (
             <li key={f.id}>
               <FestivalCard festival={f} today={today} priority={i < 3} />
             </li>

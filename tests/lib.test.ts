@@ -23,6 +23,7 @@ import { parseAddress } from "../lib/regions";
 import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
 import { buildIcs, icsFileName } from "../lib/ics";
+import { dialNumber, displayTel, searchUrl } from "../lib/contact";
 import type { Tag } from "../lib/types";
 
 describe("date", () => {
@@ -342,5 +343,39 @@ describe("날짜 직접 고르기", () => {
     assert.equal(whenLabel("custom", customRange("2026-10-03", "2026-10-05")), "10월 3일 (토) ~ 10월 5일 (월)");
     assert.equal(whenLabel("custom", customRange("2026-10-03", "")), "10월 3일 (토)");
     assert.equal(whenLabel("custom", null), null);
+  });
+});
+
+describe("연락처 정리", () => {
+  it("여러 번호가 붙어 있어도 첫 번째 번호만 건다", () => {
+    // 실제 데이터에 있던 값들이다. 예전에는 숫자만 남겨서 31자리로 전화를 걸었다
+    assert.equal(dialNumber("서울 02-786-0610수원 031-5191-2367화성 070-4202-1017"), "02-786-0610");
+    assert.equal(dialNumber("033-808-8007033-808-8009"), "033-808-8007");
+    assert.equal(dialNumber("063-454-3912, 3913"), "063-454-3912");
+    assert.equal(dialNumber("02-2153-0310, 0311 (12:00~13:00 점심시간)"), "02-2153-0310");
+    assert.equal(dialNumber("- 063-236-1577 - 010-4348-3130"), "063-236-1577");
+  });
+
+  it("평범한 번호는 그대로", () => {
+    assert.equal(dialNumber("041-000-0000"), "041-000-0000");
+    assert.equal(dialNumber("1588-1234"), "1588-1234");
+    assert.equal(dialNumber("010-1234-5678"), "010-1234-5678");
+  });
+
+  it("번호가 없으면 null — 링크를 걸지 않는다", () => {
+    assert.equal(dialNumber("행사장 안내 참조"), null);
+    assert.equal(dialNumber(""), null);
+    assert.equal(dialNumber(undefined), null);
+  });
+
+  it("화면 표시는 붙어 있는 번호 사이를 띄운다", () => {
+    assert.equal(displayTel("033-808-8007033-808-8009"), "033-808-8007 033-808-8009");
+    assert.equal(displayTel("041-000-0000"), "041-000-0000");
+  });
+
+  it("홈페이지가 없을 때 쓸 검색 주소", () => {
+    const url = searchUrl("횡성한우축제", "횡성군");
+    assert.ok(url.startsWith("https://search.naver.com/search.naver?query="));
+    assert.ok(url.includes(encodeURIComponent("횡성한우축제 횡성군")));
   });
 });

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import type { Festival } from "@/lib/types";
 import FestivalList from "./FestivalList";
@@ -67,14 +68,29 @@ export default function MonthYearTabs({ month, years, defaultYear, today }: Prop
       )}
 
       {current.past && (
-        <p className="mb-4 rounded-xl bg-zinc-100 px-3 py-2 text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
-          {current.year}년 {month}월은 이미 지났어요. 대부분 매년 비슷한 시기에 열리니 다음 해 일정을 가늠하는 데 참고하세요.
-        </p>
+        <div className="mb-4 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 dark:border-amber-800/60 dark:bg-amber-950/30">
+          <p className="text-sm font-bold text-amber-900 dark:text-amber-100">
+            {current.year}년 {month}월은 이미 지났어요
+          </p>
+          <p className="mt-1 text-sm text-amber-800 dark:text-amber-200/90">
+            대부분 매년 비슷한 시기에 열리니 다음 해 일정을 가늠하는 데 참고하세요. 다음 해 일정이 올라오면 여기에 그대로 보여드릴게요.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link href="/browse?when=ongoing" className="rounded-full bg-amber-900 px-3.5 py-1.5 text-xs font-bold text-white dark:bg-amber-200 dark:text-amber-950">
+              지금 열리는 축제
+            </Link>
+            <Link href="/browse?when=upcoming" className="rounded-full border border-amber-400 px-3.5 py-1.5 text-xs font-bold text-amber-900 dark:border-amber-700 dark:text-amber-100">
+              앞으로 열리는 축제
+            </Link>
+          </div>
+        </div>
       )}
 
       <FestivalList
         festivals={current.festivals}
         today={today}
+        // 지난 연·월 탭은 전부 끝난 목록이라 숨기면 빈 화면이 된다
+        hideEnded={!current.past}
         emptyMessage={`${current.year}년 ${month}월에는 등록된 축제가 없어요`}
       />
     </div>
