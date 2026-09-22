@@ -244,6 +244,31 @@ export function whenLabel(when: WhenKey, range: { from: string; to: string } | n
     : `${formatKoreanDate(range.from)} ~ ${formatKoreanDate(range.to)}`;
 }
 
+/**
+ * 목록 정렬 기준: 진행 중 → 예정 → 종료, 그다음 시작일 순.
+ *
+ * 검색 결과가 데이터 순서(시작일 순) 그대로 나와서 "가을축제" 를 치면
+ * 첫 화면이 작년 겨울빛축제 같은 끝난 것들로 찼다. 월 페이지에서 고친 것과
+ * 같은 문제라 규칙을 한곳에 두고 같이 쓴다.
+ *
+ * longRunningLast 를 켜면 연중 상설·오픈런을 한 칸 뒤로 미룬다.
+ * 언제 가도 볼 수 있어서 맨 위를 차지할 이유가 없다.
+ */
+export function compareForList(
+  a: { startDate: string; endDate: string },
+  b: { startDate: string; endDate: string },
+  today: string,
+  longRunningLast = false,
+): number {
+  const rank = (x: { startDate: string; endDate: string }) => {
+    const s = statusOf(x.startDate, x.endDate, today);
+    return s === "ongoing" ? 0 : s === "upcoming" ? 1 : 2;
+  };
+  const longRun = (x: { startDate: string; endDate: string }) =>
+    longRunningLast && isLongRunning(x.startDate, x.endDate) ? 1 : 0;
+  return rank(a) - rank(b) || longRun(a) - longRun(b) || a.startDate.localeCompare(b.startDate);
+}
+
 /** 기간이 구간과 겹치는지 */
 export function overlaps(start: string, end: string, range: { from: string; to: string } | null): boolean {
   if (!range) return true;

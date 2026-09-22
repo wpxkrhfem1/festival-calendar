@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllFestivals } from "@/lib/festivals";
-import { overlaps, rangeFromParams, statusOf, todayKST, whenLabel, type WhenKey } from "@/lib/date";
+import { compareForList, overlaps, rangeFromParams, todayKST, whenLabel, type WhenKey } from "@/lib/date";
 import { regionBySlug } from "@/lib/regions";
 import { CATEGORY_TAGS } from "@/lib/tags";
 import type { Tag } from "@/lib/types";
@@ -44,13 +44,8 @@ export default async function BrowsePage({ searchParams }: PageProps<"/browse">)
     .filter((f) => overlaps(f.startDate, f.endDate, range))
     .filter((f) => (region ? f.sido === region.name : true))
     .filter((f) => (category ? f.tags.includes(category) : true))
-    .sort((a, b) => {
-      // 진행 중인 것을 먼저, 그다음 시작일 순
-      const rank = (s: string) => (s === "ongoing" ? 0 : s === "upcoming" ? 1 : 2);
-      const ra = rank(statusOf(a.startDate, a.endDate, today));
-      const rb = rank(statusOf(b.startDate, b.endDate, today));
-      return ra - rb || a.startDate.localeCompare(b.startDate);
-    });
+    // 진행 중 → 예정 → 종료 순 (검색·월 페이지와 같은 규칙)
+    .sort((a, b) => compareForList(a, b, today, true));
 
   const conditions = [whenLabel(when, range), region?.name, category].filter(Boolean) as string[];
 

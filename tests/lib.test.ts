@@ -10,6 +10,7 @@ import {
   formatPeriod,
   fromApiDate,
   monthsBetween,
+  compareForList,
   customRange,
   isIsoDate,
   monthsFromCurrent,
@@ -415,5 +416,31 @@ describe("검색어 해석", () => {
     const widened = searchIn(items, "억새축제", hay);
     assert.equal(widened.results.length, 0); // "억새" 는 있지만 "축제" 가 없다
     assert.equal(widened.relaxed, true);
+  });
+});
+
+describe("목록 정렬", () => {
+  const today = "2026-09-22";
+  const ongoing = { startDate: "2026-09-04", endDate: "2026-11-08" };
+  const upcoming = { startDate: "2026-09-25", endDate: "2026-09-27" };
+  const ended = { startDate: "2026-09-04", endDate: "2026-09-12" };
+  const longRun = { startDate: "2026-01-01", endDate: "2026-12-31" };
+
+  it("진행 중 → 예정 → 종료 순", () => {
+    const sorted = [ended, upcoming, ongoing].sort((a, b) => compareForList(a, b, today));
+    assert.deepEqual(sorted, [ongoing, upcoming, ended]);
+  });
+
+  it("같은 상태면 시작일이 빠른 것 먼저", () => {
+    const a = { startDate: "2026-09-25", endDate: "2026-09-27" };
+    const b = { startDate: "2026-10-01", endDate: "2026-10-03" };
+    assert.ok(compareForList(a, b, today) < 0);
+  });
+
+  it("연중 상설은 같은 상태 안에서 뒤로 (켰을 때만)", () => {
+    // 둘 다 진행 중이지만 상설은 언제 가도 되니 뒤로
+    assert.ok(compareForList(ongoing, longRun, today, true) < 0);
+    // 끄면 시작일 순이라 1월 시작인 상설이 앞
+    assert.ok(compareForList(ongoing, longRun, today, false) > 0);
   });
 });

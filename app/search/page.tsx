@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { searchFestivalsDetailed } from "@/lib/festivals";
 import { searchConcertsDetailed } from "@/lib/concerts";
 import { relaxedTokens } from "@/lib/search";
-import { todayKST } from "@/lib/date";
+import { compareForList, todayKST } from "@/lib/date";
 import FestivalCard from "@/components/FestivalCard";
 import ConcertCard from "@/components/ConcertCard";
 import EmptyState from "@/components/EmptyState";
@@ -25,8 +25,10 @@ export default async function SearchPage({ searchParams }: PageProps<"/search">)
 
   const f = q ? searchFestivalsDetailed(q) : { results: [], relaxed: false };
   const c = q ? searchConcertsDetailed(q) : { results: [], relaxed: false };
-  const festivals = f.results;
-  const concerts = c.results;
+  // 검색 결과를 데이터 순서 그대로 두면 첫 화면이 끝난 축제로 찬다.
+  // 진행 중 → 예정 → 종료 순으로 세운다 (월 페이지·찾기와 같은 규칙).
+  const festivals = [...f.results].sort((a, b) => compareForList(a, b, today, true));
+  const concerts = [...c.results].sort((a, b) => compareForList(a, b, today, true));
   const total = festivals.length + concerts.length;
   // "가을축제" 로 못 찾아 "가을 축제" 로 다시 찾은 경우. 왜 다른 결과가 나왔는지 알려준다
   const relaxedQuery = (f.relaxed || c.relaxed) && total > 0 ? (relaxedTokens(q) ?? []).join(" ") : "";
