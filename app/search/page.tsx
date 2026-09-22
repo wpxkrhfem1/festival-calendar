@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { searchFestivals } from "@/lib/festivals";
-import { searchConcerts } from "@/lib/concerts";
+import { searchFestivalsDetailed } from "@/lib/festivals";
+import { searchConcertsDetailed } from "@/lib/concerts";
+import { relaxedTokens } from "@/lib/search";
 import { todayKST } from "@/lib/date";
 import FestivalCard from "@/components/FestivalCard";
 import ConcertCard from "@/components/ConcertCard";
@@ -22,9 +23,13 @@ export default async function SearchPage({ searchParams }: PageProps<"/search">)
   const q = (raw ?? "").trim().slice(0, 50);
   const today = todayKST();
 
-  const festivals = q ? searchFestivals(q) : [];
-  const concerts = q ? searchConcerts(q) : [];
+  const f = q ? searchFestivalsDetailed(q) : { results: [], relaxed: false };
+  const c = q ? searchConcertsDetailed(q) : { results: [], relaxed: false };
+  const festivals = f.results;
+  const concerts = c.results;
   const total = festivals.length + concerts.length;
+  // "가을축제" 로 못 찾아 "가을 축제" 로 다시 찾은 경우. 왜 다른 결과가 나왔는지 알려준다
+  const relaxedQuery = (f.relaxed || c.relaxed) && total > 0 ? (relaxedTokens(q) ?? []).join(" ") : "";
 
   return (
     <div>
@@ -39,6 +44,12 @@ export default async function SearchPage({ searchParams }: PageProps<"/search">)
       {q && (
         <p className="mb-4 mt-6 text-sm text-zinc-500 dark:text-zinc-400" aria-live="polite">
           &ldquo;{q}&rdquo; 검색 결과 축제 {festivals.length}개 · 공연 {concerts.length}개
+        </p>
+      )}
+
+      {relaxedQuery && (
+        <p className="-mt-2 mb-4 text-sm text-zinc-500 dark:text-zinc-400">
+          정확히 맞는 결과가 없어 <b className="font-semibold text-zinc-700 dark:text-zinc-200">{relaxedQuery}</b> 로 넓혀서 찾았어요.
         </p>
       )}
 

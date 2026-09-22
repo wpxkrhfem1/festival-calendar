@@ -7,6 +7,7 @@ import concertsFile from "@/data/concerts.json";
 import type { Concert, ConcertDataFile } from "./types";
 import { isLongRunning, monthKey, monthsFromCurrent, targetYearForMonth, todayKST } from "./date";
 import { REGIONS } from "./regions";
+import { searchIn } from "./search";
 
 const data = concertsFile as unknown as ConcertDataFile;
 
@@ -134,14 +135,17 @@ export function getConcertsByRegionSlug(slug: string): Concert[] {
   return ALL.filter((c) => c.sido === region.name);
 }
 
-/** 공연명·공연장·지역·장르 검색 */
+function concertHaystack(c: Concert): string {
+  return `${c.title} ${c.venue} ${c.sido} ${c.genre} ${c.cast ?? ""}`;
+}
+
+/** 공연명·공연장·지역·장르·출연진 검색 (축제 쪽과 같은 두 단계 규칙) */
+export function searchConcertsDetailed(query: string): { results: Concert[]; relaxed: boolean } {
+  return searchIn(ALL, query, concertHaystack);
+}
+
 export function searchConcerts(query: string): Concert[] {
-  const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
-  if (terms.length === 0) return [];
-  return ALL.filter((c) => {
-    const hay = `${c.title} ${c.venue} ${c.sido} ${c.genre} ${c.cast ?? ""}`.toLowerCase();
-    return terms.every((t) => hay.includes(t));
-  });
+  return searchConcertsDetailed(query).results;
 }
 
 /**

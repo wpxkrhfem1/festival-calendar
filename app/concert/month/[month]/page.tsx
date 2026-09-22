@@ -17,6 +17,16 @@ function parseMonth(raw: string): number | null {
   return Number.isInteger(m) && m >= 1 && m <= 12 ? m : null;
 }
 
+/**
+ * 색인에 올릴 만큼 공연이 모였는지 판단하는 기준.
+ *
+ * KOPIS 는 오늘부터 1년치만 준다. 그래서 9월인 지금 /concert/month/4 는
+ * 2027년 4월이고 공연이 1건뿐이다 — "4월 공연 총정리" 로 검색해 들어오면
+ * 한 건만 보고 나간다. 2~8월도 1~4건이다.
+ * 달이 가까워지면 예매가 열리면서 자연히 넘어가고 색인도 되살아난다.
+ */
+const ENOUGH_TO_INDEX = 10;
+
 export async function generateMetadata({ params }: PageProps<"/concert/month/[month]">): Promise<Metadata> {
   const { month: raw } = await params;
   const month = parseMonth(raw);
@@ -31,6 +41,7 @@ export async function generateMetadata({ params }: PageProps<"/concert/month/[mo
   return {
     title: { absolute: title },
     description,
+    ...(concerts.length < ENOUGH_TO_INDEX ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: `/concert/month/${month}` },
     openGraph: { title, description, siteName: SITE_NAME, type: "website" },
   };

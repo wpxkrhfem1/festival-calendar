@@ -24,6 +24,7 @@ import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
 import { buildIcs, icsFileName } from "../lib/ics";
 import { dialNumber, displayTel, searchUrl } from "../lib/contact";
+import { relaxedTokens, searchIn } from "../lib/search";
 import type { Tag } from "../lib/types";
 
 describe("date", () => {
@@ -377,5 +378,42 @@ describe("연락처 정리", () => {
     const url = searchUrl("횡성한우축제", "횡성군");
     assert.ok(url.startsWith("https://search.naver.com/search.naver?query="));
     assert.ok(url.includes(encodeURIComponent("횡성한우축제 횡성군")));
+  });
+});
+
+describe("검색어 해석", () => {
+  it("꼬리말이 붙은 검색어를 떼어낸다", () => {
+    // "가을축제" 는 0건, "가을 축제" 는 128건이었다. 띄어쓰기 하나 차이였다
+    assert.deepEqual(relaxedTokens("가을축제"), ["가을", "축제"]);
+    assert.deepEqual(relaxedTokens("재즈페스티벌"), ["재즈", "페스티벌"]);
+    assert.deepEqual(relaxedTokens("아이유콘서트"), ["아이유", "콘서트"]);
+  });
+
+  it("긴 꼬리말을 먼저 본다", () => {
+    assert.deepEqual(relaxedTokens("지역대축제"), ["지역", "대축제"]);
+  });
+
+  it("뗄 게 없으면 null — 다시 찾지 않는다", () => {
+    assert.equal(relaxedTokens("축제"), null); // 꼬리말만 남으면 안 된다
+    assert.equal(relaxedTokens("부산"), null);
+    assert.equal(relaxedTokens("가을 축제"), null); // 이미 띄어 썼다
+    assert.equal(relaxedTokens(""), null);
+  });
+
+  it("정확히 친 검색어는 그대로 쓰고, 0건일 때만 넓힌다", () => {
+    const items = [{ t: "홍성 남당항 대하축제" }, { t: "부산불꽃축제" }, { t: "가을 억새 여행" }];
+    const hay = (x: { t: string }) => x.t;
+
+    const exact = searchIn(items, "부산불꽃축제", hay);
+    assert.equal(exact.results.length, 1);
+    assert.equal(exact.relaxed, false);
+
+    const loose = searchIn(items, "대하축제", hay);
+    assert.equal(loose.results.length, 1);
+    assert.equal(loose.relaxed, false); // "대하축제" 가 제목에 그대로 있다
+
+    const widened = searchIn(items, "억새축제", hay);
+    assert.equal(widened.results.length, 0); // "억새" 는 있지만 "축제" 가 없다
+    assert.equal(widened.relaxed, true);
   });
 });

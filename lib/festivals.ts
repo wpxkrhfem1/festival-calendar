@@ -10,6 +10,7 @@ import type { Festival, FestivalDataFile, FestivalOverride, Tag } from "./types"
 import { isLongRunning, monthsBetween, monthsFromCurrent, statusOf, targetYearForMonth, todayKST } from "./date";
 import { classifyTags } from "./tags";
 import { regionBySlug } from "./regions";
+import { searchIn } from "./search";
 
 const data = festivalsFile as unknown as FestivalDataFile;
 const overrides = (overridesFile as unknown as { festivals?: FestivalOverride[] }).festivals ?? [];
@@ -223,13 +224,20 @@ export function getAvailableSidos(festivals: Festival[] = ALL): string[] {
 }
 
 /** 축제명/지역/주소 검색 (공백 구분 AND 검색) */
+function festivalHaystack(f: Festival): string {
+  return `${f.title} ${f.sido} ${f.sigungu} ${f.address} ${f.tags.join(" ")}`;
+}
+
+/**
+ * 축제명·지역·주소·태그 검색.
+ * 원래 검색어로 먼저 찾고, 0건이면 "가을축제" → "가을 축제" 처럼 꼬리말을 떼고 다시 찾는다.
+ */
+export function searchFestivalsDetailed(query: string): { results: Festival[]; relaxed: boolean } {
+  return searchIn(ALL, query, festivalHaystack);
+}
+
 export function searchFestivals(query: string): Festival[] {
-  const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
-  if (terms.length === 0) return [];
-  return ALL.filter((f) => {
-    const hay = `${f.title} ${f.sido} ${f.sigungu} ${f.address} ${f.tags.join(" ")}`.toLowerCase();
-    return terms.every((t) => hay.includes(t));
-  });
+  return searchFestivalsDetailed(query).results;
 }
 
 /**

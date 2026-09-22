@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getFestivalsByMonth, getLiveFestivals } from "@/lib/festivals";
-import { getLiveConcerts } from "@/lib/concerts";
+import { getConcertsByMonth, getLiveConcerts, pickConcertMonthYear } from "@/lib/concerts";
 import { REGIONS } from "@/lib/regions";
 import { THEMES } from "@/lib/tags";
 import { SITE_URL } from "@/lib/site";
@@ -32,12 +32,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily" as const,
       priority: 0.9,
     }));
-  const concertMonths: MetadataRoute.Sitemap = Array.from({ length: 12 }, (_, i) => ({
-    url: `${SITE_URL}/concert/month/${i + 1}`,
-    lastModified: now,
-    changeFrequency: "daily",
-    priority: 0.8,
-  }));
+  // 공연이 몇 건 없는 달은 넣지 않는다. KOPIS 가 1년치만 줘서 먼 달은 1~4건뿐이다.
+  const concertMonths: MetadataRoute.Sitemap = Array.from({ length: 12 }, (_, i) => i + 1)
+    .filter((m) => {
+      const r = getConcertsByMonth(m, today);
+      return (pickConcertMonthYear(r, r.defaultYear)?.concerts.length ?? 0) >= 10;
+    })
+    .map((m) => ({
+      url: `${SITE_URL}/concert/month/${m}`,
+      lastModified: now,
+      changeFrequency: "daily" as const,
+      priority: 0.8,
+    }));
   const regions: MetadataRoute.Sitemap = REGIONS.map((r) => ({
     url: `${SITE_URL}/region/${r.slug}`,
     lastModified: now,

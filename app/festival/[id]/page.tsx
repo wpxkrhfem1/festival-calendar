@@ -17,6 +17,17 @@ import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
 
 export const revalidate = 86400;
+/**
+ * 목록에 없는 id 는 바로 404.
+ *
+ * 이게 없으면 /festival/9999999 같은 주소가 "페이지를 찾을 수 없어요" 화면을
+ * 보여주면서 HTTP 200 을 돌려준다(soft 404). 검색엔진은 그걸 정상 페이지로
+ * 보고 색인하고, 잘못된 링크를 타고 오는 크롤러에게 빈 페이지를 무한히 만들어 준다.
+ * 지역·월·테마 페이지에는 이미 걸려 있었는데 상세 페이지만 빠져 있었다.
+ *
+ * 축제가 새로 추가되면 데이터 갱신 커밋으로 다시 빌드되므로 경로가 따라 들어온다.
+ */
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   return getAllFestivals().map((f) => ({ id: f.id }));
