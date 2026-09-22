@@ -9,6 +9,7 @@ import ConcertPoster from "@/components/ConcertPoster";
 import ConcertCard from "@/components/ConcertCard";
 import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
+import CalendarButton from "@/components/CalendarButton";
 
 export const revalidate = 86400;
 
@@ -21,9 +22,12 @@ export async function generateMetadata({ params }: PageProps<"/concert/[id]">): 
   const c = getConcertById(id);
   if (!c) return {};
   const description = `${formatPeriod(c.startDate, c.endDate)} · ${c.venue}${c.cast ? ` · 출연 ${c.cast.slice(0, 60)}` : ""}`;
+  // 끝난 공연은 색인하지 않는다 (축제 쪽과 같은 규칙)
+  const ended = statusOf(c.startDate, c.endDate, todayKST()) === "ended";
   return {
-    title: c.title,
+    title: ended ? `${c.title} (종료)` : c.title,
     description,
+    ...(ended ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: `/concert/${c.id}` },
     openGraph: {
       title: c.title,
@@ -119,6 +123,7 @@ export default async function ConcertPage({ params }: PageProps<"/concert/[id]">
       <div className="mt-5 flex flex-wrap gap-2">
         <SaveButton kind="concert" id={c.id} title={c.title} variant="detail" />
         <ShareButton title={c.title} text={`${formatPeriod(c.startDate, c.endDate)} · ${c.venue}`} />
+        {status !== "ended" && <CalendarButton kind="concert" id={c.id} title={c.title} />}
       </div>
 
       {/* 예매 링크 */}

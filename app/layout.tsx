@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -52,6 +54,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-16 pt-4 sm:px-6">{children}</main>
         <Footer />
+        {/* 방문 통계 — 어떤 축제를 많이 보는지 알아야 다음 개선을 추측이 아니라 데이터로 정한다 */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

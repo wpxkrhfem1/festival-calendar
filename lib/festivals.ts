@@ -7,7 +7,7 @@
 import festivalsFile from "@/data/festivals.json";
 import overridesFile from "@/data/overrides.json";
 import type { Festival, FestivalDataFile, FestivalOverride, Tag } from "./types";
-import { isLongRunning, monthsBetween, monthsFromCurrent, targetYearForMonth, todayKST } from "./date";
+import { isLongRunning, monthsBetween, monthsFromCurrent, statusOf, targetYearForMonth, todayKST } from "./date";
 import { classifyTags } from "./tags";
 import { regionBySlug } from "./regions";
 
@@ -31,6 +31,8 @@ function applyOverrides(base: Festival[], ovs: FestivalOverride[]): Festival[] {
         merged.months = monthsBetween(merged.startDate, merged.endDate);
         if (!ov.tags) merged.tags = classifyTags(merged.title, merged.overview, merged.startDate);
       }
+      // extraTags 는 덮어쓰지 않고 더한다 (계절 태그를 잃지 않기 위해)
+      if (ov.extraTags?.length) merged.tags = [...new Set([...merged.tags, ...ov.extraTags])];
       map.set(ov.id, merged);
     } else if (ov.title && ov.startDate) {
       // 신규 축제: 필수값이 있어야만 추가
@@ -48,7 +50,7 @@ function applyOverrides(base: Festival[], ovs: FestivalOverride[]): Festival[] {
         tel: ov.tel ?? "",
         homepage: ov.homepage ?? "",
         overview: ov.overview ?? "",
-        tags: ov.tags ?? classifyTags(ov.title, ov.overview ?? "", ov.startDate),
+        tags: [...new Set([...(ov.tags ?? classifyTags(ov.title, ov.overview ?? "", ov.startDate)), ...(ov.extraTags ?? [])])],
         months: monthsBetween(ov.startDate, endDate),
         place: ov.place,
         playtime: ov.playtime,
@@ -66,12 +68,27 @@ function applyOverrides(base: Festival[], ovs: FestivalOverride[]): Festival[] {
 function stripUndefined<T extends object>(obj: T): Partial<T> {
   const out: Partial<T> = {};
   for (const [k, v] of Object.entries(obj)) {
-    if (v !== undefined && k !== "hidden") (out as Record<string, unknown>)[k] = v;
+    // _ 로 시작하는 키는 파일에 적어둔 메모라 데이터에 섞지 않는다
+    if (v !== undefined && k !== "hidden" && k !== "extraTags" && !k.startsWith("_")) {
+      (out as Record<string, unknown>)[k] = v;
+    }
   }
   return out;
 }
 
-const ALL: Festival[] = applyOverrides(data.festivals ?? [], overrides);
+/**
+ * 태그를 현재 규칙으로 다시 매긴다.
+ *
+ * festivals.json 에는 수집 당시의 태그가 박혀 있다. 그래서 lib/tags.ts 의 분류
+ * 규칙을 고쳐도 데이터를 다시 받기 전까지 화면이 그대로였다 — 실제로 규칙을
+ * 두 번 고치고도 사이트에는 반영이 안 된 채였다. 읽을 때 다시 계산해서
+ * 규칙 파일이 항상 최종 결정권을 갖게 한다. 742건이라 비용은 무시할 수준이다.
+ */
+function retag(list: Festival[]): Festival[] {
+  return list.map((f) => ({ ...f, tags: classifyTags(f.title, f.overview, f.startDate) }));
+}
+
+const ALL: Festival[] = applyOverrides(retag(data.festivals ?? []), overrides);
 const BY_ID = new Map(ALL.map((f) => [f.id, f]));
 const BY_MONTH = new Map<string, Festival[]>();
 for (const f of ALL) {
@@ -225,6 +242,33 @@ export function getRelatedFestivals(f: Festival, n = 4): Festival[] {
   const sameRegion = list.filter((g) => g.sido === f.sido);
   const others = list.filter((g) => g.sido !== f.sido);
   return [...sameRegion, ...others].slice(0, n);
+}
+
+/**
+ * 아직 끝나지 않은 축제 (진행 중 + 예정).
+ *
+ * 전체 742건 중 506건(68%)이 이미 지난 축제다. 사이트맵·추천처럼
+ * "지금 갈 수 있는 곳"을 다뤄야 하는 자리에서는 이 목록만 쓴다.
+ */
+export function getLiveFestivals(today = todayKST()): Festival[] {
+  return ALL.filter((f) => f.endDate >= today);
+}
+
+/**
+ * 끝난 축제 페이지에서 대신 보여줄 축제.
+ * 같은 지역 → 기간 한정 → 지금 열리는 것 순으로 우선한다.
+ *
+ * 연중 상설 전시(페인터즈, 숭례문 파수의식 같은 것)는 시작일이 훨씬 앞서 있어서
+ * 그냥 시작일 순으로 고르면 네 칸이 전부 상설로 찬다. 실제로 그렇게 나왔다.
+ * 그래서 장기 운영은 뒤로 미룬다.
+ */
+export function getAlternativeFestivals(f: Festival, n = 4, today = todayKST()): Festival[] {
+  const live = getLiveFestivals(today).filter((g) => g.id !== f.id);
+  const rank = (g: Festival) =>
+    (g.sido === f.sido ? 0 : 4) +
+    (isLongRunning(g.startDate, g.endDate) ? 2 : 0) +
+    (statusOf(g.startDate, g.endDate, today) === "ongoing" ? 0 : 1);
+  return [...live].sort((a, b) => rank(a) - rank(b) || a.startDate.localeCompare(b.startDate)).slice(0, n);
 }
 
 export function hasTag(f: Festival, tag: Tag): boolean {

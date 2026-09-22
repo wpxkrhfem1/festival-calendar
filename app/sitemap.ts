@@ -1,12 +1,20 @@
 import type { MetadataRoute } from "next";
-import { getAllFestivals } from "@/lib/festivals";
-import { getAllConcerts } from "@/lib/concerts";
+import { getLiveFestivals } from "@/lib/festivals";
+import { getLiveConcerts } from "@/lib/concerts";
 import { REGIONS } from "@/lib/regions";
 import { SITE_URL } from "@/lib/site";
+import { todayKST } from "@/lib/date";
 
-/** sitemap.xml 자동 생성: 홈 · 12개월 · 지역 · 축제 상세 · 공연 홈/12개월/상세 */
+/**
+ * sitemap.xml 자동 생성: 홈 · 12개월 · 지역 · 축제 상세 · 공연 홈/12개월/상세
+ *
+ * 끝난 축제·공연은 넣지 않는다. 전체 742건 중 506건(68%)이 이미 지난 축제라
+ * 그대로 두면 검색엔진이 작년 벚꽃축제를 계속 물어오고, 들어온 사람은 전부 나간다.
+ * 상세 페이지 자체는 링크가 깨지지 않게 그대로 두고 색인 대상에서만 뺀다.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const today = todayKST();
 
   const months: MetadataRoute.Sitemap = Array.from({ length: 12 }, (_, i) => ({
     url: `${SITE_URL}/month/${i + 1}`,
@@ -26,13 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly",
     priority: 0.7,
   }));
-  const festivals: MetadataRoute.Sitemap = getAllFestivals().map((f) => ({
+  const festivals: MetadataRoute.Sitemap = getLiveFestivals(today).map((f) => ({
     url: `${SITE_URL}/festival/${f.id}`,
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.6,
   }));
-  const concerts: MetadataRoute.Sitemap = getAllConcerts().map((c) => ({
+  const concerts: MetadataRoute.Sitemap = getLiveConcerts(today).map((c) => ({
     url: `${SITE_URL}/concert/${c.id}`,
     lastModified: now,
     changeFrequency: "weekly",

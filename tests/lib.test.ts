@@ -18,6 +18,8 @@ import {
 import { parseAddress } from "../lib/regions";
 import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
+import { buildIcs, icsFileName } from "../lib/ics";
+import type { Tag } from "../lib/types";
 
 describe("date", () => {
   it("TourAPI 날짜 → ISO", () => {
@@ -208,6 +210,91 @@ describe("문화/전통 분류 폭", () => {
   it("전통을 가리키는 구체적인 말은 잡는다", () => {
     for (const name of ["안동국제탈춤페스티벌", "경복궁 별빛야행", "정선아리랑제", "숭례문 파수의식", "영동난계국악축제"]) {
       assert.ok(classifyTags(name, "", "2026-09-01").includes("문화/전통"), name);
+    }
+  });
+});
+
+describe("캘린더 파일(.ics)", () => {
+  const festival = {
+    id: "123",
+    title: "홍성 남당항 대하축제",
+    startDate: "2026-09-10",
+    endDate: "2026-10-10",
+    sido: "충남",
+    sigungu: "홍성군",
+    address: "충청남도 홍성군 서부면 남당항로",
+    overview: "가을; 대하, 축제\n둘째 줄",
+    homepage: "https://hongseong.go.kr",
+    image: "",
+    thumbnail: "",
+    tel: "",
+    tags: [] as Tag[],
+    months: [] as string[],
+  };
+
+  const ics = buildIcs([festival], [], new Date("2026-09-22T00:00:00Z"));
+
+  it("종일 일정의 DTEND 는 끝난 다음 날이다", () => {
+    // 그대로 넣으면 캘린더에서 마지막 날이 빠진다
+    assert.ok(ics.includes("DTSTART;VALUE=DATE:20260910"));
+    assert.ok(ics.includes("DTEND;VALUE=DATE:20261011"));
+  });
+
+  it("특수문자를 이스케이프한다", () => {
+    // 긴 줄은 75옥텟마다 접혀 있으므로 펼친 뒤에 확인한다
+    const unfolded = ics.split("\r\n ").join("");
+    assert.ok(unfolded.includes("DESCRIPTION:가을\\; 대하\\, 축제\\n둘째 줄"));
+  });
+
+  it("어떤 줄도 75옥텟을 넘지 않는다", () => {
+    // 한글은 글자당 3바이트라 제목만으로도 금방 넘는다
+    const enc = new TextEncoder();
+    const over = ics.split("\r\n").filter((line) => enc.encode(line).length > 75);
+    assert.deepEqual(over, []);
+  });
+
+  it("하루 전 알림이 들어간다", () => {
+    assert.ok(ics.includes("BEGIN:VALARM"));
+    assert.ok(ics.includes("TRIGGER:-P1D"));
+  });
+
+  it("빈 목록이어도 올바른 VCALENDAR 를 만든다", () => {
+    const empty = buildIcs([], []);
+    assert.ok(empty.startsWith("BEGIN:VCALENDAR"));
+    assert.ok(empty.trimEnd().endsWith("END:VCALENDAR"));
+  });
+
+  it("파일명에서 경로 문자를 제거한다", () => {
+    assert.equal(icsFileName("서울/빛초롱: 등축제"), "서울빛초롱 등축제.ics");
+    assert.equal(icsFileName(""), "일정.ics");
+  });
+});
+
+describe("추가된 분류 키워드", () => {
+  const cat = (name: string) => classifyTags(name, "", "2026-10-01");
+
+  it("음식 이름이 지명에 섞여 들어가도 엉뚱한 태그를 주지 않는다", () => {
+    // 금-산삼-계탕: "산삼" 으로 잡히면 안 되지만 삼계탕이라 먹거리는 맞다
+    assert.ok(cat("금산삼계탕축제").includes("먹거리"));
+    // 허-심청: 스파 이름이지 심청전이 아니다
+    assert.ok(!cat("허심청브로이 옥토버페스트").includes("문화/전통"));
+    assert.ok(cat("허심청브로이 옥토버페스트").includes("먹거리"));
+  });
+
+  it("이름에 성격이 드러난 축제를 잡는다", () => {
+    for (const [name, tag] of [
+      ["봉화송이축제", "먹거리"],
+      ["군산짬뽕페스티벌", "먹거리"],
+      ["목포항구축제", "먹거리"],
+      ["부안붉은노을축제", "불꽃/야경"],
+      ["양재 플라워 페스타", "꽃/자연"],
+      ["2026 제주올레걷기축제", "꽃/자연"],
+      ["금정산성축제", "문화/전통"],
+      ["강동선사문화축제", "문화/전통"],
+      ["부산일러스트레이션페어V.7", "전시/예술"],
+      ["2026 서울발레페스티벌", "음악/공연"],
+    ] as const) {
+      assert.ok(cat(name).includes(tag), `${name} → ${tag}`);
     }
   });
 });

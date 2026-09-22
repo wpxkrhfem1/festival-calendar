@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllFestivals, getFestivalById, getRelatedFestivals } from "@/lib/festivals";
+import { getAllFestivals, getAlternativeFestivals, getFestivalById, getRelatedFestivals } from "@/lib/festivals";
 import { dDayLabel, formatPeriod, statusOf, todayKST } from "@/lib/date";
 import { regionByName } from "@/lib/regions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
@@ -11,6 +11,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 import TagChip from "@/components/TagChip";
 import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
+import CalendarButton from "@/components/CalendarButton";
 
 export const revalidate = 86400;
 
@@ -24,9 +25,12 @@ export async function generateMetadata({ params }: PageProps<"/festival/[id]">):
   if (!f) return {};
   const region = [f.sido, f.sigungu].filter(Boolean).join(" ");
   const description = `${formatPeriod(f.startDate, f.endDate)} · ${region}. ${f.overview.slice(0, 120).replace(/\n/g, " ")}`.trim();
+  // 이미 끝난 축제는 색인하지 않는다. 검색으로 들어와도 갈 수 없는 페이지다
+  const ended = statusOf(f.startDate, f.endDate, todayKST()) === "ended";
   return {
-    title: f.title,
+    title: ended ? `${f.title} (종료)` : f.title,
     description,
+    ...(ended ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: `/festival/${f.id}` },
     openGraph: {
       title: f.title,
@@ -56,7 +60,9 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
   const status = statusOf(f.startDate, f.endDate, today);
   const dday = dDayLabel(f.startDate, f.endDate, today);
   const region = regionByName(f.sido);
-  const related = getRelatedFestivals(f, 4);
+  const ended = status === "ended";
+  // 끝난 축제 옆에 또 끝난 축제를 늘어놓지 않는다
+  const related = ended ? getAlternativeFestivals(f, 4, today) : getRelatedFestivals(f, 4);
   const { kakao, naver } = mapLinks(f);
   const monthNum = Number(f.startDate.slice(5, 7));
 
@@ -98,6 +104,25 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
         </span>
       </div>
 
+      {ended && (
+        <div className="mt-5 rounded-2xl border border-amber-300 bg-amber-50 p-4 dark:border-amber-800/60 dark:bg-amber-950/30">
+          <p className="text-[15px] font-bold text-amber-900 dark:text-amber-100">이 축제는 이미 끝났어요</p>
+          <p className="mt-1 text-sm text-amber-800 dark:text-amber-200/90">
+            다음 회차 일정이 공개되면 이 페이지에 그대로 올라와요. 아래에서 지금 갈 수 있는 축제를 골라보세요.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link href="/browse?when=ongoing" className="rounded-full bg-amber-900 px-3.5 py-1.5 text-xs font-bold text-white dark:bg-amber-200 dark:text-amber-950">
+              지금 열리는 축제
+            </Link>
+            {region && (
+              <Link href={`/region/${region.slug}`} className="rounded-full border border-amber-400 px-3.5 py-1.5 text-xs font-bold text-amber-900 dark:border-amber-700 dark:text-amber-100">
+                {region.name} 축제 보기
+              </Link>
+            )}
+          </div>
+        </div>
+      )}
+
       <div className="mt-5">
         <nav aria-label="경로" className="mb-2 flex flex-wrap gap-1 text-xs text-zinc-500 dark:text-zinc-400">
           <Link href={`/month/${monthNum}`} className="hover:underline">
@@ -124,6 +149,8 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
       <div className="mt-5 flex flex-wrap gap-2">
         <SaveButton kind="festival" id={f.id} title={f.title} variant="detail" />
         <ShareButton title={f.title} text={`${formatPeriod(f.startDate, f.endDate)} · ${[f.sido, f.sigungu].filter(Boolean).join(" ")}`} />
+        {/* 끝난 축제는 담을 이유가 없다 */}
+        {!ended && <CalendarButton kind="festival" id={f.id} title={f.title} />}
       </div>
 
       {/* 핵심 정보 */}
@@ -209,7 +236,7 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
       {/* 추천 */}
       {related.length > 0 && (
         <section className="mt-10">
-          <h2 className="mb-3 text-lg font-bold">같은 시기 다른 축제</h2>
+          <h2 className="mb-3 text-lg font-bold">{ended ? "지금 갈 수 있는 축제" : "같은 시기 다른 축제"}</h2>
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {related.map((r) => (
               <li key={r.id}>

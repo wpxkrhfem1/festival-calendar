@@ -115,6 +115,11 @@ export function getConcertMonthSummaries(today = todayKST()) {
   });
 }
 
+/** 아직 끝나지 않은 공연 (진행 중 + 예정) */
+export function getLiveConcerts(today = todayKST()): Concert[] {
+  return ALL.filter((c) => c.endDate >= today);
+}
+
 /** 데이터에 존재하는 장르 목록 (건수 많은 순) */
 export function getAvailableGenres(list: Concert[] = ALL): string[] {
   const count = new Map<string, number>();

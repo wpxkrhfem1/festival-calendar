@@ -124,7 +124,14 @@ export interface FestivalDataFile {
 }
 
 /** overrides.json 항목: id 필수, 나머지는 선택 (hidden: true 면 목록에서 제외) */
-export type FestivalOverride = Partial<Festival> & { id: string; hidden?: boolean };
+/**
+ * 수동 보정 항목.
+ *
+ * tags 를 주면 자동 분류를 통째로 갈아치우므로 계절 태그까지 직접 적어야 한다.
+ * extraTags 는 자동 분류 결과에 더하기만 한다. 축제명만으로는 성격을 알 수 없는
+ * 경우(김제지평선축제, 페인터즈 같은 것)에 이 쪽을 쓴다.
+ */
+export type FestivalOverride = Partial<Festival> & { id: string; hidden?: boolean; extraTags?: Tag[] };
 
 /* ────────────────────────────────────────────────────────────
  * 공연 (KOPIS 공연예술통합전산망)
