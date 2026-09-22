@@ -5,7 +5,7 @@ import { overlaps, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/da
 import { SITE_NAME } from "@/lib/site";
 import BrowseBar from "@/components/BrowseBar";
 import GenreShortcuts from "@/components/GenreShortcuts";
-import ConcertPoster from "@/components/ConcertPoster";
+import ConcertCollage from "@/components/ConcertCollage";
 
 export const revalidate = 86400;
 
@@ -71,19 +71,8 @@ export default function ConcertHomePage() {
                   isNow ? "border-violet-600 ring-2 ring-violet-600/40" : "border-zinc-200 dark:border-zinc-800"
                 }`}
               >
-                <div className="relative grid aspect-[4/3] grid-cols-2 grid-rows-2 gap-0.5 bg-zinc-100 dark:bg-zinc-800">
-                  {Array.from({ length: 4 }, (_, i) => {
-                    const c = sample[i];
-                    return (
-                      <div key={i} className="relative overflow-hidden">
-                        {c ? (
-                          <ConcertPoster src={c.poster} alt="" genre={c.genre} sizes="(max-width: 640px) 25vw, 16vw" />
-                        ) : (
-                          <div className="h-full w-full bg-zinc-100 dark:bg-zinc-800" />
-                        )}
-                      </div>
-                    );
-                  })}
+                <div className="relative aspect-[4/3] bg-zinc-100 dark:bg-zinc-800">
+                  <ConcertCollage sample={sample} />
                   {isNow && (
                     <span className="absolute left-2 top-2 rounded-full bg-violet-600 px-2 py-0.5 text-[11px] font-bold text-white shadow">
                       이번 달

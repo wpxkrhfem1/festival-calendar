@@ -40,6 +40,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko" suppressHydrationWarning>
       <head>
+        {/* Pretendard — 한국어 UI 표준 서체. 이게 없으면 윈도우 기본 맑은고딕으로 떨어져 촌스러워진다 */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+        />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="flex min-h-dvh flex-col">

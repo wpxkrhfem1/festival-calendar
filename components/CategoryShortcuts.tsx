@@ -1,15 +1,7 @@
 import Link from "next/link";
 import { CATEGORY_TAGS } from "@/lib/tags";
+import IconTile, { TILE } from "./IconTile";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
-
-/** 카테고리별 대표 이모지와 배경 */
-const STYLE: Record<string, { emoji: string; bg: string }> = {
-  "먹거리": { emoji: "🍢", bg: "from-amber-400 to-orange-500" },
-  "불꽃/야경": { emoji: "🎆", bg: "from-violet-500 to-fuchsia-500" },
-  "꽃/자연": { emoji: "🌸", bg: "from-emerald-400 to-lime-500" },
-  "문화/전통": { emoji: "🏮", bg: "from-rose-500 to-orange-400" },
-  "음악/공연": { emoji: "🎶", bg: "from-sky-500 to-cyan-400" },
-};
 
 /** 시기 바로가기 (자주 쓰는 것만) */
 const QUICK_WHEN: WhenKey[] = ["ongoing", "weekend", "thisMonth"];
@@ -47,19 +39,14 @@ export default function CategoryShortcuts({ counts, whenCounts }: Props) {
       <h2 className="mb-3 text-base font-bold">어떤 축제를 찾으세요?</h2>
       <ul className="grid grid-cols-5 gap-2 sm:gap-3">
         {CATEGORY_TAGS.map((t) => {
-          const s = STYLE[t] ?? { emoji: "🎪", bg: "from-zinc-400 to-zinc-500" };
+          if (!TILE[t]) return null;
           return (
             <li key={t}>
               <Link
                 href={`/browse?category=${encodeURIComponent(t)}&when=upcoming`}
                 className="group flex flex-col items-center gap-1.5 rounded-2xl border border-zinc-200 bg-white p-2 text-center transition hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 sm:p-3"
               >
-                <span
-                  aria-hidden
-                  className={`flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br ${s.bg} text-lg shadow-sm sm:h-12 sm:w-12 sm:text-xl`}
-                >
-                  {s.emoji}
-                </span>
+                <IconTile name={t} />
                 <span className="text-[11px] font-bold leading-tight sm:text-xs">{t}</span>
                 <span className="text-[10px] text-zinc-400 sm:text-[11px]">{counts[t] ?? 0}</span>
               </Link>
