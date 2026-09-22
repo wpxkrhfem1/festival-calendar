@@ -12,6 +12,9 @@ export default function SavedLink() {
   return (
     <Link
       href="/saved"
+      // 모든 화면에 있는 링크라 미리 받아두면 그 무게가 어디서나 따라온다.
+      // 찜 목록은 눌러서 들어가는 곳이지 미리 준비해 둘 화면이 아니다.
+      prefetch={false}
       aria-label={n > 0 ? `찜 목록 ${n}개` : "찜 목록"}
       className="relative rounded-full p-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
     >

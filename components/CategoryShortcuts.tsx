@@ -24,6 +24,8 @@ export default function CategoryShortcuts({ counts, whenCounts }: Props) {
       <div className="no-scrollbar -mx-4 mb-4 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:px-0">
         <Link
           href="/nearby"
+          // 목록을 통째로 들고 있는 화면이라 미리 받지 않는다
+          prefetch={false}
           className="flex shrink-0 items-center gap-1.5 rounded-full border border-brand-300 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-400 dark:border-brand-800 dark:bg-brand-950/40 dark:text-brand-200"
         >
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>

@@ -49,6 +49,10 @@ export default function MonthNav() {
             <li key={m} className="shrink-0">
               <Link
                 href={`${hrefBase}/${m}`}
+                // 헤더라 모든 화면에 12개가 늘 떠 있다. 미리 받으면 어느 페이지를
+                // 열든 12개월치가 따라온다 (9월 497KB, 10월 588KB …).
+                // 정적 페이지라 눌렀을 때 받아도 충분히 빠르다.
+                prefetch={false}
                 ref={highlight === m ? activeRef : undefined}
                 aria-current={isActive ? "page" : undefined}
                 className={[

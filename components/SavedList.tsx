@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
-import type { Concert, Festival } from "@/lib/types";
+import type { ConcertCardData, FestivalCardData } from "@/lib/card";
 import { getSavedServerSnapshot, getSavedSnapshot, subscribeSaved } from "@/lib/saved";
 import FestivalCard from "./FestivalCard";
 import ConcertCard from "./ConcertCard";
@@ -10,8 +10,8 @@ import EmptyState from "./EmptyState";
 
 interface Props {
   /** 전체 목록. 찜한 id 만 골라 쓴다 */
-  festivals: Festival[];
-  concerts: Concert[];
+  festivals: FestivalCardData[];
+  concerts: ConcertCardData[];
   today: string;
 }
 
@@ -26,8 +26,8 @@ export default function SavedList({ festivals, concerts, today }: Props) {
   const fMap = new Map(festivals.map((f) => [f.id, f]));
   const cMap = new Map(concerts.map((c) => [c.id, c]));
   // 찜한 순서(최근 것이 앞)를 그대로 유지한다
-  const myFestivals = saved.festival.map((id) => fMap.get(id)).filter((x): x is Festival => !!x);
-  const myConcerts = saved.concert.map((id) => cMap.get(id)).filter((x): x is Concert => !!x);
+  const myFestivals = saved.festival.map((id) => fMap.get(id)).filter((x): x is FestivalCardData => !!x);
+  const myConcerts = saved.concert.map((id) => cMap.get(id)).filter((x): x is ConcertCardData => !!x);
   const total = myFestivals.length + myConcerts.length;
 
   if (total === 0) {

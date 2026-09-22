@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useMemo, useState } from "react";
-import type { Festival } from "@/lib/types";
+import type { FestivalCardData } from "@/lib/card";
 import { distanceKm, formatDistance } from "@/lib/geo";
 import { statusOf } from "@/lib/date";
 import FestivalCard from "./FestivalCard";
@@ -9,7 +9,7 @@ import EmptyState from "./EmptyState";
 
 interface Props {
   /** 좌표가 있는 축제만 (서버에서 걸러서 넘긴다) */
-  festivals: Festival[];
+  festivals: FestivalCardData[];
   today: string;
 }
 

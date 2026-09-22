@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Festival, Tag } from "@/lib/types";
+import type { Tag } from "@/lib/types";
+import type { FestivalCardData } from "@/lib/card";
 import { CATEGORY_TAGS } from "@/lib/tags";
 import { isLongRunning, statusOf } from "@/lib/date";
 import FestivalCard from "./FestivalCard";
@@ -10,7 +11,7 @@ import EmptyState from "./EmptyState";
 type SortKey = "start" | "ending";
 
 interface Props {
-  festivals: Festival[];
+  festivals: FestivalCardData[];
   today: string;
   /** 지역 드롭다운 표시 여부 (지역 페이지에서는 숨김) */
   showRegionFilter?: boolean;

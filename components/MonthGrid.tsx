@@ -28,6 +28,9 @@ export default function MonthGrid({ months, nowMonth }: Props) {
           <li key={`${year}-${month}`} id={`month-${month}`} className="scroll-mt-32">
             <Link
               href={`/month/${month}`}
+              // 홈에 12개가 한꺼번에 놓여 미리 받으면 3MB 가 넘는다.
+              // 정적 페이지라 눌렀을 때 받아도 충분히 빠르다.
+              prefetch={false}
               aria-label={`${year}년 ${month}월 축제 ${count}개 보기`}
               className={`group block overflow-hidden rounded-2xl border bg-white transition hover:-translate-y-0.5 hover:shadow-md dark:bg-zinc-900 ${
                 isNow ? "border-brand-500 ring-2 ring-brand-500/40" : "border-zinc-200 dark:border-zinc-800"

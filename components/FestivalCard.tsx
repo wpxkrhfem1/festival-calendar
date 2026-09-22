@@ -1,12 +1,12 @@
 import Link from "next/link";
-import type { Festival } from "@/lib/types";
+import type { FestivalCardData } from "@/lib/card";
 import { dDayLabel, formatPeriod, isLongRunning, statusOf } from "@/lib/date";
 import FestivalImage from "./FestivalImage";
 import TagChip from "./TagChip";
 import SaveButton from "./SaveButton";
 
 interface Props {
-  festival: Festival;
+  festival: FestivalCardData;
   /** KST 기준 오늘 (YYYY-MM-DD) — D-day 계산용 */
   today: string;
   priority?: boolean;

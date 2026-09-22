@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Concert } from "@/lib/types";
+import type { ConcertCardData } from "@/lib/card";
 import { isLongRunning, statusOf } from "@/lib/date";
 import ConcertCard from "./ConcertCard";
 import EmptyState from "./EmptyState";
@@ -9,7 +9,7 @@ import EmptyState from "./EmptyState";
 type SortKey = "start" | "ending";
 
 interface Props {
-  concerts: Concert[];
+  concerts: ConcertCardData[];
   today: string;
   showRegionFilter?: boolean;
   emptyMessage?: string;
@@ -45,7 +45,7 @@ export default function ConcertList({ concerts, today, showRegionFilter = true, 
     const sorted = [...list];
     if (sort === "start") {
       // 오픈런과 몇 년씩 이어지는 장기 공연은 매달 맨 위를 차지하므로 뒤로 보낸다
-      const longRun = (c: Concert) => (c.openRun || isLongRunning(c.startDate, c.endDate) ? 1 : 0);
+      const longRun = (c: ConcertCardData) => (c.openRun || isLongRunning(c.startDate, c.endDate) ? 1 : 0);
       sorted.sort(
         (a, b) => longRun(a) - longRun(b) || a.startDate.localeCompare(b.startDate) || a.endDate.localeCompare(b.endDate),
       );

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import type { Concert } from "@/lib/types";
+import type { ConcertCardData } from "@/lib/card";
 import { dDayLabel, formatPeriod, isLongRunning, statusOf } from "@/lib/date";
 import ConcertPoster from "./ConcertPoster";
 import SaveButton from "./SaveButton";
 
 interface Props {
-  concert: Concert;
+  concert: ConcertCardData;
   /** KST 기준 오늘 (YYYY-MM-DD) */
   today: string;
   priority?: boolean;
