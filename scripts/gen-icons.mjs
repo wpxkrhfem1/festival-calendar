@@ -62,6 +62,11 @@ no fine lines, no small details anywhere.
 Palette: warm ivory face, one vermilion headband, deep brown features,
 coral cheeks.${STYLE}`,
 
+  art: `An artist palette seen at a slight angle with three dabs of paint on it
+and a single slim brush resting across it.
+Palette: violet palette body, amber and coral and jade paint dabs,
+ivory brush.${STYLE}`,
+
   music: `A vintage stage microphone standing upright, with two music notes
 arcing away from its upper right.
 Palette: cobalt blue body, jade accents, amber notes, ivory highlights.${STYLE}`,

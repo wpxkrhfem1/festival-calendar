@@ -89,20 +89,32 @@ describe("regions", () => {
 });
 
 describe("tags", () => {
-  it("키워드로 카테고리 태그 부여 + 계절", () => {
+  it("축제명의 키워드로 태그 부여 + 계절", () => {
     assert.deepEqual(classifyTags("홍성 남당항 대하축제", "", "2026-09-10").sort(), ["가을", "먹거리"].sort());
     assert.ok(classifyTags("부산불꽃축제", "", "2026-11-01").includes("불꽃/야경"));
-    assert.ok(classifyTags("진해군항제", "벚꽃이 만개하는 봄", "2026-03-25").includes("꽃/자연"));
+    assert.ok(classifyTags("진해 벚꽃축제", "", "2026-03-25").includes("꽃/자연"));
     assert.ok(classifyTags("안동국제탈춤페스티벌", "", "2026-09-26").includes("문화/전통"));
     assert.ok(classifyTags("서울재즈페스티벌", "", "2026-05-30").includes("음악/공연"));
+    assert.ok(classifyTags("제16회 광주비엔날레", "", "2026-09-01").includes("전시/예술"));
   });
-  it("'페스티벌'만으로는 음악/공연을 주지 않는다", () => {
-    const tags = classifyTags("보령머드페스티벌", "", "2026-07-20");
+
+  it("개요에 있는 말로는 태그를 주지 않는다", () => {
+    // 거의 모든 축제 소개글에 먹거리·공연 이야기가 들어가서 오분류가 쏟아졌다
+    const tags = classifyTags("경복궁 별빛야행", "다양한 먹거리와 음식, 공연을 즐길 수 있다", "2026-09-01");
+    assert.ok(!tags.includes("먹거리"));
     assert.ok(!tags.includes("음악/공연"));
-    assert.ok(tags.includes("여름"));
+    assert.ok(tags.includes("불꽃/야경")); // 야행은 제목에 있다
   });
+
+  it("한 글자 키워드로 인한 오분류를 막는다", () => {
+    // 제N회 의 회, 밤의 석조전의 밤, 문화배달의 배
+    assert.ok(!classifyTags("제24회 동강국제사진제", "", "2026-09-01").includes("먹거리"));
+    assert.ok(!classifyTags("달밤에체조 부산 챌린지", "", "2026-09-01").includes("먹거리"));
+    assert.ok(!classifyTags("문화가 있는날 문화배달", "", "2026-09-01").includes("먹거리"));
+  });
+
   it("여러 태그 동시 부여", () => {
-    const tags = classifyTags("서울빛초롱축제", "전통 등불과 빛 조형물", "2026-12-15");
+    const tags = classifyTags("서울빛초롱 전통등축제", "", "2026-12-15");
     assert.ok(tags.includes("불꽃/야경"));
     assert.ok(tags.includes("문화/전통"));
     assert.ok(tags.includes("겨울"));

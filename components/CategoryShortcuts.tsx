@@ -47,7 +47,7 @@ export default function CategoryShortcuts({ counts, whenCounts }: Props) {
 
       {/* 카테고리 타일 */}
       <h2 className="mb-3 text-base font-bold">어떤 축제를 찾으세요?</h2>
-      <ul className="grid grid-cols-5 gap-2 sm:gap-3">
+      <ul className="grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">
         {CATEGORY_TAGS.map((t) => {
           if (!TILE[t]) return null;
           return (

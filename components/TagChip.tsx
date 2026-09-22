@@ -7,6 +7,7 @@ const TAG_STYLE: Record<Tag, string> = {
   "꽃/자연": "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200",
   "문화/전통": "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-200",
   "음악/공연": "bg-sky-100 text-sky-800 dark:bg-sky-900/40 dark:text-sky-200",
+  "전시/예술": "bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-200",
   "봄": "bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-200",
   "여름": "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-200",
   "가을": "bg-orange-100 text-orange-800 dark:bg-orange-900/40 dark:text-orange-200",

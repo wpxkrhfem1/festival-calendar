@@ -15,6 +15,7 @@ export const TILE: Record<string, { icon: string; from: string; to: string }> = 
   "꽃/자연": { icon: "nature", from: "from-rose-200/60", to: "to-pink-200/60" },
   "문화/전통": { icon: "culture", from: "from-red-200/60", to: "to-orange-200/60" },
   "음악/공연": { icon: "music", from: "from-sky-200/60", to: "to-cyan-200/60" },
+  "전시/예술": { icon: "art", from: "from-violet-200/60", to: "to-purple-200/60" },
   // 공연 장르
   "서양음악(클래식)": { icon: "classic", from: "from-amber-200/60", to: "to-yellow-200/60" },
   "뮤지컬": { icon: "musical", from: "from-fuchsia-200/60", to: "to-violet-200/60" },
