@@ -42,7 +42,8 @@ export default function ConcertHomePage() {
           {nowYear}년 {nowMonth}월, 어떤 공연 볼까?
         </h1>
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300 sm:text-base">
-          전국 공연 {all.length.toLocaleString()}개를 달별로 모았어요. 시기·지역·장르로 바로 찾아보세요.
+          {/* 끝난 공연까지 센 수를 적으면 들어갔을 때와 어긋난다 (축제 홈과 같은 규칙) */}
+          지금 볼 수 있는 전국 공연 {upcoming.length.toLocaleString()}개를 달별로 모았어요. 시기·지역·장르로 바로 찾아보세요.
         </p>
       </section>
 

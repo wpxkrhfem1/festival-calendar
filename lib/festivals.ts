@@ -203,6 +203,14 @@ export function getMonthSummaries(today = todayKST()) {
       // 이 카드가 가리키는 연·월이 이미 지났는지
       past: year < nowYear || (year === nowYear && month < nowMonth),
       count: festivals.length,
+      /**
+       * 아직 안 끝난 수.
+       *
+       * 이번 달 카드가 "187개" 라고 해놓고 눌러 들어가면 74개가 보였다.
+       * 월 페이지는 끝난 축제를 접어두는데 홈 카드만 전체를 세고 있었다.
+       * 앞으로 올 달은 두 수가 같고, 이번 달에서만 갈린다.
+       */
+      liveCount: festivals.filter((f) => f.endDate >= today).length,
       /** 다른 해에도 이 달 축제가 있는지 (카드에 "2027년도 보기" 같은 힌트를 줄 때 사용) */
       otherYears: result.years.filter((y) => y.year !== result.defaultYear).map((y) => ({ year: y.year, count: y.festivals.length })),
       images: sample.map((f) => f.image || f.thumbnail),

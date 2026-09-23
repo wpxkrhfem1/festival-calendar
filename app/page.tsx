@@ -26,8 +26,9 @@ export default function HomePage() {
 
   // 바로가기에 붙일 건수. 앞으로 열리거나 진행 중인 축제만 센다
   const all = getAllFestivals();
-  const totalCount = all.length;
   const upcoming = all.filter((f) => f.endDate >= today);
+  // 전체 764건 중 507건이 이미 끝난 축제다. 그 수를 자랑해봐야 들어가면 없다
+  const totalCount = upcoming.length;
   const categoryCounts = Object.fromEntries(
     CATEGORY_TAGS.map((t) => [t, upcoming.filter((f) => f.tags.includes(t)).length]),
   );
@@ -45,7 +46,7 @@ export default function HomePage() {
           {nowYear}년 {nowMonth}월, 어디서 뭐 하지?
         </h1>
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300 sm:text-base">
-          전국 축제 {totalCount.toLocaleString()}개를 달별로 모았어요. 시기·지역·카테고리로 바로 찾아보세요.
+          지금 갈 수 있는 전국 축제 {totalCount.toLocaleString()}개를 달별로 모았어요. 시기·지역·카테고리로 바로 찾아보세요.
         </p>
       </section>
 
