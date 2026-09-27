@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { secureImage } from "@/lib/asset";
 import { useState } from "react";
 
 interface Props {
@@ -41,7 +42,8 @@ export default function ConcertPoster({ src, alt, genre, sizes = "(max-width: 64
     );
   }
 
-  const common = { src, fill: true as const, sizes, onError: () => setFailed(true) };
+  // KOPIS 포스터는 전부 http 로 온다. https 페이지에서 막히므로 올려준다
+  const common = { src: secureImage(src), fill: true as const, sizes, onError: () => setFailed(true) };
 
   return (
     <>

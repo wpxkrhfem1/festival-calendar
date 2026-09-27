@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { secureImage } from "@/lib/asset";
 import { useCallback, useEffect, useState } from "react";
 
 interface Props {
@@ -62,7 +63,7 @@ export default function PhotoGallery({ photos, title }: Props) {
                 sizes 를 vw 로 두면 화면폭마다 다른 너비를 요청해 이미지 변환이
                 여러 벌 생긴다. 축제 사진만 수천 장이라 고정 폭 하나로 묶는다.
               */}
-              <Image src={src} alt="" fill sizes="256px" className="object-cover" />
+              <Image src={secureImage(src)} alt="" fill sizes="256px" className="object-cover" />
             </button>
           </li>
         ))}
@@ -95,7 +96,7 @@ export default function PhotoGallery({ photos, title }: Props) {
           )}
 
           <div className="relative h-full max-h-[80vh] w-full max-w-4xl" onClick={(e) => e.stopPropagation()}>
-            <Image src={photos[open]} alt={`${title} 사진 ${open + 1}`} fill sizes="100vw" className="object-contain" priority />
+            <Image src={secureImage(photos[open])} alt={`${title} 사진 ${open + 1}`} fill sizes="100vw" className="object-contain" priority />
           </div>
 
           <p className="absolute bottom-6 left-0 right-0 text-center text-sm text-white/80">

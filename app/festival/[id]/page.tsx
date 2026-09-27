@@ -16,6 +16,7 @@ import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
 import { festivalEvent } from "@/lib/ics";
+import { secureImage } from "@/lib/asset";
 
 export const revalidate = 86400;
 /**
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: PageProps<"/festival/[id]">):
       description,
       siteName: SITE_NAME,
       type: "article",
-      ...(f.image ? { images: [{ url: f.image }] } : {}),
+      ...(f.image ? { images: [{ url: secureImage(f.image) }] } : {}),
     },
   };
 }
@@ -95,7 +96,7 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     description: f.overview.slice(0, 500),
     url: `${SITE_URL}/festival/${f.id}`,
-    ...(f.image ? { image: [f.image] } : {}),
+    ...(f.image ? { image: [secureImage(f.image)] } : {}),
     location: {
       "@type": "Place",
       name: f.place || f.address || f.title,

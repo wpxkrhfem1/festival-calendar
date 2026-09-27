@@ -13,6 +13,7 @@ import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
 import { concertEvent } from "@/lib/ics";
+import { secureImage } from "@/lib/asset";
 
 export const revalidate = 86400;
 /**
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: PageProps<"/concert/[id]">): 
       description,
       siteName: SITE_NAME,
       type: "article",
-      ...(c.poster ? { images: [{ url: c.poster }] } : {}),
+      ...(c.poster ? { images: [{ url: secureImage(c.poster) }] } : {}),
     },
   };
 }
@@ -79,7 +80,7 @@ export default async function ConcertPage({ params }: PageProps<"/concert/[id]">
     eventStatus: "https://schema.org/EventScheduled",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     url: `${SITE_URL}/concert/${c.id}`,
-    ...(c.poster ? { image: [c.poster] } : {}),
+    ...(c.poster ? { image: [secureImage(c.poster)] } : {}),
     location: {
       "@type": "Place",
       name: c.venue,

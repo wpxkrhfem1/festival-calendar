@@ -13,6 +13,7 @@
  */
 import type { Tag } from "./types";
 import { seasonOfMonth } from "./date";
+import { asset } from "./asset";
 
 export type CategoryTag = Exclude<Tag, "봄" | "여름" | "가을" | "겨울">;
 
@@ -143,13 +144,13 @@ export function classifyTags(title: string, overview: string, startDate: string)
 
 /** 태그별 플레이스홀더 이미지 경로 (public/placeholder) */
 export function placeholderFor(tags: Tag[]): string {
-  if (tags.includes("먹거리")) return "/placeholder/food.svg";
-  if (tags.includes("불꽃/야경")) return "/placeholder/light.svg";
-  if (tags.includes("꽃/자연")) return "/placeholder/nature.svg";
-  if (tags.includes("음악/공연")) return "/placeholder/music.svg";
-  if (tags.includes("문화/전통")) return "/placeholder/culture.svg";
-  if (tags.includes("전시/예술")) return "/placeholder/art.svg";
-  return "/placeholder/default.svg";
+  if (tags.includes("먹거리")) return asset("/placeholder/food.svg");
+  if (tags.includes("불꽃/야경")) return asset("/placeholder/light.svg");
+  if (tags.includes("꽃/자연")) return asset("/placeholder/nature.svg");
+  if (tags.includes("음악/공연")) return asset("/placeholder/music.svg");
+  if (tags.includes("문화/전통")) return asset("/placeholder/culture.svg");
+  if (tags.includes("전시/예술")) return asset("/placeholder/art.svg");
+  return asset("/placeholder/default.svg");
 }
 
 /**

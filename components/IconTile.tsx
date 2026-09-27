@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 
 /**
  * 카테고리·장르 아이콘 타일.
@@ -45,7 +46,7 @@ export default function IconTile({ name }: { name: string }) {
     >
       {/* 퍼센트 높이는 부모가 flex 라 0 으로 접힌다. 고정 크기로 둔다 */}
       <Image
-        src={`/icons/${t.icon}.png`}
+        src={asset(`/icons/${t.icon}.png`)}
         alt=""
         width={48}
         height={48}

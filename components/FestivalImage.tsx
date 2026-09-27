@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { secureImage } from "@/lib/asset";
 import { useState } from "react";
 import type { Tag } from "@/lib/types";
 import { placeholderFor } from "@/lib/tags";
@@ -38,7 +39,8 @@ export default function FestivalImage({
   const [failed, setFailed] = useState(false);
   const fallback = placeholderFor(tags);
   const useFallback = failed || !src;
-  const finalSrc = useFallback ? fallback : src;
+  // KOPIS·관광공사 원본이 http 로 오는 것이 있다. https 페이지에서 막히므로 올려준다
+  const finalSrc = useFallback ? fallback : secureImage(src);
   const isRemoteAllowed = /^https?:\/\/tong\.visitkorea\.or\.kr\//.test(finalSrc);
 
   // 플레이스홀더는 틀에 맞게 그린 그림이라 항상 꽉 채운다
