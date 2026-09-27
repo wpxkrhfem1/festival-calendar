@@ -52,6 +52,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="mx-auto w-full max-w-5xl flex-1 px-4 pb-16 pt-4 sm:px-6">{children}</main>
         <Footer />
+        {/*
+          방문 통계 (GoatCounter).
+
+          Vercel Analytics 를 썼다가 GitHub Pages 로 옮기면서 뺐다 — Vercel 전용이라
+          여기서는 404 만 났고, 애초에 대시보드에서 켜지 않아 한 건도 쌓이지 않았다.
+
+          GoatCounter 는 정적 사이트에서 스크립트 한 줄로 동작하고, 쿠키를 쓰지 않아
+          동의 배너가 필요 없다. 대시보드는 기본이 비공개라 로그인한 사람만 본다.
+          data-goatcounter 주소가 곧 수집 엔드포인트다.
+        */}
+        <script
+          data-goatcounter="https://festival-calendar.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        />
       </body>
     </html>
   );
