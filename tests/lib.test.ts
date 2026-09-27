@@ -23,7 +23,7 @@ import {
 import { parseAddress } from "../lib/regions";
 import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
-import { buildIcs, icsFileName } from "../lib/ics";
+import { buildIcs, festivalEvent, icsFileName } from "../lib/ics";
 import { dialNumber, displayTel, searchUrl } from "../lib/contact";
 import { relaxedTokens, searchIn } from "../lib/search";
 import type { Tag } from "../lib/types";
@@ -239,7 +239,7 @@ describe("캘린더 파일(.ics)", () => {
     months: [] as string[],
   };
 
-  const ics = buildIcs([festival], [], new Date("2026-09-22T00:00:00Z"));
+  const ics = buildIcs([festivalEvent(festival)], new Date("2026-09-22T00:00:00Z"));
 
   it("종일 일정의 DTEND 는 끝난 다음 날이다", () => {
     // 그대로 넣으면 캘린더에서 마지막 날이 빠진다
@@ -266,7 +266,7 @@ describe("캘린더 파일(.ics)", () => {
   });
 
   it("빈 목록이어도 올바른 VCALENDAR 를 만든다", () => {
-    const empty = buildIcs([], []);
+    const empty = buildIcs([]);
     assert.ok(empty.startsWith("BEGIN:VCALENDAR"));
     assert.ok(empty.trimEnd().endsWith("END:VCALENDAR"));
   });

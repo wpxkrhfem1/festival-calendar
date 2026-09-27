@@ -15,6 +15,7 @@ import TagChip from "@/components/TagChip";
 import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
+import { festivalEvent } from "@/lib/ics";
 
 export const revalidate = 86400;
 /**
@@ -167,7 +168,7 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
         <SaveButton kind="festival" id={f.id} title={f.title} variant="detail" />
         <ShareButton title={f.title} text={`${formatPeriod(f.startDate, f.endDate)} · ${[f.sido, f.sigungu].filter(Boolean).join(" ")}`} />
         {/* 끝난 축제는 담을 이유가 없다 */}
-        {!ended && <CalendarButton kind="festival" id={f.id} title={f.title} />}
+        {!ended && <CalendarButton events={[festivalEvent(f)]} fileBase={f.title} />}
       </div>
 
       {/* 핵심 정보 */}

@@ -7,6 +7,9 @@ import { getSavedServerSnapshot, getSavedSnapshot, subscribeSaved } from "@/lib/
 import FestivalCard from "./FestivalCard";
 import ConcertCard from "./ConcertCard";
 import EmptyState from "./EmptyState";
+import CalendarButton from "./CalendarButton";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
+import type { EventInput } from "@/lib/ics";
 
 interface Props {
   /** 전체 목록. 찜한 id 만 골라 쓴다 */
@@ -44,8 +47,27 @@ export default function SavedList({ festivals, concerts, today }: Props) {
   const upcomingFestivals = myFestivals.filter((f) => f.endDate >= today);
   const upcomingConcerts = myConcerts.filter((c) => c.endDate >= today);
   const icsCount = upcomingFestivals.length + upcomingConcerts.length;
-  const icsHref =
-    `/ics?f=${upcomingFestivals.map((f) => f.id).join(",")}` + `&c=${upcomingConcerts.map((c) => c.id).join(",")}`;
+  // 이 화면은 카드용 최소 데이터만 들고 있다. 캘린더에 필요한 건 그걸로 충분하다
+  const icsEvents: EventInput[] = [
+    ...upcomingFestivals.map((f) => ({
+      uid: `festival-${f.id}@jeonguk-chukje`,
+      title: f.title,
+      startDate: f.startDate,
+      endDate: f.endDate,
+      location: [f.sido, f.sigungu].filter(Boolean).join(" "),
+      description: "",
+      url: `${SITE_URL}/festival/${f.id}`,
+    })),
+    ...upcomingConcerts.map((c) => ({
+      uid: `concert-${c.id}@jeonguk-chukje`,
+      title: c.title,
+      startDate: c.startDate,
+      endDate: c.endDate,
+      location: c.venue || c.sido,
+      description: c.genre ?? "",
+      url: `${SITE_URL}/concert/${c.id}`,
+    })),
+  ];
 
   return (
     <div>
@@ -54,16 +76,12 @@ export default function SavedList({ festivals, concerts, today }: Props) {
       </p>
 
       {icsCount > 0 && (
-        <a
-          href={icsHref}
-          className="mb-6 flex h-12 items-center justify-center gap-2 rounded-xl bg-brand-500 px-4 text-sm font-bold text-white transition hover:bg-brand-600"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-            <rect x="3" y="4.5" width="18" height="16.5" rx="2.5" />
-            <path d="M3 9.5h18M8 2.5v4M16 2.5v4M12 12.5v5M9.5 15h5" />
-          </svg>
-          찜한 {icsCount}개를 캘린더에 담기
-        </a>
+        <CalendarButton
+          events={icsEvents}
+          fileBase={`${SITE_NAME} 일정`}
+          label={`찜한 ${icsCount}개를 캘린더에 담기`}
+          wide
+        />
       )}
 
       {myFestivals.length > 0 && (

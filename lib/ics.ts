@@ -57,7 +57,7 @@ function fold(line: string): string {
   return out.map((s, i) => (i === 0 ? s : ` ${s}`)).join("\r\n");
 }
 
-interface EventInput {
+export interface EventInput {
   uid: string;
   title: string;
   startDate: string;
@@ -98,7 +98,7 @@ function cleanOverview(text: string): string {
   return (text ?? "").replace(/^\s*\*[^*]*\*\s*/, "").trim();
 }
 
-function festivalEvent(f: Festival): EventInput {
+export function festivalEvent(f: Festival): EventInput {
   const region = [f.sido, f.sigungu].filter(Boolean).join(" ");
   return {
     uid: `festival-${f.id}@jeonguk-chukje`,
@@ -111,7 +111,7 @@ function festivalEvent(f: Festival): EventInput {
   };
 }
 
-function concertEvent(c: Concert): EventInput {
+export function concertEvent(c: Concert): EventInput {
   return {
     uid: `concert-${c.id}@jeonguk-chukje`,
     title: c.title,
@@ -123,8 +123,15 @@ function concertEvent(c: Concert): EventInput {
   };
 }
 
-/** 축제·공연 목록을 하나의 .ics 문서로 */
-export function buildIcs(festivals: Festival[], concerts: Concert[], now = new Date()): string {
+/**
+ * 일정 목록을 하나의 .ics 문서로.
+ *
+ * 전에는 Festival/Concert 를 직접 받고 서버 라우트(/ics)가 파일을 만들어 줬다.
+ * 사이트를 완전 정적으로 내보내면서 서버가 없어져, 이제 브라우저에서 만들어
+ * Blob 으로 내려받는다. 그래서 데이터 타입에 매이지 않게 EventInput 을 받는다.
+ * 찜 목록 화면은 카드용 최소 데이터만 들고 있어서 이 편이 맞기도 하다.
+ */
+export function buildIcs(events: EventInput[], now = new Date()): string {
   const stamp = `${now.toISOString().slice(0, 19).replace(/[-:]/g, "")}Z`;
   const lines = [
     "BEGIN:VCALENDAR",
@@ -133,8 +140,7 @@ export function buildIcs(festivals: Festival[], concerts: Concert[], now = new D
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     fold(`X-WR-CALNAME:${esc(SITE_NAME)}`),
-    ...festivals.flatMap((f) => toEvent(festivalEvent(f), stamp)),
-    ...concerts.flatMap((c) => toEvent(concertEvent(c), stamp)),
+    ...events.flatMap((e) => toEvent(e, stamp)),
     "END:VCALENDAR",
   ];
   return `${lines.join("\r\n")}\r\n`;

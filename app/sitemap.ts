@@ -6,6 +6,9 @@ import { THEMES } from "@/lib/tags";
 import { SITE_URL } from "@/lib/site";
 import { todayKST } from "@/lib/date";
 
+// 정적 내보내기에서는 빌드 때 파일로 구워야 한다 (서버가 없다)
+export const dynamic = "force-static";
+
 /**
  * sitemap.xml 자동 생성: 홈 · 12개월 · 지역 · 축제 상세 · 공연 홈/12개월/상세
  *

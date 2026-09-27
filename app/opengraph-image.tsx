@@ -2,6 +2,9 @@ import { OG_CONTENT_TYPE, OG_SIZE, OgCard, renderOg } from "@/lib/og";
 import { SITE_NAME } from "@/lib/site";
 import { todayKST, parseDate } from "@/lib/date";
 
+// 정적 내보내기에서는 빌드 때 이미지를 구워야 한다
+export const dynamic = "force-static";
+
 export const alt = SITE_NAME;
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;

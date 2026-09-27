@@ -1,14 +1,14 @@
 # 전국축제자랑
 
-**배포 주소: https://festival-calendar.vercel.app**
+**배포 주소: https://wpxkrhfem1.github.io/festival-calendar/**
 
 대한민국 전국 축제·페스티벌과 공연을 달별로 모아 보여주는 사이트입니다.
 "이번 달에 어디서 뭐 하지?"를 5초 안에 알 수 있게 만드는 것이 목표입니다.
 
-- **기술 스택**: Next.js (App Router, TypeScript), Tailwind CSS v4, Vercel
+- **기술 스택**: Next.js (App Router, TypeScript), Tailwind CSS v4 — **완전 정적(output: export)** 으로 빌드해 GitHub Pages 에 올린다
 - **데이터**: 축제는 한국관광공사 TourAPI 4.0 (`KorService2`), 공연은 예술경영지원센터 KOPIS
 - **구성**: 상단에서 축제와 공연을 전환합니다. 출처와 성격이 달라 목록을 섞지 않습니다.
-- **갱신**: GitHub Actions 가 **매일 새벽 04:00 KST** 데이터를 받아와 커밋 → Vercel 자동 배포
+- **갱신**: GitHub Actions 가 **매일 새벽 04:00 KST** 데이터를 받아와 커밋 → 04:30 KST 에 다시 빌드해 Pages 로 배포
 - **규모**: 축제 약 760건, 공연 약 2,800건. 빌드 시 약 3,400 페이지를 정적 생성합니다.
 
 ## 페이지
@@ -28,7 +28,7 @@
 | `/browse?when=&region=&category=&from=&to=` | 시기·지역·카테고리로 축제 찾기 |
 | `/concert/browse?when=&region=&genre=` | 시기·지역·장르로 공연 찾기 |
 | `/search?q=` | 축제·공연 통합 검색 |
-| `/ics?f=id,id&c=id,id` | 캘린더 파일(.ics) 내려받기 |
+| (캘린더 담기) | 브라우저에서 `.ics` 를 만들어 바로 내려받는다 (서버 라우트 없음) |
 | `/sitemap.xml`, `/robots.txt` | 자동 생성 |
 
 ## 주요 기능
@@ -39,7 +39,7 @@
 - **공유** — Web Share API, 없으면 주소 복사.
 - **날짜 직접 고르기** — 시기 필터에서 `날짜 직접 고르기` 를 고르면 구간을 지정할 수 있습니다.
 - **축제 ↔ 공연 교차 추천** — 같은 시도 + 기간이 겹치는 것끼리 잇습니다.
-- **방문 통계** — Vercel Analytics / Speed Insights.
+- **서버가 없다** — HTML 을 통째로 구워 올린다. 조건 검색·캘린더 파일 만들기는 브라우저가 한다.
 
 ## 1. API 키 발급
 
@@ -125,23 +125,44 @@ npm run fetch:concerts -- --max-detail=600    # 공연 상세 호출 상한 (워
 - 목록 수집이 실패하면 **기존 festivals.json 을 그대로 두고** 종료 코드 1 로 끝납니다. 사이트가 빈 상태로 배포되는 일은 없습니다.
 - 상세 호출이 개별로 실패하면 이전에 저장한 개요·홈페이지를 재사용합니다.
 
-## 3. 배포 (Vercel)
+## 3. 배포 (GitHub Pages)
 
-1. GitHub 에 push 후 Vercel 에서 **Import Project**
-2. 환경변수 설정
-   - `NEXT_PUBLIC_SITE_URL` = 배포 도메인 (예: `https://festival-calendar.vercel.app`) — OG/sitemap 절대경로에 사용
-   - `TOUR_API_KEY` 는 **빌드에 필요 없습니다.** 데이터는 저장소의 JSON 을 읽습니다. (넣어도 클라이언트에 노출되지 않음)
-3. 배포. 페이지는 빌드 시 정적 생성(SSG)되고 하루 1회 재검증(ISR)됩니다.
+`.github/workflows/deploy-pages.yml` 이 알아서 합니다. 저장소에 push 하거나
+매일 04:30 KST 에 돌면서 정적 빌드 → Pages 배포까지 끝냅니다.
+Pages 가 꺼져 있어도 `actions/configure-pages` 가 켜 줍니다.
 
-### 자동 갱신 (GitHub Actions)
+빌드할 때 두 값을 환경변수로 넘깁니다 (워크플로가 자동으로 채웁니다).
 
-`.github/workflows/update-festivals.yml` 이 **매일 04:00 KST** 에 실행됩니다.
+| 변수 | 값 | 쓰이는 곳 |
+|---|---|---|
+| `NEXT_PUBLIC_BASE_PATH` | `/festival-calendar` | 저장소 이름이 경로에 붙어서 |
+| `NEXT_PUBLIC_SITE_URL` | `https://<user>.github.io/festival-calendar` | sitemap·OG·JSON-LD 의 절대 주소 |
 
-1. GitHub 저장소 → Settings → Secrets and variables → Actions → **New repository secret**
-2. `TOUR_API_KEY` (관광공사 디코딩 키) 와 `KOPIS_API_KEY` (KOPIS 키) 두 개를 등록
-3. Actions 탭에서 **축제·공연 데이터 갱신** 워크플로를 `Run workflow` 로 한 번 수동 실행해 확인
+로컬에서 정적 결과물을 확인하려면:
 
-변경이 있으면 `데이터: 자동 갱신 (축제 N건, 공연 M건)` 커밋이 올라가고 Vercel 이 다시 배포합니다.
+```bash
+npm run build          # out/ 에 HTML 이 구워진다
+npx serve out          # 또는 아무 정적 서버
+```
+
+### 왜 Vercel 에서 옮겼나
+
+처음에는 Vercel 에 올렸는데 Hobby 무료 한도를 넘어 프로젝트가 통째로 멈췄습니다
+(HTTP 402 / `DEPLOYMENT_DISABLED`). 사이트 전체가 안 열렸습니다.
+
+빌드 결과를 보니 3,642 페이지 중 서버가 필요한 건 9개 라우트와 이미지 최적화뿐이었습니다.
+데이터가 저장소의 JSON 이고 매일 커밋으로 갱신되는 구조라 애초에 서버가 할 일이 없었습니다.
+그래서 서버 의존을 전부 걷어냈습니다.
+
+| 전 | 후 |
+|---|---|
+| `next/image` 최적화 (월 5,000회 한도) | `unoptimized` — 원본을 관광공사·KOPIS 서버에서 직접 |
+| `/ics` 서버 라우트 | 브라우저에서 Blob 으로 만들어 내려받기 |
+| `/browse`, `/concert/browse`, `/search` 서버 렌더 | 껍데기만 정적, 거르는 일은 브라우저가 |
+| 동적 OG 이미지 4종 | 삭제 — 축제·공연은 자기 사진을 OG 로 쓴다 |
+| Vercel Analytics | 제거 (Vercel 전용이라 Pages 에서 404) |
+
+결과: 서버 렌더(`ƒ`) 라우트 0개. 한도에 걸릴 자원 자체가 없습니다.
 
 ## 4. overrides.json 편집법
 
@@ -280,9 +301,12 @@ tests/                    node:test 단위 테스트
 ### 이미지
 
 - 카드 이미지는 `firstimage`(원본, 세로 600px대)를 쓴다. `firstimage2`(썸네일)는 300×200 고정이라 흐리다.
-- 고유 이미지 URL 이 7,000개에 가깝고 Vercel Hobby 의 이미지 최적화 한도는 월 5,000회다.
-  `next.config.ts` 에서 너비 후보를 실제 쓰는 `sizes` 에 맞게 줄이고 품질을 하나로 고정했다.
-  사진 갤러리 썸네일은 `vw` 대신 고정 폭(`256px`)으로 묶어 변환본이 여러 벌 생기지 않게 한다.
+- **이미지 최적화를 쓰지 않는다** (`images.unoptimized`). 고유 이미지 URL 이 7,000개에 가까운데
+  Vercel Hobby 의 변환 한도는 월 5,000회였고, 그걸 넘겨 사이트가 멈췄다.
+  원본을 관광공사·KOPIS 서버에서 그대로 불러오면 변환도 우리 대역폭도 0이다.
+  정적 내보내기에서는 어차피 최적화 서버를 띄울 수 없다.
+- **서버가 필요한 기능을 쓰기 전에 정말 필요한지 따진다.** 이 사이트는 데이터가 저장소의 JSON 이라
+  서버가 할 일이 없었는데, 이미지 최적화·조건 검색·OG 이미지를 쓰느라 서버에 묶여 있었다.
 
 ### 화면 문구
 

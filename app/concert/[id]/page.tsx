@@ -12,6 +12,7 @@ import FestivalCard from "@/components/FestivalCard";
 import SaveButton from "@/components/SaveButton";
 import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
+import { concertEvent } from "@/lib/ics";
 
 export const revalidate = 86400;
 /**
@@ -138,7 +139,7 @@ export default async function ConcertPage({ params }: PageProps<"/concert/[id]">
       <div className="mt-5 flex flex-wrap gap-2">
         <SaveButton kind="concert" id={c.id} title={c.title} variant="detail" />
         <ShareButton title={c.title} text={`${formatPeriod(c.startDate, c.endDate)} · ${c.venue}`} />
-        {status !== "ended" && <CalendarButton kind="concert" id={c.id} title={c.title} />}
+        {status !== "ended" && <CalendarButton events={[concertEvent(c)]} fileBase={c.title} />}
       </div>
 
       {/* 예매 링크 */}

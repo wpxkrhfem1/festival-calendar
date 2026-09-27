@@ -49,3 +49,6 @@ next-env.d.ts
 
 # 브랜드 후보 이미지는 고른 뒤 정리해서 커밋한다 (원본 PNG 는 크고 임시)
 
+
+# 빌드 때 만드는 검색용 목록 (scripts/build-index.ts)
+/public/data/

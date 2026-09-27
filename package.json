@@ -13,11 +13,11 @@
     "probe:kopis": "tsx scripts/probe-kopis.ts",
     "fetch:concerts": "tsx scripts/fetch-concerts.ts",
     "count:kopis": "tsx scripts/count-kopis.ts",
-    "add:photos": "tsx scripts/add-photos.ts"
+    "add:photos": "tsx scripts/add-photos.ts",
+    "build:index": "tsx scripts/build-index.ts",
+    "prebuild": "npm run build:index"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0",
     "next": "16.3.5",
     "react": "19.2.8",
     "react-dom": "19.2.8"
