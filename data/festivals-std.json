@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-09-28T07:22:58.204Z",
+    "fetchedAt": "2026-09-28T23:45:36.007Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 686,
+    "count": 685,
     "source": "문화체육관광부 전국문화축제표준데이터 (tn_pubr_public_cltur_fstvl_api)"
   },
   "festivals": [
@@ -681,7 +681,7 @@
       "modifiedTime": "20260427000000"
     },
     {
-      "id": "scd43b705",
+      "id": "sc4f24f88",
       "title": "의왕왕송호수 겨울축제(날짜미정)",
       "startDate": "2026-01-09",
       "endDate": "2026-01-25",
@@ -2014,7 +2014,7 @@
       "modifiedTime": "20260728000000"
     },
     {
-      "id": "s89ba3d85",
+      "id": "s598381ab",
       "title": "2026 원도심 도보투어 (성안올레+별별투어)",
       "startDate": "2026-04-01",
       "endDate": "2026-11-30",
@@ -2100,7 +2100,7 @@
       "modifiedTime": "20260730000000"
     },
     {
-      "id": "s20dbe31d",
+      "id": "sbf3f3dcf",
       "title": "계절이 들리는 원도심 (2026 버스킹 있는 날 in 제주시)",
       "startDate": "2026-04-01",
       "endDate": "2026-12-09",
@@ -6001,34 +6001,7 @@
       "modifiedTime": "20260709000000"
     },
     {
-      "id": "sc259c1ae",
-      "title": "장미꽃 필 무렵",
-      "startDate": "2026-05-15",
-      "endDate": "2026-05-17",
-      "sido": "대구",
-      "sigungu": "달서구",
-      "address": "대구광역시 달서구 학산로 45",
-      "image": "",
-      "thumbnail": "",
-      "tel": "053-667-2000",
-      "homepage": "https://www.dalseo.daegu.kr/",
-      "overview": "자연생태",
-      "tags": [
-        "꽃/자연",
-        "봄"
-      ],
-      "months": [
-        "2026-05"
-      ],
-      "lat": 35.82991552,
-      "lng": 128.5328356,
-      "source": "std",
-      "place": "이곡장미공원",
-      "sponsor": "대구광역시 달서구",
-      "modifiedTime": "20260730000000"
-    },
-    {
-      "id": "s0b60a4d7",
+      "id": "s7a5ff4bb",
       "title": "장미꽃 필(feel)무렵",
       "startDate": "2026-05-15",
       "endDate": "2026-05-17",
@@ -6540,7 +6513,7 @@
       "modifiedTime": "20260805000000"
     },
     {
-      "id": "s4495e8ef",
+      "id": "se5790190",
       "title": "오(oh)장미빛축제",
       "startDate": "2026-05-23",
       "endDate": "2026-05-31",
@@ -8274,7 +8247,7 @@
       "modifiedTime": "20260811000000"
     },
     {
-      "id": "s2be9fe15",
+      "id": "sfe837cc8",
       "title": "2026 대구앞산축제(제31회 대덕제)",
       "startDate": "2026-07-04",
       "endDate": "2026-07-05",
@@ -9134,7 +9107,7 @@
       "modifiedTime": "20260807000000"
     },
     {
-      "id": "sfa321dd4",
+      "id": "s26b761c0",
       "title": "영주 시원(ONE)축제",
       "startDate": "2026-07-31",
       "endDate": "2026-08-02",
@@ -9401,7 +9374,7 @@
       "modifiedTime": "20260626000000"
     },
     {
-      "id": "s070704ff",
+      "id": "s1be81c58",
       "title": "진주 M2(뮤직&미디어)페스티벌",
       "startDate": "2026-08-07",
       "endDate": "2026-08-08",
@@ -9772,7 +9745,7 @@
       "modifiedTime": "20260827000000"
     },
     {
-      "id": "s5c8d41b0",
+      "id": "s9ecb9600",
       "title": "2026 영양고추 H.O.T Festival",
       "startDate": "2026-08-27",
       "endDate": "2026-08-29",
@@ -10227,7 +10200,7 @@
       "modifiedTime": "20260909000000"
     },
     {
-      "id": "s861841d6",
+      "id": "se2125dfc",
       "title": "2026년 파주포크페스티벌(전야제)",
       "startDate": "2026-09-04",
       "endDate": "2026-09-04",
@@ -10571,7 +10544,7 @@
       "modifiedTime": "20260903000000"
     },
     {
-      "id": "s9dccf726",
+      "id": "se3125f8f",
       "title": "2026년 파주포크페스티벌(본공연)",
       "startDate": "2026-09-05",
       "endDate": "2026-09-05",
@@ -11945,7 +11918,7 @@
       "modifiedTime": "20260827000000"
     },
     {
-      "id": "s17d5c210",
+      "id": "s15b1fc4f",
       "title": "구로G페스티벌(아시아문화축제)",
       "startDate": "2026-09-19",
       "endDate": "2026-09-20",
@@ -16162,7 +16135,7 @@
       "modifiedTime": "20260928000000"
     },
     {
-      "id": "see974d03",
+      "id": "sd4584c18",
       "title": "문화다양성 축제(MAMF) 2026",
       "startDate": "2026-10-23",
       "endDate": "2026-10-25",
@@ -16405,7 +16378,7 @@
       "modifiedTime": "20260728000000"
     },
     {
-      "id": "s97ee04e4",
+      "id": "s78eedf84",
       "title": "반려동물 문화행사(페스티벌)",
       "startDate": "2026-10-24",
       "endDate": "2026-10-24",
