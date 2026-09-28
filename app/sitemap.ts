@@ -16,6 +16,12 @@ export const dynamic = "force-static";
  * 그대로 두면 검색엔진이 작년 벚꽃축제를 계속 물어오고, 들어온 사람은 전부 나간다.
  * 상세 페이지 자체는 링크가 깨지지 않게 그대로 두고 색인 대상에서만 뺀다.
  */
+/*
+ * 모든 주소 끝에 / 를 붙인다.
+ * GitHub Pages 는 /month/9/ 가 진짜 주소이고 /month/9 는 301 로 넘긴다.
+ * 슬래시 없이 적었더니 사이트맵의 주소 2,800여 개가 전부 리다이렉트였고,
+ * 페이지가 스스로 밝히는 canonical(슬래시 있음)과도 어긋났다.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const today = todayKST();
@@ -30,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       return !(y < nowYear || (y === nowYear && m < nowMonth));
     })
     .map((m) => ({
-      url: `${SITE_URL}/month/${m}`,
+      url: `${SITE_URL}/month/${m}/`,
       lastModified: now,
       changeFrequency: "daily" as const,
       priority: 0.9,
@@ -42,40 +48,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
       return (pickConcertMonthYear(r, r.defaultYear)?.concerts.length ?? 0) >= 10;
     })
     .map((m) => ({
-      url: `${SITE_URL}/concert/month/${m}`,
+      url: `${SITE_URL}/concert/month/${m}/`,
       lastModified: now,
       changeFrequency: "daily" as const,
       priority: 0.8,
     }));
   const regions: MetadataRoute.Sitemap = REGIONS.map((r) => ({
-    url: `${SITE_URL}/region/${r.slug}`,
+    url: `${SITE_URL}/region/${r.slug}/`,
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.7,
   }));
   const themes: MetadataRoute.Sitemap = THEMES.map((t) => ({
-    url: `${SITE_URL}/theme/${t.slug}`,
+    url: `${SITE_URL}/theme/${t.slug}/`,
     lastModified: now,
     changeFrequency: "daily",
     priority: 0.8,
   }));
   const festivals: MetadataRoute.Sitemap = getLiveFestivals(today).map((f) => ({
-    url: `${SITE_URL}/festival/${f.id}`,
+    url: `${SITE_URL}/festival/${f.id}/`,
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.6,
   }));
   const concerts: MetadataRoute.Sitemap = getLiveConcerts(today).map((c) => ({
-    url: `${SITE_URL}/concert/${c.id}`,
+    url: `${SITE_URL}/concert/${c.id}/`,
     lastModified: now,
     changeFrequency: "weekly",
     priority: 0.6,
   }));
 
   return [
-    { url: SITE_URL, lastModified: now, changeFrequency: "daily", priority: 1 },
-    { url: `${SITE_URL}/concert`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
-    { url: `${SITE_URL}/nearby`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
+    { url: `${SITE_URL}/concert/`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${SITE_URL}/nearby/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     ...months,
     ...concertMonths,
     ...themes,

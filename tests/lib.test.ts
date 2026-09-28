@@ -28,6 +28,7 @@ import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
 import { buildIcs, festivalEvent, icsFileName } from "../lib/ics";
 import { dialNumber, displayTel, reportChangeUrl, searchUrl } from "../lib/contact";
 import { relaxedTokens, searchIn } from "../lib/search";
+import { defaultOgImage, pickShareImage } from "../lib/asset";
 import type { Tag } from "../lib/types";
 
 describe("date", () => {
@@ -487,5 +488,37 @@ describe("일정 변경 제보 주소", () => {
     assert.ok(body.includes("id: 574285"));
     assert.ok(body.includes("https://o.github.io/r/festival/574285/"));
     assert.ok(body.includes("10월 1일 (목) ~ 10월 5일 (월)"));
+  });
+});
+
+describe("공유 미리보기 이미지", () => {
+  const site = "https://o.github.io/r";
+
+  it("기본 이미지는 확장자가 붙은 주소다 (GitHub Pages 가 image/png 로 내보내게)", () => {
+    assert.equal(defaultOgImage(site), "https://o.github.io/r/og.png");
+  });
+
+  it("목록에서 사진이 있는 첫 축제를 쓰고, http 는 https 로 올린다", () => {
+    const items = [{ image: "" }, { image: "http://tong.visitkorea.or.kr/a.jpg" }, { image: "https://b.jpg" }];
+    assert.equal(pickShareImage(items, site), "https://tong.visitkorea.or.kr/a.jpg");
+  });
+
+  it("사진이 하나도 없으면 사이트 기본 이미지", () => {
+    assert.equal(pickShareImage([{ image: "" }, {}], site), "https://o.github.io/r/og.png");
+    assert.equal(pickShareImage([], site), "https://o.github.io/r/og.png");
+  });
+});
+
+describe("공유 이미지는 상설보다 그 시기 축제를", () => {
+  it("연중 상설 공연 사진을 건너뛴다", () => {
+    const items = [
+      { image: "https://상설.jpg", startDate: "2022-11-01", endDate: "2026-12-31" },
+      { image: "https://가을.jpg", startDate: "2026-10-01", endDate: "2026-10-05" },
+    ];
+    assert.equal(pickShareImage(items, "https://s"), "https://가을.jpg");
+  });
+  it("상설밖에 없으면 그거라도 쓴다", () => {
+    const items = [{ image: "https://상설.jpg", startDate: "2022-11-01", endDate: "2026-12-31" }];
+    assert.equal(pickShareImage(items, "https://s"), "https://상설.jpg");
   });
 });

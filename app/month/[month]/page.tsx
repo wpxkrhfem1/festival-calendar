@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getFestivalsByMonth, pickMonthYear } from "@/lib/festivals";
 import { todayKST } from "@/lib/date";
-import { monthPageTitle, SITE_NAME } from "@/lib/site";
+import { monthPageTitle, SITE_NAME, SITE_URL } from "@/lib/site";
+import { pickShareImage } from "@/lib/asset";
 import MonthYearTabs from "@/components/MonthYearTabs";
 
 // 하루 1회 재검증 (ISR). 오늘 날짜에 따라 기본 연도가 바뀌므로 필요
@@ -57,7 +58,14 @@ export async function generateMetadata({ params }: PageProps<"/month/[month]">):
     description,
     ...(past ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: `/month/${month}` },
-    openGraph: { title: monthPageTitle(month, result.defaultYear), description, siteName: SITE_NAME, type: "website" },
+    openGraph: {
+      title: monthPageTitle(month, result.defaultYear),
+      description,
+      siteName: SITE_NAME,
+      type: "website",
+      // 그 달의 대표 축제 사진. openGraph 를 여기서 새로 적으면 상위의 이미지를 물려받지 않는다
+      images: [{ url: pickShareImage(past ? festivals : live, SITE_URL) }],
+    },
   };
 }
 

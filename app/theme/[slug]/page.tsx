@@ -6,6 +6,7 @@ import { formatKoreanDate, statusOf, todayKST } from "@/lib/date";
 import { REGIONS } from "@/lib/regions";
 import { THEMES, themeBySlug } from "@/lib/tags";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { pickShareImage } from "@/lib/asset";
 import FestivalCard from "@/components/FestivalCard";
 import EmptyState from "@/components/EmptyState";
 
@@ -32,7 +33,14 @@ export async function generateMetadata({ params }: PageProps<"/theme/[slug]">): 
     title,
     description,
     alternates: { canonical: `/theme/${slug}` },
-    openGraph: { title: `${title} | ${SITE_NAME}`, description, siteName: SITE_NAME, type: "website" },
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      siteName: SITE_NAME,
+      type: "website",
+      // 그 테마의 대표 축제 사진 (없으면 사이트 기본 이미지)
+      images: [{ url: pickShareImage(list, SITE_URL) }],
+    },
   };
 }
 

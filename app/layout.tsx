@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { defaultOgImage } from "@/lib/asset";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -17,8 +18,10 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    // 확장자가 붙은 정적 이미지. 이름에 .png 가 없으면 GitHub Pages 가 이미지로 안 내보낸다
+    images: [{ url: defaultOgImage(SITE_URL), width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", images: [defaultOgImage(SITE_URL)] },
   alternates: { canonical: "/" },
 };
 

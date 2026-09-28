@@ -5,7 +5,8 @@ import { getConcertsByRegionSlug } from "@/lib/concerts";
 import type { Concert, Festival } from "@/lib/types";
 import { REGIONS, regionBySlug } from "@/lib/regions";
 import { todayKST } from "@/lib/date";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { pickShareImage } from "@/lib/asset";
 import RegionSections from "@/components/RegionSections";
 
 /**
@@ -39,7 +40,14 @@ export async function generateMetadata({ params }: PageProps<"/region/[sido]">):
     title,
     description,
     alternates: { canonical: `/region/${sido}` },
-    openGraph: { title: `${title} | ${SITE_NAME}`, description, siteName: SITE_NAME, type: "website" },
+    openGraph: {
+      title: `${title} | ${SITE_NAME}`,
+      description,
+      siteName: SITE_NAME,
+      type: "website",
+      // 그 지역의 대표 축제 사진 (없으면 사이트 기본 이미지)
+      images: [{ url: pickShareImage(festivals, SITE_URL) }],
+    },
   };
 }
 

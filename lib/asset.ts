@@ -1,3 +1,5 @@
+import { isLongRunning } from "./date";
+
 /**
  * 정적 파일 경로와 외부 이미지 주소를 다듬는다.
  *
@@ -34,4 +36,31 @@ export function secureImage(url: string): string {
   // www.kopis.or.kr → kopis.or.kr (https 로 가면 어차피 여기로 넘어간다)
   if (bare.startsWith("www.kopis.or.kr/")) return `https://${bare.slice("www.".length)}`;
   return `https://${bare}`;
+}
+
+/**
+ * 사이트 기본 공유 이미지 (app/og.png/route.tsx 가 빌드 때 굽는다).
+ * 확장자가 붙어 있어야 GitHub Pages 가 image/png 로 내보낸다.
+ */
+export function defaultOgImage(siteUrl: string): string {
+  return `${siteUrl}/og.png`;
+}
+
+/**
+ * 목록 페이지(월·지역·테마)를 공유할 때 쓸 대표 사진.
+ *
+ * 정적 사이트로 옮기면서 이 페이지들의 동적 공유 이미지를 지웠더니
+ * 카카오톡에 "10월 축제" 링크를 보내면 사진 없이 글자만 나갔다.
+ * 목록 안에서 사진이 있는 첫 축제를 쓰고, 하나도 없으면 사이트 기본 이미지를 쓴다.
+ */
+export function pickShareImage(
+  items: { image?: string; startDate?: string; endDate?: string }[],
+  siteUrl: string,
+): string {
+  const withImage = items.filter((x) => !!x.image);
+  // 연중 상설(120일 넘게 이어지는 것)은 뒤로 미룬다. 목록이 시작일 순이라
+  // 2022년부터 하는 상설 공연 사진이 "10월 축제" 와 "서울 축제" 를 똑같이 대표하고 있었다
+  const seasonal = withImage.find((x) => !(x.startDate && x.endDate && isLongRunning(x.startDate, x.endDate)));
+  const found = seasonal ?? withImage[0];
+  return found?.image ? secureImage(found.image) : defaultOgImage(siteUrl);
 }
