@@ -60,6 +60,8 @@ jobs:
           # 저장소 이름이 경로에 붙는다: https://<user>.github.io/festival-calendar/
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
           NEXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          # 일정 변경 제보를 이 저장소의 이슈로 받는다
+          NEXT_PUBLIC_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
         run: npm run build
 
       - name: Jekyll 처리 막기

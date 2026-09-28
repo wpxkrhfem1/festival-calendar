@@ -3,10 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllFestivals, getAlternativeFestivals, getFestivalById, getRelatedFestivals } from "@/lib/festivals";
 import { getConcertsNear } from "@/lib/concerts";
-import { dDayLabel, formatPeriod, statusOf, todayKST } from "@/lib/date";
+import { dDayLabel, formatPeriod, fromModifiedTime, statusOf, todayKST } from "@/lib/date";
 import { regionByName } from "@/lib/regions";
-import { dialNumber, displayTel, searchUrl } from "@/lib/contact";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { dialNumber, displayTel, reportChangeUrl, searchUrl } from "@/lib/contact";
+import { REPO_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import FestivalImage from "@/components/FestivalImage";
 import FestivalCard from "@/components/FestivalCard";
 import PhotoGallery from "@/components/PhotoGallery";
@@ -17,6 +17,7 @@ import ShareButton from "@/components/ShareButton";
 import CalendarButton from "@/components/CalendarButton";
 import { festivalEvent } from "@/lib/ics";
 import { secureImage } from "@/lib/asset";
+import VerifyNotice from "@/components/VerifyNotice";
 
 export const revalidate = 86400;
 /**
@@ -171,6 +172,23 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
         {/* 끝난 축제는 담을 이유가 없다 */}
         {!ended && <CalendarButton events={[festivalEvent(f)]} fileBase={f.title} />}
       </div>
+
+      {/* 끝난 축제는 확인할 게 없다. 갈 수 있는 축제에만 띄운다 */}
+      {!ended && (
+        <VerifyNotice
+          modified={fromModifiedTime(f.modifiedTime)}
+          today={today}
+          homepageUrl={f.homepage || searchUrl(f.title, f.sigungu)}
+          hasHomepage={!!f.homepage}
+          dial={dial}
+          reportUrl={reportChangeUrl(REPO_URL, {
+            id: f.id,
+            title: f.title,
+            period: formatPeriod(f.startDate, f.endDate),
+            pageUrl: `${SITE_URL}/festival/${f.id}/`,
+          })}
+        />
+      )}
 
       {/* 핵심 정보 */}
       <dl className="mt-6 grid gap-3 rounded-2xl border border-zinc-200 bg-white p-4 text-sm dark:border-zinc-800 dark:bg-zinc-900 sm:grid-cols-2 sm:p-5">

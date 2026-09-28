@@ -56,6 +56,34 @@ export function formatPeriod(start: string, end: string): string {
   return `${formatKoreanDate(start, !sameYear)} ~ ${formatKoreanDate(end, !sameYear)}`;
 }
 
+/**
+ * TourAPI 의 modifiedtime("YYYYMMDDHHMMSS") → "YYYY-MM-DD".
+ * 관광공사 쪽에서 이 축제 정보를 마지막으로 고친 날이다. 형식이 틀리면 null.
+ */
+export function fromModifiedTime(raw: string | undefined | null): string | null {
+  if (!raw) return null;
+  return fromApiDate(String(raw).trim().slice(0, 8));
+}
+
+/**
+ * 정보가 얼마나 묵었는지.
+ *
+ * 관광공사 데이터는 실시간이 아니다. 살아있는 축제의 마지막 수정일 중앙값이
+ * 18일 전이었고, 사흘 안에 고쳐진 축제는 한 건도 없었다. 김제지평선축제는
+ * 10월 1일 시작인데 정보가 7월 22일 것 그대로였다.
+ * 그래서 화면에 "언제 정보인지" 를 드러내고, 오래됐으면 더 강하게 확인을 권한다.
+ */
+export type Freshness = "fresh" | "aging" | "stale";
+
+/** 7일 이내면 fresh, 30일 이내면 aging, 그보다 오래면 stale */
+export function freshnessOf(modifiedIso: string | null, today: string): { level: Freshness; days: number | null } {
+  if (!modifiedIso) return { level: "stale", days: null };
+  const days = diffDays(modifiedIso, today);
+  if (days <= 7) return { level: "fresh", days };
+  if (days <= 30) return { level: "aging", days };
+  return { level: "stale", days };
+}
+
 /** 두 날짜의 일수 차이 (b - a) */
 export function diffDays(a: string, b: string): number {
   const da = new Date(`${a}T00:00:00Z`).getTime();

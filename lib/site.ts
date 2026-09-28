@@ -14,3 +14,11 @@ export function monthPageTitle(month: number, year: number): string {
 }
 
 export const MONTH_NAMES = Array.from({ length: 12 }, (_, i) => `${i + 1}월`);
+
+/**
+ * 코드 저장소 주소. 일정 변경 제보를 GitHub 이슈로 받는 데 쓴다.
+ * 워크플로가 NEXT_PUBLIC_REPO_URL 을 넘기지만, 없으면 이 값을 쓴다.
+ */
+export const REPO_URL = (
+  process.env.NEXT_PUBLIC_REPO_URL ?? "https://github.com/wpxkrhfem1/festival-calendar"
+).replace(/\/$/, "");

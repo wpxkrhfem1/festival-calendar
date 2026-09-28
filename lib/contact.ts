@@ -48,3 +48,33 @@ export function searchUrl(title: string, region?: string): string {
   const q = [title, region].filter(Boolean).join(" ");
   return `https://search.naver.com/search.naver?query=${encodeURIComponent(q)}`;
 }
+
+/**
+ * 일정 변경 제보 주소 (GitHub 새 이슈, 내용이 미리 채워진 상태로 열린다).
+ *
+ * 취소·연기 정보를 주는 API 가 없어서 자동으로는 못 잡는다. 관광공사 데이터는
+ * 수정 중앙값 18일 전이라 기다려서 될 일도 아니다. 그래서 본 사람이 알려주게 한다.
+ * 제보가 오면 data/overrides.json 에 hidden(취소) 이나 날짜(연기)를 넣어 반영한다.
+ *
+ * 한계: 제보하려면 GitHub 계정이 필요하다. 나중에 구글폼 같은 걸로 바꿀 수 있게
+ * 주소를 만드는 일을 이 함수 하나에 모아 둔다.
+ */
+export function reportChangeUrl(
+  repoUrl: string,
+  f: { id: string; title: string; period: string; pageUrl: string },
+): string {
+  const title = `[일정 변경] ${f.title}`;
+  const body = [
+    `축제: ${f.title}`,
+    `페이지: ${f.pageUrl}`,
+    `지금 표시된 기간: ${f.period}`,
+    `id: ${f.id}`,
+    "",
+    "### 어떻게 바뀌었나요? (취소 / 연기 / 시간 변경 / 장소 변경 / 기타)",
+    "- ",
+    "",
+    "### 어디서 확인하셨나요? (공식 홈페이지 공지 주소 등)",
+    "- ",
+  ].join("\n");
+  return `${repoUrl}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+}

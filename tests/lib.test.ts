@@ -12,6 +12,8 @@ import {
   monthsBetween,
   compareForList,
   customRange,
+  freshnessOf,
+  fromModifiedTime,
   isIsoDate,
   monthsFromCurrent,
   overlaps,
@@ -24,7 +26,7 @@ import { parseAddress } from "../lib/regions";
 import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
 import { buildIcs, festivalEvent, icsFileName } from "../lib/ics";
-import { dialNumber, displayTel, searchUrl } from "../lib/contact";
+import { dialNumber, displayTel, reportChangeUrl, searchUrl } from "../lib/contact";
 import { relaxedTokens, searchIn } from "../lib/search";
 import type { Tag } from "../lib/types";
 
@@ -442,5 +444,48 @@ describe("목록 정렬", () => {
     assert.ok(compareForList(ongoing, longRun, today, true) < 0);
     // 끄면 시작일 순이라 1월 시작인 상설이 앞
     assert.ok(compareForList(ongoing, longRun, today, false) > 0);
+  });
+});
+
+describe("정보가 얼마나 묵었나", () => {
+  it("TourAPI modifiedtime 을 날짜로", () => {
+    assert.equal(fromModifiedTime("20260722152006"), "2026-07-22");
+    assert.equal(fromModifiedTime("20260230120000"), null); // 없는 날
+    assert.equal(fromModifiedTime(""), null);
+    assert.equal(fromModifiedTime(undefined), null);
+  });
+
+  it("7일 이내 fresh, 30일 이내 aging, 그 이상 stale", () => {
+    const today = "2026-09-28";
+    assert.deepEqual(freshnessOf("2026-09-25", today), { level: "fresh", days: 3 });
+    assert.deepEqual(freshnessOf("2026-09-10", today), { level: "aging", days: 18 });
+    // 김제지평선축제: 10월 1일 시작인데 7월 22일 정보 그대로였다
+    assert.deepEqual(freshnessOf("2026-07-22", today), { level: "stale", days: 68 });
+  });
+
+  it("수정일을 모르면 가장 조심스럽게 본다", () => {
+    assert.deepEqual(freshnessOf(null, "2026-09-28"), { level: "stale", days: null });
+  });
+});
+
+describe("일정 변경 제보 주소", () => {
+  const url = reportChangeUrl("https://github.com/o/r", {
+    id: "574285",
+    title: "김제지평선축제",
+    period: "10월 1일 (목) ~ 10월 5일 (월)",
+    pageUrl: "https://o.github.io/r/festival/574285/",
+  });
+
+  it("저장소의 새 이슈 화면으로 간다", () => {
+    assert.ok(url.startsWith("https://github.com/o/r/issues/new?title="));
+  });
+
+  it("제목과 본문에 어떤 축제인지가 미리 들어간다", () => {
+    const q = new URL(url).searchParams;
+    assert.equal(q.get("title"), "[일정 변경] 김제지평선축제");
+    const body = q.get("body") ?? "";
+    assert.ok(body.includes("id: 574285"));
+    assert.ok(body.includes("https://o.github.io/r/festival/574285/"));
+    assert.ok(body.includes("10월 1일 (목) ~ 10월 5일 (월)"));
   });
 });
