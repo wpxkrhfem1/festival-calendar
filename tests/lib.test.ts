@@ -10,15 +10,20 @@ import {
   formatPeriod,
   fromApiDate,
   monthsBetween,
+  addMonths,
   compareForList,
   customRange,
   freshnessOf,
   fromModifiedTime,
   isIsoDate,
+  matchesWhen,
+  monthGrid,
   monthsFromCurrent,
+  openOn,
   overlaps,
   statusOf,
   whenLabel,
+  whenRange,
   targetYearForMonth,
   todayKST,
 } from "../lib/date";
@@ -26,7 +31,7 @@ import { parseAddress } from "../lib/regions";
 import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
 import { buildIcs, festivalEvent, icsFileName } from "../lib/ics";
-import { dialNumber, displayTel, reportChangeUrl, searchUrl } from "../lib/contact";
+import { dialNumber, displayTel, lodgingUrl, reportChangeUrl, searchUrl } from "../lib/contact";
 import { relaxedTokens, searchIn } from "../lib/search";
 import { defaultOgImage, pickShareImage } from "../lib/asset";
 import type { Tag } from "../lib/types";
@@ -520,5 +525,69 @@ describe("공유 이미지는 상설보다 그 시기 축제를", () => {
   it("상설밖에 없으면 그거라도 쓴다", () => {
     const items = [{ image: "https://상설.jpg", startDate: "2022-11-01", endDate: "2026-12-31" }];
     assert.equal(pickShareImage(items, "https://s"), "https://상설.jpg");
+  });
+});
+
+describe("달력 칸", () => {
+  it("2026년 10월은 목요일에 시작하고 31일에 끝난다", () => {
+    const weeks = monthGrid(2026, 10);
+    assert.deepEqual(weeks[0], [null, null, null, null, "2026-10-01", "2026-10-02", "2026-10-03"]);
+    const flat = weeks.flat().filter(Boolean);
+    assert.equal(flat.length, 31);
+    assert.equal(flat.at(-1), "2026-10-31");
+    assert.ok(weeks.every((w) => w.length === 7));
+  });
+
+  it("2월 윤년·평년", () => {
+    assert.equal(monthGrid(2028, 2).flat().filter(Boolean).length, 29);
+    assert.equal(monthGrid(2027, 2).flat().filter(Boolean).length, 28);
+  });
+
+  it("그날 열려 있는 것만 고른다 (첫날·마지막 날 포함)", () => {
+    const list = [
+      { id: "a", startDate: "2026-10-01", endDate: "2026-10-05" },
+      { id: "b", startDate: "2026-10-05", endDate: "2026-10-05" },
+      { id: "c", startDate: "2026-10-06", endDate: "2026-10-09" },
+    ];
+    assert.deepEqual(openOn(list, "2026-10-05").map((x) => x.id), ["a", "b"]);
+    assert.deepEqual(openOn(list, "2026-10-10").map((x) => x.id), []);
+  });
+
+  it("달 더하기 (해가 넘어가도)", () => {
+    assert.equal(addMonths("2026-09", 1), "2026-10");
+    assert.equal(addMonths("2026-12", 1), "2027-01");
+    assert.equal(addMonths("2027-01", -1), "2026-12");
+    assert.equal(addMonths("2026-09", 11), "2027-08");
+  });
+});
+
+describe("오늘 시작", () => {
+  const today = "2026-10-02";
+  const range = whenRange("startsToday", today);
+  it("시작일이 오늘인 것만 고른다", () => {
+    assert.equal(matchesWhen("2026-10-02", "2026-10-05", "startsToday", range, today), true);
+    // 어제 시작해서 진행 중인 것은 "지금 진행 중" 에는 들지만 "오늘 시작" 은 아니다
+    assert.equal(matchesWhen("2026-10-01", "2026-10-05", "startsToday", range, today), false);
+    assert.equal(matchesWhen("2026-10-01", "2026-10-05", "ongoing", whenRange("ongoing", today), today), true);
+    assert.equal(matchesWhen("2026-10-03", "2026-10-05", "startsToday", range, today), false);
+  });
+  it("다른 시기는 기간이 겹치는지로 본다", () => {
+    const weekend = whenRange("weekend", today);
+    assert.equal(matchesWhen("2026-10-04", "2026-10-04", "weekend", weekend, today), true);
+    assert.equal(matchesWhen("2026-10-10", "2026-10-11", "weekend", weekend, today), false);
+  });
+  it("이름표가 있다", () => {
+    assert.equal(whenLabel("startsToday", range), "오늘 시작");
+  });
+});
+
+describe("근처 숙소 주소", () => {
+  it("시도·시군구로 네이버지도 숙소 검색을 연다", () => {
+    const url = lodgingUrl({ sido: "경남", sigungu: "진주시" });
+    assert.ok(url.startsWith("https://map.naver.com/p/search/"));
+    assert.equal(decodeURIComponent(url.split("/search/")[1]), "경남 진주시 숙소");
+  });
+  it("시군구가 없으면 시도만", () => {
+    assert.equal(decodeURIComponent(lodgingUrl({ sido: "세종" }).split("/search/")[1]), "세종 숙소");
   });
 });

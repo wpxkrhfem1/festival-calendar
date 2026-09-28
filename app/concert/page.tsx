@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllConcerts, getConcertMonthSummaries } from "@/lib/concerts";
-import { overlaps, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
+import { matchesWhen, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
 import { SITE_NAME } from "@/lib/site";
 import BrowseBar from "@/components/BrowseBar";
 import GenreShortcuts from "@/components/GenreShortcuts";
@@ -29,9 +29,9 @@ export default function ConcertHomePage() {
   for (const c of upcoming) if (c.genre) genreCount.set(c.genre, (genreCount.get(c.genre) ?? 0) + 1);
   const genres = [...genreCount.entries()].sort((a, b) => b[1] - a[1]);
   const whenCounts = Object.fromEntries(
-    (["ongoing", "weekend", "thisMonth"] as WhenKey[]).map((k) => {
+    (["ongoing", "startsToday", "weekend", "thisMonth"] as WhenKey[]).map((k) => {
       const range = whenRange(k, today);
-      return [k, all.filter((c) => overlaps(c.startDate, c.endDate, range)).length];
+      return [k, all.filter((c) => matchesWhen(c.startDate, c.endDate, k, range, today)).length];
     }),
   ) as Partial<Record<WhenKey, number>>;
 

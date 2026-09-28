@@ -22,6 +22,17 @@ export default function Header() {
         <SectionNav />
         <div className="flex shrink-0 items-center gap-1">
           <Link
+            href="/calendar/"
+            aria-label="축제 달력"
+            prefetch={false}
+            className="rounded-full p-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <rect x="3" y="5" width="18" height="16" rx="2" />
+              <path d="M8 3v4M16 3v4M3 10h18" />
+            </svg>
+          </Link>
+          <Link
             href="/search"
             aria-label="축제 검색"
             className="rounded-full p-2 text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"

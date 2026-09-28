@@ -78,3 +78,15 @@ export function reportChangeUrl(
   ].join("\n");
   return `${repoUrl}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
 }
+
+/**
+ * 축제 근처 숙소 찾기 주소 (네이버지도 검색).
+ *
+ * 비슷한 사이트들은 축제 옆에 숙소 예약을 붙여 둔다. 멀리서 오는 사람에겐 다음 할 일이 숙소다.
+ * 지금은 제휴가 없어서 네이버지도에서 "시군구 숙소" 를 찾게만 한다.
+ * 나중에 숙박 제휴(여기어때·아고다 등)에 가입하면 이 함수 하나만 바꾸면 된다.
+ */
+export function lodgingUrl(f: { sido: string; sigungu?: string }): string {
+  const area = f.sigungu ? `${f.sido} ${f.sigungu}` : f.sido;
+  return `https://map.naver.com/p/search/${encodeURIComponent(`${area} 숙소`)}`;
+}

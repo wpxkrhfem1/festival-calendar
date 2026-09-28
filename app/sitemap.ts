@@ -81,6 +81,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
     { url: `${SITE_URL}/concert/`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${SITE_URL}/calendar/`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${SITE_URL}/map/`, lastModified: now, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE_URL}/nearby/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     ...months,
     ...concertMonths,

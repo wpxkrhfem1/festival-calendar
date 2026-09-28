@@ -2,7 +2,7 @@ import Link from "next/link";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
 import IconTile, { SHORT_NAME, TILE } from "./IconTile";
 
-const QUICK_WHEN: WhenKey[] = ["ongoing", "weekend", "thisMonth"];
+const QUICK_WHEN: WhenKey[] = ["ongoing", "startsToday", "weekend", "thisMonth"];
 
 interface Props {
   /** [장르명, 건수] 건수 많은 순 */
@@ -15,7 +15,8 @@ export default function GenreShortcuts({ genres, whenCounts }: Props) {
   return (
     <section className="mb-8">
       <div className="no-scrollbar -mx-4 mb-4 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:px-0">
-        {QUICK_WHEN.map((k) => (
+        {/* "오늘 시작" 은 그런 날이 없으면 0 이 적힌 칩만 남으니 뺀다 */}
+        {QUICK_WHEN.filter((k) => k !== "startsToday" || (whenCounts[k] ?? 0) > 0).map((k) => (
           <Link
             key={k}
             href={`/concert/browse?when=${k}`}

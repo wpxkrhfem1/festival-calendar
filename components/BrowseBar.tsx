@@ -5,7 +5,7 @@ import { useState } from "react";
 import { REGIONS } from "@/lib/regions";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
 
-const WHEN_ORDER: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
+const WHEN_ORDER: WhenKey[] = ["all", "ongoing", "startsToday", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
 
 /** 구역별 강조색. Tailwind 가 클래스를 지우지 않도록 전체 문자열로 적어둔다 */
 const ACCENT = {

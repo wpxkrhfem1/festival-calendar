@@ -69,3 +69,40 @@ export async function renderOg(element: ReactElement, fontText: string): Promise
     fonts: font ? [{ name: "Noto Sans KR", data: font, weight: 700, style: "normal" }] : undefined,
   });
 }
+
+/**
+ * 앱 아이콘 (홈 화면에 추가했을 때 보이는 정사각형).
+ *
+ * 로고가 글자 워드마크라 이미지 파일이 없다. 공유 이미지와 같은 그라데이션에
+ * "축제" 두 글자만 얹는다. 안드로이드는 아이콘을 원·물방울 모양으로 잘라내므로
+ * 글자를 가운데 80% 안에 들어가게 작게 둔다 (한 변의 30%).
+ */
+export async function renderAppIcon(size: number): Promise<ImageResponse> {
+  const font = await loadKoreanFont("축제");
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "linear-gradient(135deg, #f25a2a 0%, #ff9a5a 60%, #ffd166 100%)",
+          color: "#fff",
+          fontFamily: '"Noto Sans KR", sans-serif',
+          fontSize: Math.round(size * 0.3),
+          fontWeight: 700,
+          letterSpacing: "-0.04em",
+        }}
+      >
+        축제
+      </div>
+    ),
+    {
+      width: size,
+      height: size,
+      fonts: font ? [{ name: "Noto Sans KR", data: font, weight: 700, style: "normal" }] : undefined,
+    },
+  );
+}

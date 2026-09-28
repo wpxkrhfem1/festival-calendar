@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { compareForList, overlaps, rangeFromParams, todayKST, whenLabel, type WhenKey } from "@/lib/date";
+import { compareForList, matchesWhen, rangeFromParams, todayKST, whenLabel, type WhenKey } from "@/lib/date";
 import { regionBySlug } from "@/lib/regions";
 import { useSiteIndex } from "@/lib/useIndex";
 import BrowseBar from "./BrowseBar";
 import ConcertCard from "./ConcertCard";
 import EmptyState from "./EmptyState";
 
-const WHEN_KEYS: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
+const WHEN_KEYS: WhenKey[] = ["all", "ongoing", "startsToday", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
 const MAX_SHOWN = 60;
 
 /** 조건으로 공연 찾기 (클라이언트). 축제 쪽 BrowseResults 와 같은 구조 */
@@ -35,7 +35,7 @@ export default function ConcertBrowseResults() {
   const genre = genres.includes(genreRaw) ? genreRaw : undefined;
 
   const results = data.concerts
-    .filter((c) => overlaps(c.startDate, c.endDate, range))
+    .filter((c) => matchesWhen(c.startDate, c.endDate, when, range, today))
     .filter((c) => (region ? c.sido === region.name : true))
     .filter((c) => (genre ? c.genre === genre : true))
     // 진행 중 → 예정 → 종료, 상시 공연은 뒤로

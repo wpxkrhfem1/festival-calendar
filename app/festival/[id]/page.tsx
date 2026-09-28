@@ -5,7 +5,7 @@ import { getAllFestivals, getAlternativeFestivals, getFestivalById, getRelatedFe
 import { getConcertsNear } from "@/lib/concerts";
 import { dDayLabel, formatPeriod, fromModifiedTime, statusOf, todayKST } from "@/lib/date";
 import { regionByName } from "@/lib/regions";
-import { dialNumber, displayTel, reportChangeUrl, searchUrl } from "@/lib/contact";
+import { dialNumber, displayTel, lodgingUrl, reportChangeUrl, searchUrl } from "@/lib/contact";
 import { REPO_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 import FestivalImage from "@/components/FestivalImage";
 import FestivalCard from "@/components/FestivalCard";
@@ -209,6 +209,18 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
                 <a href={naver} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#03C75A] px-3 py-1.5 text-xs font-bold text-white">
                   네이버지도
                 </a>
+                {/* 끝난 축제에 숙소를 찾을 일은 없다. 누르는 수를 세서 숙박 제휴를 붙일지 판단한다 */}
+                {!ended && (
+                  <a
+                    href={lodgingUrl(f)}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    data-goatcounter-click="lodging"
+                    className="rounded-full border border-zinc-300 px-3 py-1.5 text-xs font-bold text-zinc-700 dark:border-zinc-700 dark:text-zinc-200"
+                  >
+                    근처 숙소
+                  </a>
+                )}
               </div>
             </dd>
           </div>

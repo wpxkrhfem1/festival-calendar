@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { compareForList, overlaps, rangeFromParams, todayKST, whenLabel, type WhenKey } from "@/lib/date";
+import { compareForList, matchesWhen, rangeFromParams, todayKST, whenLabel, type WhenKey } from "@/lib/date";
 import { regionBySlug } from "@/lib/regions";
 import { CATEGORY_TAGS } from "@/lib/tags";
 import type { Tag } from "@/lib/types";
@@ -11,7 +11,7 @@ import BrowseBar from "./BrowseBar";
 import FestivalCard from "./FestivalCard";
 import EmptyState from "./EmptyState";
 
-const WHEN_KEYS: WhenKey[] = ["all", "ongoing", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
+const WHEN_KEYS: WhenKey[] = ["all", "ongoing", "startsToday", "weekend", "thisMonth", "nextMonth", "upcoming", "custom"];
 const MAX_SHOWN = 60;
 
 /**
@@ -41,7 +41,7 @@ export default function BrowseResults() {
   // 745건 거르고 세우는 일이라 매 렌더 계산해도 눈에 띄지 않는다.
   // 직접 useMemo 를 걸면 range 가 매번 새 객체라 React Compiler 가 최적화를 포기한다.
   const results = data.festivals
-    .filter((f) => overlaps(f.startDate, f.endDate, range))
+    .filter((f) => matchesWhen(f.startDate, f.endDate, when, range, today))
     .filter((f) => (region ? f.sido === region.name : true))
     .filter((f) => (category ? f.tags.includes(category) : true))
     // 진행 중 → 예정 → 종료 순 (검색·월 페이지와 같은 규칙)

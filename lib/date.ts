@@ -189,11 +189,12 @@ export function endOfMonth(iso: string): string {
 }
 
 /** 찾아보기에서 고를 수 있는 시기 */
-export type WhenKey = "all" | "ongoing" | "weekend" | "thisMonth" | "nextMonth" | "upcoming" | "custom";
+export type WhenKey = "all" | "ongoing" | "startsToday" | "weekend" | "thisMonth" | "nextMonth" | "upcoming" | "custom";
 
 export const WHEN_LABELS: Record<WhenKey, string> = {
   all: "시기 전체",
   ongoing: "지금 진행 중",
+  startsToday: "오늘 시작",
   weekend: "이번 주말",
   thisMonth: "이번 달",
   nextMonth: "다음 달",
@@ -233,6 +234,7 @@ export function customRange(from: string, to: string): { from: string; to: strin
 export function whenRange(when: WhenKey, today: string): { from: string; to: string } | null {
   switch (when) {
     case "ongoing":
+    case "startsToday":
       return { from: today, to: today };
     case "weekend": {
       const dow = new Date(`${today}T00:00:00Z`).getUTCDay(); // 0=일 ... 6=토
@@ -297,6 +299,23 @@ export function compareForList(
   return rank(a) - rank(b) || longRun(a) - longRun(b) || a.startDate.localeCompare(b.startDate);
 }
 
+/**
+ * 시기 조건에 맞는지.
+ *
+ * 대부분은 기간이 구간과 겹치면 되지만 "오늘 시작" 은 시작일이 오늘인 것만이다.
+ * "지금 진행 중" 은 몇 달째 하는 상설까지 다 섞여서 새로 열리는 축제가 묻힌다.
+ */
+export function matchesWhen(
+  start: string,
+  end: string,
+  when: WhenKey,
+  range: { from: string; to: string } | null,
+  today: string,
+): boolean {
+  if (when === "startsToday") return start === today;
+  return overlaps(start, end, range);
+}
+
 /** 기간이 구간과 겹치는지 */
 export function overlaps(start: string, end: string, range: { from: string; to: string } | null): boolean {
   if (!range) return true;
@@ -312,4 +331,35 @@ export function overlaps(start: string, end: string, range: { from: string; to: 
  */
 export function monthsFromCurrent(nowMonth: number): number[] {
   return Array.from({ length: 12 }, (_, i) => ((nowMonth - 1 + i) % 12) + 1);
+}
+
+/**
+ * 한 달을 달력 칸으로. 일요일부터 시작하는 7칸짜리 주의 배열이고,
+ * 그 달이 아닌 칸은 null 이다.
+ *
+ * 사이트 이름이 축제 "달력" 인데 정작 날짜 칸이 있는 달력 화면이 없었다.
+ * 비슷한 사이트(대한민국 구석구석, K-트래블메이트)는 다 갖고 있는 기본 화면이다.
+ */
+export function monthGrid(year: number, month: number): (string | null)[][] {
+  const first = `${year}-${String(month).padStart(2, "0")}-01`;
+  const lead = new Date(`${first}T00:00:00Z`).getUTCDay(); // 0=일
+  const last = Number(endOfMonth(first).slice(8, 10));
+  const cells: (string | null)[] = Array.from({ length: lead }, () => null);
+  for (let d = 1; d <= last; d++) cells.push(`${first.slice(0, 8)}${String(d).padStart(2, "0")}`);
+  while (cells.length % 7) cells.push(null);
+  const weeks: (string | null)[][] = [];
+  for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+  return weeks;
+}
+
+/** 그날 열려 있는 것 (시작일 ≤ 그날 ≤ 종료일) */
+export function openOn<T extends { startDate: string; endDate: string }>(list: T[], iso: string): T[] {
+  return list.filter((x) => x.startDate <= iso && x.endDate >= iso);
+}
+
+/** "2026-10" 에 n 달을 더한 "YYYY-MM" */
+export function addMonths(ym: string, n: number): string {
+  const [y, m] = ym.split("-").map(Number);
+  const idx = y * 12 + (m - 1) + n;
+  return `${Math.floor(idx / 12)}-${String((idx % 12) + 1).padStart(2, "0")}`;
 }

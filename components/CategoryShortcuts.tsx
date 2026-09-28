@@ -4,7 +4,7 @@ import IconTile, { TILE } from "./IconTile";
 import { WHEN_LABELS, type WhenKey } from "@/lib/date";
 
 /** 시기 바로가기 (자주 쓰는 것만) */
-const QUICK_WHEN: WhenKey[] = ["ongoing", "weekend", "thisMonth"];
+const QUICK_WHEN: WhenKey[] = ["ongoing", "startsToday", "weekend", "thisMonth"];
 
 interface Props {
   /** 카테고리별 축제 수 */
@@ -34,7 +34,8 @@ export default function CategoryShortcuts({ counts, whenCounts }: Props) {
           </svg>
           내 주변
         </Link>
-        {QUICK_WHEN.map((k) => (
+        {/* "오늘 시작" 은 그런 날이 없으면 0 이 적힌 칩만 남으니 뺀다 */}
+        {QUICK_WHEN.filter((k) => k !== "startsToday" || (whenCounts[k] ?? 0) > 0).map((k) => (
           <Link
             key={k}
             href={`/browse?when=${k}`}
@@ -45,16 +46,29 @@ export default function CategoryShortcuts({ counts, whenCounts }: Props) {
             <span className="text-xs font-medium text-zinc-400">{whenCounts[k] ?? 0}</span>
           </Link>
         ))}
-        {/* 연휴처럼 날짜를 정해놓고 찾는 사람을 위한 입구 */}
+        {/* 날짜 칸 달력. 기간을 정해 찾는 건 위 검색창의 "날짜 직접 고르기" 에 그대로 있다 */}
         <Link
-          href="/browse?when=custom"
+          href="/calendar/"
+          prefetch={false}
           className="flex shrink-0 items-center gap-1.5 rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold transition hover:border-brand-400 hover:text-brand-600 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:text-brand-300"
         >
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" aria-hidden>
             <rect x="3" y="5" width="18" height="16" rx="2" />
             <path d="M8 3v4M16 3v4M3 10h18" />
           </svg>
-          날짜 고르기
+          달력으로 보기
+        </Link>
+        <Link
+          href="/map/"
+          // 축제 목록을 통째로 들고 있는 화면이라 미리 받지 않는다
+          prefetch={false}
+          className="flex shrink-0 items-center gap-1.5 rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-semibold transition hover:border-brand-400 hover:text-brand-600 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:text-brand-300"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z" />
+            <path d="M9 3v15M15 6v15" />
+          </svg>
+          지도로 보기
         </Link>
       </div>
 

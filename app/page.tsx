@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getAllFestivals, getMonthSummaries } from "@/lib/festivals";
-import { overlaps, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
+import { matchesWhen, parseDate, todayKST, whenRange, type WhenKey } from "@/lib/date";
 import { CATEGORY_TAGS } from "@/lib/tags";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import BrowseBar from "@/components/BrowseBar";
@@ -33,9 +33,9 @@ export default function HomePage() {
     CATEGORY_TAGS.map((t) => [t, upcoming.filter((f) => f.tags.includes(t)).length]),
   );
   const whenCounts = Object.fromEntries(
-    (["ongoing", "weekend", "thisMonth"] as WhenKey[]).map((k) => {
+    (["ongoing", "startsToday", "weekend", "thisMonth"] as WhenKey[]).map((k) => {
       const range = whenRange(k, today);
-      return [k, all.filter((f) => overlaps(f.startDate, f.endDate, range)).length];
+      return [k, all.filter((f) => matchesWhen(f.startDate, f.endDate, k, range, today)).length];
     }),
   ) as Partial<Record<WhenKey, number>>;
 

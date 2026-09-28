@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
-import { defaultOgImage } from "@/lib/asset";
+import { asset, defaultOgImage } from "@/lib/asset";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", images: [defaultOgImage(SITE_URL)] },
   alternates: { canonical: "/" },
+  // 홈 화면에 추가했을 때 아이콘. 매니페스트(app/manifest.ts)는 안드로이드용이고 아이폰은 이걸 본다
+  icons: { apple: asset("/apple-touch-icon.png") },
+  appleWebApp: { capable: true, title: SITE_NAME, statusBarStyle: "default" },
 };
 
 export const viewport: Viewport = {
