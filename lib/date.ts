@@ -338,7 +338,7 @@ export function monthsFromCurrent(nowMonth: number): number[] {
  * 그 달이 아닌 칸은 null 이다.
  *
  * 사이트 이름이 축제 "달력" 인데 정작 날짜 칸이 있는 달력 화면이 없었다.
- * 비슷한 사이트(대한민국 구석구석, K-트래블메이트)는 다 갖고 있는 기본 화면이다.
+ * 대한민국 구석구석 축제달력은 날짜 칸마다 "개최시작 N건 / 개최중 N건" 을 적는다 (2026-09-28 확인).
  */
 export function monthGrid(year: number, month: number): (string | null)[][] {
   const first = `${year}-${String(month).padStart(2, "0")}-01`;
