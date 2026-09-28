@@ -58,7 +58,23 @@ export function searchUrl(title: string, region?: string): string {
  *
  * 한계: 제보하려면 GitHub 계정이 필요하다. 나중에 구글폼 같은 걸로 바꿀 수 있게
  * 주소를 만드는 일을 이 함수 하나에 모아 둔다.
+ *
+ * 무엇이 바뀌었는지는 고르게 한다. 리컴에리어 신고 창이 "날짜가 달라요", "폐업/종료",
+ * "중복" 같은 유형을 먼저 고르게 한다 (2026-09-28 확인). 받는 쪽에서 overrides.json 에
+ * 무엇을 넣을지(hidden / 날짜 / 장소) 바로 갈린다.
  */
+export const REPORT_TYPES = [
+  "취소됐어요",
+  "날짜가 바뀌었어요 (연기·단축)",
+  "시간이 달라요",
+  "장소·주소가 달라요",
+  "지도 위치가 달라요",
+  "연락처·홈페이지가 달라요",
+  "요금·내용이 달라요",
+  "같은 축제가 두 번 있어요",
+  "기타",
+] as const;
+
 export function reportChangeUrl(
   repoUrl: string,
   f: { id: string; title: string; period: string; pageUrl: string },
@@ -70,7 +86,10 @@ export function reportChangeUrl(
     `지금 표시된 기간: ${f.period}`,
     `id: ${f.id}`,
     "",
-    "### 어떻게 바뀌었나요? (취소 / 연기 / 시간 변경 / 장소 변경 / 기타)",
+    "### 무엇이 달라졌나요? (해당하는 곳의 [ ] 를 [x] 로 바꿔 주세요)",
+    ...REPORT_TYPES.map((t) => `- [ ] ${t}`),
+    "",
+    "### 어떻게 바뀌었나요?",
     "- ",
     "",
     "### 어디서 확인하셨나요? (공식 홈페이지 공지 주소 등)",

@@ -357,6 +357,15 @@ export function openOn<T extends { startDate: string; endDate: string }>(list: T
   return list.filter((x) => x.startDate <= iso && x.endDate >= iso);
 }
 
+/**
+ * 그날 시작하는 것.
+ * 열려 있는 수만 적으면 긴 축제가 여러 날 겹쳐 세여서 새로 여는 날이 묻힌다.
+ * 구석구석 달력처럼 "시작" 을 따로 센다.
+ */
+export function startsOn<T extends { startDate: string }>(list: T[], iso: string): T[] {
+  return list.filter((x) => x.startDate === iso);
+}
+
 /** "2026-10" 에 n 달을 더한 "YYYY-MM" */
 export function addMonths(ym: string, n: number): string {
   const [y, m] = ym.split("-").map(Number);

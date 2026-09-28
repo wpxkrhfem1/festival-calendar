@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { FestivalCardData } from "@/lib/card";
-import { addMonths, formatKoreanDate, isLongRunning, monthGrid, openOn } from "@/lib/date";
+import { addMonths, formatKoreanDate, isLongRunning, monthGrid, openOn, startsOn } from "@/lib/date";
 import FestivalCard from "./FestivalCard";
 import EmptyState from "./EmptyState";
 
@@ -48,6 +48,7 @@ export default function CalendarView({ festivals, today }: Props) {
 
   const seasonal = festivals.filter((f) => !isLongRunning(f.startDate, f.endDate));
   const countOn = (iso: string) => openOn(seasonal, iso).length;
+  const startCount = (iso: string) => startsOn(seasonal, iso).length;
   const monthMax = Math.max(0, ...weeks.flat().filter((d): d is string => !!d).map(countOn));
 
   const dayList = openOn(festivals, selected);
@@ -109,6 +110,7 @@ export default function CalendarView({ festivals, today }: Props) {
           {weeks.flat().map((iso, i) => {
             if (!iso) return <div key={`blank-${i}`} aria-hidden />;
             const n = countOn(iso);
+            const s = startCount(iso);
             const dow = i % 7;
             const isToday = iso === today;
             const isSel = iso === selected;
@@ -122,8 +124,8 @@ export default function CalendarView({ festivals, today }: Props) {
                   setShowLong(false);
                 }}
                 aria-pressed={isSel}
-                aria-label={`${formatKoreanDate(iso)}, 축제 ${n}개`}
-                className={`flex aspect-square min-h-11 flex-col items-center justify-center gap-0.5 rounded-xl border text-sm transition sm:aspect-auto sm:h-16 ${
+                aria-label={`${formatKoreanDate(iso)}, 축제 ${n}개${s > 0 ? `, 그중 ${s}개 이날 시작` : ""}`}
+                className={`relative flex aspect-square min-h-11 flex-col items-center justify-center gap-0.5 rounded-xl border text-sm transition sm:aspect-auto sm:h-16 ${
                   isSel
                     ? "border-brand-500 ring-2 ring-brand-500/40"
                     : isToday
@@ -139,12 +141,26 @@ export default function CalendarView({ festivals, today }: Props) {
                 {n > 0 && (
                   <span className={`rounded-full px-1.5 text-[10px] font-bold leading-4 sm:text-[11px] ${shade(n, monthMax)}`}>{n}</span>
                 )}
+                {/* 이날 새로 여는 축제. 좁은 화면은 칸이 작아 모서리 점으로, 넓으면 수까지 */}
+                {s > 0 && (
+                  <>
+                    <span className="absolute right-1 top-1 h-1.5 w-1.5 rounded-full bg-emerald-500 sm:hidden" aria-hidden />
+                    <span className="hidden text-[10px] font-semibold leading-3 text-emerald-600 dark:text-emerald-400 sm:block" aria-hidden>
+                      시작 {s}
+                    </span>
+                  </>
+                )}
               </button>
             );
           })}
         </div>
         <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-          숫자는 그날 열려 있는 축제 수예요. 색이 진할수록 이 달에서 축제가 많은 날이에요. 1년 내내 하는 상설 행사는 세지 않았어요.
+          숫자는 그날 열려 있는 축제 수예요. 색이 진할수록 이 달에서 축제가 많은 날이에요.{" "}
+          <span className="whitespace-nowrap">
+            <span className="mr-1 inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 align-middle" aria-hidden />
+            초록은 그날 새로 시작하는 축제예요.
+          </span>{" "}
+          1년 내내 하는 상설 행사는 세지 않았어요.
         </p>
       </div>
 

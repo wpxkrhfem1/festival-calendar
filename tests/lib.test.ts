@@ -20,6 +20,7 @@ import {
   monthGrid,
   monthsFromCurrent,
   openOn,
+  startsOn,
   overlaps,
   statusOf,
   whenLabel,
@@ -31,7 +32,7 @@ import { parseAddress } from "../lib/regions";
 import { classifyTags, placeholderFor } from "../lib/tags";
 import { extractUrl, normalizeFestival, stripHtml } from "../lib/normalize";
 import { buildIcs, festivalEvent, icsFileName } from "../lib/ics";
-import { dialNumber, displayTel, lodgingUrl, reportChangeUrl, searchUrl } from "../lib/contact";
+import { dialNumber, displayTel, lodgingUrl, REPORT_TYPES, reportChangeUrl, searchUrl } from "../lib/contact";
 import { relaxedTokens, searchIn } from "../lib/search";
 import { defaultOgImage, pickShareImage } from "../lib/asset";
 import type { Tag } from "../lib/types";
@@ -494,6 +495,12 @@ describe("일정 변경 제보 주소", () => {
     assert.ok(body.includes("https://o.github.io/r/festival/574285/"));
     assert.ok(body.includes("10월 1일 (목) ~ 10월 5일 (월)"));
   });
+
+  it("무엇이 달라졌는지 고를 수 있게 유형이 체크 목록으로 들어간다", () => {
+    const body = new URL(url).searchParams.get("body") ?? "";
+    for (const t of REPORT_TYPES) assert.ok(body.includes(`- [ ] ${t}`), t);
+    assert.ok(body.includes("- [ ] 취소됐어요"));
+  });
 });
 
 describe("공유 미리보기 이미지", () => {
@@ -589,5 +596,18 @@ describe("근처 숙소 주소", () => {
   });
   it("시군구가 없으면 시도만", () => {
     assert.equal(decodeURIComponent(lodgingUrl({ sido: "세종" }).split("/search/")[1]), "세종 숙소");
+  });
+});
+
+describe("달력 칸의 시작 수", () => {
+  const list = [
+    { startDate: "2026-10-02", endDate: "2026-10-04" },
+    { startDate: "2026-10-01", endDate: "2026-10-05" },
+    { startDate: "2026-10-02", endDate: "2026-10-02" },
+  ];
+  it("그날 시작하는 것만 센다 (열려 있는 수와 다르다)", () => {
+    assert.equal(startsOn(list, "2026-10-02").length, 2);
+    assert.equal(openOn(list, "2026-10-02").length, 3);
+    assert.equal(startsOn(list, "2026-10-03").length, 0);
   });
 });
