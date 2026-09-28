@@ -9,6 +9,7 @@
     "lint": "eslint",
     "test": "tsx --test tests/*.test.ts",
     "fetch:festivals": "tsx scripts/fetch-festivals.ts",
+    "fetch:std": "tsx scripts/fetch-std-festivals.ts",
     "probe:api": "tsx scripts/probe-api.ts",
     "probe:kopis": "tsx scripts/probe-kopis.ts",
     "fetch:concerts": "tsx scripts/fetch-concerts.ts",

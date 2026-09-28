@@ -32,6 +32,9 @@ export default function Footer() {
             {asOf.slice(0, 4)}년 {formatKoreanDate(asOf).replace(/\s*\(.\)$/, "")} 기준 · 매일 새벽에 새로 받아옵니다
           </p>
         )}
+        <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-500">
+          축제: 한국관광공사 TourAPI, 문화체육관광부 전국문화축제표준데이터 · 공연: 공연예술통합전산망(KOPIS)
+        </p>
       </div>
     </footer>
   );

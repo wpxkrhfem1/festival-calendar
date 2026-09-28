@@ -109,6 +109,33 @@ export interface Festival {
   lat?: number;
   /** API modifiedtime (변경 감지용) */
   modifiedTime?: string;
+  /**
+   * 어디서 온 정보인지. 비어 있으면 한국관광공사 TourAPI.
+   * "std" 는 문화체육관광부 전국문화축제표준데이터 (지자체가 올린다).
+   */
+  source?: "std";
+}
+
+/** 전국문화축제표준데이터 한 줄 (api.data.go.kr/openapi/tn_pubr_public_cltur_fstvl_api) */
+export interface RawStdFestival {
+  fstvlNm: string;
+  opar?: string;
+  fstvlStartDate: string; // YYYY-MM-DD
+  fstvlEndDate: string;
+  fstvlCo?: string;
+  mnnstNm?: string;
+  auspcInsttNm?: string;
+  suprtInsttNm?: string;
+  phoneNumber?: string;
+  homepageUrl?: string;
+  relateInfo?: string;
+  rdnmadr?: string;
+  lnmadr?: string;
+  latitude?: string;
+  longitude?: string;
+  referenceDate?: string;
+  insttCode?: string;
+  insttNm?: string;
 }
 
 /** festivals.json 파일 구조 */

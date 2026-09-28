@@ -35,7 +35,8 @@ import { buildIcs, festivalEvent, icsFileName } from "../lib/ics";
 import { dialNumber, displayTel, lodgingUrl, REPORT_TYPES, reportChangeUrl, searchUrl } from "../lib/contact";
 import { relaxedTokens, searchIn } from "../lib/search";
 import { defaultOgImage, pickShareImage } from "../lib/asset";
-import type { Tag } from "../lib/types";
+import type { Festival, Tag } from "../lib/types";
+import { dedupeStd, mergeStd, normalizeStdFestival, sameFestival } from "../lib/normalize-std";
 
 describe("date", () => {
   it("TourAPI 날짜 → ISO", () => {
@@ -609,5 +610,87 @@ describe("달력 칸의 시작 수", () => {
     assert.equal(startsOn(list, "2026-10-02").length, 2);
     assert.equal(openOn(list, "2026-10-02").length, 3);
     assert.equal(startsOn(list, "2026-10-03").length, 0);
+  });
+});
+
+describe("전국문화축제표준데이터 합치기", () => {
+  const raw = {
+    fstvlNm: "동작댄스데이",
+    opar: "노량진축구장",
+    fstvlStartDate: "2026-09-28",
+    fstvlEndDate: "2026-09-28",
+    fstvlCo: "댄스대회+길거리 댄스교습소",
+    mnnstNm: "동작문화재단",
+    phoneNumber: "02-820-9405",
+    homepageUrl: "www.idfac.or.kr",
+    rdnmadr: "서울특별시 동작구 노들로 688",
+    latitude: "37.515",
+    longitude: "126.944",
+    referenceDate: "2026-08-19",
+    insttCode: "3190000",
+  };
+
+  it("우리 형식으로 바꾼다", () => {
+    const f = normalizeStdFestival(raw)!;
+    assert.ok(f.id.startsWith("s"));
+    assert.equal(f.sido, "서울");
+    assert.equal(f.sigungu, "동작구");
+    assert.equal(f.place, "노량진축구장");
+    assert.equal(f.homepage, "https://www.idfac.or.kr");
+    assert.equal(f.modifiedTime, "20260819000000");
+    assert.equal(f.source, "std");
+    assert.deepEqual(f.months, ["2026-09"]);
+  });
+
+  it("날짜가 틀리면 버리고, 한반도 밖 좌표는 비운다", () => {
+    assert.equal(normalizeStdFestival({ ...raw, fstvlStartDate: "2026-13-01" }), null);
+    const f = normalizeStdFestival({ ...raw, latitude: "126.9", longitude: "37.5" })!;
+    assert.equal(f.lat, undefined);
+    assert.equal(f.lng, undefined);
+  });
+
+  it("같은 id 는 같은 입력에서 늘 같다", () => {
+    assert.equal(normalizeStdFestival(raw)!.id, normalizeStdFestival(raw)!.id);
+  });
+
+  const tour = (title: string, startDate: string, endDate: string, sigungu = "동작구"): Festival => ({
+    ...normalizeStdFestival(raw)!,
+    id: title,
+    title,
+    startDate,
+    endDate,
+    sigungu,
+    source: undefined,
+  });
+
+  it("관광공사에 같은 축제가 있으면 표준데이터 쪽을 뺀다 (이름이 조금 달라도)", () => {
+    const s = (title: string) => ({ ...normalizeStdFestival({ ...raw, fstvlNm: title })! });
+    // 괄호·따옴표·연도 차이
+    assert.ok(sameFestival(tour("2026 금남로 차 없는 거리 ‘걷자잉’", "2026-09-28", "2026-09-28"), s("금남로 차 없는 거리 걷자잉")));
+    assert.ok(sameFestival(tour("장미꽃 필(Feel) 무렵", "2026-09-28", "2026-09-28"), s("장미꽃 필 무렵")));
+    assert.ok(sameFestival(tour("영양고추 H.O.T 페스티벌", "2026-09-28", "2026-09-28"), s("2026 영양고추 H.O.T Festival")));
+    // 한두 글자 차이 (같은 시군구일 때만)
+    assert.ok(sameFestival(tour("반딧불이 곤충축제", "2026-09-28", "2026-09-28"), s("제16회 반딧불 곤충축제")));
+    assert.ok(!sameFestival(tour("반딧불이 곤충축제", "2026-09-28", "2026-09-28", "관악구"), s("제16회 반딧불 곤충축제")));
+  });
+
+  it("이름이 비슷해도 다른 행사, 기간이 안 겹치면 따로 둔다", () => {
+    const s = normalizeStdFestival({ ...raw, fstvlNm: "진해군악의장페스티벌" })!;
+    assert.ok(!sameFestival(tour("진해군항제", "2026-09-28", "2026-09-28"), s));
+    assert.ok(!sameFestival(tour("동작댄스데이", "2026-10-10", "2026-10-11"), normalizeStdFestival(raw)!));
+  });
+
+  it("합치면 겹치지 않는 것만 더해진다", () => {
+    const std = [normalizeStdFestival(raw)!, normalizeStdFestival({ ...raw, fstvlNm: "노들섬 가을밤 축제" })!];
+    const out = mergeStd([tour("동작 댄스데이", "2026-09-28", "2026-09-28")], std);
+    assert.deepEqual(out.map((f) => f.title), ["동작 댄스데이", "노들섬 가을밤 축제"]);
+  });
+
+  it("표준데이터 안의 같은 줄은 하나로 합친다", () => {
+    const a = normalizeStdFestival({ ...raw, latitude: "" })!;
+    const b = normalizeStdFestival(raw)!;
+    const out = dedupeStd([a, b]);
+    assert.equal(out.length, 1);
+    assert.equal(out[0].lat, 37.515);
   });
 });

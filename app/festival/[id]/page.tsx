@@ -327,7 +327,9 @@ export default async function FestivalPage({ params }: PageProps<"/festival/[id]
       )}
 
       <p className="mt-10 text-xs text-zinc-500 dark:text-zinc-400">
-        정보 출처: 한국관광공사 TourAPI. 일정·요금은 변경될 수 있으니 방문 전 공식 홈페이지나 문의처에서 확인해 주세요.
+        {/* 지자체가 올린 표준데이터 축제는 사진·요금·시간 정보가 없다. 어디서 온 정보인지 밝혀 둔다 */}
+        정보 출처: {f.source === "std" ? "문화체육관광부 전국문화축제표준데이터 (각 지자체 제공)" : "한국관광공사 TourAPI"}. 일정·요금은
+        변경될 수 있으니 방문 전 공식 홈페이지나 문의처에서 확인해 주세요.
       </p>
     </article>
   );

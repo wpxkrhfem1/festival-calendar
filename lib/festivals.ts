@@ -1,18 +1,23 @@
 /**
  * 축제 데이터 접근 계층 (서버 컴포넌트/빌드 시 사용)
- * - data/festivals.json + data/overrides.json 을 읽어 병합한다
+ * - data/festivals.json(관광공사) + data/festivals-std.json(전국문화축제표준데이터) 을 합친다.
+ *   두 곳에 다 있는 축제는 관광공사 쪽만 남긴다 (lib/normalize-std.ts mergeStd)
+ * - 그 위에 data/overrides.json 을 병합한다
  * - 같은 id 면 overrides 가 우선, overrides 에만 있으면 새 축제로 추가, hidden 이면 제외
  * - 월/지역/검색용 조회 함수 제공
  */
 import festivalsFile from "@/data/festivals.json";
+import stdFile from "@/data/festivals-std.json";
 import overridesFile from "@/data/overrides.json";
 import type { Festival, FestivalDataFile, FestivalOverride, Tag } from "./types";
 import { isLongRunning, monthsBetween, monthsFromCurrent, statusOf, targetYearForMonth, todayKST } from "./date";
 import { classifyTags } from "./tags";
 import { regionBySlug } from "./regions";
 import { searchIn } from "./search";
+import { mergeStd } from "./normalize-std";
 
 const data = festivalsFile as unknown as FestivalDataFile;
+const stdData = stdFile as unknown as FestivalDataFile;
 const overrides = (overridesFile as unknown as { festivals?: FestivalOverride[] }).festivals ?? [];
 
 /** overrides 를 적용한 최종 목록 (모듈 로드 시 1회 계산) */
@@ -89,7 +94,7 @@ function retag(list: Festival[]): Festival[] {
   return list.map((f) => ({ ...f, tags: classifyTags(f.title, f.overview, f.startDate) }));
 }
 
-const ALL: Festival[] = applyOverrides(retag(data.festivals ?? []), overrides);
+const ALL: Festival[] = applyOverrides(mergeStd(retag(data.festivals ?? []), retag(stdData.festivals ?? [])), overrides);
 const BY_ID = new Map(ALL.map((f) => [f.id, f]));
 const BY_MONTH = new Map<string, Festival[]>();
 for (const f of ALL) {
