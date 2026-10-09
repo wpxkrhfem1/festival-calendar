@@ -1,10 +1,10 @@
 {
   "meta": {
-    "fetchedAt": "2026-10-08T23:41:49.916Z",
-    "rangeStart": "2026-10-08",
-    "rangeEnd": "2027-10-08",
-    "count": 3215,
-    "detailCount": 3215,
+    "fetchedAt": "2026-10-09T23:05:10.382Z",
+    "rangeStart": "2026-10-09",
+    "rangeEnd": "2027-10-09",
+    "count": 3157,
+    "detailCount": 3157,
     "source": "예술경영지원센터 공연예술통합전산망(KOPIS)"
   },
   "concerts": [
@@ -1466,7 +1466,7 @@
       "startDate": "2024-03-22",
       "endDate": "2026-11-29",
       "genre": "연극",
-      "venue": "초록씨어터 (초록씨어터)",
+      "venue": "초록씨어터",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF238631_250609_134228.gif",
       "openRun": true,
@@ -5842,7 +5842,7 @@
       "startDate": "2026-07-15",
       "endDate": "2026-11-29",
       "genre": "연극",
-      "venue": "대학로 스타릿홀 (2관(5F))",
+      "venue": "대학로 스타릿홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293558_261008_113442.gif",
       "openRun": true,
@@ -6306,7 +6306,7 @@
       "startDate": "2026-07-31",
       "endDate": "2026-10-30",
       "genre": "서커스/마술",
-      "venue": "더퍼포머 마술극장 (더퍼포머 마술극장)",
+      "venue": "더퍼포머 마술극장",
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298097_260810_141218.png",
       "openRun": false,
@@ -11720,7 +11720,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302266_261001_144335.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -11738,36 +11738,6 @@
         }
       ],
       "updatedAt": "2026-10-01 15:00:00.102987"
-    },
-    {
-      "id": "PF301154",
-      "title": "가야금산조 축제: 삼일삼색",
-      "startDate": "2026-10-06",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "국립국악원",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301154_260917_104154.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이지영, 최문진, 김해숙",
-      "runtime": "1시간",
-      "ageLimit": "만 7세 이상",
-      "price": "3일권 24,000원, 1일권 10,000원",
-      "timeGuide": "화요일 ~ 목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301154_202609171041549300.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013418"
-        }
-      ],
-      "updatedAt": "2026-09-17 15:00:00.085083"
     },
     {
       "id": "PF301739",
@@ -11853,166 +11823,6 @@
         }
       ],
       "updatedAt": "2026-08-26 10:43:30"
-    },
-    {
-      "id": "PF301218",
-      "title": "제4회 PLOT STAGE, 틱, 틱, 끼익",
-      "startDate": "2026-10-06",
-      "endDate": "2026-10-08",
-      "genre": "복합",
-      "venue": "극장 PLOT",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301218_260917_142220.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김영준, 배새정, 남소엽, 한서은, 서찬호, 이휘연, 김민석 등",
-      "crew": "김호영, 이형우, 조수아 등",
-      "runtime": "1시간",
-      "ageLimit": "전체 관람가",
-      "price": "전석 40,000원",
-      "timeGuide": "화요일 ~ 수요일(20:30), 목요일(20:00)",
-      "producer": "문화예술공간 잔재주, 하이웨이브",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301218_202609170232599410.png",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301218_202609170232599491.png",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301218_202609170232599572.png",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301218_202609170233301970.png"
-      ],
-      "tickets": [
-        {
-          "name": "TINY티켓",
-          "url": "https://www.tinyticket.net/event/EVeLdRLAtXsM"
-        }
-      ],
-      "updatedAt": "2026-09-17 15:00:00.085083"
-    },
-    {
-      "id": "PF299875",
-      "title": "제6회 첫걸음 페스티벌, 고슴도치 유전자",
-      "startDate": "2026-10-06",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "소극장 플랫폼74",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299875_260902_113600.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이동호, 최원호",
-      "crew": "최지유, 김산하, 마지민 등",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 12세 이상",
-      "price": "전석 40,000원",
-      "timeGuide": "화요일(19:30), 수요일(15:00,19:30), 목요일(19:30)",
-      "producer": "체리쒸 프로젝트, 체리쒸 프로젝트",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299875_202609021136006590.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012329"
-        }
-      ],
-      "updatedAt": "2026-09-02 15:00:00.043155"
-    },
-    {
-      "id": "PF292014",
-      "title": "[패키지] 현대카드 슈퍼콘서트 28, 위켄드 (The Weeknd)",
-      "startDate": "2026-10-07",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "고양종합운동장",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292014_260522_103802.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "에이블 마코넨 테스페이 등",
-      "ageLimit": "만 19세 이상",
-      "price": "ULTIMATE VIP PACKAGE 859,000원, GOLD VIP PACKAGE 569,000원",
-      "timeGuide": "수요일 ~ 목요일(19:45)",
-      "producer": "(주)라이브네이션코리아",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292014_202605221038028010.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007178"
-        }
-      ],
-      "updatedAt": "2026-09-21 18:00:00.116607"
-    },
-    {
-      "id": "PF300060",
-      "title": "금천라이브 플러스",
-      "startDate": "2026-10-07",
-      "endDate": "2026-10-08",
-      "genre": "복합",
-      "venue": "금나래아트홀",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300060_260903_134430.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "송재원, 김현철, 김영주, 서남재, 이석원, 이준상, 함서율 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "전체 관람가",
-      "price": "전석무료",
-      "timeGuide": "수요일 ~ 목요일(19:30)",
-      "producer": "(재)금천문화재단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300060_202609030144300670.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012635"
-        }
-      ],
-      "updatedAt": "2026-09-03 15:00:00.027783"
-    },
-    {
-      "id": "PF297929",
-      "title": "라 보엠 [창원]",
-      "startDate": "2026-10-07",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "성산아트홀",
-      "sido": "경남",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297929_260807_112858.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김희정, 임순태, 김윤아, 김광현, 서정혁, 손상혁, 정혜민 등",
-      "crew": "조미숙, 정인숙, 이동신 등",
-      "runtime": "2시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "VIP석 150,000원, R석 100,000원, S석 70,000원, A석 50,000원, B석 30,000원, C석 10,000원",
-      "timeGuide": "수요일 ~ 목요일(19:30)",
-      "producer": "(사)경남오페라단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297929_202609290426042030.png"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011530"
-        }
-      ],
-      "updatedAt": "2026-09-29 18:00:00.063448"
     },
     {
       "id": "PF296762",
@@ -12179,37 +11989,6 @@
       "updatedAt": "2026-10-01 15:00:00.102987"
     },
     {
-      "id": "PF299764",
-      "title": "정원기의 다섯 줄",
-      "startDate": "2026-10-07",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "국립국악원",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299764_260831_151949.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "정원기",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 20,000원",
-      "timeGuide": "수요일 ~ 목요일(19:30)",
-      "producer": "아트스퀘어 위아(We Are)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299764_202608310319497710.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012566"
-        }
-      ],
-      "updatedAt": "2026-08-31 18:00:00.023552"
-    },
-    {
       "id": "PF300377",
       "title": "제23회 호러와 함께 대구국제 힐링공연예술제, 우리는 괜찮아지는 중입니다 [대구]",
       "startDate": "2026-10-07",
@@ -12219,7 +11998,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300377_260908_112235.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -12347,69 +12126,6 @@
       "updatedAt": "2026-09-28 15:00:00.05876"
     },
     {
-      "id": "PF291729",
-      "title": "현대카드 슈퍼콘서트 28, 위켄드 (The Weeknd)",
-      "startDate": "2026-10-07",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "고양종합운동장",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291729_260519_110652.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "에이블 마코넨 테스페이 등",
-      "ageLimit": "만 19세 이상",
-      "price": "지정석 P 289,000원, 지정석 R 247,000원, 지정석 S 200,000원, 지정석 A 178,000원, 지정석 B 167,000원, 지정석 C 156,000원, 지정석 D 145,000원, 스탠딩석 189,000원, 스탠딩 EARLY ENTRY PACKAGE  469,000원",
-      "timeGuide": "수요일 ~ 목요일(19:45)",
-      "producer": "(주)라이브네이션코리아",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF291729_202605191106526760.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26006903"
-        }
-      ],
-      "updatedAt": "2026-05-20 11:10:39"
-    },
-    {
-      "id": "PF302019",
-      "title": "D.FESTA 소극장축제, 벼랑 위의 오리엔테이션",
-      "startDate": "2026-10-07",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "후암스테이지",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302019_260929_152611.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "한진우, 이호림, 김관모, 유호선",
-      "crew": "권혁풍, 남기오, 김민겸 등",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 13세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "수요일 ~ 목요일(19:30)",
-      "producer": "(사)한국소극장협회, 창작D120",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302019_202609290326115901.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302019_202609290326115770.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013443"
-        }
-      ],
-      "updatedAt": "2026-09-29 18:00:00.063448"
-    },
-    {
       "id": "PF294733",
       "title": "[패키지] 충남도청 문예회관 공연관람 패키지B",
       "startDate": "2026-10-08",
@@ -12441,140 +12157,6 @@
         }
       ],
       "updatedAt": "2026-09-21 18:00:00.116607"
-    },
-    {
-      "id": "PF301607",
-      "title": "7시에 만나 [예산]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "충남도청 문예회관",
-      "sido": "충남",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301607_260922_154435.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김가영, 오혜린, 황인석, 정리우, 최상태",
-      "crew": "한상호",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 20,000원, S석 15,000원, A석 10,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)충남문화관광재단, 제이앤에스",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301607_202609220344352970.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013180"
-        }
-      ],
-      "updatedAt": "2026-09-22 18:00:00.023452"
-    },
-    {
-      "id": "PF300849",
-      "title": "강남발레단 가을 정기 공연, 돈키호테 하일라이트",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "무용(서양/한국무용)",
-      "venue": "강남씨어터",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300849_260914_144724.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "박채은, 정치영, 오예린, 이도연, 정해리, 안선향, 오시헌 등",
-      "crew": "유지숙, 송주관, 박상현 등",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 5세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "서울 강남 발레단, 서울 강남 발레단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300849_202609140247245084.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300849_202609140247244813.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300849_202609140247244622.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300849_202609140247244341.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300849_202609140247244120.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65452"
-        }
-      ],
-      "updatedAt": "2026-09-14 15:00:00.136781"
-    },
-    {
-      "id": "PF301926",
-      "title": "걷다 바라보다 그리고 서다 [영광]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "무용(서양/한국무용)",
-      "venue": "영광예술의전당",
-      "sido": "전남",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301926_260929_104824.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "정하연, 양지수, 김민주, 성혜경, 송예빈, 김민희, 이현석 등",
-      "crew": "서연수, 강요찬, 신경아 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(19:00)",
-      "producer": "영광군청",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301926_202609291048246753.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301926_202609291048246712.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301926_202609291048246551.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301926_202609291048246500.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65771"
-        }
-      ],
-      "updatedAt": "2026-09-29 15:00:00.178521"
-    },
-    {
-      "id": "PF298687",
-      "title": "공명 콘서트: Resonance",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "LG아트센터 서울",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298687_260818_133518.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "강선일, 박승원, 송경근",
-      "crew": "서형원, 박가은, 정우인 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF298687_202608180135478120.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "LG아트센터",
-          "url": "https://lgart.com/product/ko/performance/252976"
-        }
-      ],
-      "updatedAt": "2026-08-18 15:00:00.097276"
     },
     {
       "id": "PF295971",
@@ -12643,210 +12225,6 @@
       "updatedAt": "2026-09-17 15:00:00.085083"
     },
     {
-      "id": "PF297831",
-      "title": "금호 위너스, 정승호 Piano",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "금호아트홀 연세",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297831_260806_111542.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "정승호",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "금호문화재단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297831_202608061115424630.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "금호아트홀(금호아시아나문화재단)",
-          "url": "https://www.kumhoarthall.com:448/designer/skin/01/detail.html?p_idx=25875"
-        },
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/12/bizes/1710909"
-        },
-        {
-          "name": "놀유니버스",
-          "url": "https://nol.yanolja.com/ticket/products/26011444"
-        }
-      ],
-      "updatedAt": "2026-09-15 12:46:04"
-    },
-    {
-      "id": "PF300805",
-      "title": "김대욱 트럼펫 독주회: 미국 작곡가의 트럼펫 음악 시리즈 Ⅴ",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "예술의전당 [서울]",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300805_260914_130344.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김대욱, 신민철",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "영음예술기획",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300805_202609140103442890.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012440"
-        }
-      ],
-      "updatedAt": "2026-09-14 15:00:00.136781"
-    },
-    {
-      "id": "PF300230",
-      "title": "김시라의 품바: Original [창원]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "마산대학교",
-      "sido": "경남",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300230_260907_112904.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "오정석, 이시찬",
-      "crew": "최민선, 김시라, 최성봉 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 55,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(주)좋은콘서트, 위플레이",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300230_202609071129042970.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65439"
-        },
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/12/bizes/1731401"
-        }
-      ],
-      "updatedAt": "2026-09-21 10:43:40"
-    },
-    {
-      "id": "PF301252",
-      "title": "김종미 & 윤다정 피아노 듀오 리사이틀: Operas and Dances on the Keyboard [성남]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "성남아트센터",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301252_260918_104227.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김종미, 윤다정",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301252_202609181042277050.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013659"
-        }
-      ],
-      "updatedAt": "2026-09-18 15:00:00.083592"
-    },
-    {
-      "id": "PF301941",
-      "title": "내 이름은 [안양]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "안양아트센터",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301941_260929_113054.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이윤수, 양해지, 송서유, 전찬영, 최보라",
-      "crew": "정진희",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 12세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "producer": "크리스마스 컴퍼니",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301941_202609291130542090.png",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301941_202609291130542151.png"
-      ],
-      "tickets": [
-        {
-          "name": "플레이티켓",
-          "url": "http://playticket.co.kr/nav/detail.html?idx=4595"
-        }
-      ],
-      "updatedAt": "2026-09-29 15:00:00.178521"
-    },
-    {
-      "id": "PF298154",
-      "title": "대한민국 피아노 페스티벌, 베토벤 피아노 트리오 [수원]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "경기아트센터(구. 경기도문화의전당)",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298154_260810_170219.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김태형, 이지혜, 김두민",
-      "runtime": "1시간 45분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 30,000원, S석 20,000원, 만원의행복석  10,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)경기아트센터",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF298154_202608100502197630.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011332"
-        },
-        {
-          "name": "예스24",
-          "url": "https://ticket.yes24.com/Perf/59624"
-        }
-      ],
-      "updatedAt": "2026-09-04 12:30:10"
-    },
-    {
       "id": "PF300558",
       "title": "라 트라비아타 [남양주]",
       "startDate": "2026-10-08",
@@ -12876,68 +12254,6 @@
         }
       ],
       "updatedAt": "2026-09-29 18:00:00.063448"
-    },
-    {
-      "id": "PF301576",
-      "title": "라라라온 [서울 얼라이브홀]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "얼라이브홀(구. 크랙홀)",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301576_260922_135832.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "전다혜, 박종범, 최한림",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 22,000원",
-      "timeGuide": "목요일(20:00)",
-      "producer": "(사)한국음악레이블산업협회",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301576_202609220158324190.png"
-      ],
-      "tickets": [
-        {
-          "name": "2TM(우리은행)",
-          "url": "https://www.2tm.co.kr/ticket/10766"
-        }
-      ],
-      "updatedAt": "2026-09-22 15:00:00.046131"
-    },
-    {
-      "id": "PF299514",
-      "title": "르 보야즈 보칼레 앙상블과 함께하는 바로크 음악 여행 12. 영화를 물들인 바로크 음악 [부산]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "낙동아트센터",
-      "sido": "부산",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299514_260827_134604.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이성훈, 강혜정, 정민호, 조희창, 최현정, 최현영 등",
-      "runtime": "2시간",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 30,000원, S석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "낙동아트센터, 르 보야즈 보칼레 앙상블",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299514_202608270146042900.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012255"
-        }
-      ],
-      "updatedAt": "2026-08-27 15:00:00.170072"
     },
     {
       "id": "PF297086",
@@ -12982,36 +12298,6 @@
       "updatedAt": "2026-09-21 11:28:07"
     },
     {
-      "id": "PF300585",
-      "title": "바리톤 박대용 독창회 [부산]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "동래문화회관",
-      "sido": "부산",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300585_260910_121244.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "박대용, 이현주, 김성민, 김은수, 박해미",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300585_202609101212445630.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "동래문화회관",
-          "url": "https://dnac.moonhwain.net:451/rsvc/rsv_pm.html?b_id=dnac&p_idx=205"
-        }
-      ],
-      "updatedAt": "2026-09-10 15:00:00.08251"
-    },
-    {
       "id": "PF298142",
       "title": "백두산 호랭이 [청주]",
       "startDate": "2026-10-08",
@@ -13021,7 +12307,7 @@
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298142_260810_155237.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -13043,100 +12329,6 @@
         }
       ],
       "updatedAt": "2026-09-01 18:00:00.141096"
-    },
-    {
-      "id": "PF300946",
-      "title": "백제문화제 기념 제44회 공주시충남연정국악단 정기연주회: 국악으로 만나는 클래식과 영화음악 [공주]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "공주문예회관",
-      "sido": "충남",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300946_260915_110057.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "백윤학 등",
-      "crew": "황호준, 김대성, 임교민 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 6세 이상",
-      "price": "전석 5,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "공주시청",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300946_202609151100570921.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300946_202609151100570790.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013278"
-        }
-      ],
-      "updatedAt": "2026-09-15 15:00:00.072101"
-    },
-    {
-      "id": "PF301043",
-      "title": "밴드날다: 시흥, 날다 [시흥]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "시흥아트센터",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301043_260916_113543.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "오단해, 서진실, 이효주, 김수유, 이준, 김수준, 송창현 등",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 20,000원, S석 10,000원, B석 5,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "시흥시청",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301043_202609161135433850.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013251"
-        }
-      ],
-      "updatedAt": "2026-09-16 15:00:00.096789"
-    },
-    {
-      "id": "PF301637",
-      "title": "벤치위레오 단독 콘서트: Black White La cuisine",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "생기 스튜디오",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301637_260923_104332.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "runtime": "1시간 40분",
-      "ageLimit": "전체 관람가",
-      "price": "전석 38,000원",
-      "timeGuide": "목요일(20:00)",
-      "producer": "스튜디오인히즈",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301637_202609231043322160.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "멜론티켓",
-          "url": "https://ticket.melon.com/performance/index.htm?prodId=213940"
-        }
-      ],
-      "updatedAt": "2026-09-23 15:00:00.065979"
     },
     {
       "id": "PF300623",
@@ -13168,131 +12360,6 @@
         }
       ],
       "updatedAt": "2026-09-10 15:00:00.08251"
-    },
-    {
-      "id": "PF301774",
-      "title": "부평구립여성합창단 연합 기획공연, Concentus Trinitatis: 세 개의 울림, 함께 부르는 노래 [인천]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "부평아트센터",
-      "sido": "인천",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301774_260928_131658.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "임성민, 이강민, 함정민, 홍대용 등",
-      "runtime": "2시간",
-      "ageLimit": "만 7세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)인천광역시 부평구문화재단(부평아트센터), 부평구립여성합창단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301774_202609280116587190.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013647"
-        }
-      ],
-      "updatedAt": "2026-09-28 15:00:00.05876"
-    },
-    {
-      "id": "PF302458",
-      "title": "뷰티플마인드와 함께하는 가을음악회",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "롯데콘서트홀",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302458_261006_105430.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이원숙, 문태국, 강소연, 김일중, 최진우 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302458_202610061054308610.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "롯데콘서트홀",
-          "url": "https://www.lotteconcerthall.com/product/performance/261191"
-        }
-      ],
-      "updatedAt": "2026-10-06 15:00:00.074715"
-    },
-    {
-      "id": "PF300814",
-      "title": "브릿지클래식 1. Colors: 리듬의 색채 [춘천]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "춘천문화예술회관",
-      "sido": "강원",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300814_260914_132338.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "심선민, 박수정, 강이안, 김찬민, 박상언, 손시뤄, 승병록 등",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)춘천문화재단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300814_202609140123389960.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "춘천문화재단",
-          "url": "http://cccf.moonhwain.net/rsvc/rsv_pm.html?b_id=cccf&p_idx=66"
-        }
-      ],
-      "updatedAt": "2026-09-14 15:00:00.136781"
-    },
-    {
-      "id": "PF301349",
-      "title": "사라진 소리의 흔적",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "거암아트홀",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301349_260921_103922.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "손소이, 정규상, 채형봉, 조인영, 고영주, 유이삭",
-      "crew": "나석주, 이수연, 노지은 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "현대문화기획",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301349_202609211041351880.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301349_202609211039222960.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013093"
-        }
-      ],
-      "updatedAt": "2026-09-21 15:00:00.137023"
     },
     {
       "id": "PF301944",
@@ -13327,39 +12394,6 @@
       "updatedAt": "2026-09-29 15:00:00.178521"
     },
     {
-      "id": "PF295313",
-      "title": "서리풀 고음악 시리즈, 불멸의 바로크",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "반포심산아트홀",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295313_260703_143142.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김은식, 김상하, 황수빈, 안지원, 장희진, 이남곤, 강효정 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 20,000원, S석 15,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)서초문화재단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295313_202607030231423892.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295313_202607030231423681.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF295313_202607030231423630.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26009599"
-        }
-      ],
-      "updatedAt": "2026-07-03 15:00:02.068649"
-    },
-    {
       "id": "PF301300",
       "title": "선돌, 정반합: Oh, Girl!",
       "startDate": "2026-10-08",
@@ -13392,66 +12426,6 @@
       "updatedAt": "2026-09-18 15:00:00.083592"
     },
     {
-      "id": "PF300040",
-      "title": "세비야의 이발사 [세종]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "세종문화예술회관",
-      "sido": "세종",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300040_260903_130153.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(14:00,17:00)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300040_202609030101537820.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012572"
-        }
-      ],
-      "updatedAt": "2026-09-03 15:00:00.027783"
-    },
-    {
-      "id": "PF302682",
-      "title": "소리와 춤으로 팔도 아리랑",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "서울돈화문국악당",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302682_261007_121829.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김세철, 김승국, 김인순, 이종진, 박미경, 정현숙, 이연희 등",
-      "crew": "박동순, 박천지, 정주미",
-      "runtime": "1시간 20분",
-      "ageLimit": "전체 관람가",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302682_202610071218298590.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "서울돈화문국악당",
-          "url": "http://sdtt.moonhwain.kr/rsvc/rsv_pm.html?b_id=sdtt&p_idx=692"
-        }
-      ],
-      "updatedAt": "2026-10-07 15:00:00.086823"
-    },
-    {
       "id": "PF302041",
       "title": "손바닥 소극장 오페라 시리즈 Ⅰ. 코스모스를 죽였다 [대전]",
       "startDate": "2026-10-08",
@@ -13461,7 +12435,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302041_260929_165329.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -13484,42 +12458,6 @@
       "updatedAt": "2026-09-29 18:00:00.063448"
     },
     {
-      "id": "PF299100",
-      "title": "수림뉴웨이브, 이재하: 현금제: 이중번역 (二重飜譯)",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "김희수아트센터",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299100_260821_144653.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이재하, 김승태, 신원섭, 정종임",
-      "runtime": "1시간",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)수림문화재단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299100_202608210246535730.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299100_202608210247398660.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "나눔티켓",
-          "url": "https://www.nanumticket.or.kr/pe/detail.html?p_marking=&p_new=&start2=0&page_no2=1&p_idx=13981"
-        },
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010645"
-        }
-      ],
-      "updatedAt": "2026-09-11 13:30:38"
-    },
-    {
       "id": "PF291256",
       "title": "시간의 저편에서: OTHELLO Part Ⅱ [부산]",
       "startDate": "2026-10-08",
@@ -13529,7 +12467,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291256_260513_111657.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -13565,7 +12503,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300815_260914_132343.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -13587,107 +12525,6 @@
       "updatedAt": "2026-09-14 15:00:00.136781"
     },
     {
-      "id": "PF299621",
-      "title": "약속의 봄 [대구]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "봉산문화회관",
-      "sido": "대구",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299621_260828_132937.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김동건, 박상현, 김태인, 박명선, 박범진, 정지윤, 강희준 등",
-      "crew": "안성국, 박지훈, 박예진 등",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 6세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "인칸토 솔리스트 앙상블",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299621_202608280129375693.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299621_202608280129375642.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299621_202608280129375591.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299621_202608280129375530.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65205"
-        }
-      ],
-      "updatedAt": "2026-08-28 15:00:00.187093"
-    },
-    {
-      "id": "PF292331",
-      "title": "에즈라 콜렉티브 첫 단독 내한공연 Ezra Collective Live [서울]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "예스24 라이브홀 (구. 악스코리아)",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292331_260527_130919.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "ageLimit": "만 7세 이상",
-      "price": "지정석 99,000원, 스탠딩 88,000원",
-      "timeGuide": "목요일(20:00)",
-      "producer": "(주)프라이빗커브",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF292331_202605270109199750.png"
-      ],
-      "tickets": [
-        {
-          "name": "예스24",
-          "url": "https://ticket.yes24.com/Perf/58534"
-        }
-      ],
-      "updatedAt": "2026-05-27 15:00:04.230096"
-    },
-    {
-      "id": "PF299799",
-      "title": "에코챔버오케스트라와 지휘자 백진현이 함께하는 행복한 클래식 [대구]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "아양아트센터",
-      "sido": "대구",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299799_260901_104714.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "신상준, 김혜진, 김나영, 김동균, 이애리, 우지학, 정윤제 등",
-      "crew": "김지민, 한다현, 백경빈 등",
-      "runtime": "1시간 50분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 30,000원, S석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "에코챔버오케스트라(EchO Chamber Orchestra)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299799_202609011047144211.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299799_202609011047143760.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65249"
-        },
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/12/bizes/1726766"
-        }
-      ],
-      "updatedAt": "2026-09-01 15:00:00.051689"
-    },
-    {
       "id": "PF300169",
       "title": "여주세종문화관광재단 기획공연: 숨, 세종의 뜻이 머무는 길 [여주]",
       "startDate": "2026-10-08",
@@ -13697,7 +12534,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300169_260904_135532.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -13720,363 +12557,6 @@
       "updatedAt": "2026-09-04 15:00:00.200856"
     },
     {
-      "id": "PF302415",
-      "title": "연희 판: 흥으로 잇는 세상 [고창]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "고창문화의전당",
-      "sido": "전북",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302415_261002_153807.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "runtime": "1시간 10분",
-      "ageLimit": "36개월 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "producer": "고창문화의전당",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302415_202610020338070504.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302415_202610020338070473.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302415_202610020338070442.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302415_202610020338070421.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302415_202610020338070340.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "고창문화의전당",
-          "url": "http://ticket.gcac.kr/?p_idx=219"
-        }
-      ],
-      "updatedAt": "2026-10-02 18:00:00.088619"
-    },
-    {
-      "id": "PF300977",
-      "title": "오아시스 세탁소 습격사건 [울산]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "울산광역시학생교육문화회관",
-      "sido": "울산",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300977_260915_132810.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "황인준, 김영은, 허은녕, 황성호, 송인경, 김민주, 김호성 등",
-      "crew": "고선평, 이상훈, 허은녕 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 20,000원",
-      "timeGuide": "목요일(19:00)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300977_202609150128102000.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/12/bizes/941255"
-        }
-      ],
-      "updatedAt": "2026-09-28 18:00:00.116245"
-    },
-    {
-      "id": "PF299793",
-      "title": "울산시립합창단 기획공연, 울산합창 대축제: 울산사람 큰 울 (蔚) 림 (林)",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "울산문화예술회관",
-      "sido": "울산",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299793_260901_102920.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "박동희, 김희정, 김은혜, 김동욱, 김대하, 이승욱, 전선화 등",
-      "crew": "박동희 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 5,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "울산시립합창단",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299793_202609011029208000.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "울산문화예술회관",
-          "url": "https://www.ulsan.go.kr/ucac/art/page.do?mnu_code=mnu001002&cmd=2&res_cate=ResCateCD_001&per_sn=497"
-        }
-      ],
-      "updatedAt": "2026-09-01 15:00:00.051689"
-    },
-    {
-      "id": "PF299021",
-      "title": "유망예술가 발굴 프로젝트, 우리 安에 가을 [대구]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "어울아트센터(구. 대구북구문예회관)",
-      "sido": "대구",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299021_260821_104003.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "안혜찬",
-      "runtime": "1시간",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 15,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)행복북구문화재단(어울아트센터)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299021_202608211040040140.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65016"
-        },
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/12/bizes/1719979"
-        }
-      ],
-      "updatedAt": "2026-08-31 11:32:08"
-    },
-    {
-      "id": "PF300959",
-      "title": "윤수일 BAND 전국투어 콘서트 [부산]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "벡스코 (BEXCO)",
-      "sido": "부산",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300959_260915_114242.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "윤수일",
-      "runtime": "2시간",
-      "ageLimit": "전체 관람가",
-      "price": "VIP석 165,000원, Royal석  132,000원",
-      "timeGuide": "목요일(19:00)",
-      "producer": "(주)누리마루엔터테인먼트",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300959_202609151142422300.gif"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013301"
-        }
-      ],
-      "updatedAt": "2026-09-15 15:00:00.072101"
-    },
-    {
-      "id": "PF300304",
-      "title": "음악공방 피오레움, 윤피아노 클래스 초청 연주회: 김현호",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "피오레아트앤엔터(피오레움)",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300304_260907_145751.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김현호",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 13세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:00)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300304_202609070257519230.png"
-      ],
-      "tickets": [
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/5/bizes/1610089"
-        }
-      ],
-      "updatedAt": "2026-09-09 18:00:00.145157"
-    },
-    {
-      "id": "PF300551",
-      "title": "이지훈과 함께하는 음악여행: 프랑스 & 독일 [파주]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "솔가람아트홀",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300551_260910_101819.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이지훈, 서우형, 남정현, 이상은, 이호찬",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300551_202609101018196580.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "파주문화재단",
-          "url": "http://paju.moonhwain.kr/rsvc/rsv_pm.html?b_id=paju&p_idx=843"
-        }
-      ],
-      "updatedAt": "2026-09-10 15:00:00.08251"
-    },
-    {
-      "id": "PF299520",
-      "title": "인천시립교향악단 기획연주회, 기록음악회",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "아트센터 인천",
-      "sido": "인천",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299520_260827_135541.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "최수열, 김성현, 최진 등",
-      "crew": "최수열",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(20:00)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299520_202608270155414190.png"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012434"
-        },
-        {
-          "name": "엔티켓",
-          "url": "https://www.enticket.com:469/pfm/sub01_view.html?pfmIng=1&p_idx=4369"
-        },
-        {
-          "name": "인천문화예술회관",
-          "url": "https://www.incheon.go.kr/art/ART010101/view?resveProgrmSeCode=C&resveGroupSn=5&progrmSn=10975"
-        }
-      ],
-      "updatedAt": "2026-08-31 13:06:55"
-    },
-    {
-      "id": "PF302596",
-      "title": "일로역 유물소동 [무안]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "연극",
-      "venue": "무안승달문화예술회관",
-      "sido": "전남",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302596_261006_161327.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이영환, 김경옥, 정성현, 양동진, 최영윤, 윤미란, 신온주 등",
-      "crew": "나상문",
-      "runtime": "1시간 20분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 1,000원",
-      "timeGuide": "목요일(15:00,19:30)",
-      "producer": "더 아트컴퍼니 연",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302596_202610060413279350.png"
-      ],
-      "tickets": [
-        {
-          "name": "승달문화예술회관",
-          "url": "https://muanculture.moonhwain.net:451/rsvc/rsv_pm.html?b_id=muanculture&vwClsPidx="
-        }
-      ],
-      "updatedAt": "2026-10-06 18:00:00.093519"
-    },
-    {
-      "id": "PF296589",
-      "title": "장한나의 대전그랜드페스티벌, 김세현 & 디토 체임버 오케스트라 [대전]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "대전예술의전당",
-      "sido": "대전",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296589_260722_111242.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김세현 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "얼리버드 티켓 24,000원, 전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "대전예술의전당",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296589_202607221112428810.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010342"
-        }
-      ],
-      "updatedAt": "2026-07-22 15:00:02.047933"
-    },
-    {
-      "id": "PF302000",
-      "title": "제12회 VP 정기연주회: R.Strauss & H.Duparc Art Song Concert: 두 개의 언어, 하나의 심연",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "대구콘서트하우스",
-      "sido": "대구",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302000_260929_143352.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김보라, 김은형, 소은경, 전선미, 김명규, 노운병, 노성훈 등",
-      "runtime": "1시간 20분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302000_202609290233529630.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302000_202609290235093770.png",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302000_202609290235093821.png"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65768"
-        }
-      ],
-      "updatedAt": "2026-09-29 15:00:00.178521"
-    },
-    {
       "id": "PF300477",
       "title": "제17회 국제 소극장 축제, 그대는 봄 [대전]",
       "startDate": "2026-10-08",
@@ -14086,7 +12566,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300477_260909_134004.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14122,7 +12602,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300901_260914_165003.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14142,71 +12622,6 @@
         }
       ],
       "updatedAt": "2026-09-14 18:00:00.025371"
-    },
-    {
-      "id": "PF298981",
-      "title": "제18회 서울국제음악제 개막음악회: 숨, 그리고 삶",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "예술의전당 [서울]",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298981_260820_142500.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "윤혜리, 김한, 알렉산더 피터스타인, 한이제, 세바스티안 알렉산드로 비치, 김민주, 라도반 블라트코비치 등",
-      "runtime": "1시간 35분",
-      "ageLimit": "만 7세 이상",
-      "price": "R석 60,000원, S석 40,000원, A석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "서울국제음악제",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF298981_202608200225006030.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26011930"
-        }
-      ],
-      "updatedAt": "2026-08-20 15:00:00.079918"
-    },
-    {
-      "id": "PF300943",
-      "title": "제205회 원주시립교향악단 정기연주회: 러시아의 울림",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "원주백운아트홀",
-      "sido": "강원",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300943_260915_105315.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "성기선, 이유빈 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300943_202609151053155634.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300943_202609151053155103.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300943_202609151053154952.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300943_202609151053154921.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300943_202609151053154760.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "원주시청",
-          "url": "http://wonju.moonhwain.kr/rsvc/rsv_pm.html?b_id=wonju&p_idx=260"
-        }
-      ],
-      "updatedAt": "2026-09-15 15:00:00.072101"
     },
     {
       "id": "PF300597",
@@ -14282,7 +12697,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298743_260818_153152.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14340,224 +12755,6 @@
       "updatedAt": "2026-08-18 18:00:00.061156"
     },
     {
-      "id": "PF301966",
-      "title": "제33회 대구레이디스코러스 정기연주회: 아름다운 합창 & 음악으로 함께 누리는 힐링 타임",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "대구콘서트하우스",
-      "sido": "대구",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301966_260929_132701.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "허윤성, 이수진, 김혜심, 정지윤, 주찬미, 김지현 등",
-      "crew": "허윤성 등",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석무료",
-      "timeGuide": "목요일(19:30)",
-      "producer": "대구광역시 여성회관",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301966_202609290127018431.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301966_202609290127018370.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "http://www.ticketlink.co.kr/product/65613"
-        }
-      ],
-      "updatedAt": "2026-09-29 15:00:00.178521"
-    },
-    {
-      "id": "PF297655",
-      "title": "제4회 대한민국국악관현악축제, 안산시립국악단",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "한국음악(국악)",
-      "venue": "세종문화회관",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297655_260804_133312.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "임교민, 김영절, 김성민, 정유진, 김선우, 권민서, 안병준 등",
-      "crew": "임교민, 김태권, 박순영 등",
-      "runtime": "2시간",
-      "ageLimit": "만 6세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "(재)세종문화회관",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297655_202608040133127293.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297655_202608040133127232.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297655_202608040133126881.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF297655_202608040133126640.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "NHN티켓링크",
-          "url": "https://www.ticketlink.co.kr/product/64284"
-        },
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004740"
-        },
-        {
-          "name": "멜론티켓",
-          "url": "https://ticket.melon.com/performance/index.htm?prodId=213674"
-        },
-        {
-          "name": "세종문화회관",
-          "url": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37422&menuNo=200320"
-        },
-        {
-          "name": "예스24",
-          "url": "https://ticket.yes24.com/Perf/59452"
-        },
-        {
-          "name": "클립서비스주식회사",
-          "url": "https://ticket.clipservice.co.kr/Clipservice/Ticket/ShowDetail?playNum=79349"
-        }
-      ],
-      "updatedAt": "2026-09-02 11:34:47"
-    },
-    {
-      "id": "PF299714",
-      "title": "제5회 경기 심포닉 윈드오케스트라 정기연주회: SONGS OF OUR LIFE 음악, 추억 그리고 삶 [과천]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "과천시민회관",
-      "sido": "경기",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299714_260831_132739.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김대남, 이요한 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "리드예술기획",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299714_202608310127394171.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299714_202608310127393920.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012667"
-        }
-      ],
-      "updatedAt": "2026-08-31 15:00:00.113972"
-    },
-    {
-      "id": "PF300666",
-      "title": "제5회 아티스테 앙상블 정기 연주회 [부산]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "부산문화회관",
-      "sido": "부산",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300666_260911_110552.jpg",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "이예빈, 김지수, 신승엽, 김성주, 이지은",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 4세 이상",
-      "price": "전석 20,000원",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300666_202609111105524142.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300666_202609111105523961.jpg",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300666_202609111105523840.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "네이버N예약",
-          "url": "https://booking.naver.com/booking/6/bizes/1465372"
-        }
-      ],
-      "updatedAt": "2026-09-11 15:00:00.171731"
-    },
-    {
-      "id": "PF299973",
-      "title": "제물포구문화체육센터 마티네콘서트Ⅰ. 오은철의 목요일, 오후 2시 [인천]",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "제물포구문화체육센터(구. 동구문화체육센터)",
-      "sido": "인천",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299973_260902_163502.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "오은철, 고상지, 윤종수, 김유성",
-      "runtime": "1시간 10분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 15,000원",
-      "timeGuide": "목요일(14:00)",
-      "producer": "제물포구",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF299973_202609020435021140.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26012795"
-        },
-        {
-          "name": "엔티켓",
-          "url": "https://www.enticket.com:469/pfm/sub01_view.html?pfmIng=1&p_idx=4376"
-        }
-      ],
-      "updatedAt": "2026-09-02 18:00:00.089326"
-    },
-    {
-      "id": "PF301980",
-      "title": "창악회 기획 초청연주회: CMSS Festival Ⅴ. 피아니스트 3인 초청연주회",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "일신홀",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301980_260929_135101.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "김아름, 박수홍, 손지혜",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 10,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "창악회, 현대문화기획",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF301980_202609290151014100.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013801"
-        }
-      ],
-      "updatedAt": "2026-09-29 15:00:00.178521"
-    },
-    {
       "id": "PF300529",
       "title": "팬레터 [김천]",
       "startDate": "2026-10-08",
@@ -14567,7 +12764,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300529_260909_155806.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14592,37 +12789,6 @@
         }
       ],
       "updatedAt": "2026-09-09 18:00:00.145157"
-    },
-    {
-      "id": "PF300610",
-      "title": "피아니스 현영경 반주 리사이틀: 시의 숨결",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "예술의전당 [서울]",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300610_260910_134754.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "현영경, 이성은, 윤민규",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300610_202609100147548941.png",
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300610_202609100147548680.png"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26013221"
-        }
-      ],
-      "updatedAt": "2026-09-10 15:00:00.08251"
     },
     {
       "id": "PF300720",
@@ -14659,76 +12825,6 @@
       "updatedAt": "2026-09-11 15:00:00.171731"
     },
     {
-      "id": "PF296276",
-      "title": "한화생명과 함께하는 예술의전당 11시 콘서트 (10월)",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "예술의전당 [서울]",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296276_260716_143857.gif",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "홍석원, 임주희, 강석우 등",
-      "runtime": "1시간 40분",
-      "ageLimit": "만 7세 이상",
-      "price": "일반석 30,000원, 3층석 15,000원",
-      "timeGuide": "목요일(11:00)",
-      "producer": "예술의전당",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF296276_202607160238572900.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26010143"
-        },
-        {
-          "name": "예스24",
-          "url": "https://ticket.yes24.com/Perf/59285"
-        }
-      ],
-      "updatedAt": "2026-07-21 13:24:12"
-    },
-    {
-      "id": "PF300615",
-      "title": "한희준 피아노 독주회",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "서양음악(클래식)",
-      "venue": "세종문화회관",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300615_260910_135607.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "cast": "한희준",
-      "runtime": "1시간 30분",
-      "ageLimit": "만 7세 이상",
-      "price": "전석 30,000원",
-      "timeGuide": "목요일(19:30)",
-      "producer": "이든예술기획(주)",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300615_202609170228331620.png"
-      ],
-      "tickets": [
-        {
-          "name": "놀유니버스",
-          "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=P0004836"
-        },
-        {
-          "name": "세종문화회관",
-          "url": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37632&menuNo=200320"
-        }
-      ],
-      "updatedAt": "2026-09-17 14:28:45"
-    },
-    {
       "id": "PF301270",
       "title": "헌법의 순간 [안산]",
       "startDate": "2026-10-08",
@@ -14738,7 +12834,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301270_260918_112437.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14759,36 +12855,6 @@
         }
       ],
       "updatedAt": "2026-09-18 15:00:00.083592"
-    },
-    {
-      "id": "PF300789",
-      "title": "FIREWORKS",
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-08",
-      "genre": "대중음악",
-      "venue": "롤링홀",
-      "sido": "서울",
-      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300789_260914_121206.png",
-      "openRun": false,
-      "state": "공연완료",
-      "months": [
-        "2026-10"
-      ],
-      "runtime": "2시간",
-      "ageLimit": "전체 관람가",
-      "price": "전석 44,000원",
-      "timeGuide": "목요일(20:00)",
-      "producer": "롤링홀",
-      "introImages": [
-        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF300789_202609141212061440.jpg"
-      ],
-      "tickets": [
-        {
-          "name": "멜론티켓",
-          "url": "https://ticket.melon.com/performance/index.htm?prodId=213858"
-        }
-      ],
-      "updatedAt": "2026-09-14 15:00:00.136781"
     },
     {
       "id": "PF298883",
@@ -14832,7 +12898,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299306_260825_110332.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14862,7 +12928,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301921_260929_103513.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14894,7 +12960,7 @@
       "startDate": "2026-10-09",
       "endDate": "2026-10-11",
       "genre": "연극",
-      "venue": "인천여관1965 (인천여관1965)",
+      "venue": "인천여관1965",
       "sido": "인천",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302783_261008_105535.jpg",
       "openRun": false,
@@ -14960,7 +13026,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302424_261002_160617.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -14991,7 +13057,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301159_260917_104925.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15017,11 +13083,11 @@
       "startDate": "2026-10-09",
       "endDate": "2026-10-09",
       "genre": "대중음악",
-      "venue": "우무지 (우무지)",
+      "venue": "우무지",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302828_261008_135902.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15051,7 +13117,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301371_260921_112644.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15117,7 +13183,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302372_261002_141142.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15149,7 +13215,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299160_260824_105810.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15319,7 +13385,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297653_260804_132932.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15363,7 +13429,7 @@
       "sido": "제주",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301633_260923_103817.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15393,7 +13459,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301564_260922_132639.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15423,7 +13489,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299252_260824_151331.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15520,7 +13586,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299433_260826_141511.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15595,7 +13661,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301019_260916_101718.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15624,7 +13690,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300388_260908_125357.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15655,7 +13721,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296476_260720_174724.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15758,7 +13824,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300955_260915_112921.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15824,7 +13890,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293418_260611_130903.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -15921,7 +13987,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297508_260803_132728.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16016,7 +14082,7 @@
       "sido": "울산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299133_260821_174253.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16043,7 +14109,7 @@
       "startDate": "2026-10-09",
       "endDate": "2026-10-11",
       "genre": "뮤지컬",
-      "venue": "우리소극장 [의정부] (우리소극장 [의정부])",
+      "venue": "우리소극장 [의정부]",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302790_261008_111530.jpg",
       "openRun": false,
@@ -16119,7 +14185,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF294286_260622_132730.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16216,7 +14282,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301023_260916_103416.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16245,7 +14311,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299146_260824_101704.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16280,7 +14346,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301770_260928_130742.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16311,7 +14377,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301262_260918_110521.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16342,7 +14408,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297918_260807_110350.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16408,7 +14474,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300098_260904_101649.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16468,7 +14534,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301568_260922_133854.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16503,7 +14569,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300831_260914_140408.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16533,7 +14599,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300904_260914_165759.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16563,7 +14629,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299687_260831_112129.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16595,7 +14661,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297542_260803_144533.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16730,7 +14796,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296668_260722_144148.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16761,7 +14827,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296660_260722_142838.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16794,7 +14860,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299412_260826_131428.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16855,7 +14921,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301403_260921_132008.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -16919,7 +14985,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299074_260821_133809.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17132,7 +15198,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301237_260918_101314.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17166,7 +15232,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302009_260929_145835.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17196,7 +15262,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301688_260923_134211.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17228,7 +15294,7 @@
       "sido": "제주",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302099_260930_130511.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17261,7 +15327,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302087_260930_113742.jpeg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17295,7 +15361,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299910_260902_141636.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17326,7 +15392,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300431_260909_101815.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17395,7 +15461,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299420_260826_133411.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17430,7 +15496,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300271_260907_133901.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17495,7 +15561,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295882_260713_130241.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17535,7 +15601,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301481_260921_161547.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17626,7 +15692,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298422_260813_131721.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17659,7 +15725,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299219_260824_140857.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17688,7 +15754,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301031_260916_105347.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17719,7 +15785,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298414_260813_130743.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17825,7 +15891,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298986_260820_143043.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17864,7 +15930,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300393_260908_131255.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -17929,7 +15995,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292543_260529_172146.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18007,7 +16073,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300687_260911_131022.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18103,7 +16169,7 @@
       "sido": "충남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301420_260921_135439.gif",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18133,7 +16199,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300935_260915_103344.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18162,7 +16228,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300545_260910_100008.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18223,7 +16289,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302518_261006_134655.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18380,7 +16446,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297726_260805_114049.jpg",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18411,7 +16477,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298259_260811_145742.png",
       "openRun": false,
-      "state": "공연중",
+      "state": "공연완료",
       "months": [
         "2026-10"
       ],
@@ -18441,7 +16507,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299371_260826_102156.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18471,7 +16537,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300951_260915_111751.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18503,7 +16569,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300835_260914_141526.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18533,7 +16599,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299618_260828_132325.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18564,7 +16630,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300559_260910_104229.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18596,7 +16662,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298860_260819_140444.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18630,7 +16696,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299225_260824_141831.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18666,7 +16732,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292610_260601_112924.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18699,7 +16765,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301390_260921_125116.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18730,7 +16796,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297742_260805_131243.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18770,7 +16836,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302563_261006_151406.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18801,7 +16867,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299654_260828_144449.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18836,7 +16902,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300906_260914_170814.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18867,7 +16933,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302024_260929_154723.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18899,7 +16965,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301761_260928_124732.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18930,7 +16996,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301965_260929_132244.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18961,7 +17027,7 @@
       "sido": "인천",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302141_260930_143551.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -18993,7 +17059,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300151_260904_131807.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19035,7 +17101,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293126_260608_152929.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19072,7 +17138,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301807_260928_142511.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19103,7 +17169,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301188_260917_130816.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19133,7 +17199,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298103_260810_142326.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19168,7 +17234,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301431_260921_141713.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19199,7 +17265,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297656_260804_133914.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19247,7 +17313,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302685_261007_124151.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19277,7 +17343,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301030_260916_104914.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19307,7 +17373,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301543_260922_113443.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19337,7 +17403,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301952_260929_124442.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19372,7 +17438,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301587_260922_143045.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19402,7 +17468,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299375_260826_103220.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19433,7 +17499,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300802_260914_125310.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19463,7 +17529,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298260_260811_150301.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19506,7 +17572,7 @@
       "sido": "세종",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299512_260827_134120.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19541,7 +17607,7 @@
       "sido": "인천",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300447_260909_110432.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19572,7 +17638,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300267_260907_132936.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19600,7 +17666,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298812_260819_111604.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19634,7 +17700,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298804_260819_123720.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19682,7 +17748,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301454_260921_150224.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19719,7 +17785,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299221_260824_141217.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19751,7 +17817,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297457_260803_104501.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19784,7 +17850,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301424_260921_140408.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19816,7 +17882,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299921_260916_144342.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19860,7 +17926,7 @@
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296169_260715_142357.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19901,7 +17967,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300152_260904_131807.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19944,7 +18010,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301033_260916_110135.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -19975,7 +18041,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301336_260918_145215.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20007,7 +18073,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298938_260820_124549.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20045,7 +18111,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301418_260921_134842.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20076,7 +18142,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298477_260813_152641.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20119,7 +18185,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300876_260914_155245.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20151,7 +18217,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301523_260922_104523.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20182,7 +18248,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300247_260907_124040.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10",
         "2026-11"
@@ -20213,7 +18279,7 @@
       "sido": "충남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301653_260923_112003.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20244,7 +18310,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299248_260824_150721.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20276,7 +18342,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300862_260914_151718.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20315,7 +18381,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301632_260923_103549.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20346,7 +18412,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301086_260916_144027.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20377,7 +18443,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299096_260821_143556.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20408,7 +18474,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301157_260917_104846.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20439,7 +18505,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296711_260723_111135.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20478,7 +18544,7 @@
       "sido": "충남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298968_260820_135758.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20511,7 +18577,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298368_260813_102721.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20546,7 +18612,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302472_261006_112549.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20576,7 +18642,7 @@
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295803_260710_134714.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20614,7 +18680,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297368_260731_111939.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20651,7 +18717,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300662_260911_105545.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20683,7 +18749,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298837_260819_131806.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20715,7 +18781,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301801_260928_141615.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20746,7 +18812,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300714_260911_141748.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20781,7 +18847,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292440_260528_134054.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20817,7 +18883,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301805_260928_142242.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20847,7 +18913,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297803_260805_162822.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20887,7 +18953,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296738_260723_130229.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20926,7 +18992,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300014_260903_105934.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20958,7 +19024,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297098_260728_103839.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -20995,7 +19061,7 @@
       "sido": "인천",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299394_260826_111518.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21034,7 +19100,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300924_260915_100829.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21065,7 +19131,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301061_260916_134107.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21098,7 +19164,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300342_260907_170650.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21129,7 +19195,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299362_260826_095736.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21160,7 +19226,7 @@
       "sido": "대전",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296652_260722_141800.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21193,7 +19259,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299757_260831_145616.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21225,7 +19291,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301868_260928_163232.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21254,7 +19320,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300949_260915_110815.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21285,7 +19351,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299503_260827_131908.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21320,7 +19386,7 @@
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301533_260922_111025.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21349,7 +19415,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300154_260904_132221.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21385,7 +19451,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298780_260818_175947.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21417,7 +19483,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300846_260914_144019.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21449,7 +19515,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299906_260902_140543.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21479,7 +19545,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302508_261006_132745.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21511,7 +19577,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299688_260831_112129.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21543,7 +19609,7 @@
       "sido": "제주",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302085_260930_113148.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21576,7 +19642,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301680_260923_132318.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21608,7 +19674,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300671_260911_111751.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21640,7 +19706,7 @@
       "sido": "인천",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301646_260923_110312.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21671,7 +19737,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300660_260911_105231.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21703,7 +19769,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297210_260729_132622.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21742,7 +19808,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298102_260810_141812.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21781,7 +19847,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295322_260703_145014.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21817,7 +19883,7 @@
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296930_260724_151559.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21859,7 +19925,7 @@
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301624_260923_143212.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21891,7 +19957,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF290835_260507_140024.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21937,7 +20003,7 @@
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302557_261006_145817.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -21969,7 +20035,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297371_260731_112819.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22010,7 +20076,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300214_260907_105012.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22047,7 +20113,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298825_260819_125415.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22084,7 +20150,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299239_260824_144701.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22118,7 +20184,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF295791_260710_131449.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22156,7 +20222,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301455_260921_150225.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22187,11 +20253,11 @@
       "startDate": "2026-10-10",
       "endDate": "2026-10-10",
       "genre": "서양음악(클래식)",
-      "venue": "비원뮤직홀 (콘서트홀)",
+      "venue": "비원뮤직홀",
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302840_261008_143945.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22222,7 +20288,7 @@
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301515_260922_102010.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22255,7 +20321,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301567_260922_133641.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22284,7 +20350,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300960_260915_114415.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22315,7 +20381,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301076_260916_141539.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22346,7 +20412,7 @@
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF296155_260715_134801.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22386,7 +20452,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297701_260805_103243.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22415,7 +20481,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297551_260803_151227.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22449,7 +20515,7 @@
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292758_260602_110829.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22480,7 +20546,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302594_261006_160810.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22512,7 +20578,7 @@
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297851_260806_130205.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22541,7 +20607,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298523_260814_112742.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22576,7 +20642,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301381_260921_121124.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22608,7 +20674,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302144_260930_143734.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22640,7 +20706,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300643_260910_151926.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22671,7 +20737,7 @@
       "sido": "인천",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF286272_260304_141336.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22703,7 +20769,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298551_260814_134421.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22734,7 +20800,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302023_260929_153959.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22762,7 +20828,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302261_261001_143101.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22791,7 +20857,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF297586_260804_102420.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22821,7 +20887,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301722_260928_103401.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22853,7 +20919,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301140_260917_100607.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22887,7 +20953,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301535_260922_110647.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22917,7 +20983,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301853_260928_155551.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22949,7 +21015,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300740_260911_155730.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -22979,7 +21045,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301505_260921_174540.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23008,7 +21074,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302056_260930_102607.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23039,7 +21105,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301635_260923_104057.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23070,7 +21136,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301373_260921_113205.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23101,7 +21167,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301893_260928_172956.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23132,7 +21198,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300646_260911_101722.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23167,7 +21233,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301316_260918_140739.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23199,7 +21265,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300709_260911_140834.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23229,7 +21295,7 @@
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301605_260922_152751.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23257,7 +21323,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302549_261006_144357.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23285,7 +21351,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300683_260922_162417.gif",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23317,7 +21383,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301741_260928_112819.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23348,7 +21414,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301842_260928_153349.png",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23378,7 +21444,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF300962_260915_124012.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23409,7 +21475,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301326_260918_142557.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -23440,7 +21506,7 @@
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF298950_260820_132246.jpg",
       "openRun": false,
-      "state": "공연예정",
+      "state": "공연중",
       "months": [
         "2026-10"
       ],
@@ -24312,7 +22378,7 @@
       "startDate": "2026-10-11",
       "endDate": "2026-10-11",
       "genre": "대중음악",
-      "venue": "우무지 (우무지)",
+      "venue": "우무지",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302835_261008_141737.jpg",
       "openRun": false,
@@ -28660,7 +26726,7 @@
       "startDate": "2026-10-14",
       "endDate": "2026-10-14",
       "genre": "서양음악(클래식)",
-      "venue": "부산콘서트홀 (콘서트홀)",
+      "venue": "부산콘서트홀",
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302786_261008_110634.png",
       "openRun": false,
@@ -29006,7 +27072,7 @@
       "startDate": "2026-10-14",
       "endDate": "2026-10-14",
       "genre": "무용(서양/한국무용)",
-      "venue": "국립국악원 (풍류사랑방)",
+      "venue": "국립국악원",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302855_261008_152548.png",
       "openRun": false,
@@ -29387,7 +27453,7 @@
       "startDate": "2026-10-15",
       "endDate": "2026-10-15",
       "genre": "연극",
-      "venue": "철원군 화강문화센터 (공연장)",
+      "venue": "철원군 화강문화센터",
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302811_261008_131513.jpg",
       "openRun": false,
@@ -30193,7 +28259,7 @@
       "startDate": "2026-10-15",
       "endDate": "2026-10-15",
       "genre": "서양음악(클래식)",
-      "venue": "의성문화회관 (의성문화회관)",
+      "venue": "의성문화회관",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302805_261008_130109.jpg",
       "openRun": false,
@@ -30462,7 +28528,7 @@
       "startDate": "2026-10-15",
       "endDate": "2026-10-15",
       "genre": "복합",
-      "venue": "북구문화센터  (야외광장 )",
+      "venue": "북구문화센터",
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302322_261002_113212.jpg",
       "openRun": false,
@@ -32598,7 +30664,7 @@
       "startDate": "2026-10-16",
       "endDate": "2026-10-16",
       "genre": "대중음악",
-      "venue": "보령문화예술회관 (대공연장)",
+      "venue": "보령문화예술회관",
       "sido": "충남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302824_261008_134717.png",
       "openRun": false,
@@ -35135,7 +33201,7 @@
       "startDate": "2026-10-17",
       "endDate": "2026-11-07",
       "genre": "뮤지컬",
-      "venue": "레미어린이극장 [울산진장] (레미어린이극장 [울산진장])",
+      "venue": "레미어린이극장 [울산진장]",
       "sido": "울산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302834_261008_141327.jpg",
       "openRun": false,
@@ -37427,7 +35493,7 @@
       "startDate": "2026-10-17",
       "endDate": "2026-10-17",
       "genre": "대중음악",
-      "venue": "영주문화예술회관 (까치홀)",
+      "venue": "영주문화예술회관",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302771_261008_101905.jpg",
       "openRun": false,
@@ -39408,7 +37474,7 @@
       "startDate": "2026-10-17",
       "endDate": "2026-10-17",
       "genre": "서양음악(클래식)",
-      "venue": "롯데콘서트홀 (롯데콘서트홀)",
+      "venue": "롯데콘서트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302795_261008_113927.jpg",
       "openRun": false,
@@ -42325,7 +40391,7 @@
       "startDate": "2026-10-18",
       "endDate": "2026-10-18",
       "genre": "대중음악",
-      "venue": "우무지 (우무지)",
+      "venue": "우무지",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302853_261008_152018.png",
       "openRun": false,
@@ -42630,7 +40696,7 @@
       "startDate": "2026-10-19",
       "endDate": "2026-10-19",
       "genre": "서양음악(클래식)",
-      "venue": "롯데콘서트홀 (롯데콘서트홀)",
+      "venue": "롯데콘서트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302784_261008_105824.jpg",
       "openRun": false,
@@ -43524,7 +41590,7 @@
       "startDate": "2026-10-20",
       "endDate": "2026-10-20",
       "genre": "복합",
-      "venue": "원주백운아트홀 (원주백운아트홀)",
+      "venue": "원주백운아트홀",
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302787_261008_110635.jpg",
       "openRun": false,
@@ -45335,7 +43401,7 @@
       "startDate": "2026-10-21",
       "endDate": "2026-10-21",
       "genre": "복합",
-      "venue": "부천아트센터 (콘서트홀)",
+      "venue": "부천아트센터",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302803_261008_124523.jpg",
       "openRun": false,
@@ -45358,6 +43424,34 @@
         }
       ],
       "updatedAt": "2026-10-08 15:00:00.092925"
+    },
+    {
+      "id": "PF302854",
+      "title": "LIVE in SETi vol.96",
+      "startDate": "2026-10-21",
+      "endDate": "2026-10-21",
+      "genre": "대중음악",
+      "venue": "세티 라이브홀 (SETI LIVE HALL) (세티 라이브홀 (SETI LIVE HALL) )",
+      "sido": "서울",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302854_261008_152135.png",
+      "openRun": false,
+      "state": "공연예정",
+      "months": [
+        "2026-10"
+      ],
+      "ageLimit": "전체 관람가",
+      "price": "전석 20,000원, 현장판매 25,000원",
+      "timeGuide": "수요일(19:00)",
+      "introImages": [
+        "http://www.kopis.or.kr/upload/pfmIntroImage/PF_PF302854_202610080321358080.png"
+      ],
+      "tickets": [
+        {
+          "name": "네이버N예약",
+          "url": "https://booking.naver.com/booking/12/bizes/1293964"
+        }
+      ],
+      "updatedAt": "2026-10-09 15:00:00.14034"
     },
     {
       "id": "PF302768",
@@ -45751,7 +43845,7 @@
       "startDate": "2026-10-22",
       "endDate": "2026-10-22",
       "genre": "뮤지컬",
-      "venue": "서일대학교 배양관 (예다움홀)",
+      "venue": "서일대학교 배양관",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF299509_260827_133238.gif",
       "openRun": false,
@@ -46612,7 +44706,7 @@
       "startDate": "2026-10-22",
       "endDate": "2026-10-22",
       "genre": "서양음악(클래식)",
-      "venue": "김천시문화예술회관 (대공연장)",
+      "venue": "김천시문화예술회관",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302826_261008_135118.jpg",
       "openRun": false,
@@ -46929,7 +45023,7 @@
       "startDate": "2026-10-22",
       "endDate": "2026-10-22",
       "genre": "서양음악(클래식)",
-      "venue": "음악공간 중력장 (중력장)",
+      "venue": "음악공간 중력장",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302860_261008_155640.jpg",
       "openRun": false,
@@ -47831,7 +45925,7 @@
       "startDate": "2026-10-23",
       "endDate": "2026-10-23",
       "genre": "연극",
-      "venue": "김해서부문화센터 (하늬홀)",
+      "venue": "김해서부문화센터",
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302849_261008_150502.jpg",
       "openRun": false,
@@ -49148,7 +47242,7 @@
       "startDate": "2026-10-23",
       "endDate": "2026-10-23",
       "genre": "대중음악",
-      "venue": "KT&G 상상마당 라이브홀 [마포] (KT&G 상상마당 라이브홀 [마포] )",
+      "venue": "KT&G 상상마당 라이브홀 [마포]",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302785_261008_110157.png",
       "openRun": false,
@@ -52208,7 +50302,7 @@
       "startDate": "2026-10-24",
       "endDate": "2026-10-24",
       "genre": "연극",
-      "venue": "김해서부문화센터 (하늬홀)",
+      "venue": "김해서부문화센터",
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302806_261008_130110.jpg",
       "openRun": false,
@@ -53123,7 +51217,7 @@
       "startDate": "2026-10-24",
       "endDate": "2026-10-24",
       "genre": "한국음악(국악)",
-      "venue": "칠곡향사아트센터 (공연장)",
+      "venue": "칠곡향사아트센터",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302217_261008_173343.jpg",
       "openRun": false,
@@ -53775,7 +51869,7 @@
       "startDate": "2026-10-24",
       "endDate": "2026-10-25",
       "genre": "뮤지컬",
-      "venue": "제주아트센터 (대극장)",
+      "venue": "제주아트센터",
       "sido": "제주",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302821_261008_133522.png",
       "openRun": false,
@@ -55041,7 +53135,7 @@
       "startDate": "2026-10-24",
       "endDate": "2026-10-25",
       "genre": "대중음악",
-      "venue": "한국콘텐츠진흥원 CKL스테이지 (한국콘텐츠진흥원 CKL스테이지)",
+      "venue": "한국콘텐츠진흥원 CKL스테이지",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302807_261008_130806.jpg",
       "openRun": false,
@@ -55889,7 +53983,7 @@
       "startDate": "2026-10-25",
       "endDate": "2026-10-25",
       "genre": "연극",
-      "venue": "김해서부문화센터 (하늬홀)",
+      "venue": "김해서부문화센터",
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302845_261008_144739.jpg",
       "openRun": false,
@@ -57175,7 +55269,7 @@
       "startDate": "2026-10-26",
       "endDate": "2026-10-26",
       "genre": "연극",
-      "venue": "부암아트홀 (TG EVENT HALL)",
+      "venue": "부암아트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302034_261008_175211.gif",
       "openRun": false,
@@ -57267,7 +55361,7 @@
       "startDate": "2026-10-26",
       "endDate": "2026-10-26",
       "genre": "복합",
-      "venue": "엠팟홀 (구. 삼익아트홀) (엠팟홀 (구. 삼익아트홀) )",
+      "venue": "엠팟홀 (구. 삼익아트홀)",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF301717_260928_102508.gif",
       "openRun": false,
@@ -58105,7 +56199,7 @@
       "startDate": "2026-10-28",
       "endDate": "2026-10-28",
       "genre": "서양음악(클래식)",
-      "venue": "울주문화예술회관 (그린나래홀 (공연장) )",
+      "venue": "울주문화예술회관",
       "sido": "울산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302782_261008_105534.jpg",
       "openRun": false,
@@ -60056,7 +58150,7 @@
       "startDate": "2026-10-29",
       "endDate": "2026-10-29",
       "genre": "한국음악(국악)",
-      "venue": "민속극장풍류 (민속극장풍류)",
+      "venue": "민속극장풍류",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302772_261008_102445.jpg",
       "openRun": false,
@@ -60483,7 +58577,7 @@
       "startDate": "2026-10-29",
       "endDate": "2026-10-29",
       "genre": "서양음악(클래식)",
-      "venue": "제주아트센터 (대극장)",
+      "venue": "제주아트센터",
       "sido": "제주",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302802_261008_123813.jpg",
       "openRun": false,
@@ -62573,7 +60667,7 @@
       "startDate": "2026-10-30",
       "endDate": "2026-10-30",
       "genre": "서양음악(클래식)",
-      "venue": "일신홀 (일신홀)",
+      "venue": "일신홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302837_261008_142431.jpg",
       "openRun": false,
@@ -68172,7 +66266,7 @@
       "startDate": "2026-10-31",
       "endDate": "2026-10-31",
       "genre": "대중음악",
-      "venue": "제주문예회관 (대극장)",
+      "venue": "제주문예회관",
       "sido": "제주",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302797_261008_114955.jpg",
       "openRun": false,
@@ -68202,7 +66296,7 @@
       "startDate": "2026-10-31",
       "endDate": "2026-10-31",
       "genre": "대중음악",
-      "venue": "국립부경대학교 대연캠퍼스 (대운동장)",
+      "venue": "국립부경대학교 대연캠퍼스",
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302774_261008_103408.jpg",
       "openRun": false,
@@ -68392,7 +66486,7 @@
       "startDate": "2026-10-31",
       "endDate": "2026-10-31",
       "genre": "대중음악",
-      "venue": "노들섬 (라이브하우스)",
+      "venue": "노들섬",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302852_261008_151728.png",
       "openRun": false,
@@ -69282,7 +67376,7 @@
       "startDate": "2026-11-01",
       "endDate": "2026-11-01",
       "genre": "서양음악(클래식)",
-      "venue": "고양아람누리 (아람음악당)",
+      "venue": "고양아람누리",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302812_261008_131810.png",
       "openRun": false,
@@ -69589,7 +67683,7 @@
       "startDate": "2026-11-01",
       "endDate": "2026-11-01",
       "genre": "대중음악",
-      "venue": "우무지 (우무지)",
+      "venue": "우무지",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302814_261008_132017.png",
       "openRun": false,
@@ -69961,7 +68055,7 @@
       "startDate": "2026-11-03",
       "endDate": "2026-11-03",
       "genre": "서양음악(클래식)",
-      "venue": "세종문화회관 (세종체임버홀)",
+      "venue": "세종문화회관",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302804_261008_124523.png",
       "openRun": false,
@@ -70542,7 +68636,7 @@
       "startDate": "2026-11-04",
       "endDate": "2026-11-04",
       "genre": "서양음악(클래식)",
-      "venue": "롯데콘서트홀 (롯데콘서트홀)",
+      "venue": "롯데콘서트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302788_261008_111018.jpg",
       "openRun": false,
@@ -70828,7 +68922,7 @@
       "startDate": "2026-11-05",
       "endDate": "2026-11-05",
       "genre": "서양음악(클래식)",
-      "venue": "부천아트센터 (콘서트홀)",
+      "venue": "부천아트센터",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF280847_261008_173754.jpg",
       "openRun": false,
@@ -71277,7 +69371,7 @@
       "startDate": "2026-11-05",
       "endDate": "2026-11-05",
       "genre": "서양음악(클래식)",
-      "venue": "포항시청 대잠홀 (포항시청 대잠홀)",
+      "venue": "포항시청 대잠홀",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302810_261008_131406.png",
       "openRun": false,
@@ -71374,7 +69468,7 @@
       "startDate": "2026-11-05",
       "endDate": "2026-11-05",
       "genre": "서양음악(클래식)",
-      "venue": "달서아트센터 (구. 웃는얼굴아트센터) (청룡홀)",
+      "venue": "달서아트센터 (구. 웃는얼굴아트센터)",
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302833_261008_140841.jpg",
       "openRun": false,
@@ -72361,7 +70455,7 @@
       "startDate": "2026-11-06",
       "endDate": "2026-11-07",
       "genre": "뮤지컬",
-      "venue": "다산아트홀 (다산아트홀)",
+      "venue": "다산아트홀",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302770_261008_101904.png",
       "openRun": false,
@@ -75332,7 +73426,7 @@
       "startDate": "2026-11-07",
       "endDate": "2026-11-14",
       "genre": "연극",
-      "venue": "LG아트센터 서울 (U+ 스테이지)",
+      "venue": "LG아트센터 서울",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302846_261008_144747.png",
       "openRun": false,
@@ -75783,7 +73877,7 @@
       "startDate": "2026-11-07",
       "endDate": "2026-11-07",
       "genre": "복합",
-      "venue": "만천명월예술인가 (만천홀(B1))",
+      "venue": "만천명월예술인가",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302848_261008_145901.png",
       "openRun": false,
@@ -77342,7 +75436,7 @@
       "startDate": "2026-11-08",
       "endDate": "2026-11-08",
       "genre": "서양음악(클래식)",
-      "venue": "공간울림연주홀 (공간울림연주홀)",
+      "venue": "공간울림연주홀",
       "sido": "대구",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302818_261008_132918.jpg",
       "openRun": false,
@@ -77707,7 +75801,7 @@
       "startDate": "2026-11-09",
       "endDate": "2026-11-09",
       "genre": "서양음악(클래식)",
-      "venue": "포항시청 대잠홀 (포항시청 대잠홀)",
+      "venue": "포항시청 대잠홀",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302847_261008_145747.jpg",
       "openRun": false,
@@ -78102,7 +76196,7 @@
       "startDate": "2026-11-10",
       "endDate": "2026-11-10",
       "genre": "뮤지컬",
-      "venue": "롯데콘서트홀 (롯데콘서트홀)",
+      "venue": "롯데콘서트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302792_261008_112216.jpg",
       "openRun": false,
@@ -78414,7 +76508,7 @@
       "startDate": "2026-11-11",
       "endDate": "2026-11-11",
       "genre": "서양음악(클래식)",
-      "venue": "전남광주통합특별시 예술의전당 (구. 광주예술의전당) (소극장)",
+      "venue": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302816_261008_132419.jpg",
       "openRun": false,
@@ -78943,7 +77037,7 @@
       "startDate": "2026-11-12",
       "endDate": "2026-11-13",
       "genre": "한국음악(국악)",
-      "venue": "국립국악원 (예악당)",
+      "venue": "국립국악원",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302808_261008_131045.png",
       "openRun": false,
@@ -85394,7 +83488,7 @@
       "startDate": "2026-11-20",
       "endDate": "2026-11-20",
       "genre": "서양음악(클래식)",
-      "venue": "함안문화예술회관 (대공연장)",
+      "venue": "함안문화예술회관",
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302781_261008_105224.jpg",
       "openRun": false,
@@ -87147,7 +85241,7 @@
       "startDate": "2026-11-21",
       "endDate": "2026-11-21",
       "genre": "서양음악(클래식)",
-      "venue": "세종문화회관 (세종체임버홀)",
+      "venue": "세종문화회관",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF277504_261007_180019.gif",
       "openRun": false,
@@ -87322,7 +85416,7 @@
       "startDate": "2026-11-21",
       "endDate": "2026-11-22",
       "genre": "대중무용",
-      "venue": "고려대학교 화정체육관 (주경기장)",
+      "venue": "고려대학교 화정체육관",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302793_261008_112459.jpg",
       "openRun": false,
@@ -88221,7 +86315,7 @@
       "startDate": "2026-11-21",
       "endDate": "2026-11-21",
       "genre": "무용(서양/한국무용)",
-      "venue": "춘천문화예술회관 (공연장)",
+      "venue": "춘천문화예술회관",
       "sido": "강원",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302813_261008_131810.jpg",
       "openRun": false,
@@ -89713,7 +87807,7 @@
       "startDate": "2026-11-24",
       "endDate": "2026-12-06",
       "genre": "연극",
-      "venue": "정심아트홀 (정심아트홀)",
+      "venue": "정심아트홀",
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302815_261008_132223.png",
       "openRun": false,
@@ -91409,7 +89503,7 @@
       "startDate": "2026-11-27",
       "endDate": "2026-11-27",
       "genre": "뮤지컬",
-      "venue": "울산중구문화의전당 (함월홀 (2층) )",
+      "venue": "울산중구문화의전당",
       "sido": "울산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302830_261008_140243.png",
       "openRun": false,
@@ -91992,7 +90086,7 @@
       "startDate": "2026-11-28",
       "endDate": "2026-11-28",
       "genre": "대중음악",
-      "venue": "HD아트센터(구 현대예술관) (대공연장)",
+      "venue": "HD아트센터(구 현대예술관)",
       "sido": "울산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302832_261008_140331.png",
       "openRun": false,
@@ -95503,7 +93597,7 @@
       "startDate": "2026-12-04",
       "endDate": "2026-12-04",
       "genre": "서양음악(클래식)",
-      "venue": "김해문화의전당 (마루홀)",
+      "venue": "김해문화의전당",
       "sido": "경남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF291884_261008_174202.png",
       "openRun": false,
@@ -95572,7 +93666,7 @@
       "startDate": "2026-12-04",
       "endDate": "2026-12-06",
       "genre": "뮤지컬",
-      "venue": "해운대문화회관 (고운홀)",
+      "venue": "해운대문화회관",
       "sido": "부산",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302822_261008_134128.png",
       "openRun": false,
@@ -95983,7 +94077,7 @@
       "startDate": "2026-12-04",
       "endDate": "2026-12-04",
       "genre": "대중음악",
-      "venue": "CJB미디어센터 (에덴아트홀)",
+      "venue": "CJB미디어센터",
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302778_261008_104440.jpg",
       "openRun": false,
@@ -96462,7 +94556,7 @@
       "startDate": "2026-12-05",
       "endDate": "2026-12-06",
       "genre": "뮤지컬",
-      "venue": "강동문화복지회관 (천생아트홀 (대공연장) )",
+      "venue": "강동문화복지회관",
       "sido": "경북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302789_261008_111210.jpg",
       "openRun": false,
@@ -98260,7 +96354,7 @@
       "startDate": "2026-12-06",
       "endDate": "2026-12-06",
       "genre": "서양음악(클래식)",
-      "venue": "세종문화회관 (세종대극장)",
+      "venue": "세종문화회관",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302791_261008_112038.png",
       "openRun": false,
@@ -99048,7 +97142,7 @@
       "startDate": "2026-12-11",
       "endDate": "2026-12-11",
       "genre": "대중음악",
-      "venue": "연세대학교 대강당 (연세대학교 대강당)",
+      "venue": "연세대학교 대강당",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302844_261008_144450.png",
       "openRun": false,
@@ -99523,7 +97617,7 @@
       "startDate": "2026-12-12",
       "endDate": "2027-03-01",
       "genre": "뮤지컬",
-      "venue": "서울어린이대공원 (아트센터)",
+      "venue": "서울어린이대공원",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302780_261008_104752.png",
       "openRun": false,
@@ -100958,7 +99052,7 @@
       "startDate": "2026-12-13",
       "endDate": "2026-12-13",
       "genre": "뮤지컬",
-      "venue": "순천문화예술회관 (대극장)",
+      "venue": "순천문화예술회관",
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302856_261008_152548.jpg",
       "openRun": false,
@@ -101297,7 +99391,7 @@
       "startDate": "2026-12-13",
       "endDate": "2026-12-13",
       "genre": "대중음악",
-      "venue": "전북대학교 삼성문화회관 (대공연장)",
+      "venue": "전북대학교 삼성문화회관",
       "sido": "전북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302775_261008_103616.jpg",
       "openRun": false,
@@ -102211,7 +100305,7 @@
       "startDate": "2026-12-18",
       "endDate": "2026-12-20",
       "genre": "뮤지컬",
-      "venue": "현대백화점 문화홀 [킨텍스] (문화홀 (9층))",
+      "venue": "현대백화점 문화홀 [킨텍스]",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302776_261008_103617.png",
       "openRun": false,
@@ -102423,7 +100517,7 @@
       "startDate": "2026-12-18",
       "endDate": "2026-12-19",
       "genre": "무용(서양/한국무용)",
-      "venue": "국립아시아문화전당 (극장1)",
+      "venue": "국립아시아문화전당",
       "sido": "전남",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302858_261008_154138.jpg",
       "openRun": false,
@@ -103411,7 +101505,7 @@
       "startDate": "2026-12-19",
       "endDate": "2026-12-19",
       "genre": "서양음악(클래식)",
-      "venue": "롯데콘서트홀 (롯데콘서트홀)",
+      "venue": "롯데콘서트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302798_261008_115611.jpg",
       "openRun": false,
@@ -103689,7 +101783,7 @@
       "startDate": "2026-12-19",
       "endDate": "2026-12-19",
       "genre": "한국음악(국악)",
-      "venue": "강동아트센터 (대극장 한강)",
+      "venue": "강동아트센터",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302827_261008_135232.jpg",
       "openRun": false,
@@ -105010,7 +103104,7 @@
       "startDate": "2026-12-22",
       "endDate": "2027-02-28",
       "genre": "뮤지컬",
-      "venue": "블루스퀘어 (우리은행홀 (구. 인터파크홀, 구. 신한카드홀) )",
+      "venue": "블루스퀘어",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302842_261008_143949.jpg",
       "openRun": false,
@@ -107826,7 +105920,7 @@
       "startDate": "2026-12-26",
       "endDate": "2026-12-26",
       "genre": "뮤지컬",
-      "venue": "충북혁신도시 복합혁신센터 (공연장 )",
+      "venue": "충북혁신도시 복합혁신센터",
       "sido": "충북",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302820_261008_133133.jpg",
       "openRun": false,
@@ -107963,7 +106057,7 @@
       "startDate": "2026-12-27",
       "endDate": "2026-12-27",
       "genre": "대중음악",
-      "venue": "GB성암아트홀 (GB성암아트홀)",
+      "venue": "GB성암아트홀",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302777_261008_104203.jpg",
       "openRun": false,
@@ -108118,7 +106212,7 @@
       "startDate": "2026-12-27",
       "endDate": "2026-12-27",
       "genre": "뮤지컬",
-      "venue": "시흥ABC행복학습센터 (ABC홀)",
+      "venue": "시흥ABC행복학습센터",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302794_261008_112809.jpg",
       "openRun": false,
@@ -108182,7 +106276,7 @@
       "startDate": "2026-12-27",
       "endDate": "2026-12-27",
       "genre": "뮤지컬",
-      "venue": "장안구민회관 한누리아트홀 (한누리아트홀)",
+      "venue": "장안구민회관 한누리아트홀",
       "sido": "경기",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302839_261008_143152.png",
       "openRun": false,
@@ -109146,7 +107240,7 @@
       "startDate": "2027-01-23",
       "endDate": "2027-01-23",
       "genre": "대중음악",
-      "venue": "예스24 라이브홀 (구. 악스코리아) (예스24 라이브홀 (구. 악스코리아))",
+      "venue": "예스24 라이브홀 (구. 악스코리아)",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302796_261008_114822.jpg",
       "openRun": false,
@@ -109246,7 +107340,7 @@
       "startDate": "2027-01-30",
       "endDate": "2027-01-30",
       "genre": "대중음악",
-      "venue": "예스24 라이브홀 (구. 악스코리아) (예스24 라이브홀 (구. 악스코리아))",
+      "venue": "예스24 라이브홀 (구. 악스코리아)",
       "sido": "서울",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF302829_261008_140205.jpg",
       "openRun": false,
