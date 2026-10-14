@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-10-13T23:12:07.150Z",
+    "fetchedAt": "2026-10-14T22:06:01.341Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 805,
+    "count": 811,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -15558,8 +15558,8 @@
       "sido": "서울",
       "sigungu": "서초구",
       "address": "서울특별시 서초구 신반포로 194 (반포동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/29/4094029_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/29/4094029_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/86/4124886_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/86/4124886_image3_1.jpg",
       "tel": "02-3477-2808",
       "homepage": "",
       "overview": "[서초뮤직앤아트페스티벌(SMAF)]은 청년의 감각과 열정으로 도심 한복판을 문화예술의 광장으로 바꾸는 서초구 대표 여름 축제이다. 2023년 축제의 첫선을 보인 이후 구민들의 열띤 호응 속에 빠르게 성장하여 올해로 4회를 맞이했으며, 축제 장소는 서울고속버스터미널 일대와 고터·세빛 관광특구를 배경으로 펼쳐진다. 올해는 특별히 음악과 패션이 결합된 고터·세빛 관광특구만의 융복합 K-컬처 무대를 새롭게 만나볼 수 있다. 아울러 서초구 관내 다양한 프로그램들과 연계하여, 축제를 찾은 방문객 모두에게 다양한 경험과 즐거움을 선사할 예정이다.",
@@ -15573,19 +15573,19 @@
       ],
       "lng": 127.0055699583,
       "lat": 37.5061540847,
-      "modifiedTime": "20260825100352",
+      "modifiedTime": "20261014163104",
       "place": "서울고속버스터미널 일대",
       "playtime": "17:00~21:00",
       "fee": "무료",
       "sponsor": "서초구청 / 서초문화재단",
       "program": "1. 메인 프로그램\n- 8월 29일(토) [DAY 1] 뮤직 다이브(Music Dive) : 축제의 열기를 더할 라이브 뮤직 스테이지\n- 8월 30일(일) [DAY 2] 패션 다이브(Fashion Dive) : 패션쇼와 함께하는 퍼포먼스 공연\n\n2. 연계 프로그램\n- 터치더피아노 : 시민 누구나 연주자가 되는 참여형 오픈 스테이지 프로그램\n- 여행하는 서재 : 도서관의 문턱을 낮추고 지역 곳곳을 순회하며 맞춤형 도서 큐레이션과 문화 경험을 제공하는 서초구만의 찾아가는 도서관\n- 서초-한강 아트투어(ART TOUR) : 고터·세빛 관광 특구, 세빛섬 및 반포한강공원 일대를 연결하는 투어형 전시\n\n3. 기타 프로그램 : 휴게 공간 및 현장 이벤트 등",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/26/4094026_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/27/4094027_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/28/4094028_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/30/4094030_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/32/4094032_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/46/4103746_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/46/4103746_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/85/4124885_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/87/4124887_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/88/4124888_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/89/4124889_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/90/4124890_image2_1.jpg"
       ]
     },
     {
@@ -15771,8 +15771,8 @@
       "sido": "서울",
       "sigungu": "중구",
       "address": "서울특별시 중구 을지로 281 (을지로7가)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/08/4109008_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/08/4109008_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/4124771_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/71/4124771_image3_1.jpg",
       "tel": "02-2153-0000",
       "homepage": "https://ddp.or.kr/",
       "overview": "서울 도심을 환하게 비춰줄 세계 최대 비정형 미디어아트 축제 [서울라이트 DDP 2026 가을]이 오는 9월 3일부터 13일까지 11일간 동대문디자인플라자(DDP)에서 개최된다. ‘DAYBREAKER’를 테마로, 어둠을 깨고 새로운 빛을 여는 혁신과 도전정신을 가을·겨울·카운트다운 세 개의 축제를 통해 선보인다. 그 첫 장을 여는 [서울라이트 DDP 2026 가을]은 ‘K-Original Light’를 주제로, 오늘의 한국 문화를 이루어온 근원적인 빛을 조명한다. 이번 행사에서는 특히 백남준의 철학을 바탕으로 라이브 퍼포먼스와 실시간 반응형 미디어아트를 통해 서울라이트 DDP 최초의 새로운 무대를 선보인다. 또한, 유영국의 작품과 한글을 현대적으로 재해석한 미디어아트, 빛과 소리·레이저가 결합된 퍼포먼스까지 더해져 앞으로의 서울라이트 DDP를 기억하게 될 또 하나의 시작을 만들어 본다.",
@@ -15784,22 +15784,22 @@
       ],
       "lng": 127.0095547691,
       "lat": 37.5660539726,
-      "modifiedTime": "20260908153554",
+      "modifiedTime": "20261014161346",
       "place": "동대문디자인플라자",
       "playtime": "19:30~22:30",
       "fee": "무료",
       "sponsor": "서울특별시 / 서울디자인재단",
       "program": "1. 메인 프로그램\n1) 미디어파사드\n- The Break Pointㅣ백남준×버스데이\n- 내 안의 산을 찾아서ㅣ유영국×권하윤\n- 말이 빛나는 밤ㅣ청구영언×투그레이\n\n2) 레이저아트\n- 미래의 빛, 시간의 울림을 통과하다ㅣDDP 365라이트x윤제호\n\n3) 라이브 퍼포먼스\n- IDIOTAPE(이디오테잎)\n- SION(시온)\n- HYPNOSIS THERAPY(힙노시스 테라피)\n- SOULSCPAE(소울스케이프)\n\n2. 이벤트\n- SNS 팔로우 이벤트\n- 관람 인증 이벤트\n- 개막식 선착순 굿즈 이벤트",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/02/4109002_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/03/4109003_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/04/4109004_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/05/4109005_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/06/4109006_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/07/4109007_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/09/4109009_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/10/4109010_image2_1.png",
-        "https://tong.visitkorea.or.kr/cms/resource/11/4109011_image2_1.png"
+        "https://tong.visitkorea.or.kr/cms/resource/64/4124764_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/65/4124765_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/66/4124766_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/67/4124767_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/68/4124768_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/72/4124772_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/73/4124773_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/74/4124774_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/75/4124775_image2_1.JPG"
       ]
     },
     {
@@ -17721,6 +17721,48 @@
         "https://tong.visitkorea.or.kr/cms/resource/02/4105302_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/03/4105303_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/04/4105304_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "3352029",
+      "title": "포천 한탄강 가든페스타",
+      "startDate": "2026-09-12",
+      "endDate": "2026-11-01",
+      "sido": "경기",
+      "sigungu": "포천시",
+      "address": "경기도 포천시 관인면 창동로 832",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/47/4114547_image2_1.jpeg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/47/4114547_image3_1.jpeg",
+      "tel": "031-538-3030",
+      "homepage": "https://www.pocheon-gardenfesta.kr/",
+      "overview": "'2026 포천 한탄강 가든페스타'는 포천 한탄강 생태경관단지에서 열리는 계절꽃과 자연을 주제로 한 대규모 생태・정원 축제이다. 유네스코 세계지질공원으로 등재 된 한탄강 지역의 광활한 자연 경관과 함께 길이 410m의 Y형 출렁다리의 스릴을 즐길 수 있는 축제이며, 인기 캐릭터 뽀로로와 친구들과 함께 가을 캠핑 컨셉의 포토존, 포천 대표 농특산물과 다양한 먹거리를 즐길 수 있는 리버마켓, 지역 작가와 함께하는 다양한 테마의 주제 정원, 가족과 함께 하는 전기자전거 체험이 준비되어 있다. 특히, 한탄강의 가을 바람을 느끼며 쉼을 만끽할 수 있는 공간도 함께 조성되어 있다.",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+      ],
+      "lng": 127.2085797227,
+      "lat": 38.0829307871,
+      "modifiedTime": "20261014173549",
+      "place": "포천 한탄강 생태경관단지",
+      "playtime": "09:00~18:00 (17:00 입장마감, 전기자전거 매표마감 16:30)",
+      "fee": "유료",
+      "sponsor": "포천시 / 포천시, 포천시 농업재단",
+      "program": "1. 메인프로그램\n- 뽀로로와 친구들 포토존, 가족형 전기자전거 체험, 계절꽃정원(국화, 버베나, 황화코스모스, 코스모스, 가우라 등), 포천 한탄강 마켓\n2. 부대프로그램\n- 버스킹 프로그램(마술, 인디 밴드 공연 등)\n- 가든라운지(독서 및 쉼터)\n- 체험프로그램(워터클레이로 만드는 워리스톤, 키캡·키링 만들기, 반려돌 만들기, 페이스페인팅, 연날리기)\n\n[이용요금]\n성인 : 입장료 7,000원 / 상품권 환급 4,000원\n청소년 및 어린이 : 입장료 5,000원 / 상품권 환급 3,000원\n면제(무료) : 포천시민, 장애인(경증 1명, 중증 보호자포함 2명), 국가유공자, 7세 미만(미취학) 등\n감면(50%) : 경로 및 상호결연도시(노원구·중구·강동구 주민)\n테라판타지아 연계할인: 성인 : 입장료 6,000원 / 상품권 환급 3,000원 / 어린이 및 청소년 : 입장료 4,000원 / 상품권 환급 2,000원 할인\n※ 감면 및 면제 대상 신분증 필수 지참(관련 증빙서류 미지참 시 일반요금 반영)\n※ 성인: 19세 이상인 사람, 청소년: 13세 이상 18세 이하인 사람, 어린이: 12세 이하의 사람 또는 초등학생\n※ 테라판타지아 연계 할인: 가든페스타 발권 시 테라판타지아 실물 입장권 제시\n- 유효 기간: 테라판타지아 발권일 포함한 3일 내(휴장일 포함)\n- 휴장 안내: 가든페스타(매주 화) / 테라판타지아(매주 월, 화)_가든페스타 휴장일(화)에도 유효기간 3일은 동일하게 적용되니, 관람 일정에 유의하시기 바랍니다.",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/76/4107076_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/45/4114545_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/46/4114546_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/48/4114548_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/49/4114549_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/50/4114550_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/51/4114551_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/52/4114552_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/53/4114553_image2_1.jpeg"
       ]
     },
     {
@@ -20038,6 +20080,41 @@
       ]
     },
     {
+      "id": "4123754",
+      "title": "의령기강리치꽃축제",
+      "startDate": "2026-09-24",
+      "endDate": "2026-10-25",
+      "sido": "경남",
+      "sigungu": "의령군",
+      "address": "경상남도 의령군 지정면 성산리 228 호국의병의 숲 친수공원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/56/4123756_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/56/4123756_image3_1.jpg",
+      "tel": "055-570-2764",
+      "homepage": "",
+      "overview": "「2026 의령 기강 리치 꽃 축제」는 2026년 9월 24일(목)부터 10월 25일(일)까지 의령군 지정면 성산리 672번지 일원 호국의병의 숲 친수공원에서 개최되는 꽃 테마 축제이다. 개막식은 9월 27일(일) 오후 2시부터 3시 30분까지 제2광장에서 열리며, 축제 프로그램은 9월 24일부터 27일, 10월 3일부터 5일, 10월 9일부터 11일까지 총 10일간 운영된다. 축제는 기강권역의 수변·꽃 경관과 '부자의 기운'이라는 테마를 접목해 의령만의 특색 있는 꽃축제로 조성하는 것을 추진 방향으로 한다. 경관단지는 총 7.1ha 규모로 조성되며 댑싸리, 팜파스그라스, 핑크뮬리, 아스타국화, 가우라, 코스모스 등이 식재된다. 주요 프로그램으로는 개막 퍼포먼스 및 축하공연, 생태탐방로 산책길, 꽃 포토존, 인생네컷 포토부스, 꽃 놀이터, 문화공연, 지역 먹거리 부스, 농·특산물 판매부스가 운영된다. 축제 기간 중에는 의령읍과 정곡면, 축제장을 순환하는 셔틀버스(빵빵버스)가 1일 8회 운행되며, 축제는 의령군이 주최하고 의령군의회가 후원한다.",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-09",
+        "2026-10"
+      ],
+      "lng": 128.4320700618,
+      "lat": 35.3962139306,
+      "modifiedTime": "20261014101912",
+      "place": "호국의병의 숲 친수공원",
+      "playtime": "09:00~18:00",
+      "fee": "무료",
+      "sponsor": "의령군청",
+      "program": "1. 메인프로그램\n- 개막식 및 축하공연, 생태탐방로 산책\n2. 부대프로그램\n- 문화공연\n3. 소비자 참여 프로그램\n- 사진 인화 이벤트, 인생네컷 포토부스, 꽃 놀이터\n4. 기타 내용\n- 먹거리 부스,농특산물 판매부스",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/57/4123757_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/58/4123758_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/59/4123759_image2_1.jpg"
+      ]
+    },
+    {
       "id": "2618014",
       "title": "인제가을꽃축제",
       "startDate": "2026-09-24",
@@ -20461,7 +20538,7 @@
       ],
       "lng": 127.1114520361,
       "lat": 36.8194430336,
-      "modifiedTime": "20260923104810",
+      "modifiedTime": "20261014155501",
       "place": "천안종합운동장 및 천안삼거리공원",
       "playtime": "10:00~22:00",
       "fee": "무료",
@@ -20699,7 +20776,7 @@
       ],
       "lng": 128.9681914,
       "lat": 35.1728573,
-      "modifiedTime": "20260929131547",
+      "modifiedTime": "20261014145223",
       "place": "삼락생태공원",
       "playtime": "10:00~22:00",
       "fee": "유료",
@@ -21411,7 +21488,7 @@
       ],
       "lng": 128.521518,
       "lat": 36.868718,
-      "modifiedTime": "20260923105749",
+      "modifiedTime": "20261014152046",
       "place": "영주시 풍기읍 남원천 및 풍기인삼공원 일원",
       "playtime": "10:00~20:00",
       "fee": "무료(일부 체험프로그램 유료)",
@@ -23160,6 +23237,34 @@
       ]
     },
     {
+      "id": "4099101",
+      "title": "불취무귀야시장 시즌2",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-31",
+      "sido": "경기",
+      "sigungu": "수원시",
+      "address": "경기도 수원시 팔달구 팔달문로 9 (팔달로2가)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/22/4123922_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/22/4123922_image3_1.jpg",
+      "tel": "031-8001-1101",
+      "homepage": "https://sscf2016.or.kr/",
+      "overview": "“취하지 않으면 돌아가지 못하리!” 정조대왕의 역사적 이야기를 담은 왕의 야시장 〈불취무귀〉가 더욱 풍성해진 시즌2로 돌아온다. 2026년 10월 10일부터 31일까지 매주 토요일, 총 4회에 걸쳐 수원남문시장 일원에서 펼쳐지는 이번 야시장은 전통시장의 역사와 문화를 먹거리, 공연, 체험 콘텐츠와 결합한 체류형 야간 축제다. 기존 행사 공간을 차 없는 거리와 시장 아케이드까지 확대해 방문객들이 시장 곳곳을 자유롭게 둘러보며 축제를 즐길 수 있도록 구성했다. 축제에서는 시장 상인들이 직접 운영하는 먹거리 공간 ‘남문장터’와 야외 취식 공간 ‘야장마당’, 푸드트럭 등 다채로운 먹거리를 만날 수 있다. 또한 시장을 탐방하며 미션을 수행하고 신분을 높여가는 게임형 프로그램과 시민 참여 이벤트가 진행된다. 특히 ‘왕의 귀환’, ‘조선귀신’ 등 회차별 특색 있는 콘셉트와 참여형 이벤트를 통해 색다른 즐거움을 선사한다. 왕의 야시장 〈불취무귀〉 시즌2는 수원의 역사성과 남문시장의 활기를 하나로 엮어, 시민과 관광객이 먹고 걷고 즐기며 수원의 밤을 새롭게 경험하는 축제다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 127.0184725227,
+      "lat": 37.277751177,
+      "modifiedTime": "20261014110701",
+      "place": "팔달문 고객지원센터 광장 / 지동교 일원",
+      "playtime": "17:00~22:00",
+      "fee": "무료",
+      "sponsor": "수원특례시 / 수원도시재단",
+      "program": "- 주요 프로그램 : 야시장 / 먹거리 / 달별장(플리마켓) / 참여형 이벤트(신분상승미션) / 무대 공연(버스킹, 디제잉)\n- 부대 행사 및 프로그램 : 플리마켓 / 버스킹 공연 등\n\n1회차(10/10) : 왕이 오신다 / 2회차(10/17) : 디제이 파티 / 3회차(10/24) : 슌듸데이(순대데이) / 4회차(10/31) : 조선귀신데이"
+    },
+    {
       "id": "2846034",
       "title": "안양청년축제",
       "startDate": "2026-10-10",
@@ -23180,7 +23285,7 @@
       ],
       "lng": 126.9613286581,
       "lat": 37.3901365976,
-      "modifiedTime": "20261001150529",
+      "modifiedTime": "20261014153205",
       "place": "평촌중앙공원",
       "playtime": "16:00~21:00",
       "fee": "무료",
@@ -23605,6 +23710,44 @@
         "https://tong.visitkorea.or.kr/cms/resource/36/3519736_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/37/3519737_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/84/4108384_image2_1.png"
+      ]
+    },
+    {
+      "id": "2561700",
+      "title": "광주서창억새축제",
+      "startDate": "2026-10-15",
+      "endDate": "2026-10-18",
+      "sido": "광주",
+      "sigungu": "서구",
+      "address": "전남광주통합특별시 서구 서창둑길 377 (벽진동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/22/3546722_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/22/3546722_image3_1.jpg",
+      "tel": "062-350-4792",
+      "homepage": "https://www.seogu.gwangju.kr",
+      "overview": "남도대표 자연 힐링축제인 광주서창억새축제는 영산강 일원에서 자연 억새와 어우러진 다양한 문화예술공연과 체험행사, 선셋런, 이색적인 포토존 등의 프로그램이 운영된다. 서구 8경 중 하나인 서창들녘 노을과 억새길을 걸으며 남도 유일 도심속 자연축제를 만날 수 있다. 이번 축제는 선율이 흐르는 억새길, LP음악과 함께하는 SG억새밭라운지, 사운드스케이프, 소리산책지도 만들기 등 산책과 소리를 콘텐츠화한 다양한 체험콘텐츠와 휴식왕을 찾아라!, 왈왈 런 등 서창억새축제에서만 즐길 수 있는 이벤트가 함께한다. 올해는 '은빛 억새가 전하는 가을로의 산책'이라는 주제로 10월 15일부터 18일까지 4일간 진행된다.",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 126.8287603579,
+      "lat": 35.1384947137,
+      "modifiedTime": "20261014131556",
+      "place": "영산강자전거길안내센터",
+      "playtime": "13:00~18:00",
+      "fee": "입장료 무료 (일부 유료 체험 - 먹거리, 일부 체험)",
+      "sponsor": "전남광주통합특별시 서구",
+      "program": "1. 대표프로그램\n- 선율이 흐르는 억새길, 뚜벅뚜벅 억새탐험대, SG 억새밭 라운지, 휴식왕을 찾아라, 노을530\n2. 주제프로그램\n- 억새 사운드 스케이프, 왈왈 런!, 소리 산책지도 만들기, 감성 트롤리 버스 여행, 억새 포토존\n3. 공연프로그램\n- 억새 버스킹, 선셋 라이브, 가족힐링 공연 , 주민 참여 페스타\n4. 체험프로그램\n- 억새밭 체험 놀이터, 찾아가는 사회적경제 이음장터, 서창마을투어\n5. 연계행사\n- 2026 광주서창 억새노을마라톤, 제16회 빛고을 문예 백일장, 한국마사회 승마체험\n6. 관람객 편의\n- (안내)종합안내소, 광주관광안내소, 서구관광안내소 (먹거리)서창주막, 천원국시, 시니어카페, F&B 플리마켓 (편의)공유자건거 대여소",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/34/4112934_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/35/4112935_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/36/4112936_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/37/4112937_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/40/4114540_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/41/4114541_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/42/4114542_image2_1.jpg"
       ]
     },
     {
@@ -24128,7 +24271,7 @@
       ],
       "lng": 129.0570297348,
       "lat": 35.2452812589,
-      "modifiedTime": "20261006102817",
+      "modifiedTime": "20261014123138",
       "place": "금정산성광장 및 금정산성 일원",
       "playtime": "10:00~19:00",
       "fee": "무료(일부 유료)",
@@ -24286,7 +24429,7 @@
       ],
       "lng": 129.0643020394,
       "lat": 35.148215631,
-      "modifiedTime": "20261013132445",
+      "modifiedTime": "20261014131256",
       "place": "나우어라이빙(NOW ARRIVING)",
       "playtime": "16:00~21:00",
       "fee": "무료",
@@ -24303,7 +24446,7 @@
       "address": "전남광주통합특별시 화순군 도곡면 고인돌1로 180",
       "image": "https://tong.visitkorea.or.kr/cms/resource/97/3547597_image2_1.jpg",
       "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/97/3547597_image3_1.jpg",
-      "tel": "061-379-3575",
+      "tel": "061-379-3575~8",
       "homepage": "https://www.hwasun.go.kr/festival/index.do?S=S11",
       "overview": "세계문화유산 화순 고인돌 가을꽃 축제는 2013년 ‘도심 속 국화향연’으로 시작해 남산공원에서 개최되던 국화축제를 화순 고인돌유적지로 옮겨 새롭게 발전시킨 화순의 대표 가을축제이다. 세계문화유산 고인돌과 매년 새로운 주제로 조성되는 다채로운 가을꽃이 어우러져 아름다운 가을 풍경을 선사하며, 고인돌과 청동기시대의 역사·문화를 흥미있게 풀어낸 가족 참여형 체험 프로그램과 다채로운 전시·공연 등 풍성한 볼거리와 즐길거리를 만나볼 수 있다. 특히 DolMen(고인돌)의 ‘DM’을 이름에 담은 화순의 대표 공연 ‘DM콘서트’​가 열려 축제의 즐거움을 더하며, 세계문화유산의 가치와 가을꽃의 아름다움을 함께 경험할 수 있는 특별한 축제를 선보인다.",
       "tags": [
@@ -24316,7 +24459,7 @@
       ],
       "lng": 126.9169377939,
       "lat": 34.9866366704,
-      "modifiedTime": "20261008171917",
+      "modifiedTime": "20261014094918",
       "place": "화순 고인돌 유적지",
       "playtime": "09:00~18:00",
       "fee": "유료 : 5,000원 (화순사랑상품권 5,000원 환급)무료 : 화순군민, 미취학아동, 장애인, 국가유공자, 독립유공자, 5·18민주유공자, 참전유공자(증빙자료 제시)",
@@ -24393,7 +24536,7 @@
       ],
       "lng": 127.0614526431,
       "lat": 38.0156483829,
-      "modifiedTime": "20261006112430",
+      "modifiedTime": "20261014130146",
       "place": "연천 전곡리 유적",
       "playtime": "09:00~18:00",
       "fee": "유료",
@@ -24410,6 +24553,46 @@
         "https://tong.visitkorea.or.kr/cms/resource/44/4117544_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/45/4117545_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/46/4117546_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "3363802",
+      "title": "영덕 웰니스페스타",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-18",
+      "sido": "경북",
+      "sigungu": "영덕군",
+      "address": "경상북도 영덕군 병곡면 고래불로 68",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/11/4123911_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/11/4123911_image3_1.jpg",
+      "tel": "054-730-5852",
+      "homepage": "https://yeongdeokwellnessfesta2026.com/",
+      "overview": "영덕군의 대표적인 가을 힐링 축제인 '영덕 웰니스 페스타 2026'이 다가오는 10월 16일부터 10월 18일까지 3일간 경상북도 영덕군 병곡면 고래불로 68에 위치한 고래불국민야영장 일원에서 개최된다. 푸른 동해바다와 아름다운 솔숲이 어우러진 이번 축제는 '웰니스피아 영덕 : 가장 완벽한 휴식을 만나다'라는 슬로건 아래 몸과 마음의 온전한 휴식을 선사할 예정이다. 주요 프로그램으로는 해변 맨발걷기(어싱) 및 노르딕 워킹을 비롯해 숲속 요가, 명상, 한방·생활·자연치유 등 자연 및 치유 프로그램이 마련되어 있다. 이와 함께 웰니스 뮤직 콘서트, 가을밤 감성을 더하는 캠프파이어, 영덕 로컬 먹거리 공간 등 다채로운 체험·참여 부대 행사도 준비되어 있다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 129.4190142309,
+      "lat": 36.571516196,
+      "modifiedTime": "20261014113932",
+      "place": "영덕고래불국민야영장일원",
+      "playtime": "11:00 ~ 19:00(일 11:00 ~ 18:00)",
+      "fee": "무료",
+      "sponsor": "영덕군 / (재)영덕문화관광재단",
+      "program": "1. 힐링스테이지(음악 치유 체험존)\n- 보이는 라디오, 웰니스 뮤직 콘서트, 웰니스 강연\n2. 자연치유길(자연치유체험존)\n- 맨발걷기 챌린지, 노르딕 워킹 챌린지\n3. 웰니스푸드코트(음식치유체험존)\n- 웰니스푸드콘테스트, 푸드트럭 등\n4. 영덕웰니스홍보존(영덕 홍보존)\n- 영덕 특산물 판매 플리마켓\n5. 한방체험클리닉(의료체험존)\n- 내몸바로 알기존, 전통한의치료존, 한의신기술치료존 등\n6. 힐링체험마당(체험행사존)\n- 심리상담 체험, 한지 무드등 만들기 체험, 아로마 테라피 체험\n7. 힐링라운지(캠핑라운지)\n- 캠프파이어, 싱어롱 프로그램\n8. 웰니스 체험 라운지(생활 치유 체험존)\n- 숲 속에서 만나는 웰니스 클래스\n9. 고래불 캠프 빌리지\n- 사전 예약제로 운영되는 캠프닉, 캠핑 체험 제공",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/10/4123910_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/12/4123912_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/13/4123913_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/14/4123914_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/15/4123915_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/16/4123916_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/17/4123917_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/18/4123918_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/19/4123919_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/20/4123920_image2_1.jpg"
       ]
     },
     {
@@ -24821,47 +25004,6 @@
       "program": "- 주요 프로그램 : 전국 드론 경연대회(드론 정밀조종미션, 탐색미션 챌린지) / 드론 컨퍼런스 / 드론라이트쇼 / 드론전시·체험 / 가수 축하공연 등\n- 부대 행사 및 프로그램 : 각종 드론 전시·체험 / 15개 시군 홍보부스 운영"
     },
     {
-      "id": "1806376",
-      "title": "강동바람꽃축제 X 강동북페스티벌",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "sido": "서울",
-      "sigungu": "강동구",
-      "address": "서울특별시 강동구 동남로 870 (상일동) 강동아트센터",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/97/4121697_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/97/4121697_image3_1.jpg",
-      "tel": "02-440-0516, 02-2045-7911",
-      "homepage": "https://www.gdlibrary.or.kr/",
-      "overview": "2026 강동바람꽃축제 × 17th 강동북페스티벌은 ‘읽고, 마시고, 예술하라’를 주제로 책과 예술, 음악과 공연, 전시와 로컬 콘텐츠를 한자리에서 만나는 문화축제이다. 김애란·성해나 작가와의 만남을 비롯해 독립출판사, 지역서점과 작가가 함께하는 ‘Text Hip’에서는 책을 통해 새로운 이야기를 발견하고 소통할 수 있으며, 바이닐 DJ와 다양한 공연, 지역 예술인 체험으로 구성된 ‘Art Hip’을 통해 일상 가까이에서 예술을 경험할 수 있다. 또한 강동구의 카페·베이커리·디저트 맛집 22곳도 함께하여 책과 문화, 지역의 맛을 한자리에서 만나볼 수 있는 특별한 축제이다.",
-      "tags": [
-        "꽃/자연",
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lng": 127.157342547,
-      "lat": 37.5512204558,
-      "modifiedTime": "20261012180927",
-      "place": "강동아트센터",
-      "playtime": "10:00~18:00",
-      "fee": "무료(체험 및 카페·디저트 팝업스토어는 유료)",
-      "sponsor": "강동문화재단 / 문화사업팀·도서관팀",
-      "program": "1. Art Hip : 공연 프로그램\n- 리얼 바이닐(LP) DJ with Soundsip\n- 음악공연 with 미스뚜라\n- 음악공연 with 김필선\n- 재즈서커스 with 팀퍼니스트 [체어, 테이블, 체어]\n- 음악공연 with 정욱\n- 음악공연 with 박찬영\n\n2. Text Hip : 강연 프로그램\n- 김애란 작가 강연 [소설의 음계, 삶의 사계]\n- 성해나 작가 강연 [사랑으로('진짜' 사랑)]\n\n3. 예술체험 및 공동창작\n- 예술체험 : 강동청년미술인 14팀·지역예술인 15팀·사회적경제지원센터 11팀\n- 공동창작 : 오늘의 유물(시민참여형 공동창작 설치미술)\n\n4. 지역상생 프로그램\n- 강동구 로컬 카페(11팀) 및 디저트(11팀) 팝업스토어\n- 「잇북人강동」 연계 지역작가(6명)·지역서점(3개)·지역출판사(3개) 부스\n- 독립출판 마켓 부스(7팀)\n- 협력기관 : 동네서점협동조합, 세종국어문화원 부스\n\n5. 독서·휴식·체험 프로그램\n- 야외 독서공간 + 북큐레이션\n- 숲속 북캠핑\n- 탐조 체험프로그램\n- 모던 전기수 이야기 낭독극",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/92/4121692_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/93/4121693_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/94/4121694_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/95/4121695_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/98/4121698_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/99/4121699_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/00/4121700_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/01/4121701_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/02/4121702_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/04/4121704_image2_1.jpg"
-      ]
-    },
-    {
       "id": "2618971",
       "title": "구로청소년축제",
       "startDate": "2026-10-17",
@@ -24938,43 +25080,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/45/4110845_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/46/4110846_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/47/4110847_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "2761411",
-      "title": "금천하모니축제",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-18",
-      "sido": "서울",
-      "sigungu": "금천구",
-      "address": "서울특별시 금천구 시흥대로73길 70 (시흥동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/92/3483192_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/92/3483192_image3_1.jpg",
-      "tel": "070-4118-3420",
-      "homepage": "",
-      "overview": "금천하모니축제는 2003년부터 시작해 20년 넘게 매해 열리는 금천구 대표 축제이다. 올해는 '울림의 하모니, 마음을 잇는 멜로디'라는 슬로건을 가지고 '음악'을 소재로 주민들이 쉬고 즐기고 화합하는 축제의 장을 마련하고자 한다. 금천구청을 중심으로 금나래중앙공원, 구청 앞 광장 등을 축제 장소로 활용하여 주민들이 직접 목소리를 모아 아름다운 멜로디를 만드는 시민참여 쇼콰이어 '싱 포 하모니'부터 신나는 음악 공연, 다채로운 체험 부스, 감성 가득한 플리마켓, 그리고 맛있는 푸드트럭까지 주민들이 즐기고 참여할수 있는 콘텐츠로 구성될 예정이다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lng": 126.895507334,
-      "lat": 37.4564406598,
-      "modifiedTime": "20261007145224",
-      "place": "금천구청 광장, 금나래 중앙공원 등",
-      "playtime": "11:00 ~ 20:00",
-      "fee": "무료",
-      "sponsor": "금천구 / 금천문화재단",
-      "program": "1. 메인프로그램 : 불꽃놀이, 초청가수, 시민 쇼콰이어 등\n2. 부대프로그램 : 체험부스, 플리마켓, 푸드트럭, 북페스티벌 등",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/75/3115075_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/76/3115076_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/95/3483195_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/96/3483196_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/58/4101158_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/59/4101159_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/60/4101160_image2_1.JPG"
       ]
     },
     {
@@ -25087,39 +25192,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/93/4115693_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/94/4115694_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/95/4115695_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "3548867",
-      "title": "대구 동구 어울림한마당",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "sido": "대구",
-      "sigungu": "동구",
-      "address": "대구광역시 동구 금호강변로 278 (율하동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/34/4122934_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/34/4122934_image3_1.jpg",
-      "tel": "053-662-4072",
-      "homepage": "https://blog.naver.com/dgdonggu/224428311829",
-      "overview": "대구 동구 어울림한마당은 동구를 찾은 모든 이들이 함께 어우러져 즐기고 소통하는 화합의 축제로, 도심 속 힐링과 연대의 가치를 나누고 지역사회에 활력을 불어넣기 위해 기획되었다. 주민과 방문객이 함께 참여하고 즐길 수 있는 다채로운 프로그램을 통해 세대와 계층을 아우르는 소통의 장을 마련하고, 지역공동체의 유대감을 강화하고자 한다. 주요 프로그램으로는 주민 화합과 건강한 여가문화를 위한 체육대회, 흥겨운 무대를 선사하는 전국트롯가요제와 어울림콘서트, 어린이와 가족이 함께 즐기는 i 팝업놀이터, 배움과 나눔의 기회를 제공하는 평생학습마당 등이 운영된다. 특히 드론 라이트 쇼는 첨단기술과 문화예술이 어우러진 야간 볼거리를 선사하며 축제의 대미를 장식할 예정이다. 이처럼 다양한 문화·체험 프로그램을 통해 지역의 매력을 널리 알리고 주민과 방문객이 함께 즐기는 열린 축제를 구현함으로써, ‘소통과 화합의 도시 동구’라는 가치를 확산하고 동구의 새로운 미래와 지역 발전의 가능성을 함께 나누고자 한다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lng": 128.6928367841,
-      "lat": 35.8599184085,
-      "modifiedTime": "20261013171009",
-      "place": "율하체육공원",
-      "playtime": "10:00 ~ 21:00",
-      "fee": "무료",
-      "sponsor": "대구광역시 동구",
-      "program": "- 개회식\n- 어울림체육대회\n- 전국 트롯 가요제\n- 어울림 콘서트(초대가수)\n- 드론라이트쇼 및 불꽃놀이\n- 평생학습 어울마당 / 동구 i 팝업놀이터",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/33/4122933_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/35/4122935_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/36/4122936_image2_1.jpg"
       ]
     },
     {
@@ -25301,46 +25373,6 @@
       ]
     },
     {
-      "id": "4115702",
-      "title": "서초 AI 페스타",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "sido": "서울",
-      "sigungu": "서초구",
-      "address": "서울특별시 서초구 바우뫼로12길 40 (양재동) 서초문화예술공원",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/04/4115704_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/04/4115704_image3_1.jpg",
-      "tel": "02-2155-8831",
-      "homepage": "https://seochoai.kr/",
-      "overview": "2026 서초 AI 페스타는 서울특별시 서초구청이 주최하는 인공지능 체험형 축제다. 축제는 2026년 10월 17일(토) 오전 10시부터 오후 6시까지 서초문화예술공원 일원에서 열린다. 행사장은 Special·Education·On Tech·Create·Healthcare·Open 등 6개 테마의 AI 체험존으로 구성되어, 생활·교육·기술혁신·창작·헬스케어·공공정책 등 다양한 분야의 인공지능 기술을 직접 보고 체험할 수 있다. 메인 무대에서는 피지컬 AI 로봇쇼, AI 골든벨, AI 시네마, AI × 콤팩트 로봇 퍼포먼스, AI 캐릭터 공모전 시상식, 토크쇼 등의 프로그램이 시간대별로 진행되며, 부대 프로그램으로 디지털 노마드존, AI 캐릭터 공모 전시, 스탬프 투어, 찾아가는 AI 체육관, 플라잉 캐치, 여행하는 AI 서재, 커피차, 푸드트럭 등이 함께 운영된다. 지역 주민으로 구성된 주민평가단은 AI 캐릭터 공모전 출품작을 직접 심사하고 투표에 참여한다. 축제는 KT, ESTsoft, KETI(한국전자기술연구원), 서초AiCT, 농심 등 여러 기업 및 기관과의 협력으로 운영되며, 관람객은 인공지능 기술을 일상 속에서 체험하는 하루를 보낼 수 있다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lng": 127.0320215881,
-      "lat": 37.4698840183,
-      "modifiedTime": "20260929100524",
-      "place": "서초문화예술공원",
-      "playtime": "10:00~18:00",
-      "fee": "무료",
-      "sponsor": "서초구청 / 서초구청, 숭실대AI융합연구원, ㈜아야어여",
-      "program": "1. 메인프로그램 (무대 프로그램, 서초문화예술공원 메인무대)\n- 피지컬 AI 로봇쇼\n- AI 골든벨 : 도전! OX 퀴즈\n- AI 시네마\n- AI × 콤팩트 로봇 퍼포먼스\n- AI 캐릭터 공모전 시상식\n- 토크쇼 : AI로 이거까지 해봤다\n- AI 시네마\n- AI × 콤팩트 로봇 퍼포먼스\n- AI 시네마\n\n2. 부대프로그램\n- AI 체험존 6개 존(Special · Education · On Tech · Create · Healthcare · Open) : 생활·교육·기술혁신·창작·헬스케어·공공정책 분야 AI 체험\n- 디지털 노마드존, AI 캐릭터 공모 전시, 찾아가는 AI 체육관, 플라잉 캐치, 여행하는 AI 서재\n\n3. 소비자 참여 프로그램\n- 스탬프 투어\n- AI 캐릭터 공모전 주민평가단 투표\n- 푸드트럭 운영",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/03/4115703_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/05/4115705_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/06/4115706_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/07/4115707_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/08/4115708_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/09/4115709_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/10/4115710_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/11/4115711_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/12/4115712_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/13/4115713_image2_1.jpg"
-      ]
-    },
-    {
       "id": "2756476",
       "title": "세계유산 조선왕릉축전",
       "startDate": "2026-10-17",
@@ -25378,41 +25410,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/70/4106570_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/71/4106571_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/72/4106572_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "3544911",
-      "title": "수봉산 페스티벌",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-18",
-      "sido": "인천",
-      "sigungu": "미추홀구",
-      "address": "인천광역시 미추홀구 수봉안길 84 (숭의동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/40/4116440_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/40/4116440_image3_1.jpg",
-      "tel": "032-880-7976",
-      "homepage": "https://www.michuhol.go.kr/",
-      "overview": "2021년부터 시작된 수봉산 페스티벌은 인천 미추홀구의 대표적인 문화축제로, 수봉산의 자연경관과 다채로운 문화예술을 한자리에서 즐길 수 있는 관광연계형 축제이다. 수봉산을 찾은 주민과 관광객이 자연 속에서 공연과 전시, 체험, 먹거리를 함께 즐기며 특별한 시간을 보낼 수 있도록 다양한 프로그램을 선보인다. 축제에서는 지역예술인의 공연과 인기 아티스트 초청공연을 비롯해 다양한 장르의 음악을 만날 수 있으며, 가족과 함께 즐길 수 있는 체험프로그램과 아트프리마켓, 상설전시, 푸드존 등 풍성한 즐길거리와 볼거리, 먹거리가 마련된다. 특히 수봉산의 역사적 가치와 아름다운 자연환경을 배경으로 펼쳐지는 야외 공연은 도심 속에서 자연과 문화를 동시에 만끽할 수 있는 수봉산 페스티벌만의 매력이다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lng": 126.6632947343,
-      "lat": 37.4598298556,
-      "modifiedTime": "20261007173628",
-      "place": "수봉공원 인공폭포 일대",
-      "playtime": "14:00~20:30",
-      "fee": "무료",
-      "sponsor": "인천광역시 미추홀구",
-      "program": "1. 메인프로그램\n- 지역예술인, 대학교 동아리, 아티스트(에일리, 변진섭, 김현정) 무대 공연\n2. 부대프로그램\n- 숲속영화관, 아트프리마켓, 거리예술(삐에로, 코스프레), 생태QR포토존\n3. 체험프로그램\n- 볼펜꾸미기, 캔버스 만들기, 이오난사 거치대 만들기, 자원순환 체험, 목공예품 만들기 등 기관(부서) 연계 체험, 정책홍보\n4. 푸드존\n- 노인인력개발센터 연계 카페부스, 푸드트럭 운영",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/36/4116436_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/37/4116437_image2_1.png",
-        "https://tong.visitkorea.or.kr/cms/resource/38/4116438_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/39/4116439_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/41/4116441_image2_1.png"
       ]
     },
     {
@@ -25488,47 +25485,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/24/4122224_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/25/4122225_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/27/4122227_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "2561795",
-      "title": "유성국화축제",
-      "startDate": "2026-10-17",
-      "endDate": "2026-11-01",
-      "sido": "대전",
-      "sigungu": "유성구",
-      "address": "대전광역시 유성구 어은로 27 (봉명동) 유림공원 일원",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/05/3546705_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/05/3546705_image3_1.jpg",
-      "tel": "042-611-2678",
-      "homepage": "http://www.ysfesta.com/bbs/ycf.php",
-      "overview": "2022년부터 대전시 대표축제로 선정된 대전 유성구 대표 가을축제인 「제17회 유성국화축제」가 10월 17일부터 11월 1일까지 16일간 유림공원 일원에서 개최된다. 국화 본연의 아름다움과 과학도시 유성의 특색을 담은 다채로운 전시와 체험, 공연을 만나볼 수 있다. 올해는 과학도시의 상징인 한빛탑을 국화 조형물로 새롭게 선보이고, 아스타국화 정원을 유성천(어은교 하부)까지 확대하는 한편 반도지와 유성천 산책길에 코스모스길을 조성해 풍성한 가을꽃 경관을 제공한다. 또한 드로잉 캐리커처 로봇, 테라리움 등 생활가드닝 체험, 목재체험, 국화 관련 체험 프로그램과 지역 대학 및 로컬 아티스트 공연을 운영한다. 밤에는 달빛 버스킹, 캔들가든 콘서트, 소망등, 국화(온빛)시네마 등 감성적인 야간 콘텐츠를 마련해 오래 머물며 즐길 수 있는 축제로 꾸민다. 축제장 인근 상권과 연계한 영수증 이벤트와 맛집 지도도 운영해 지역경제 활성화에도 힘을 더한다. 아름다운 국화와 가을꽃, 과학과 예술, 문화와 쉼이 어우러지는 유성국화축제에서 특별한 가을의 추억을 만나볼 수 있다.",
-      "tags": [
-        "꽃/자연",
-        "가을"
-      ],
-      "months": [
-        "2026-10",
-        "2026-11"
-      ],
-      "lng": 127.3576881543,
-      "lat": 36.3606844775,
-      "modifiedTime": "20261012131149",
-      "place": "유림공원 일원",
-      "playtime": "10:00~22:00",
-      "fee": "무료",
-      "sponsor": "대전광역시 유성구",
-      "program": "1. 메인프로그램\n- 국화조형물, 국화 등 가을꽃 배치, 국화분재, 기업후원 정원조성, 체험부스 운영, 연계행사 개최 등\n2. 부대프로그램\n- '드로잉 캐리커처 로봇' 운영, 아스타 정원, 코스모스길 등\n3. 소비자 참여 프로그램\n- 생활가드닝 체험(테라리움 등), 캔들가든 콘서트, 달빛 버스킹, 국화시네마, 지역상권 상생 영수증 이벤트 등\n4. 기타 내용\n- 아스타 정원, 코스모스길 등",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/99/3546699_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/00/3546700_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/01/3546701_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/02/3546702_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/03/3546703_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/04/3546704_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/08/3546708_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/09/3546709_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/10/4115610_image2_1.jpg"
       ]
     },
     {
@@ -25713,6 +25669,35 @@
         "https://tong.visitkorea.or.kr/cms/resource/63/4104863_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/89/4121189_image2_1.jpg"
       ]
+    },
+    {
+      "id": "4124907",
+      "title": "2026 쉬엄쉬엄모닝",
+      "startDate": "2026-10-18",
+      "endDate": "2026-11-29",
+      "sido": "서울",
+      "sigungu": "강동구",
+      "address": "서울특별시 강동구 선사로 83-19 (천호동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/08/4124908_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/08/4124908_image3_1.jpg",
+      "tel": "1644-6155",
+      "homepage": "https://www.instagram.com/siumsium.morning/",
+      "overview": "누구나 자신의 속도로 즐기는 주말 아침, ‘쉬엄쉬엄모닝’이 열린다. 걷기·달리기·자전거는 물론 유아차와 반려견 동반까지, 자신의 체력에 맞춰 원하는 방식으로 참여할 수 있는 서울형 아침 운동 프로그램이다. 기록과 순위에 대한 부담 없이 운동을 즐기며 서울의 아침을 만나는 시간이다.\n2026년 10월 18일부터 11월 29일까지 광진교·잠실대교·서강대교 일대에서 총 6회 운영한다. 서울의 대교와 한강공원을 무대로 도심과 한강의 풍경을 따라 걷고 달리며, 익숙한 공간의 새로운 매력을 느낄 수 있다.\n현장에서는 전문 강사와 함께하는 GX 프로그램과 자신의 체력 수준을 확인하는 ‘찾아가는 서울체력장’도 함께 즐길 수 있다. 혼자서도, 가족·친구와 함께해도 좋다. 운동을 처음 시작하는 시민부터 평소 운동을 즐기는 시민까지 누구나 부담 없이 참여할 수 있다. 참여는 별도 사전 신청 없이 행사 당일 현장 접수로 진행한다. 회차별 장소와 코스, 프로그램은 공식 홈페이지에서 확인할 수 있다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10",
+        "2026-11"
+      ],
+      "lng": 127.1179813872,
+      "lat": 37.5452481279,
+      "modifiedTime": "20261014164043",
+      "place": "광진교",
+      "playtime": "06:00~10:30",
+      "fee": "무료",
+      "sponsor": "서울특별시 / ㈜헤이웨이",
+      "program": "- 기간 : 2026년 10월 18일·25일, 11월 8일·15일·22일·29일 / 총 6회\n- 장소: 광진교·잠실대교·서강대교 일대\n- 주요 프로그램: 걷기·달리기·자전거 코스 참여, 유아차·반려견 동반 참여\n- 부대 행사 및 프로그램: 전문 강사 지도 GX 프로로그램 / 찾아가는 서울시 체력장 / 모닝 옐로우 라운지\n\n※ 별도 사전 신청 없이 행사 당일 현장 접수"
     },
     {
       "id": "4117084",
@@ -25900,6 +25885,42 @@
         "https://tong.visitkorea.or.kr/cms/resource/93/4113393_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/94/4113394_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/95/4113395_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "2558866",
+      "title": "예산장터 삼국축제",
+      "startDate": "2026-10-22",
+      "endDate": "2026-10-25",
+      "sido": "충남",
+      "sigungu": "예산군",
+      "address": "충청남도 예산군 예산읍 예산시장길 2",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/59/4095359_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/59/4095359_image3_1.jpg",
+      "tel": "041-332-4317",
+      "homepage": "",
+      "overview": "올해는 예산장터 삼국축제 10년, 예산시장 100년을 기념하는 특별한 해로, 국밥·국수·국화에 담긴 군민들의 삻과 이야기, 새로운 100년을 시작하는 예산시장의 끝없는 희망의 메시지를 전달하는 축제로 진행될 예정이며 지난 10년간의 기록들과 군민들의 바람을 생동감과 안정감있게 '삼국'이라는 희망상자에 빠짐없이 담을 예정이다. 가치의 확장, 공간의 확장, 참여의 확장, 시간의 확장 이 4가지의 테마로 '끝나지 않는 이야기' 주제를 풀어나갈 것이며, \"예산장터! 우리들의 이야기는 계속된다\"라는 슬로건을 가지고,\n우리 지역 전역의 축제분위기를 고조시키며, 지역 청년로컬크리에이터 및 청년단체와의 협업을 통한 지역축제의 브랜드를 선보일 예정이다. 예산장터 삼국축제에서 꼭 해야하는 버킷리스트 10가지 중 선정하여 참여하는 대표프로그램을 중심으로 삼국콘텐츠를 강화한 지역민과 함께하는 먹거리문화를 활성화하여 운영될 예정이다.",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 126.8496518916,
+      "lat": 36.6770296847,
+      "modifiedTime": "20261014142529",
+      "place": "예산상설시장 일원",
+      "playtime": "10:00~20:00",
+      "fee": "무료",
+      "sponsor": "예산군 / (사)예산군개발위원회",
+      "program": "1. : 삼국축제에서 꼭 해야하는 10가지 콘텐츠를 선정, 단계별로 참여하는 대표 프로그램\n2. : 세가지(삼국,8미,로컬) 삼국 테마의 지역민 참여 먹거리 프로그램\n3. : 예산장터를 대표하는 글로컬(Glocal) 콘텐츠 이머시브 연극\n4. : 색(color)이 있는 요일별 주무대 공연프로그램\n5. 예산춤페스티벌 : 전국의 춤 좀 추는 사람들이 모여 춤대결을 펼치는 경연프로그램\n6. 전시프로그램 : 국화 및 포토존 전시\n7. 홍보, 먹거리 운영",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/58/4095358_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/60/4095360_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/61/4095361_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/62/4095362_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/63/4095363_image2_1.jpg"
       ]
     },
     {
@@ -26190,6 +26211,42 @@
         "https://tong.visitkorea.or.kr/cms/resource/97/4110497_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/98/4110498_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/99/4110499_image2_1.png"
+      ]
+    },
+    {
+      "id": "1325331",
+      "title": "문화다양성축제 MAMF(맘프)",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "sido": "경남",
+      "sigungu": "창원시",
+      "address": "경상남도 창원시 성산구 중앙대로186번길 13 (신월동) 용지문화공원, 성산아트홀, 창원중앙대로 일원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/13/4125113_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/13/4125113_image3_1.JPG",
+      "tel": "055-277-8779",
+      "homepage": "https://www.mamf.co.kr/",
+      "overview": "MAMF(맘프)는 대한민국에서 살아가는 이주민과 내국인이 문화적 다양성을 존중하고 서로의 문화를 이해할 수 있도록 기획된 국내 최대 규모의 문화다양성 축제이다. 경상남도 창원에서 개최되며, 세계 각국의 다채로운 문화를 다양한 방식으로 체험 및 관람할 수 있도록 운영된다. 개막식&개막축하공연, 주빈국 예술단 특별문화공연, 문화다양성 퍼레이드, 월드뮤직페스티벌, 대한민국이주민가요제, 세계 문화 체험 부스 등 다채로운 프로그램으로 구성되어 있으며, 이를 통해 방문객들은 3일간 세계 문화를 직접 보고 느끼며 흥미롭게 향유할 수 있다. 2026년 주빈국은 우즈베키스탄으로, 국립예술단의 전통 공연과 특별한 문화를 선보일 예정이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 128.687083687,
+      "lat": 35.2293083357,
+      "modifiedTime": "20261014175724",
+      "place": "용지문화공원, 성산아트홀, 창원중앙대로 일원",
+      "playtime": "10:00~20:30",
+      "fee": "무료",
+      "sponsor": "경상남도, 창원특례시, 경남이주민센터, 창원문화재단 / MAMF(맘프)2026 추진위원회",
+      "program": "1. 메인프로그램 : 개막식&개막축하공연, 주빈국 국립예술단 특별문화공연, 문화다양성 퍼레이드, 대한민국이주민가요제, 월드뮤직페스티벌, 마이그런츠아리랑\n2. 부대프로그램 : 프린지&버스킹 페스타, 도시에서 떠나는 세계여행\n3. 소비자 참여 프로그램 : 글로벌 스트리트 푸드, 지구을 바자르&플리마켓\n4. 기타 내용 : 체험부스를 통해 다양한 체험, 관람 가능",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/08/4125108_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/09/4125109_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/10/4125110_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/11/4125111_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/17/4125117_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/18/4125118_image2_1.jpg"
       ]
     },
     {
@@ -26806,6 +26863,46 @@
       ]
     },
     {
+      "id": "527789",
+      "title": "순천 낙안읍성 민속문화축제",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "sido": "전남",
+      "sigungu": "순천시",
+      "address": "전남광주통합특별시 순천시 낙안면 충민길 30 순천 낙안읍성",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/32/4124832_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/32/4124832_image3_1.jpg",
+      "tel": "061-749-8838",
+      "homepage": "https://www.suncheon.go.kr/nagan/page02/0002/0001/",
+      "overview": "600여 년의 역사와 전통을 간직한 순천 낙안읍성에서 2026년 10월 24일부터 25일까지 '낙안(樂安), 즐거움을 쌓고 세대를 잇다'를 주제로 제31회 순천 낙안읍성 민속문화축제가 열린다. 조선시대 성곽과 관아, 초가마을이 어우러진 낙안읍성에서 남녀노소 누구나 전통문화의 멋과 흥을 즐길 수 있다.\n\n축제의 시작을 알리는 낙안군수 부임행렬을 비롯해 수문장 교대식과 기마장군 순라의식이 조선시대 읍성의 모습을 재현한다. 주민들이 함께하는 백중놀이와 성곽쌓기, 줄타기와 전통무술, 김빈길 창극, 판소리와 가야금병창 공연이 풍성하게 펼쳐진다. 또한 대중가요 등을 만날 수 있는 '낙안 樂 페스타'가 세대를 아우르는 흥겨운 무대를 선사한다.\n\n큰줄다리기와 씨름·팔씨름대회, 윷놀이 등 참여 행사와 전통 호패 만들기, 짚물공예, 활쏘기 등 다채로운 체험 프로그램도 마련된다. 지역 먹거리와 함께 과거와 현재를 잇는 특별한 축제의 즐거움을 느낄 수 있다.",
+      "tags": [
+        "문화/전통",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 127.3417276358,
+      "lat": 34.9060616206,
+      "modifiedTime": "20261014162352",
+      "place": "순천 낙안읍성",
+      "playtime": "11:00~17:00",
+      "fee": "유료 (성인 4,000원, 청소년 및 군인 2,500원, 어린이 1,500원) 할인 등 기타 세부사항은 홈페이지 참고",
+      "sponsor": "전남광주통합특별시 순천시 / (사)낙안읍성보존회·순천낙안읍성민속문화축제추진위",
+      "program": "1. 개막식 : 낙안군수 부임행렬, 개막식 축하공연(낙안 樂 페스타)\n2. 민속재현 : 백중놀이/성곽쌓기, 수문장 교대식, 기마장군 순라의식\n3. 참여행사 : 큰줄다리기, 씨름대회, 팔씨름대회, 윷놀이(마을대항전)\n4. 축제공연 : 낙안 樂 페스타, 줄타기공연, 전통무술공연, 김빈길 창극 공연 등\n5. 상시행사 : 먹거리 및 체험 부스 운영, 전통생활용품 전시 및 판매 등",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/25/4124825_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/26/4124826_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/27/4124827_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/28/4124828_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/29/4124829_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/30/4124830_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/31/4124831_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/33/4124833_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/34/4124834_image2_1.jpg"
+      ]
+    },
+    {
       "id": "3522322",
       "title": "오슬로우 빈티지 마켓",
       "startDate": "2026-10-24",
@@ -26875,6 +26972,45 @@
       ]
     },
     {
+      "id": "2621502",
+      "title": "제주마축제",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "sido": "제주",
+      "sigungu": "제주시",
+      "address": "제주특별자치도 제주시 애월읍 평화로 2144 렛츠런파크 제주",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/65/3545565_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/65/3545565_image3_1.jpg",
+      "tel": "1566-3333",
+      "homepage": "https://jejuma.festimap.kr/",
+      "overview": "2026년 제21회 제주마축제는 2026년 10월 24일부터 25일까지 이틀간 제주시 애월읍 렛츠런파크 제주 가족공원 일원에서 열리는 축제이다. 운영 시간은 매일 오전 10시부터 오후 6시까지이며, 주최 기관은 한국마사회와 제주특별자치도이고 주관 기관은 한국마사회 제주본부이다. 전체 프로그램은 총 37종으로, 전시 8종, 산업·예술 12종, 놀이·체험 9종, 마켓·휴식 5종, 연계 3종의 구성이다. 행사장은 제주마 헤리티지 라운지, 말테우리 스튜디오, 레클리스 플레이파크, 제라진 피크닉마켓의 네 가지 테마 공간을 중심으로 운영되는 구조이다. 헌마공신 김만일과 제주마의 역사를 다루는 전시와 도슨트, 다큐멘터리 상영이 마련되며, 포니 먹이주기·승마·말 그림 채색 등 제주마 교감 프로그램이 진행되는 축제이다. 말테우리 문화 체험, 승마 시뮬레이터, 인공지능 포토 스튜디오, 댄스와 그림그리기 대회, 전통놀이, 가족 경주, 피크닉 공연, 먹거리와 제주 로컬 상품 판매, 대상경주 및 스탬프랠리 연계 프로그램도 함께 운영되는 행사이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 126.3931218693,
+      "lat": 33.409840857,
+      "modifiedTime": "20261014090232",
+      "place": "렛츠런파크 제주",
+      "playtime": "10:00~17:00",
+      "fee": "무료",
+      "sponsor": "한국마사회 제주지역본부",
+      "program": "1. 메인프로그램\n- 제주마 헤리티지 라운지 : 헌마공신 김만일 전시물 관람, 스토리텔링 도슨트, 제주마 다큐멘터리 상영, 말테우리 복장 착장 체험, 마혼비 톺아보기, 포니 먹이주기, 제주마 승마 체험, 말 그림 도안 채색 체험\n- 말테우리 스튜디오 : 말테우리 입문소, 말테우리 차림새 공방, 말테우리 도구 제작소, 말테우리 놀이터, 말테우리 임명식, 장제 시연, 승마 시뮬레이터 체험, 한국마사회 인공지능 성과 홍보관, 제주마 인공지능 포토 스튜디오, 제주마축제 추억네컷\n\n2. 부대프로그램\n- 제라진 피크닉마켓 : 감성 힐링 캠프닉, 피크닉 프린지 공연, 렛츠런 미식 투어, 렛츠런 낭만 와이너리, 제라진 제주 로컬 판매 부스\n- 연계 프로그램 : 대상경주 이벤트, 말테우리 오딧세이 스탬프랠리\n\n3. 소비자 참여 프로그램\n- 레클리스 플레이파크 : 제주마 댄스 페스타 ‘말춤 광장’, 어린이 제주마 그림그리기 대회, 제주명마 윷놀이·넉둥베기 대회 및 경마 보드게임 체험, 나의 제주마 응원전, 포니 사이클 경주대회, 가족대항 말끈 릴레이 마라톤대회, 렛츠런 명랑 운동회, 말마 술래잡기, 레클리스 히어로 아카데미\n\n4. 기타 내용\n- 산업·홍보 프로그램 : 한국마사회 제주본부 말산업 취업상담, 도내 기관·기업 홍보관, 전자카드 가입 이벤트",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/62/3545562_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/63/3545563_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/64/3545564_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/66/3545566_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/67/3545567_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/69/3545569_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/58/4123458_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/63/4123463_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/64/4123464_image2_1.jpg"
+      ]
+    },
+    {
       "id": "3547712",
       "title": "한미친선 문화 한마당",
       "startDate": "2026-10-24",
@@ -26908,36 +27044,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/94/4118194_image2_1.JPG",
         "https://tong.visitkorea.or.kr/cms/resource/95/4118195_image2_1.jpg"
       ]
-    },
-    {
-      "id": "3370452",
-      "title": "2026 수성국제비엔날레",
-      "startDate": "2026-10-27",
-      "endDate": "2026-11-22",
-      "sido": "대구",
-      "sigungu": "수성구",
-      "address": "대구광역시 수성구 무학로 112 (두산동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/75/4116875_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/75/4116875_image3_1.jpg",
-      "tel": "053-668-1541",
-      "homepage": "https://www.suseong.kr/urbanism/",
-      "overview": "「2026 수성국제비엔날레」는 ‘Living Ground(리빙 그라운드)’를 주제로 건축과 조경을 통해 도시와 자연, 공간과 사람의 관계를 새롭게 바라보는 국제 비엔날레이다. 국내외 건축가와 조경가가 참여해 수성구의 공원과 호수, 유휴공간 등 실제 도시 공간에 다양한 프로젝트를 구현한다. 전시와 포럼, 체험 및 참여 프로그램을 통해 시민들이 일상 속에서 건축과 조경을 경험할 수 있다. 2026년 10월 27일부터 11월 22일까지 수성못 상화동산 일원에서 펼쳐진다.",
-      "tags": [
-        "전시/예술",
-        "가을"
-      ],
-      "months": [
-        "2026-10",
-        "2026-11"
-      ],
-      "lng": 128.6205920321,
-      "lat": 35.8293696738,
-      "modifiedTime": "20261001145950",
-      "place": "수성못 상화동산",
-      "playtime": "- 평일 12:00~21:00- 주말 10:00~21:00",
-      "fee": "무료",
-      "sponsor": "대구광역시 수성구 / (재)수성문화재단, 비엔날레 조직위원회",
-      "program": "1. 개막행사\n- 기간 : 2026. 10. 27. 14:00~18:00)\n- 주요 프로그램 : 식전공연 / 주제 및 참여작가 소개 / 작가별 참여작품 설명 / 전문가 포럼\n\n2. 전시행사\n- 기간 : 2026. 10. 27.~2026. .11. 22.\n- 주요 프로그램 : 참여작가 작품 / 예술감독 국제 스튜디오 / 수성 어린이 건축·조경 문화학교 / 세계 건축·조경 시각 예술작품\n\n3. 기타 행사\n- 기간 : 2026. 10. 27.~2026. 11. 22.\n- 주요 프로그램 : 시민 참여 프로그램\n\n4. 주말 상시 프로그램\n- 한옥 원리 체험 / 기와 쌓기 체험 / 뚜비 탑 쌓기 / Living Village 블록 마을 만들기\n\n5. 주말 접수 프로그램\n- 수성못 생태 투어 / 뚜비 찾아가는 어린이 공연 / 명상 프로그램"
     },
     {
       "id": "4115269",
@@ -27036,6 +27142,47 @@
       ]
     },
     {
+      "id": "3113995",
+      "title": "경기‧양주‧지작사 드론봇 페스티벌",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "sido": "경기",
+      "sigungu": "양주시",
+      "address": "경기도 양주시 광적면 삼일로 52 가납리비행장",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/54/4124654_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/54/4124654_image3_1.JPG",
+      "tel": "031-8082-6161",
+      "homepage": "https://www.yangju.go.kr/",
+      "overview": "경기‧양주‧지작사 드론봇 페스티벌은 경기도, 양주시, 지상작전사령부가 공동 주최하는 민ㆍ관ㆍ군 상생 페스티벌이다. 2026년 10월 30일부터 11월 1일까지 3일간 양주시 광적면 가납리비행장에서 개최된다. 본 축제는 「양주시 드론산업 육성 및 지원에 관한 조례」와 「가납리 비행장 민·관·군 상생발전을 위한 업무협약」을 근거로 서부권 대표 축제를 육성하고, 드론 산업 기반을 마련하여 지역 균형발전을 도모하는 것이 목적이다. 총사업비 612억 원이 투입되며, 육군의 드론봇 전투체계 시연, 주한미군 전투장비 전시, 국내외 첨단 드론·로봇 기업 전시, 드론봇 경연대회, 다채로운 군문화 공연 및 시민 체험 프로그램을 통해 첨단 국방력과 4차 산업의 미래를 조망하는 행사이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10",
+        "2026-11"
+      ],
+      "lng": 126.989798,
+      "lat": 37.833553,
+      "modifiedTime": "20261014154844",
+      "place": "가납리비행장",
+      "playtime": "09:00~21:00",
+      "fee": "무료 (일부 체험 관련 유료)",
+      "sponsor": "경기도, 양주시, 지상작전사령부 / 민‧관‧군 행사추진위원회",
+      "program": "1. 메인 프로그램: 개ㆍ폐막식, 드론 전술시범, 육군항공대 축하비행, 민ㆍ군 상생음악회, 드론라이트쇼, 경기도지사ㆍ지상작전사령관배 드론봇 경연대회\n2. 부대 프로그램: 주한미군(M1전차 등) 및 국군(K-2전차 등) 전투장비 전시, 첨단 드론ㆍ로봇 기업 제품 전시, 수방사 MC퍼레이드, 특공무술 및 육군 의장대ㆍ군악대 시범 공연, 드론봇 발전 세미나\n3. 소비자 참여 프로그램: KUH-1 수리온 헬기 및 K200A1 장갑차 탑승 체험, 워리어플랫폼 장비 체험, 드론봇 체험부스 (드론 조종, 시뮬레이터 등), 먹거리장터, 경찰ㆍ소방 장비 체험 등\n4. 기타 내용: 임시주차장 및 셔틀버스 운행 (백석체육공원, 양주문예회관 ↔ 행사장), 의료부스, 이동식 화장실 등 편의시설 운영",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/45/4124645_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/46/4124646_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/47/4124647_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/48/4124648_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/49/4124649_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/50/4124650_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/51/4124651_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/52/4124652_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/53/4124653_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/59/4124659_image2_1.JPG"
+      ]
+    },
+    {
       "id": "2559006",
       "title": "목포 국가유산야행",
       "startDate": "2026-10-30",
@@ -27043,8 +27190,8 @@
       "sido": "전남",
       "sigungu": "목포시",
       "address": "전남광주통합특별시 목포시 번화로 18 (중앙동2가)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/22/4122722_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/22/4122722_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/17/4122717_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/17/4122717_image3_1.jpg",
       "tel": "061-270-8321",
       "homepage": "",
       "overview": "「2026 목포 국가유산 야행」은 국가유산청과 전남광주통합특별시의 후원으로 목포시가 주최·주관하는 야간 문화유산 활용 행사이다. 2026년 10월 30일부터 11월 1일까지 3일간 목포근대역사문화공간 일원에서 개최되는 행사로, 목포의 근대 역사와 국가유산을 야간에 체험할 수 있도록 기획된 문화행사이다. ‘모던타임즈, 목포 개항 이야기 129’를 부제로 하며, 1897년 대한제국 최초의 자주적 개항도시인 목포의 개항과 근대도시 형성 과정을 주요 내용으로 다루는 행사이다. 주요 문화유산으로는 근대역사관 1관, 근대역사관 2관, 심상소학교, 경동성당, 목포진지 등 역사적 장소와 건축유산이다. 행사 프로그램은 야간 경관과 문화유산을 연계한 관람 및 체험 활동, 전통문화 공연, 공연 등으로 구성되며, 목포의 개항 역사와 근대문화유산의 역사적 가치를 관람객에게 전달하는 행사이다.",
@@ -27058,7 +27205,7 @@
       ],
       "lng": 126.3814912601,
       "lat": 34.785963747,
-      "modifiedTime": "20261013151407",
+      "modifiedTime": "20261014095715",
       "place": "목포근대역사문화공간 일원",
       "playtime": "18:00~22:00",
       "fee": "무료",
@@ -27068,11 +27215,11 @@
         "https://tong.visitkorea.or.kr/cms/resource/14/4122714_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/15/4122715_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/16/4122716_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/17/4122717_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/18/4122718_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/19/4122719_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/20/4122720_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/21/4122721_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/22/4122722_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/23/4122723_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/24/4122724_image2_1.jpg"
       ]
@@ -27155,6 +27302,47 @@
         "https://tong.visitkorea.or.kr/cms/resource/63/4119063_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/64/4119064_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/65/4119065_image2_1.png"
+      ]
+    },
+    {
+      "id": "3012116",
+      "title": "부여국화축제",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-08",
+      "sido": "충남",
+      "sigungu": "부여군",
+      "address": "충청남도 부여군 부여읍 동남리 117 부여 궁남지 일원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/69/4124969_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/69/4124969_image3_1.jpg",
+      "tel": "041-830-2591",
+      "homepage": "https://www.buyeo.go.kr/html/bcfestival/",
+      "overview": "제23회 부여국화축제가 2026년 10월 30일에서 11월 8일까지 10일간 부여의 대표 명소인 궁남지 일원에서 화려하게 펼쳐진다. “국화, 가을의 조각들을 맞추다”를 주제로 꾸며져, 국화의 아름다움과 백제의 역사·문화가 어우러지는 특별한 시간을 선사한다. 축제장은 역사의 조각, 풍경의 조각, 인연의 조각, 향기의 조각, 치유의 조각 등 5개의 테마공간으로 나누어져 있어, 다양한 국화 기획 작품들과 금동대향로, 사비문 등 오직 부여에서만 볼 수 있는 국화 조형물들이 다수 전시되어 있다. 이외에도 각종 홍보·판촉, 푸드트럭, 국화 관련 체험 등이 자리 잡고 있어 다채로운 즐길거리와 볼거리가 마련되어 있다.",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-10",
+        "2026-11"
+      ],
+      "lng": 126.912293,
+      "lat": 36.269786,
+      "modifiedTime": "20261014165712",
+      "place": "부여 궁남지 일원",
+      "playtime": "09:00~21:00",
+      "fee": "무료",
+      "sponsor": "부여군 / 부여군농업기술센터, 부여군국화연구회",
+      "program": "1. 메인프로그램 : 부여국화축제 국화 작품 전시\n2. 부대프로그램 : 개막행사\n3. 소비자 참여 프로그램 : 국화 다도 및 체험부스운영, 지역 특산물 판매, 소규모 버스킹 등",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/66/4124966_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/67/4124967_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/68/4124968_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/70/4124970_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/73/4124973_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/74/4124974_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/75/4124975_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/77/4124977_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/78/4124978_image2_1.jpg"
       ]
     },
     {
@@ -27760,8 +27948,8 @@
       "sido": "경북",
       "sigungu": "구미시",
       "address": "경상북도 구미시 역전로",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/40/3497640_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/40/3497640_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/59/4124759_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/59/4124759_image3_1.jpg",
       "tel": "054-480-2651~3",
       "homepage": "https://www.gumiramyun.com/",
       "overview": "*하기 축제 먹거리 내용은 전년도(2025년) 축제 내용으로, 2026년도 축제 먹거리 내용은 업데이트 중에 있습니다.*구미라면축제는 라면을 주제로 구미의 산업과 음식문화, 지역관광을 연계한 지역 대표 축제이다. 구미는 국내 대표 라면기업인 농심 구미공장이 위치한 도시로, 라면 생산과 관련된 산업 기반을 바탕으로 라면을 지역의 관광 콘텐츠로 발전시키고 있다. 축제는 구미역과 역전로, 문화로, 금리단길, 새마을중앙시장 등 원도심 일원에서 개최되며 도심 전체를 축제 공간으로 활용하는 것이 특징이다. 주요 프로그램으로 라면 레스토랑, 갓튀긴라면, 갓랜드, 글로벌 라면 챌린지, 로봇 셰프, 후루룩 라운지 등이 운영된다. 전국의 다양한 라면 요리를 선보이는 라면 레스토랑과 갓 튀긴 라면을 맛볼 수 있는 프로그램을 통해 라면의 다양한 맛과 문화를 경험할 수 있다. 또한 지역 음식점과 상권이 축제에 참여하여 축제장과 원도심을 연결하고 지역경제 활성화를 도모한다. 2026 구미라면축제는 라면을 매개로 지역의 산업과 관광, 음식문화, 상권을 연결하여 구미만의 도시형 관광축제를 선보이는 행사이다.",
@@ -27774,19 +27962,23 @@
       ],
       "lng": 128.3323188678,
       "lat": 36.1309792684,
-      "modifiedTime": "20261007130043",
+      "modifiedTime": "20261014162656",
       "place": "경상북도 구미시 역전로",
       "playtime": "10:00~21:00",
       "fee": "무료",
       "sponsor": "구미시",
       "program": "1. 메인프로그램\n- 라면 레스토랑 : 전국 각 지역의 다양한 라면 요리를 선보이는 음식 프로그램\n- 갓튀긴라면 : 갓 튀긴 면을 활용한 구미라면축제 대표 먹거리 프로그램\n- 갓랜드 : 라면과 관련된 체험 및 콘텐츠 운영\n- 글로벌 라면 챌린지 : 국내외 참가자가 참여하는 라면 관련 참여 프로그램\n\n2. 부대프로그램\n- 후루룩 라운지 : 라면과 함께 휴식하고 공연 및 콘텐츠를 즐기는 공간\n- 지역 음식점 및 상권 연계 프로그램\n- 원도심 일원 축제 공간 및 거리 콘텐츠 운영\n\n3. 소비자 참여 프로그램\n- 나만의 라면 만들기\n- 스프랩\n\n4. 기타 내용\n- 지역 음식점 참여\n- 구미역, 역전로, 문화로, 금리단길, 새마을중앙시장 등 원도심 연계\n- 축제장 및 원도심 상권 연계 홍보·마케팅",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/38/3497638_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/39/3497639_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/40/3497640_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/41/3497641_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/42/3497642_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/43/3497643_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/22/4095622_image2_1.png"
+        "https://tong.visitkorea.or.kr/cms/resource/22/4095622_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/56/4124756_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/57/4124757_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/58/4124758_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/60/4124760_image2_1.jpg"
       ]
     },
     {
@@ -28368,6 +28560,34 @@
       "fee": "무료",
       "sponsor": "경기도 / 사단법인도농문화콘텐츠연구회",
       "program": "- 주요 프로그램 : 경기미쌀베이킹콘테스트 / 경기미쌀떡볶이경연대회\n- 부대 행사 및 프로그램 : 모두의 경기미 전시 / 쌀떡볶이·쌀베이커리 소상공인 초대전 / 쌀디저트 마켓 / 김밥경연대회 수상작 판매전 / 나만의 떡볶이 만들기 체험 / 쌀쿠키 만들기 체험 / 시상식 / 개회식"
+    },
+    {
+      "id": "2853386",
+      "title": "2026 단단단페스티벌",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-28",
+      "sido": "강원",
+      "sigungu": "강릉시",
+      "address": "강원특별자치도 강릉시 단오장길 1 (노암동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/4124982_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/82/4124982_image3_1.jpg",
+      "tel": "033-641-1593",
+      "homepage": "",
+      "overview": "단단단(端單團) 으뜸 단(端), 오직 하나 단(單), 우리 단(團)을 뜻하며, “오직 하나뿐인 우리의 으뜸 축제”를 의미한다.\n이번 축제는 강원도의 전통문화를 중심으로 지역 예술가들에게 창작의 기회를 제공하고, 시민 문화 향유권 증진과 관광 활성화를 도모하기 위해 마련됐다. 오는 11월 26일부터 28일까지 3일간 진행되는 2026 단단단페스티벌에서는 JTBC풍류대장 1대 우승팀인 서도밴드, 강릉의 5개 어린이집 및 기관의 어린이와 청소년이 참여하는 어린이전통연희한마당, 강원의 4개 공연팀이 함께 하는 그리고 박애리, 팝핀현준, 그리고 역대 영산홍챌린지 수상팀들과 지역의 예술인들이 참여하는 영산홍콘서트까지 풍성한 공연들을 만나볼 수 있다. 또한 관람객들을 위한 경품뽑기행사도 진행된다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 128.8950411936,
+      "lat": 37.7482018271,
+      "modifiedTime": "20261014165307",
+      "place": "강릉단오제전수교육관 일원",
+      "playtime": "10:30~19:30",
+      "fee": "무료",
+      "sponsor": "(사)강릉단오제위원회 / 강원특별자치도, 강릉시",
+      "program": "- 기간 : 11/26 18:30\n- 주요 프로그램 : 안예은, 추다혜차지스\n\n- 기간 : 11/27 10:30\n- 주요 프로그램 : 어울림전통연희한마당\n\n- 기간 : 11/27 18:30\n- 주요 프로그램 : 연합공연 (태극, 최혜선da 댄스컴퍼니, 국악밴드해랑, 갯마당)\n\n- 기간 : 11/28 16:30\n- 주요 프로그램 : 영산홍콘서트"
     },
     {
       "id": "3367339",
