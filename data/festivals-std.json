@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-01T22:36:58.780Z",
+    "fetchedAt": "2026-11-03T01:27:48.623Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 743,
+    "count": 817,
     "source": "문화체육관광부 전국문화축제표준데이터 (tn_pubr_public_cltur_fstvl_api)"
   },
   "festivals": [
@@ -37,63 +37,6 @@
       "place": "서면1번가",
       "sponsor": "부산광역시 부산진구청",
       "modifiedTime": "20260622000000"
-    },
-    {
-      "id": "s4f6f4f6b",
-      "title": "영종국제도시 빛축제",
-      "startDate": "2025-11-01",
-      "endDate": "2026-01-31",
-      "sido": "인천",
-      "sigungu": "중구",
-      "address": "인천광역시 중구 제물량로232번길 46",
-      "image": "",
-      "thumbnail": "",
-      "tel": "070-4123-8949",
-      "homepage": "http://www.ijcf.or.kr/",
-      "overview": "포토 존 등 경관조성 및 야간 상시전시 운영, 점등식 및 축하공연",
-      "tags": [
-        "불꽃/야경",
-        "가을"
-      ],
-      "months": [
-        "2025-11",
-        "2025-12",
-        "2026-01"
-      ],
-      "lat": 37.47473377,
-      "lng": 126.6207654,
-      "source": "std",
-      "place": "하늘도시 초입",
-      "sponsor": "(재)인천중구문화재단",
-      "modifiedTime": "20251210000000"
-    },
-    {
-      "id": "sf167839f",
-      "title": "크리스마스 트리 축제",
-      "startDate": "2025-11-01",
-      "endDate": "2026-01-31",
-      "sido": "인천",
-      "sigungu": "중구",
-      "address": "인천광역시 중구 제물량로232번길 46",
-      "image": "",
-      "thumbnail": "",
-      "tel": "070-4123-8949",
-      "homepage": "http://www.ijcf.or.kr/",
-      "overview": "트리, 포토 존 등 경관조성 및 야간 상시전시 운영, 점등식 및 축하공연",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2025-11",
-        "2025-12",
-        "2026-01"
-      ],
-      "lat": 37.47473377,
-      "lng": 126.6207654,
-      "source": "std",
-      "place": "신포문화의 거리, 신흥사거리",
-      "sponsor": "(재)인천중구문화재단",
-      "modifiedTime": "20251210000000"
     },
     {
       "id": "s94937f40",
@@ -455,7 +398,7 @@
       "source": "std",
       "place": "오봉산 침산정 일원",
       "sponsor": "(사)대구북구새마을회",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "sa92e4852",
@@ -510,6 +453,32 @@
       "modifiedTime": "20260806000000"
     },
     {
+      "id": "sdff310c5",
+      "title": "제27회 서귀포 겨울바다 국제펭귄 수영대회",
+      "startDate": "2026-01-01",
+      "endDate": "2026-01-01",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 중문관광로 154-27",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-739-7201+064-760-2652",
+      "homepage": "https://jejusta.or.kr/pages.php?p=2_1_1_1",
+      "overview": "바다입수+체험행사등",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2026-01"
+      ],
+      "lat": 33.24384736,
+      "lng": 126.4145128,
+      "source": "std",
+      "place": "중문색달해수욕장",
+      "sponsor": "사단법인 서귀포시관광협의회 / 제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sc9931687",
       "title": "해미벚꽃축제",
       "startDate": "2026-01-01",
@@ -561,6 +530,33 @@
       "place": "왕송호수공원",
       "sponsor": "경기도 의왕시청",
       "modifiedTime": "20251106000000"
+    },
+    {
+      "id": "s28c1ad9d",
+      "title": "제15회 철원 한탄강 얼음트레킹",
+      "startDate": "2026-01-09",
+      "endDate": "2026-01-17",
+      "sido": "강원",
+      "sigungu": "철원군",
+      "address": "강원특별자치도 철원군 동송읍 태봉로 1814-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-450-3600",
+      "homepage": "https://gcwcf.or.kr",
+      "overview": "개막행사, 얼음트레킹, 똥바람 알통구보대회 등",
+      "tags": [
+        "꽃/자연",
+        "겨울"
+      ],
+      "months": [
+        "2026-01"
+      ],
+      "lat": 38.188522,
+      "lng": 127.300353,
+      "source": "std",
+      "place": "철원 한탄강 및 승일공원 일원",
+      "sponsor": "(재)철원문화재단 / 강원특별자치도 철원군",
+      "modifiedTime": "20261013000000"
     },
     {
       "id": "s0ce99674",
@@ -699,7 +695,7 @@
       "source": "std",
       "place": "양간다리 수산시장 일원",
       "sponsor": "전남광주통합특별시 무안군축제추진위원회 / 전남광주통합특별시 무안군",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "se1ae8d0c",
@@ -724,6 +720,32 @@
       "place": "발산역 지하광장",
       "sponsor": "서울특별시 강서구",
       "modifiedTime": "20260827000000"
+    },
+    {
+      "id": "s7e21242d",
+      "title": "제1회 송산동 부시리 축제",
+      "startDate": "2026-02-06",
+      "endDate": "2026-02-07",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 칠십리로 120-12",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "https://www.jejubusiri.com/",
+      "overview": "드라이브스루회판매+음식점운영+초대가수공연+요리시연회+체험부스등",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2026-02"
+      ],
+      "lat": 33.24144151,
+      "lng": 126.5668484,
+      "source": "std",
+      "place": "서귀포 자구리 문화예술공원",
+      "sponsor": "송산동서귀마을회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s2bfa83ef",
@@ -808,6 +830,31 @@
       "modifiedTime": "20260918000000"
     },
     {
+      "id": "s1e01b9d2",
+      "title": "하동 청학 미나리 판매 행사",
+      "startDate": "2026-02-28",
+      "endDate": "2026-03-22",
+      "sido": "경남",
+      "sigungu": "하동군",
+      "address": "경상남도 하동군 악양면 평사리 305-2",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-880-2713",
+      "homepage": "https://www.hadong.go.kr/02641/02652/02819.web",
+      "overview": "미나리+삼겹살+판매",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2026-02",
+        "2026-03"
+      ],
+      "source": "std",
+      "place": "경상남도 하동군 횡천면 남산리 일원",
+      "sponsor": "악양농민회",
+      "modifiedTime": "20261015000000"
+    },
+    {
       "id": "s5e069b5a",
       "title": "응봉산 개나리 축제",
       "startDate": "2026-03-01",
@@ -885,7 +932,7 @@
       "source": "std",
       "place": "해운대해수욕장",
       "sponsor": "사단법인 해운대지구발전협의회",
-      "modifiedTime": "20260916000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s6ec8950c",
@@ -913,6 +960,33 @@
       "place": "삼겹살거리",
       "sponsor": "청주서문시장상인회 / 충청북도 청주시청",
       "modifiedTime": "20260928000000"
+    },
+    {
+      "id": "s57b8b0ba",
+      "title": "2026 을사년 정월대보름 달맞이축제",
+      "startDate": "2026-03-03",
+      "endDate": "2026-03-03",
+      "sido": "부산",
+      "sigungu": "남구",
+      "address": "부산광역시 남구 분포로 66-40",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-608-1544",
+      "homepage": "https://www.bncf.or.kr/main.do",
+      "overview": "LED달집 점등식, 무대, 체험 등 20개 프로그램 운영",
+      "tags": [
+        "문화/전통",
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "lat": 35.13221534,
+      "lng": 129.120141,
+      "source": "std",
+      "place": "용호별빛공원",
+      "sponsor": "부산남구문화재단 / 부산광역시 남구",
+      "modifiedTime": "20261013000000"
     },
     {
       "id": "sae61806d",
@@ -966,7 +1040,7 @@
       "source": "std",
       "place": "산격대교 하단 일원",
       "sponsor": "대구광역시 북구문화원",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "s80967773",
@@ -1023,6 +1097,33 @@
       "modifiedTime": "20260929000000"
     },
     {
+      "id": "s10ac6d5f",
+      "title": "원동매화축제",
+      "startDate": "2026-03-07",
+      "endDate": "2026-03-08",
+      "sido": "경남",
+      "sigungu": "양산시",
+      "address": "경상남도 양산시 원동면 원동마을길 32",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-380-0920",
+      "homepage": "https://www.ycf.or.kr/pages/MNLTO003000M",
+      "overview": "개막식+환영공연+원동매화쇼+원동청춘스테이션+원동미나리노래방+원동작은음악회+농특산물장터+매화네컷+딸기모종심기+시음시식부스+풍선아트+쿠킹클래스+매실국시집+원동미나리길",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "lat": 35.3644753,
+      "lng": 128.919084,
+      "source": "std",
+      "place": "주말장터 및 쌍포다목적 광장+원동면 일원(매년 변동 가능)",
+      "sponsor": "(재)양산문화재단 / (재)양산문화재단+경상남도 양산시청",
+      "modifiedTime": "20261030000000"
+    },
+    {
       "id": "sb5db2a8b",
       "title": "제8회 매곡동 탐매축제",
       "startDate": "2026-03-07",
@@ -1071,7 +1172,7 @@
       "source": "std",
       "place": "우수영 관광지 일원",
       "sponsor": "해남새봄새김치담기축제추진위원회",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
     },
     {
       "id": "saec156df",
@@ -1127,33 +1228,6 @@
       "modifiedTime": "20260811000000"
     },
     {
-      "id": "s8faf73e3",
-      "title": "원동매화축제",
-      "startDate": "2026-03-14",
-      "endDate": "2026-03-15",
-      "sido": "경남",
-      "sigungu": "양산시",
-      "address": "경상남도 양산시 원동면 원동마을길 32",
-      "image": "",
-      "thumbnail": "",
-      "tel": "055-392-0920",
-      "homepage": "https://www.ycf.or.kr",
-      "overview": "개막식+환영공연+원동매화쇼+원동청춘스테이션+원동미나리노래방+원동작은음악회+농특산물장터+매화네컷+딸기모종심기+시음시식부스+풍선아트+쿠킹클래스+매실국시집+원동미나리길",
-      "tags": [
-        "꽃/자연",
-        "봄"
-      ],
-      "months": [
-        "2026-03"
-      ],
-      "lat": 35.3644753,
-      "lng": 128.919084,
-      "source": "std",
-      "place": "주말장터 및 쌍포다목적 광장+원동면 일원(매년 변동 가능)",
-      "sponsor": "(재)양산문화재단 / (재)양산문화재단+경상남도 양산시청",
-      "modifiedTime": "20260810000000"
-    },
-    {
       "id": "sb8d0df58",
       "title": "제22회 진안고원 운장산 고로쇠축제",
       "startDate": "2026-03-14",
@@ -1177,7 +1251,7 @@
       "source": "std",
       "place": "주천면 운일암반일암 삼거광장 일원",
       "sponsor": "진안고원운장산고로쇠축제위원회 / 전북특별자치도 진안군",
-      "modifiedTime": "20260728000000"
+      "modifiedTime": "20261028000000"
     },
     {
       "id": "s2ca8e81b",
@@ -1230,6 +1304,32 @@
       "place": "산수유마을일원",
       "sponsor": "의성군축제추진위원회",
       "modifiedTime": "20260921000000"
+    },
+    {
+      "id": "s76bf671e",
+      "title": "제27회 양평 단월고로쇠축제",
+      "startDate": "2026-03-21",
+      "endDate": "2026-03-22",
+      "sido": "경기",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 단월면 보룡길 123",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-770-3192",
+      "homepage": "https://tour.yp21.go.kr/www/contents.do?key=90",
+      "overview": "물맑은 양평의 청정지역에서만 나오는 소리산 고로쇠 수액으로 매년 3월에 개최되는 축제",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "lat": 37.5449768,
+      "lng": 127.670192,
+      "source": "std",
+      "place": "단월레포츠공원",
+      "sponsor": "양평단월고로쇠축제추진위원회",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s72060cc2",
@@ -1422,6 +1522,32 @@
       "modifiedTime": "20260918000000"
     },
     {
+      "id": "s00c758ad",
+      "title": "제27회 화개장터벚꽃축제",
+      "startDate": "2026-03-27",
+      "endDate": "2026-03-29",
+      "sido": "경남",
+      "sigungu": "하동군",
+      "address": "경상남도 하동군 화개면 탑리 576",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-880-6584",
+      "homepage": "https://www.hadong.go.kr/02641/02652/02807.web",
+      "overview": "벚꽃축제+공연+경연+판매",
+      "tags": [
+        "먹거리",
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "source": "std",
+      "place": "경상남도 하동군 화개면 그린나래 공원(화개면사무소 뒤)",
+      "sponsor": "화개면 청년회 / 화개장터벚꽃축제추진위원회",
+      "modifiedTime": "20261015000000"
+    },
+    {
       "id": "sa5db3c1b",
       "title": "진해군악의장페스티벌",
       "startDate": "2026-03-27",
@@ -1499,7 +1625,7 @@
       "source": "std",
       "place": "운남농협자재센터 일원",
       "sponsor": "전남광주통합특별시 무안군",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "s2d8467f6",
@@ -1560,7 +1686,34 @@
       "source": "std",
       "place": "해남군 미황사+해남군 일원",
       "sponsor": "전남광주통합특별시 해남군청",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
+    },
+    {
+      "id": "s937d8d5d",
+      "title": "대륜동에 벚꽃이 오나. 봄",
+      "startDate": "2026-03-28",
+      "endDate": "2026-03-29",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 서호동 356-5",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-4753",
+      "homepage": "",
+      "overview": "즉석컬링대회+버스킹공연+초대공연+체험부스등",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "lat": 33.25761601,
+      "lng": 126.523433,
+      "source": "std",
+      "place": "호근서호로 일원",
+      "sponsor": "대륜동주민센터 / 대륜동연합청년회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s23297e43",
@@ -1641,6 +1794,60 @@
       "modifiedTime": "20260818000000"
     },
     {
+      "id": "s80db1e72",
+      "title": "제28회 서귀포 유채꽃 국제걷기대회",
+      "startDate": "2026-03-28",
+      "endDate": "2026-03-29",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 월드컵로 33",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-739-7201+064-760-2652",
+      "homepage": "https://jejusta.or.kr/pages.php?p=3_1_1_1",
+      "overview": "코스별 걷기 행사 및 홍보체험 부스 운영 등",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "lat": 33.24621937,
+      "lng": 126.5092753,
+      "source": "std",
+      "place": "제주월드컵경기장(주행사장) 및 서귀포시 일원",
+      "sponsor": "사단법인 서귀포시관광협의회 / 제주특별자치도 서귀포시 관광진흥과+사단법인 한국체육진흥회",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "s75774c18",
+      "title": "제3회 신풍벚꽃터널축제",
+      "startDate": "2026-03-28",
+      "endDate": "2026-03-29",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 성산읍 남산봉로 235-20",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-782-0311",
+      "homepage": "",
+      "overview": "피크닉존+플리마켓+지역공연+체험부스+먹거리판매",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-03"
+      ],
+      "lat": 33.37865988,
+      "lng": 126.8153098,
+      "source": "std",
+      "place": "신풍리 풍요정원",
+      "sponsor": "신풍리마을회",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "s99b8fb24",
       "title": "합천벚꽃마라톤대회",
       "startDate": "2026-03-29",
@@ -1719,7 +1926,7 @@
       "source": "std",
       "place": "여의서로 벚꽃길+한강공원+국회+축구장 등",
       "sponsor": "서울특별시 영등포구청+영등포문화재단",
-      "modifiedTime": "20260728000000"
+      "modifiedTime": "20261028000000"
     },
     {
       "id": "s598381ab",
@@ -1841,7 +2048,7 @@
       "source": "std",
       "place": "익산 주얼팰리스",
       "sponsor": "(사)주얼팰리스협의회",
-      "modifiedTime": "20260407000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s70bbfed1",
@@ -1921,7 +2128,7 @@
       "source": "std",
       "place": "장자호수공원",
       "sponsor": "경기도 구리시청",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s179089f1",
@@ -2059,6 +2266,31 @@
       "modifiedTime": "20260528000000"
     },
     {
+      "id": "s50d0514a",
+      "title": "여주흥천남한강벚꽃축제",
+      "startDate": "2026-04-03",
+      "endDate": "2026-04-05",
+      "sido": "경기",
+      "sigungu": "여주시",
+      "address": "경기도 여주시 흥천면 귀백리 168-3번지",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-887-3875",
+      "homepage": "",
+      "overview": "벚꽃길 운영, 먹거리 특산물 판매, 공연 등",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "source": "std",
+      "place": "흥천면 귀백사거리 일원",
+      "sponsor": "경기도 여주시청",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sabdbc308",
       "title": "은평의 봄",
       "startDate": "2026-04-03",
@@ -2083,6 +2315,32 @@
       "place": "불광천",
       "sponsor": "서울특별시 은평구",
       "modifiedTime": "20260721000000"
+    },
+    {
+      "id": "s122bc7de",
+      "title": "제15회 서귀포 봄맞이축제 개최",
+      "startDate": "2026-04-03",
+      "endDate": "2026-04-05",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 칠십리로 156-8",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-733-2345",
+      "homepage": "",
+      "overview": "문화예술공연+시민포럼+식물문화탐방+남극성노인성제재현+체험등",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "lat": 33.24480923,
+      "lng": 126.5706571,
+      "source": "std",
+      "place": "서귀진지(4.3.)+서복전시관(4.4.)+가시리(4.5.)",
+      "sponsor": "사단법인 서귀포문화사업회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s609377ea",
@@ -2223,6 +2481,31 @@
       "modifiedTime": "20260731000000"
     },
     {
+      "id": "sb0e0a44b",
+      "title": "네 번째. 서홍동 웃물교 벚꽃구경",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-05",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 서홍로242번길 25-9",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-4742",
+      "homepage": "https://www.seogwipo.go.kr/local/seohong/notice.htm?act=view&seq=153357094",
+      "overview": "먹거리장터+축하공연+체험프로그램",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "source": "std",
+      "place": "서홍동 웃물교 일원",
+      "sponsor": "서홍동 주민센터+서홍동웃물교벚꽃구경축제위원회",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sae08b17e",
       "title": "당진 삽교호 드론 라이트 쇼",
       "startDate": "2026-04-04",
@@ -2276,7 +2559,7 @@
       "source": "std",
       "place": "장안1 수변공원 및 장안벚꽃길 일대",
       "sponsor": "서울특별시 동대문구청",
-      "modifiedTime": "20260914000000"
+      "modifiedTime": "20261012000000"
     },
     {
       "id": "s6080de05",
@@ -2304,7 +2587,7 @@
       "source": "std",
       "place": "대흥사 입구 두륜산 도립공원쉼터",
       "sponsor": "삼산면주민자치회",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
     },
     {
       "id": "s5b8fbb49",
@@ -2316,8 +2599,8 @@
       "address": "경상남도 양산시 물금읍 황산공원1길 275",
       "image": "",
       "thumbnail": "",
-      "tel": "055-392-0920",
-      "homepage": "https://www.ycf.or.kr",
+      "tel": "055-380-0920",
+      "homepage": "https://www.ycf.or.kr/pages/MNLTO004000M",
       "overview": "개막식, 축하공연+동요공연+예술인공연+뮤지컬+전시체험부스+체리존피크닉+사진전시관+벚꽃터널+야간벚꽃길 운영",
       "tags": [
         "꽃/자연",
@@ -2331,7 +2614,7 @@
       "source": "std",
       "place": "양산시 황산공원 일원",
       "sponsor": "(재)양산문화재단 / (재)양산문화재단+경상남도 양산시청",
-      "modifiedTime": "20260810000000"
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "sd9d99cf7",
@@ -2355,7 +2638,7 @@
       "source": "std",
       "place": "농다리+초평호 일원",
       "sponsor": "농다리축제추진위원회 / 진천문화원",
-      "modifiedTime": "20260709000000"
+      "modifiedTime": "20261013000000"
     },
     {
       "id": "sd2089d6f",
@@ -2407,7 +2690,7 @@
       "source": "std",
       "place": "이천시 신둔면 예스파크",
       "sponsor": "(사)이천농촌나드리 / 경기도 이천시",
-      "modifiedTime": "20260721000000"
+      "modifiedTime": "20261026000000"
     },
     {
       "id": "sd5b213e6",
@@ -2437,6 +2720,33 @@
       "modifiedTime": "20260918000000"
     },
     {
+      "id": "s020a54bc",
+      "title": "제23회 양평 산수유한우축제",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-05",
+      "sido": "경기",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 개군면 하자포길33번길 8",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-770-3342",
+      "homepage": "https://tour.yp21.go.kr/www/contents.do?key=91",
+      "overview": "노란 산수유 꽃이 피는 4월 주읍리 등 마을길을 걷고 개군한우를 먹으며 즐길 수 있는 축제",
+      "tags": [
+        "먹거리",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "lat": 37.43277374,
+      "lng": 127.5313533,
+      "source": "std",
+      "place": "개군면사무소 앞 일원+내리·주읍리 일원",
+      "sponsor": "양평산수유축제추진위원회",
+      "modifiedTime": "20261002000000"
+    },
+    {
       "id": "sb85648e9",
       "title": "제30회 제천청풍호벚꽃축제",
       "startDate": "2026-04-04",
@@ -2462,6 +2772,61 @@
       "place": "청풍 문화마을 일원",
       "sponsor": "제천문화재단",
       "modifiedTime": "20260813000000"
+    },
+    {
+      "id": "s798133c3",
+      "title": "제3회 예래사자마을 봄꽃나들이",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-05",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 상예동 5002-26",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "",
+      "overview": "공연+체험프로그램등운영",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "lat": 33.24763589,
+      "lng": 126.39649,
+      "source": "std",
+      "place": "예래생태공원 주차장 일대",
+      "sponsor": "예래사자마을봄꽃나들이 추진위원회 / 상예1리마을회",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "s81ada386",
+      "title": "제43회 서귀포유채꽃축제",
+      "startDate": "2026-04-04",
+      "endDate": "2026-04-05",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 표선면 녹산로 381-15",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3942",
+      "homepage": "https://www.sgpcanola.com/",
+      "overview": "유채꽃광장 야간개장+유채RUN+원데이클래스 등 유채 테마 프로그램 운영",
+      "tags": [
+        "불꽃/야경",
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "lat": 33.38309593,
+      "lng": 126.7362847,
+      "source": "std",
+      "place": "서귀포시 표선면 가시리 조랑말체험공원 일대",
+      "sponsor": "서귀포유채꽃축제조직위원회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s98cad47c",
@@ -2561,12 +2926,12 @@
       "months": [
         "2026-04"
       ],
-      "lat": 37.625343,
-      "lng": 126.718456,
+      "lat": 37.62672648,
+      "lng": 126.7148066,
       "source": "std",
       "place": "계양천 산책길 일원",
       "sponsor": "경기도 김포시 / 김포문화재단",
-      "modifiedTime": "20260520000000"
+      "modifiedTime": "20261028000000"
     },
     {
       "id": "s95b99b1d",
@@ -2626,6 +2991,34 @@
       "place": "이중섭거리 일대",
       "sponsor": "제주특별자치도 서귀포시",
       "modifiedTime": "20260731000000"
+    },
+    {
+      "id": "s36a5f3ea",
+      "title": "2026 서귀포베라벨책정원",
+      "startDate": "2026-04-11",
+      "endDate": "2026-04-11",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 김정문화로 32",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3731",
+      "homepage": "https://www.jeju.go.kr/lib/open/notice.htm?act=view&seq=2012422",
+      "overview": "작가와의만남+체험프로그램등운영",
+      "tags": [
+        "꽃/자연",
+        "전시/예술",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "lat": 33.25141622,
+      "lng": 126.5076206,
+      "source": "std",
+      "place": "서귀포시 중앙도서관",
+      "sponsor": "서귀포시 도서관운영사무소",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "sf56ffc55",
@@ -2755,7 +3148,7 @@
       "source": "std",
       "place": "옥정호 출렁다리 앞 광장",
       "sponsor": "전북특별자치도 임실군청",
-      "modifiedTime": "20260720000000"
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "s5496b9eb",
@@ -3007,7 +3400,7 @@
       "address": "서울특별시 동대문구 무학로 44길 38",
       "image": "",
       "thumbnail": "",
-      "tel": "02-3295-5566",
+      "tel": "02-3295-5506",
       "homepage": "",
       "overview": "어가행렬+제례봉행+한시대회+선농제향체험프로그램",
       "tags": [
@@ -3017,9 +3410,33 @@
         "2026-04"
       ],
       "source": "std",
-      "place": "선농단역사공원일대 및 용두공원",
+      "place": "선농단역사공원일대",
       "sponsor": "선농단보존회 / 재단법인 동대문문화재단",
-      "modifiedTime": "20260914000000"
+      "modifiedTime": "20261012000000"
+    },
+    {
+      "id": "s9d716f6e",
+      "title": "여주 싸리산 축제",
+      "startDate": "2026-04-17",
+      "endDate": "2026-04-19",
+      "sido": "경기",
+      "sigungu": "여주시",
+      "address": "경기도 여주시 강변북로 77",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-887-3973",
+      "homepage": "",
+      "overview": "공연, 행사 등",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "source": "std",
+      "place": "여주시민공원 일원",
+      "sponsor": "경기도 여주시청",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "se17e6259",
@@ -3046,6 +3463,33 @@
       "place": "전라병영성 일원",
       "sponsor": "강진군축제추진위원회 / 전남광주통합특별시 강진군",
       "modifiedTime": "20260728000000"
+    },
+    {
+      "id": "s4bcecd54",
+      "title": "제15회 가파도 청보리축제",
+      "startDate": "2026-04-17",
+      "endDate": "2026-05-17",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 대정읍 가파로 275",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-794-7130",
+      "homepage": "https://www.seogwipo.go.kr/tourismculture/destination/festival/greenbarley.htm",
+      "overview": "청보리밭올레길걷기+연날리기+특산품판매+참여형프로그램+초대가수공연",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-04",
+        "2026-05"
+      ],
+      "lat": 33.17314934,
+      "lng": 126.2682153,
+      "source": "std",
+      "place": "대정읍 가파리 일원",
+      "sponsor": "가파도청보리축제위원회 / 가파도마을회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "se937c2b7",
@@ -3209,15 +3653,15 @@
       "id": "s2f954cc6",
       "title": "군포철쭉축제",
       "startDate": "2026-04-18",
-      "endDate": "2026-04-26",
+      "endDate": "2026-04-27",
       "sido": "경기",
       "sigungu": "군포시",
-      "address": "경기도 군포시 산본동 1152-14",
+      "address": "경기도 군포시 번영로 407",
       "image": "",
       "thumbnail": "",
       "tel": "031-390-3552",
-      "homepage": "http://gunpofestival.or.kr/",
-      "overview": "공연+전시+체험프로그램+ 먹거리 등",
+      "homepage": "http://gunpofestival.or.kr//",
+      "overview": "공연+전시+체험프로그램+먹거리 등",
       "tags": [
         "꽃/자연",
         "봄"
@@ -3228,7 +3672,7 @@
       "source": "std",
       "place": "철쭉동산+철쭉공원 등",
       "sponsor": "군포문화재단 / 경기도 군포시",
-      "modifiedTime": "20260309000000"
+      "modifiedTime": "20260922000000"
     },
     {
       "id": "scadccb96",
@@ -3312,30 +3756,30 @@
       "modifiedTime": "20260730000000"
     },
     {
-      "id": "s670a2f88",
-      "title": "제30회 한라산청정고사리축제",
+      "id": "s09fd83e2",
+      "title": "제30회 한라산 청정 고사리 축제",
       "startDate": "2026-04-18",
       "endDate": "2026-04-19",
       "sido": "제주",
       "sigungu": "서귀포시",
-      "address": "제주특별자치도 서귀포시 남원읍 서성로 755",
+      "address": "제주특별자치도 서귀포시 남원읍 한남리 1622-5",
       "image": "",
       "thumbnail": "",
-      "tel": "",
-      "homepage": "",
-      "overview": "한라산청정고사리를 테마로 한 축제",
+      "tel": "064-764-4183",
+      "homepage": "http://www.jejugosari.net/",
+      "overview": "고사리를테마로한각종체험행사및공연등진행",
       "tags": [
         "봄"
       ],
       "months": [
         "2026-04"
       ],
-      "lat": 33.33052259,
-      "lng": 126.6738998,
+      "lat": 33.33150191,
+      "lng": 126.6780008,
       "source": "std",
-      "place": "머체왓방문객센터",
-      "sponsor": "제주특별자치도 서귀포시 남원읍축제위원회",
-      "modifiedTime": "20260731000000"
+      "place": "국가태풍센터 인근",
+      "sponsor": "남원읍축제위원회 / 남원읍사무소",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s8bd3de12",
@@ -3389,6 +3833,33 @@
       "place": "주부토로 일원(계산2동 행정복지센터 ~ 계산국민체육센터)",
       "sponsor": "인천광역시 계양구",
       "modifiedTime": "20260804000000"
+    },
+    {
+      "id": "s43047a22",
+      "title": "2026 서귀포 크루즈 페스타",
+      "startDate": "2026-04-22",
+      "endDate": "2026-05-19",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 말질로 259",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3973",
+      "homepage": "",
+      "overview": "전통공연+로컬 플리마켓+체험콘텐츠+포토존 등",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-04",
+        "2026-05"
+      ],
+      "lat": 33.22903945,
+      "lng": 126.4784679,
+      "source": "std",
+      "place": "강정크루즈터미널 인근",
+      "sponsor": "제주특별자치도 서귀포시",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s095796cf",
@@ -3630,7 +4101,34 @@
       "source": "std",
       "place": "익산 왕궁리유적",
       "sponsor": "전북특별자치도 익산시청 / 문화재청+전북특별자치도 익산시청",
-      "modifiedTime": "20260407000000"
+      "modifiedTime": "20261015000000"
+    },
+    {
+      "id": "s2d8076af",
+      "title": "제16회 양평 용문산 산나물축제",
+      "startDate": "2026-04-24",
+      "endDate": "2026-04-26",
+      "sido": "경기",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 용문면 용문산로 656",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-770-1072",
+      "homepage": "https://ypsannamul.kr/",
+      "overview": "산나물의 맛과 향기를 느낄수 있는 즐거운 체험, 공연이 펼쳐지는 다채로운 축제",
+      "tags": [
+        "먹거리",
+        "봄"
+      ],
+      "months": [
+        "2026-04"
+      ],
+      "lat": 37.54633417,
+      "lng": 127.5824277,
+      "source": "std",
+      "place": "용문산관광지",
+      "sponsor": "양평군축제추진위원회 / 경기도 양평군",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s44a2491a",
@@ -3711,6 +4209,38 @@
       "place": "함평 엑스포공원 일원",
       "sponsor": "함평축제관광재단 / 전남광주통합특별시 함평군",
       "modifiedTime": "20260916000000"
+    },
+    {
+      "id": "sfb2eb5d7",
+      "title": "2026 금토금토새연쇼",
+      "startDate": "2026-04-25",
+      "endDate": "2026-10-31",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 서홍동 707-7",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-2651+064-760-2654",
+      "homepage": "https://www.seogwipo.go.kr/tourismculture/destination/season/saenyeon.htm",
+      "overview": "불꽃쇼+음악분수쇼+문화공연",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10"
+      ],
+      "lat": 33.23898176,
+      "lng": 126.5587792,
+      "source": "std",
+      "place": "서귀포항 새연교 일원",
+      "sponsor": "제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "se5d66d54",
@@ -3850,7 +4380,7 @@
       "source": "std",
       "place": "거제맹종죽테마파크 일원",
       "sponsor": "거제맹종죽영농조합법인 / 거제시농업기술센터 농식품유통과",
-      "modifiedTime": "20260707000000"
+      "modifiedTime": "20260930000000"
     },
     {
       "id": "s99f09488",
@@ -3933,32 +4463,6 @@
       "modifiedTime": "20260818000000"
     },
     {
-      "id": "saddabc11",
-      "title": "제29회 동춘당문화제",
-      "startDate": "2026-04-25",
-      "endDate": "2026-04-25",
-      "sido": "대전",
-      "sigungu": "대덕구",
-      "address": "대전광역시 대덕구 동춘당로 80 (동춘당)",
-      "image": "",
-      "thumbnail": "",
-      "tel": "042-608-6572",
-      "homepage": "",
-      "overview": "문정공시호봉송행렬 등",
-      "tags": [
-        "봄"
-      ],
-      "months": [
-        "2026-04"
-      ],
-      "lat": 36.36537889,
-      "lng": 127.4412933,
-      "source": "std",
-      "place": "동춘당역사공원 일원",
-      "sponsor": "대덕문화원 / 대전광역시 대덕구",
-      "modifiedTime": "20260917000000"
-    },
-    {
       "id": "se1eecb7d",
       "title": "제29회 백아산 철쭉제 및 6.25 희생자 위령제",
       "startDate": "2026-04-25",
@@ -4011,33 +4515,6 @@
       "place": "대구전역",
       "sponsor": "대구광역시청",
       "modifiedTime": "20260730000000"
-    },
-    {
-      "id": "s889fe64a",
-      "title": "광명등문화축제",
-      "startDate": "2026-04-27",
-      "endDate": "2026-05-29",
-      "sido": "경기",
-      "sigungu": "광명시",
-      "address": "경기도 광명시 오리로 703",
-      "image": "",
-      "thumbnail": "",
-      "tel": "02-2680-0700",
-      "homepage": "",
-      "overview": "거리등 전시+점등식+체험부스+문화공연",
-      "tags": [
-        "봄"
-      ],
-      "months": [
-        "2026-04",
-        "2026-05"
-      ],
-      "lat": 37.4625199,
-      "lng": 126.8711626,
-      "source": "std",
-      "place": "시민체육관",
-      "sponsor": "광명전통문화연구회 / 경기도 광명시청",
-      "modifiedTime": "20260507000000"
     },
     {
       "id": "s6d227631",
@@ -4170,12 +4647,12 @@
         "2026-04",
         "2026-05"
       ],
-      "lat": 35.40409116,
-      "lng": 127.3786423,
+      "lat": 35.40413057,
+      "lng": 127.380504,
       "source": "std",
       "place": "광한루원+요천변 일원",
       "sponsor": "춘향제전위원회 / 전북특별자치도 남원시",
-      "modifiedTime": "20260713000000"
+      "modifiedTime": "20261013000000"
     },
     {
       "id": "sb34725e2",
@@ -4202,7 +4679,7 @@
       "source": "std",
       "place": "송림숲 및 유채꽃 경관단지 일원",
       "sponsor": "해제 유채꽃 축제추진위위원회",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "sb444c7ce",
@@ -4392,7 +4869,7 @@
       "source": "std",
       "place": "여주 신륵사관광지 일원",
       "sponsor": "여주세종문화관광재단 / 경기도 여주시청",
-      "modifiedTime": "20260615000000"
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "sdada701b",
@@ -4471,7 +4948,7 @@
       "source": "std",
       "place": "오수의견관광지",
       "sponsor": "의견문화제전위원회",
-      "modifiedTime": "20260720000000"
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "s7123337b",
@@ -4497,7 +4974,7 @@
       "source": "std",
       "place": "금마면 서동공원",
       "sponsor": "(재)익산문화관광재단 / 전북특별자치도 익산시청",
-      "modifiedTime": "20260407000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s741f149a",
@@ -4524,7 +5001,7 @@
       "source": "std",
       "place": "한지테마파크",
       "sponsor": "(사)한지문화재단",
-      "modifiedTime": "20260703000000"
+      "modifiedTime": "20261022000000"
     },
     {
       "id": "sc745ffd2",
@@ -4630,7 +5107,7 @@
       "source": "std",
       "place": "함양상림공원",
       "sponsor": "천령문화제위원회 / 경상남도 함양군청",
-      "modifiedTime": "20260812000000"
+      "modifiedTime": "20261012000000"
     },
     {
       "id": "sdea6e8b1",
@@ -4735,7 +5212,31 @@
       "source": "std",
       "place": "해뜰마루지방정원",
       "sponsor": "전북특별자치도 부안군",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261015000000"
+    },
+    {
+      "id": "s3c60d2a2",
+      "title": "고흥우주항공축제",
+      "startDate": "2026-05-02",
+      "endDate": "2026-05-05",
+      "sido": "전남",
+      "sigungu": "고흥군",
+      "address": "전남광주통합특별시 고흥군 봉래면 예내리 500",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "",
+      "overview": "공연+전시+체험",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "source": "std",
+      "place": "나로우주센터 우주과학관 광장 일원",
+      "sponsor": "전남광주통합특별시 고흥군 / 고흥군 축제위원회",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s65322fed",
@@ -4965,7 +5466,7 @@
       "source": "std",
       "place": "해남 공룡박물관 일원",
       "sponsor": "전남광주통합특별시 해남군청",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
     },
     {
       "id": "sa19c4228",
@@ -5231,6 +5732,33 @@
       "modifiedTime": "20260928000000"
     },
     {
+      "id": "sf0c1652e",
+      "title": "(1회차) 2026 서귀포시 드론라이트쇼 「빛나는 서귀포의 밤」",
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-08",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 남원읍 신례로 96",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-2654",
+      "homepage": "",
+      "overview": "제60회 제주특별자치도민 체육대회 개막식 연계 드론라이트쇼",
+      "tags": [
+        "불꽃/야경",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.27680424,
+      "lng": 126.6409078,
+      "source": "std",
+      "place": "공천포전지훈련센터",
+      "sponsor": "제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sbb669c80",
       "title": "2026 구리 유채꽃 축제",
       "startDate": "2026-05-08",
@@ -5255,7 +5783,7 @@
       "source": "std",
       "place": "구리한강 시민공원",
       "sponsor": "(사)구리문화원 / 경기도 구리시청",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s0fff18ec",
@@ -5282,30 +5810,6 @@
       "place": "성남시청 한누리실+야외광장",
       "sponsor": "경기도 성남시 식품안전의 날 행사추진위원회 / 식품안전의 날 행사추진위원회",
       "modifiedTime": "20260818000000"
-    },
-    {
-      "id": "s40db68e6",
-      "title": "2026 유성온천문화축제",
-      "startDate": "2026-05-08",
-      "endDate": "2026-05-10",
-      "sido": "대전",
-      "sigungu": "유성구",
-      "address": "대전광역시 유성구 계룡로123번길 52",
-      "image": "",
-      "thumbnail": "",
-      "tel": "042-611-2080",
-      "homepage": "",
-      "overview": "축하공연+드론라이트쇼+체험부스",
-      "tags": [
-        "봄"
-      ],
-      "months": [
-        "2026-05"
-      ],
-      "source": "std",
-      "place": "유림공원+온천로 일원",
-      "sponsor": "대전광역시 유성구청",
-      "modifiedTime": "20260709000000"
     },
     {
       "id": "see8ad9e9",
@@ -5358,7 +5862,7 @@
       "source": "std",
       "place": "충현박물관(5. 8.) /광명시민체육관(5. 9.)",
       "sponsor": "광명문화원",
-      "modifiedTime": "20260507000000"
+      "modifiedTime": "20261007000000"
     },
     {
       "id": "se93cec1e",
@@ -5385,6 +5889,32 @@
       "place": "동성로 일원",
       "sponsor": "대구광역시 중구",
       "modifiedTime": "20260730000000"
+    },
+    {
+      "id": "seaa8dd69",
+      "title": "제60회 제주특별자치도민체육대회",
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 남원읍 신례로 96",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3602",
+      "homepage": "https://jejusportsf.kr/introduction/summary/summary.htm",
+      "overview": "개막식+성화봉송+폐회식",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.27680424,
+      "lng": 126.6409078,
+      "source": "std",
+      "place": "공천포전지훈련센터 주경기장",
+      "sponsor": "제주특별자치도 서귀포시 +서귀포시체육회+회원종목단체 / 제주특별자치도체육회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "sef73ea2f",
@@ -5438,7 +5968,7 @@
       "source": "std",
       "place": "별빛내린천(도림천)",
       "sponsor": "서울특별시 관악구청 / 관악문화재단",
-      "modifiedTime": "20260730000000"
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "s19ff0eca",
@@ -5522,7 +6052,7 @@
       "source": "std",
       "place": "관천로 문화플랫폼 S1472 및 봉림교 주변",
       "sponsor": "관악문화재단",
-      "modifiedTime": "20260730000000"
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "s4b606116",
@@ -5574,7 +6104,7 @@
       "source": "std",
       "place": "화명생태공원",
       "sponsor": "(사)부산축제조직위원회 / 부산광역시청",
-      "modifiedTime": "20260626000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "se535aa1e",
@@ -5604,8 +6134,35 @@
       "modifiedTime": "20260827000000"
     },
     {
+      "id": "s5516d31c",
+      "title": "제4회 의귀리 귤꽃축제",
+      "startDate": "2026-05-09",
+      "endDate": "2026-05-10",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 남원읍 한신로 213",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-764-7208",
+      "homepage": "https://blog.naver.com/culture_seogwipo/224260259819",
+      "overview": "초대가수공연+오끼트레일+초대공연+체험프로그램",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.31111895,
+      "lng": 126.714628,
+      "source": "std",
+      "place": "의귀초등학교",
+      "sponsor": "의귀리휴양마을 / 의귀리마을회",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "s0973b0b6",
-      "title": "제16회 화성시 가족사랑축제",
+      "title": "화성시 가족사랑축제",
       "startDate": "2026-05-09",
       "endDate": "2026-05-09",
       "sido": "경기",
@@ -5627,7 +6184,7 @@
       "source": "std",
       "place": "동탄호수공원",
       "sponsor": "화성시문화관광재단 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "s69139067",
@@ -5653,7 +6210,33 @@
       "source": "std",
       "place": "해남군 황산면 연호리 보리밭",
       "sponsor": "마을기업㈜연호",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
+    },
+    {
+      "id": "sf965a125",
+      "title": "광명등문화축제",
+      "startDate": "2026-05-10",
+      "endDate": "2026-05-10",
+      "sido": "경기",
+      "sigungu": "광명시",
+      "address": "경기도 광명시 오리로 703",
+      "image": "",
+      "thumbnail": "",
+      "tel": "02-2680-0700",
+      "homepage": "",
+      "overview": "거리등 전시+점등식+체험부스+민속공연",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 37.4625199,
+      "lng": 126.8711626,
+      "source": "std",
+      "place": "시민체육관",
+      "sponsor": "광명전통문화연구회 / 경기도 광명시청",
+      "modifiedTime": "20261007000000"
     },
     {
       "id": "sf58a159e",
@@ -5758,7 +6341,7 @@
       "source": "std",
       "place": "아미르공원 및 블루포트2021",
       "sponsor": "부산광역시 영도구청, (사)한국커피협회 / 부산광역시 영도구청",
-      "modifiedTime": "20260709000000"
+      "modifiedTime": "20261007000000"
     },
     {
       "id": "s7a5ff4bb",
@@ -5785,7 +6368,59 @@
       "source": "std",
       "place": "이곡장미공원",
       "sponsor": "(재)달서문화재단",
-      "modifiedTime": "20260710000000"
+      "modifiedTime": "20261006000000"
+    },
+    {
+      "id": "s0d32431b",
+      "title": "제12회 북천 꽃 양귀비 축제",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-25",
+      "sido": "경남",
+      "sigungu": "하동군",
+      "address": "경상남도 하동군 북천면 경서대로 2446-6",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-884-7416",
+      "homepage": "https://www.hadong.go.kr/02641/02652/02810.web",
+      "overview": "꽃축제+전시+대회+공연",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "source": "std",
+      "place": "경상남도 하동군 북천면 직전리 꽃단지 일원",
+      "sponsor": "하동북천코스모스·메밀꽃영농조합법인",
+      "modifiedTime": "20261015000000"
+    },
+    {
+      "id": "se251e8b5",
+      "title": "제6회 웰니스 숲 힐링 축제",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-17",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 산록남로 2271",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3774",
+      "homepage": "https://www.seogwipo.go.kr/healing/community/notice.htm?act=view&seq=153777295",
+      "overview": "숲속힐링음악회+숲속북토크+숲속인문학",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.29193862,
+      "lng": 126.5279023,
+      "source": "std",
+      "place": "서귀포치유의숲 노고록무장애나눔길 무대",
+      "sponsor": "서귀포시 산림휴양관리소",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s3e51161d",
@@ -5868,6 +6503,33 @@
       "modifiedTime": "20260916000000"
     },
     {
+      "id": "sc8194c18",
+      "title": "2026 효돈감귤꽃축제",
+      "startDate": "2026-05-16",
+      "endDate": "2026-05-17",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 효돈순환로 441",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-767-4623",
+      "homepage": "https://www.seogwipo.go.kr/local/hyodon/notice.htm?act=view&seq=153757861",
+      "overview": "감귤관련체험+감귤꽃향기따라걷기+감귤관련먹거리운영",
+      "tags": [
+        "꽃/자연",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.27159304,
+      "lng": 126.6074285,
+      "source": "std",
+      "place": "서귀포감귤박물관 야외공연장",
+      "sponsor": "효돈감귤꽃축제위원회",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "s6be7fabe",
       "title": "2026 D.FESTA 대학로 거리공연축제",
       "startDate": "2026-05-16",
@@ -5904,7 +6566,7 @@
       "address": "세종특별자치시 중앙공원로 60",
       "image": "",
       "thumbnail": "",
-      "tel": "044-850-0592",
+      "tel": "044-850-0599",
       "homepage": "https://www.sjcf.or.kr/index.do",
       "overview": "市 무형유산 세종불교낙화법 활용 야간 특화 관광 축제",
       "tags": [
@@ -5917,95 +6579,8 @@
       "lng": 127.271784,
       "source": "std",
       "place": "세종호수+중앙공원 일원",
-      "sponsor": "세종특별자치시 문화관광재단 / 세종특별자치시청",
-      "modifiedTime": "20260831000000"
-    },
-    {
-      "id": "sc2f18920",
-      "title": "슬도아트 전시 [스스로 접히는 빛]",
-      "startDate": "2026-05-16",
-      "endDate": "2026-06-28",
-      "sido": "울산",
-      "sigungu": "동구",
-      "address": "울산광역시 동구 성끝길 103",
-      "image": "",
-      "thumbnail": "",
-      "tel": "052-234-1033",
-      "homepage": "https://www.instagram.com/seuldoart/",
-      "overview": "전시",
-      "tags": [
-        "불꽃/야경",
-        "전시/예술",
-        "봄"
-      ],
-      "months": [
-        "2026-05",
-        "2026-06"
-      ],
-      "lat": 35.48090382,
-      "lng": 129.4327723,
-      "source": "std",
-      "place": "슬도아트",
-      "sponsor": "슬도아트",
-      "modifiedTime": "20260701000000"
-    },
-    {
-      "id": "sf901dd99",
-      "title": "슬도아트 전시 [안아:초록에 둘러싸여서]",
-      "startDate": "2026-05-16",
-      "endDate": "2026-06-28",
-      "sido": "울산",
-      "sigungu": "동구",
-      "address": "울산광역시 동구 성끝길 103",
-      "image": "",
-      "thumbnail": "",
-      "tel": "052-234-1033",
-      "homepage": "https://www.instagram.com/seuldoart/",
-      "overview": "전시",
-      "tags": [
-        "전시/예술",
-        "음악/공연",
-        "봄"
-      ],
-      "months": [
-        "2026-05",
-        "2026-06"
-      ],
-      "lat": 35.48090382,
-      "lng": 129.4327723,
-      "source": "std",
-      "place": "슬도아트",
-      "sponsor": "슬도아트",
-      "modifiedTime": "20260701000000"
-    },
-    {
-      "id": "sec9a3d2f",
-      "title": "슬도아트 전시 [푸른 빛 개화]",
-      "startDate": "2026-05-16",
-      "endDate": "2026-06-28",
-      "sido": "울산",
-      "sigungu": "동구",
-      "address": "울산광역시 동구 성끝길 103",
-      "image": "",
-      "thumbnail": "",
-      "tel": "052-234-1033",
-      "homepage": "https://www.instagram.com/seuldoart/",
-      "overview": "전시",
-      "tags": [
-        "불꽃/야경",
-        "전시/예술",
-        "봄"
-      ],
-      "months": [
-        "2026-05",
-        "2026-06"
-      ],
-      "lat": 35.48090382,
-      "lng": 129.4327723,
-      "source": "std",
-      "place": "슬도아트",
-      "sponsor": "슬도아트",
-      "modifiedTime": "20260701000000"
+      "sponsor": "세종특별자치시 문화관광재단+불교낙화법보존회 / 세종특별자치시청+불교낙화법보존회",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "sae3ee425",
@@ -6058,7 +6633,7 @@
       "source": "std",
       "place": "정조효공원+용주사",
       "sponsor": "화성시불교사암연합회 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "sae3be291",
@@ -6086,7 +6661,7 @@
       "source": "std",
       "place": "용수골",
       "sponsor": "용수골꽃양귀비축제추진위원회",
-      "modifiedTime": "20260703000000"
+      "modifiedTime": "20261022000000"
     },
     {
       "id": "sf03fda57",
@@ -6114,6 +6689,35 @@
       "place": "울산대공원 장미원",
       "sponsor": "울산광역시 / SK이노베이션",
       "modifiedTime": "20260820000000"
+    },
+    {
+      "id": "s4911c007",
+      "title": "수국과 공연이 꽃피는 혼인지",
+      "startDate": "2026-05-21",
+      "endDate": "2026-06-20",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 성산읍 혼인지로 39-42",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-782-2766",
+      "homepage": "",
+      "overview": "드론쇼+전통혼례공연+문화공연",
+      "tags": [
+        "꽃/자연",
+        "음악/공연",
+        "봄"
+      ],
+      "months": [
+        "2026-05",
+        "2026-06"
+      ],
+      "lat": 33.41605786,
+      "lng": 126.8950647,
+      "source": "std",
+      "place": "온평리 혼인지 야외마당 및 온평리 서포구 잔디마당",
+      "sponsor": "온평리마을회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s81061f4c",
@@ -6169,6 +6773,31 @@
       "modifiedTime": "20260909000000"
     },
     {
+      "id": "s795a0039",
+      "title": "금사참외축제",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-24",
+      "sido": "경기",
+      "sigungu": "여주시",
+      "address": "경기도 여주시 금사면 이여로 1278",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-887-3893",
+      "homepage": "",
+      "overview": "참외판매부스 및 체험부스 운영, 공연 등",
+      "tags": [
+        "먹거리",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "source": "std",
+      "place": "금사근린공원 일원",
+      "sponsor": "경기도 여주시청",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "s93458ed0",
       "title": "부산원도심활성화축제",
       "startDate": "2026-05-22",
@@ -6178,7 +6807,7 @@
       "address": "부산광역시 동구 중앙대로 210",
       "image": "",
       "thumbnail": "",
-      "tel": "051-888-5221",
+      "tel": "051-888-5222",
       "homepage": "https://festivalbusan.com/",
       "overview": "택슐랭 체험 프로그램 등",
       "tags": [
@@ -6192,7 +6821,33 @@
       "source": "std",
       "place": "부산역광장",
       "sponsor": "(사)부산축제조직위원회 / 부산광역시청",
-      "modifiedTime": "20260626000000"
+      "modifiedTime": "20261015000000"
+    },
+    {
+      "id": "s822243e7",
+      "title": "제22회 보목자리돔축제",
+      "startDate": "2026-05-22",
+      "endDate": "2026-05-24",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 보목포로 46",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-733-3508",
+      "homepage": "https://bomokjaridom.com/",
+      "overview": "맨손잡기+초대가수공연+플로깅+먹거리부스운영등",
+      "tags": [
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.23921804,
+      "lng": 126.6067616,
+      "source": "std",
+      "place": "보목포구 일원",
+      "sponsor": "보목자리돔축제위원회 / 보목동어촌계+보목동부녀회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s0a74704d",
@@ -6298,7 +6953,7 @@
       "source": "std",
       "place": "고인돌공원",
       "sponsor": "경기도 오산시청 문화예술과",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "s98b37dca",
@@ -6353,18 +7008,18 @@
       "modifiedTime": "20260803000000"
     },
     {
-      "id": "sc08e1987",
-      "title": "2026 하영 빛나는 서귀포",
+      "id": "s78bc2b18",
+      "title": "(2회차) 2026 서귀포시 드론라이트쇼 「빛나는 서귀포의 밤」",
       "startDate": "2026-05-24",
       "endDate": "2026-05-24",
       "sido": "제주",
       "sigungu": "서귀포시",
-      "address": "제주특별자치도 서귀포시 칠십리로 120-12 (서귀동)",
+      "address": "제주특별자치도 서귀포시 칠십리로 120-12",
       "image": "",
       "thumbnail": "",
       "tel": "064-760-2654",
       "homepage": "",
-      "overview": "서귀포의 낮과 밤을 함께 즐기는 특별한 하루 2026년 5월 도심 걷기와 감성 음악콘서트 그리고 화려한 드론라이트쇼가 어우러진 복합 문화행사 「하영 빛나는 서귀포」 가 개최됩니다. 시민과 관광객 여러분의 많은 관심과 참여 바랍니다.",
+      "overview": "하영올레도심걷기 및 야해페스티벌 연계 드론라이트쇼",
       "tags": [
         "불꽃/야경",
         "봄"
@@ -6375,9 +7030,9 @@
       "lat": 33.24144151,
       "lng": 126.5668484,
       "source": "std",
-      "place": "자구리공원 일대",
-      "sponsor": "제주특별자치도 서귀포시",
-      "modifiedTime": "20260731000000"
+      "place": "자구리문화예술공원",
+      "sponsor": "제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "sb9158634",
@@ -6406,6 +7061,33 @@
       "modifiedTime": "20260916000000"
     },
     {
+      "id": "s0b698a89",
+      "title": "하영 빛나는 서귀포",
+      "startDate": "2026-05-24",
+      "endDate": "2026-05-24",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 칠십리로 120-12",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3944+064-760-2654",
+      "homepage": "https://www.seogwipo.go.kr/group/culture/tourism/notice.htm?act=view&seq=153885367",
+      "overview": "하영올레도심걷기+음악콘서트+드론쇼",
+      "tags": [
+        "불꽃/야경",
+        "봄"
+      ],
+      "months": [
+        "2026-05"
+      ],
+      "lat": 33.24144151,
+      "lng": 126.5668484,
+      "source": "std",
+      "place": "자구리공원 및 하영올레 1·2코스",
+      "sponsor": "제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sd341b152",
       "title": "장미축제",
       "startDate": "2026-05-27",
@@ -6430,7 +7112,7 @@
       "source": "std",
       "place": "장미공원",
       "sponsor": "장미축제위원회",
-      "modifiedTime": "20260703000000"
+      "modifiedTime": "20261022000000"
     },
     {
       "id": "s6197c5a8",
@@ -6457,7 +7139,7 @@
       "source": "std",
       "place": "임실치즈테마파크",
       "sponsor": "(재)임실치즈테마파크",
-      "modifiedTime": "20260720000000"
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "s601bc485",
@@ -6617,8 +7299,32 @@
       "modifiedTime": "20260731000000"
     },
     {
-      "id": "sc7780c2d",
-      "title": "음성품바축제",
+      "id": "s61739b4e",
+      "title": "한라산아래첫마을 광평리 2026 제주메밀축제",
+      "startDate": "2026-06-06",
+      "endDate": "2026-06-07",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 광평로 41",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "",
+      "overview": "메밀염색하기+메밀꽃밭공연+퍼레이드등",
+      "tags": [
+        "여름"
+      ],
+      "months": [
+        "2026-06"
+      ],
+      "source": "std",
+      "place": "한라산아래첫마을영농조합법인 일대",
+      "sponsor": "광평리마을회",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "s8638783f",
+      "title": "제27회 음성품바축제",
       "startDate": "2026-06-10",
       "endDate": "2026-06-14",
       "sido": "충북",
@@ -6626,21 +7332,21 @@
       "address": "충청북도 음성군 음성읍 설성공원길 28",
       "image": "",
       "thumbnail": "",
-      "tel": "043-871-3415",
-      "homepage": "https://pumba.kr/",
-      "overview": "전국 품바 길놀이 퍼레이드+품바 하우스 짓기 경연대회+전국 품바 래퍼 경연대회",
+      "tel": "043-873-2241",
+      "homepage": "https://www.pumba.kr/",
+      "overview": "최귀동 할아버지의 박애정신과 사랑, 나눔, 봉사를 통하여 아름다운 사회를 구현하고자 하는 정신문화축제",
       "tags": [
         "여름"
       ],
       "months": [
         "2026-06"
       ],
-      "lat": 36.93278536,
-      "lng": 127.6910228,
+      "lat": 36.93278537,
+      "lng": 127.6910226,
       "source": "std",
-      "place": "설성공원 및 꽃동네 일원",
-      "sponsor": "음성품바축제기획실무위원회 / 음성군 축제추진위원회+음성예총",
-      "modifiedTime": "20260916000000"
+      "place": "음성 설성공원 및 꽃동네 일원",
+      "sponsor": "음성품바축제 기획실무위원회 / 음성군 축제추진위원회, 음성예총",
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "se94e836e",
@@ -6726,7 +7432,33 @@
       "source": "std",
       "place": "옥포대첩기념공원+옥포수변공원 일원",
       "sponsor": "거제시문화예술재단",
-      "modifiedTime": "20260707000000"
+      "modifiedTime": "20260930000000"
+    },
+    {
+      "id": "sb8e6623d",
+      "title": "제10회 하동섬진강문화재첩축제",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-14",
+      "sido": "경남",
+      "sigungu": "하동군",
+      "address": "경상남도 하동군 하동읍 섬진강대로 2107-8",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-880-2450",
+      "homepage": "https://www.hadong.go.kr/02641/02652/02812.web",
+      "overview": "먹거리축제+체험+공연+대회+판매",
+      "tags": [
+        "먹거리",
+        "문화/전통",
+        "여름"
+      ],
+      "months": [
+        "2026-06"
+      ],
+      "source": "std",
+      "place": "경상남도 하동읍 송림공원 및 섬진강변 일원",
+      "sponsor": "(사)하동섬진강문화재첩축제추진위원회",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s0b94e00e",
@@ -6777,6 +7509,33 @@
       "place": "광안리해변 및 수영사적공원 일원",
       "sponsor": "수영구 축제위원회 / 부산광역시 수영구청",
       "modifiedTime": "20260813000000"
+    },
+    {
+      "id": "sa657197f",
+      "title": "제7회 안덕면 수눌음 수국·헌혈 페스타",
+      "startDate": "2026-06-12",
+      "endDate": "2026-06-13",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 안덕면 화순서서로 59",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-4315",
+      "homepage": "",
+      "overview": "헌혈버스운영+축하공연+어린이댄스및사생대회등",
+      "tags": [
+        "꽃/자연",
+        "여름"
+      ],
+      "months": [
+        "2026-06"
+      ],
+      "lat": 33.2549408,
+      "lng": 126.3285704,
+      "source": "std",
+      "place": "안덕생활체육관 일원",
+      "sponsor": "안덕면주민자치회+안덕청년회의소+안덕적십자봉사회 / 안덕면사무소",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s609b646d",
@@ -6932,34 +7691,34 @@
       "source": "std",
       "place": "선돌마당공원+선돌공원+달서선사관+한샘청동공원",
       "sponsor": "달서선사유적사람들+세종문화재연구원 / 달서구문화원",
-      "modifiedTime": "20260710000000"
+      "modifiedTime": "20261006000000"
     },
     {
-      "id": "s9a4e60c7",
-      "title": "문화공장 방어진 [단단한 선이 허물어지고 우리는 기꺼이 풍경이 된다]",
+      "id": "s9a60ad40",
+      "title": "라벤더축제",
       "startDate": "2026-06-13",
-      "endDate": "2026-07-19",
-      "sido": "울산",
-      "sigungu": "동구",
-      "address": "울산광역시 동구 중진2길 5",
+      "endDate": "2026-06-21",
+      "sido": "강원",
+      "sigungu": "동해시",
+      "address": "강원특별자치도 동해시 이기로 97",
       "image": "",
       "thumbnail": "",
-      "tel": "052-234-1034",
-      "homepage": "https://www.instagram.com/seuldoart/",
-      "overview": "전시",
+      "tel": "033-530-2381",
+      "homepage": "http://dhfesta.or.kr/dhlf/",
+      "overview": "개막식+공연행사+먹거리부스운영+라벤더사진체험등",
       "tags": [
+        "꽃/자연",
         "여름"
       ],
       "months": [
-        "2026-06",
-        "2026-07"
+        "2026-06"
       ],
-      "lat": 35.48357441,
-      "lng": 129.4242217,
+      "lat": 37.47612138,
+      "lng": 129.0337136,
       "source": "std",
-      "place": "문화공장 방어진",
-      "sponsor": "문화공장방어진",
-      "modifiedTime": "20260701000000"
+      "place": "무릉별유천지",
+      "sponsor": "동해문화관광재단 / 강원특별자치도 동해시청",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "sce8f15d7",
@@ -6985,6 +7744,32 @@
       "place": "조달청 주차장",
       "sponsor": "반포4동 주민자치위원회",
       "modifiedTime": "20260928000000"
+    },
+    {
+      "id": "s97bb03a9",
+      "title": "서귀포시 청소년 페스티벌",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-13",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 중앙로150번길 4-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-2465",
+      "homepage": "https://www.seogwipo.go.kr/info/news/notice.htm?&act=view&seq=153946039",
+      "overview": "청소년끼경연대회+축하가수공연+체험프로그램",
+      "tags": [
+        "여름"
+      ],
+      "months": [
+        "2026-06"
+      ],
+      "lat": 33.25861971,
+      "lng": 126.5619523,
+      "source": "std",
+      "place": "서귀포학생문화원",
+      "sponsor": "서귀포시 여성가족과",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "sc42ba7f3",
@@ -7149,6 +7934,30 @@
       "place": "무등산국립공원 증심사지구 일원",
       "sponsor": "전남광주통합특별시 동구",
       "modifiedTime": "20260731000000"
+    },
+    {
+      "id": "sbb7d88ee",
+      "title": "제4회 양평 밀축제",
+      "startDate": "2026-06-13",
+      "endDate": "2026-06-14",
+      "sido": "경기",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 청운면 가현리 698-17",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-770-1072",
+      "homepage": "https://wheat-festival.detaste.kr/",
+      "overview": "양평 우리밀을 활용한 다양한 음식 부스, 체험프로그램, 공연 등 운영",
+      "tags": [
+        "여름"
+      ],
+      "months": [
+        "2026-06"
+      ],
+      "source": "std",
+      "place": "양평우리밀경관단지 일원",
+      "sponsor": "양평군 축제추진위원회 / 경기도 양평군(관광과, 기후환경과)",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "sffad7837",
@@ -7361,7 +8170,7 @@
       "source": "std",
       "place": "경산시 자인면 계정숲",
       "sponsor": "경산자인단오제보존회",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "sa010dea4",
@@ -7382,12 +8191,12 @@
       "months": [
         "2026-06"
       ],
-      "lat": 37.598696,
-      "lng": 126.787338,
+      "lat": 37.59870927,
+      "lng": 126.7878826,
       "source": "std",
       "place": "아라마리나 일원",
       "sponsor": "㈜케이워터운영관리 / 경기도 김포시 + K-water",
-      "modifiedTime": "20260520000000"
+      "modifiedTime": "20261028000000"
     },
     {
       "id": "s553a36d5",
@@ -7547,7 +8356,7 @@
       "source": "std",
       "place": "북항친수공원",
       "sponsor": "(사)부산축제조직위원회 / 부산광역시청",
-      "modifiedTime": "20260626000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "sc1a2ff51",
@@ -7611,8 +8420,8 @@
       "address": "경상남도 양산시 배움터길 60-19",
       "image": "",
       "thumbnail": "",
-      "tel": "055-392-0920",
-      "homepage": "https://www.ycf.or.kr",
+      "tel": "055-380-0920",
+      "homepage": "https://www.ycf.or.kr/pages/MNLTO002000M",
       "overview": "개막식+축하공연+웅상신풍워터페스타+조선통신사퍼레이드+물놀이장+물총대첨+웅상농청장원놀이공연+웅상석빙고체험+솔밭황톳길숲체험+역사부스조성+먹거리존",
       "tags": [
         "여름"
@@ -7625,7 +8434,7 @@
       "source": "std",
       "place": "웅상체육공원 일원",
       "sponsor": "(재)양산문화재단 / (재)양산문화재단+경상남도 양산시청",
-      "modifiedTime": "20260810000000"
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "s08fba731",
@@ -7814,7 +8623,7 @@
       "source": "std",
       "place": "회산백련지 일원",
       "sponsor": "전남광주통합특별시 무안군축제추진위원회 / 전남광주통합특별시 무안군",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "s87a485c3",
@@ -7867,8 +8676,8 @@
       "lng": 128.6101227,
       "source": "std",
       "place": "매물도 여객선터미널+남부면 저구항 일원",
-      "sponsor": "남부면발전협의회 / 남부면",
-      "modifiedTime": "20260707000000"
+      "sponsor": "남부면발전협의회 / 남부면사무소",
+      "modifiedTime": "20260930000000"
     },
     {
       "id": "sad212617",
@@ -7974,6 +8783,33 @@
       "modifiedTime": "20260811000000"
     },
     {
+      "id": "sa47ee702",
+      "title": "제5회 강정마을 생태축제",
+      "startDate": "2026-07-03",
+      "endDate": "2026-07-05",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 강정동 2673-6",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "",
+      "overview": "초대공연+에코노을런+팩배킹+스노클링+천체관측등",
+      "tags": [
+        "꽃/자연",
+        "여름"
+      ],
+      "months": [
+        "2026-07"
+      ],
+      "lat": 33.23402942,
+      "lng": 126.4872424,
+      "source": "std",
+      "place": "강정체육공원 일원",
+      "sponsor": "강정마을 생태축제위원회 / 강정마을회",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sfe837cc8",
       "title": "2026 대구앞산축제(제31회 대덕제)",
       "startDate": "2026-07-04",
@@ -8025,6 +8861,31 @@
       "place": "우장산축구장",
       "sponsor": "서울특별시 강서구",
       "modifiedTime": "20260827000000"
+    },
+    {
+      "id": "s65521e08",
+      "title": "제2회 양평 수박축제",
+      "startDate": "2026-07-04",
+      "endDate": "2026-07-05",
+      "sido": "경기",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 청운면 용두민속장터길 2",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-770-3232",
+      "homepage": "https://tour.yp21.go.kr/www/contents.do?key=573",
+      "overview": "청운 대표특산물인 수박을 주제로 싱싱한 수박, 농특산물과 물놀이 등을 즐길 수 있는 축제",
+      "tags": [
+        "먹거리",
+        "여름"
+      ],
+      "months": [
+        "2026-07"
+      ],
+      "source": "std",
+      "place": "청운용두시장",
+      "sponsor": "청운면 수박축제추진위원회+증안리약초마을협동조합 / 경기도 양평군+청운면 수박축제추진위원회",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s4cc36d23",
@@ -8130,7 +8991,7 @@
       "source": "std",
       "place": "관악문화재단 관악아트홀",
       "sponsor": "관악문화재단 / 서울특별시 관악구청",
-      "modifiedTime": "20260730000000"
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "sd17028ce",
@@ -8322,7 +9183,7 @@
       "source": "std",
       "place": "변산+격포+모항해수욕장 일원",
       "sponsor": "전북특별자치도 부안군",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s19b5dd0c",
@@ -8378,33 +9239,6 @@
       "modifiedTime": "20260916000000"
     },
     {
-      "id": "se83af748",
-      "title": "세종조치원복숭아축제",
-      "startDate": "2026-07-24",
-      "endDate": "2026-07-26",
-      "sido": "세종",
-      "sigungu": "조치원읍",
-      "address": "세종특별자치시 조치원읍 대첩로 98",
-      "image": "",
-      "thumbnail": "",
-      "tel": "044-300-2512",
-      "homepage": "http://www.jcwpeach.kr/",
-      "overview": "세종시 대표 특산물인 복숭아를 테마로 한 문화관광축제 및 복숭아 판촉행사",
-      "tags": [
-        "먹거리",
-        "여름"
-      ],
-      "months": [
-        "2026-07"
-      ],
-      "lat": 36.59567112,
-      "lng": 127.2837453,
-      "source": "std",
-      "place": "세종시민운동장 일원",
-      "sponsor": "세종특별자치시+ 세종문화관광재단+ NH농협중앙회충남세종본부+ 세종조치원복숭아연합회",
-      "modifiedTime": "20260831000000"
-    },
-    {
       "id": "s78a68973",
       "title": "제15회 산토끼와 따오기가 함께하는 창작동요제",
       "startDate": "2026-07-24",
@@ -8429,6 +9263,33 @@
       "place": "창녕문화예술회관 대공연장",
       "sponsor": "㈜KNN / 경상남도 창녕군청",
       "modifiedTime": "20260918000000"
+    },
+    {
+      "id": "se83af748",
+      "title": "제24회 세종 조치원복숭아축제",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-26",
+      "sido": "세종",
+      "sigungu": "조치원읍",
+      "address": "세종특별자치시 조치원읍 대첩로 98",
+      "image": "",
+      "thumbnail": "",
+      "tel": "044-300-2512",
+      "homepage": "http://www.jcwpeach.kr/",
+      "overview": "세종시 대표 농특산물인 조치원복숭아를 주제로 한 복숭아 판매전, 체험, 전시, 먹거리, 문화 공연 등",
+      "tags": [
+        "먹거리",
+        "여름"
+      ],
+      "months": [
+        "2026-07"
+      ],
+      "lat": 36.59567112,
+      "lng": 127.2837453,
+      "source": "std",
+      "place": "세종시민운동장, 도도리파크 일원",
+      "sponsor": "세종특별자치시+세종조치원복숭아연합회+NH농협은행",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s5e4130cb",
@@ -8561,32 +9422,7 @@
       "source": "std",
       "place": "지세포항수변공원 일원",
       "sponsor": "거제해양관광개발공사",
-      "modifiedTime": "20260707000000"
-    },
-    {
-      "id": "s7cc88321",
-      "title": "당항포 물축제",
-      "startDate": "2026-07-25",
-      "endDate": "2026-08-17",
-      "sido": "경남",
-      "sigungu": "고성군",
-      "address": "경상남도 고성군 회화면 당항만로 1116",
-      "image": "",
-      "thumbnail": "",
-      "tel": "055-670-7400",
-      "homepage": "https://www.gngsctf.or.kr/danghangpo/index.goseong",
-      "overview": "물축제+에어바운스",
-      "tags": [
-        "여름"
-      ],
-      "months": [
-        "2026-07",
-        "2026-08"
-      ],
-      "source": "std",
-      "place": "당항포관광지",
-      "sponsor": "고성문화관광재단",
-      "modifiedTime": "20260730000000"
+      "modifiedTime": "20260930000000"
     },
     {
       "id": "sd27dbd32",
@@ -8748,7 +9584,7 @@
       "source": "std",
       "place": "추암+망상해변",
       "sponsor": "동해문화관광재단 / 강원특별자치도 동해시청",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s659b91d2",
@@ -8971,6 +9807,32 @@
       "modifiedTime": "20260807000000"
     },
     {
+      "id": "s4aaa1120",
+      "title": "변시지 화백 탄생 100주년 기념행사 <100년의 바람. 변시지>",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 남성중로153번길 15",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-2485+064-760-4723",
+      "homepage": "",
+      "overview": "변시지그림정원+에피소드토크쇼+미술연계체험프로그램+어린이사생대회",
+      "tags": [
+        "여름"
+      ],
+      "months": [
+        "2026-08"
+      ],
+      "lat": 33.24484755,
+      "lng": 126.5511958,
+      "source": "std",
+      "place": "변시지 그림정원 및 기당미술관 일원",
+      "sponsor": "서홍동주민자치위원회 / 서귀포시 문화예술과",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "sa0142ab8",
       "title": "삼길포우럭축제",
       "startDate": "2026-08-01",
@@ -9021,7 +9883,7 @@
       "source": "std",
       "place": "동향면 체련공원 일원",
       "sponsor": "진안고원수박축제추진위원회 / 전북특별자치도 진안군",
-      "modifiedTime": "20260728000000"
+      "modifiedTime": "20261028000000"
     },
     {
       "id": "s860e48c6",
@@ -9105,13 +9967,13 @@
       "id": "s9fbc9777",
       "title": "부산바다축제",
       "startDate": "2026-08-07",
-      "endDate": "2026-08-09",
+      "endDate": "2026-08-13",
       "sido": "부산",
       "sigungu": "사하구",
       "address": "부산광역시 사하구 몰운대1길 14",
       "image": "",
       "thumbnail": "",
-      "tel": "051-888-5224",
+      "tel": "051-888-5221",
       "homepage": "https://festivalbusan.com/",
       "overview": "공연행사+불꽃쇼+체험행사 등",
       "tags": [
@@ -9125,7 +9987,7 @@
       "source": "std",
       "place": "다대포해수욕장",
       "sponsor": "(사)부산축제조직위원회 / 부산광역시청",
-      "modifiedTime": "20260626000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s1be81c58",
@@ -9152,6 +10014,86 @@
       "place": "진주시 망경동 남강둔치(중앙광장 아래)",
       "sponsor": "진주문화관광재단 / 경상남도 진주시청+진주문화관광재단",
       "modifiedTime": "20260807000000"
+    },
+    {
+      "id": "se69824df",
+      "title": "(3회차) 2026 서귀포시 드론라이트쇼 「빛나는 서귀포의 밤」",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 표선면 민속해안로 592",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-2654",
+      "homepage": "",
+      "overview": "드론라이트쇼",
+      "tags": [
+        "불꽃/야경",
+        "여름"
+      ],
+      "months": [
+        "2026-08"
+      ],
+      "lat": 33.32563394,
+      "lng": 126.8424107,
+      "source": "std",
+      "place": "표선해수욕장",
+      "sponsor": "제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "sa528de8b",
+      "title": "2026년 천연염색 한마당 축제 손 끝에 머문 자연의 색(色)",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 남원읍 중산간동로 7415",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-7831",
+      "homepage": "",
+      "overview": "천연염색패션쇼+천연염색제품판매+버스킹+천연염색체험등",
+      "tags": [
+        "여름"
+      ],
+      "months": [
+        "2026-08"
+      ],
+      "lat": 33.28744492,
+      "lng": 126.6079132,
+      "source": "std",
+      "place": "서귀포농업기술센터 일원",
+      "sponsor": "서귀포농업기술센터",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "s3f54daa5",
+      "title": "제31회 표선해변하얀모래축제",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 표선면 민속해안로 592",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-4415",
+      "homepage": "",
+      "overview": "동아리경연+맨손광어잡기+갈치무료시식회등",
+      "tags": [
+        "꽃/자연",
+        "여름"
+      ],
+      "months": [
+        "2026-08"
+      ],
+      "lat": 33.32563394,
+      "lng": 126.8424107,
+      "source": "std",
+      "place": "표선해수욕장 일대",
+      "sponsor": "표선리청년회 / 표선리마을회",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s7f7fef55",
@@ -9259,33 +10201,6 @@
       "place": "다대포해수욕장 일원",
       "sponsor": "(사)한국영화감독협회+부산일보 / 부산광역시 사하구청+다대포선셋영화축제 조직위원회",
       "modifiedTime": "20260908000000"
-    },
-    {
-      "id": "s0b6fe01c",
-      "title": "거제맥주축제",
-      "startDate": "2026-08-15",
-      "endDate": "2026-08-16",
-      "sido": "경남",
-      "sigungu": "거제시",
-      "address": "경상남도 거제시 장승로 146-12",
-      "image": "",
-      "thumbnail": "",
-      "tel": "055-639-8193",
-      "homepage": "",
-      "overview": "생맥주 무제한 제공+무대공연+먹거리 체험 부스 등",
-      "tags": [
-        "먹거리",
-        "여름"
-      ],
-      "months": [
-        "2026-08"
-      ],
-      "lat": 34.866879,
-      "lng": 128.726047,
-      "source": "std",
-      "place": "장승포 수변공원 일원",
-      "sponsor": "거제해양관광개발공사",
-      "modifiedTime": "20260707000000"
     },
     {
       "id": "s104004e8",
@@ -9574,7 +10489,7 @@
       "source": "std",
       "place": "송운초등학교",
       "sponsor": "반송한마음축제추진위원회",
-      "modifiedTime": "20260916000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s104f9de8",
@@ -9708,6 +10623,32 @@
       "modifiedTime": "20260827000000"
     },
     {
+      "id": "s09fa2625",
+      "title": "2026 유성재즈&맥주페스타",
+      "startDate": "2026-08-28",
+      "endDate": "2026-08-30",
+      "sido": "대전",
+      "sigungu": "유성구",
+      "address": "대전광역시 유성구 어은로 27",
+      "image": "",
+      "thumbnail": "",
+      "tel": "042-611-6134",
+      "homepage": "",
+      "overview": "전문재즈공연+수제맥주 시음",
+      "tags": [
+        "먹거리",
+        "음악/공연",
+        "여름"
+      ],
+      "months": [
+        "2026-08"
+      ],
+      "source": "std",
+      "place": "유림공원",
+      "sponsor": "대전광역시 유성구청 / 대전광역시 유성구청+유성문화원",
+      "modifiedTime": "20261016000000"
+    },
+    {
       "id": "s56b3bf1f",
       "title": "국가유산 미디어아트",
       "startDate": "2026-08-28",
@@ -9745,7 +10686,7 @@
       "address": "서울특별시 동대문구 무학로 44길 38",
       "image": "",
       "thumbnail": "",
-      "tel": "02-3295-5566",
+      "tel": "02-3295-5568",
       "homepage": "",
       "overview": "맥주 및 먹거리, 문화공연 등",
       "tags": [
@@ -9757,8 +10698,8 @@
       ],
       "source": "std",
       "place": "장안1 수변공원",
-      "sponsor": "재단법인 동대문문화재단",
-      "modifiedTime": "20260914000000"
+      "sponsor": "재단법인 동대문문화재단 / 서울특별시 동대문구청",
+      "modifiedTime": "20261012000000"
     },
     {
       "id": "sa6367a8d",
@@ -9838,7 +10779,7 @@
       "source": "std",
       "place": "황토갯벌랜드 일원",
       "sponsor": "전남광주통합특별시 무안군축제추진위원회 / 전남광주통합특별시 무안군",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "sf60cf4ed",
@@ -9865,6 +10806,60 @@
       "place": "의정부예술의전당",
       "sponsor": "의정부문화관광재단 / 경기도 의정부시",
       "modifiedTime": "20260831000000"
+    },
+    {
+      "id": "s5b98662e",
+      "title": "거제둔덕포도&한우축제",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30",
+      "sido": "경남",
+      "sigungu": "거제시",
+      "address": "경상남도 거제시 둔덕면 하둔리 645",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-639-6611",
+      "homepage": "",
+      "overview": "행사 취소",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 34.83386587,
+      "lng": 128.5038784,
+      "source": "std",
+      "place": "둔덕가족생활체육공원 일원",
+      "sponsor": "거제둔덕포도한우축제추진위원회",
+      "modifiedTime": "20260930000000"
+    },
+    {
+      "id": "sf5611d0c",
+      "title": "거제맥주축제",
+      "startDate": "2026-09-01",
+      "endDate": "2026-09-30",
+      "sido": "경남",
+      "sigungu": "거제시",
+      "address": "경상남도 거제시 장승로 146-12",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-639-8193",
+      "homepage": "",
+      "overview": "행사 취소",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 34.866879,
+      "lng": 128.726047,
+      "source": "std",
+      "place": "장승포 수변공원 일원",
+      "sponsor": "거제해양관광개발공사",
+      "modifiedTime": "20260930000000"
     },
     {
       "id": "s904fde66",
@@ -10188,7 +11183,7 @@
       "source": "std",
       "place": "유라리광장+남포동건어물도매시장",
       "sponsor": "부산광역시 중구청",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "sc822554d",
@@ -10453,33 +11448,6 @@
       "modifiedTime": "20260813000000"
     },
     {
-      "id": "s5f986c7a",
-      "title": "거제둔덕포도&한우축제",
-      "startDate": "2026-09-05",
-      "endDate": "2026-09-06",
-      "sido": "경남",
-      "sigungu": "거제시",
-      "address": "경상남도 거제시 둔덕면 하둔리 645",
-      "image": "",
-      "thumbnail": "",
-      "tel": "055-639-6611",
-      "homepage": "",
-      "overview": "포도한우판매+포도 경매+체험+공연 등",
-      "tags": [
-        "먹거리",
-        "가을"
-      ],
-      "months": [
-        "2026-09"
-      ],
-      "lat": 34.83386587,
-      "lng": 128.5038784,
-      "source": "std",
-      "place": "둔덕가족생활체육공원 일원",
-      "sponsor": "거제둔덕포도한우축제추진위원회",
-      "modifiedTime": "20260707000000"
-    },
-    {
       "id": "s49a48a85",
       "title": "광주비엔날레",
       "startDate": "2026-09-05",
@@ -10507,6 +11475,35 @@
       "place": "광주비엔날레전시관",
       "sponsor": "광주비엔날레재단 / 광주광역시청",
       "modifiedTime": "20260601000000"
+    },
+    {
+      "id": "s2a0fce50",
+      "title": "슬도아트 전시 [에헤야자: 도오와, 도오와, 거더러줘라]",
+      "startDate": "2026-09-05",
+      "endDate": "2026-11-01",
+      "sido": "울산",
+      "sigungu": "동구",
+      "address": "울산광역시 동구 성끝길 103",
+      "image": "",
+      "thumbnail": "",
+      "tel": "052-234-1033",
+      "homepage": "https://www.instagram.com/seuldoart/",
+      "overview": "전시",
+      "tags": [
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-09",
+        "2026-10",
+        "2026-11"
+      ],
+      "lat": 35.48090382,
+      "lng": 129.4327723,
+      "source": "std",
+      "place": "슬도아트",
+      "sponsor": "슬도아트",
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "sf8d65f91",
@@ -10611,7 +11608,7 @@
       "source": "std",
       "place": "궁평항",
       "sponsor": "(재)화성푸드통합지원센터 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "s9968133c",
@@ -10845,7 +11842,7 @@
       "source": "std",
       "place": "해남군 우수영관광지+진도군 녹진관광지 일원",
       "sponsor": "(재)명량대첩기념사업회 / 전남광주통합특별시+전남광주통합특별시 해남군청+전남광주통합특별시 진도군청",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
     },
     {
       "id": "sdc979d39",
@@ -10924,6 +11921,34 @@
       "place": "연세로+스타광장+창천문화공원",
       "sponsor": "서울특별시 서대문구 / 서울특별시 서대문구+대학생중앙기획단",
       "modifiedTime": "20260811000000"
+    },
+    {
+      "id": "s55216327",
+      "title": "제2회 부산남구 달빛 야외도서관 축제",
+      "startDate": "2026-09-11",
+      "endDate": "2026-09-13",
+      "sido": "부산",
+      "sigungu": "남구",
+      "address": "부산광역시 남구 대연동 707",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-607-6555",
+      "homepage": "",
+      "overview": "북콘서트, 독서골든벨 등 독서진흥행사 운영",
+      "tags": [
+        "불꽃/야경",
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 35.12624054,
+      "lng": 129.1004335,
+      "source": "std",
+      "place": "평화공원 일원",
+      "sponsor": "부산광역시 남구",
+      "modifiedTime": "20261013000000"
     },
     {
       "id": "s4651b29d",
@@ -11420,6 +12445,32 @@
       "modifiedTime": "20260811000000"
     },
     {
+      "id": "s52ea551e",
+      "title": "제21회 중문칠선녀축제",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-13",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 천제연로 132",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-738-0069",
+      "homepage": "",
+      "overview": "천제연폭포에 전해지는 칠선녀 설화를 바탕으로 전통과 현대적인 공연·체험 콘텐츠를 함께 즐길 수 있는 제21회 중문칠선녀축제",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 33.2526754971,
+      "lng": 126.4183742424,
+      "source": "std",
+      "place": "천제연폭포 일원",
+      "sponsor": "중문마을회 / 중문칠선녀축제위원회",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "s8fdc19d9",
       "title": "제3회 허준인트로 축제",
       "startDate": "2026-09-12",
@@ -11574,7 +12625,7 @@
       "source": "std",
       "place": "오리숲+안의면 시가지 일원",
       "sponsor": "함양연암문화제운영위원회 / 경상남도 함양군청",
-      "modifiedTime": "20260812000000"
+      "modifiedTime": "20261012000000"
     },
     {
       "id": "sfce61cd0",
@@ -11624,7 +12675,7 @@
       "source": "std",
       "place": "동해웰빙레포츠타운",
       "sponsor": "한국예술문화단체총연합회 동해지회 / 강원특별자치도 동해시청",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "sa117c17f",
@@ -11810,7 +12861,7 @@
       "source": "std",
       "place": "댄싱공연장 일원",
       "sponsor": "원주문화재단 / 강원특별자치도 원주시청",
-      "modifiedTime": "20260703000000"
+      "modifiedTime": "20261022000000"
     },
     {
       "id": "sa7cff628",
@@ -12152,7 +13203,7 @@
       "source": "std",
       "place": "갓바위 공영주차장+와촌면민운동장",
       "sponsor": "(재)경산문화관광재단",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "se3d5929d",
@@ -12205,6 +13256,32 @@
       "place": "산격대교 하단 일원",
       "sponsor": "대구광역시 북구",
       "modifiedTime": "20260730000000"
+    },
+    {
+      "id": "s7f0aff98",
+      "title": "2026 담안골문화축제",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 중동2로 11",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-746-4061",
+      "homepage": "",
+      "overview": "주민노래자랑, 축하공연, 체험부스 먹거리장터 운영 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 35.16313992,
+      "lng": 129.1635303,
+      "source": "std",
+      "place": "영산대학교 이벤트광장",
+      "sponsor": "(사)반송지구발전협의회",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s95b466d3",
@@ -12439,7 +13516,33 @@
       "source": "std",
       "place": "시민체육관",
       "sponsor": "한국예술문화단체총연합회 광명지회 / 경기도 광명시청",
-      "modifiedTime": "20260507000000"
+      "modifiedTime": "20261007000000"
+    },
+    {
+      "id": "sd8af5b9a",
+      "title": "금호강 한마음 축제",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-19",
+      "sido": "대구",
+      "sigungu": "북구",
+      "address": "대구광역시 북구 산격동 1477-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "053-665-2795",
+      "homepage": "",
+      "overview": "무대공연+전시+체험 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 35.90943011,
+      "lng": 128.6039524,
+      "source": "std",
+      "place": "산격대교 하단 일원",
+      "sponsor": "(재)행복북구문화재단",
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "s0a3ab1df",
@@ -12466,6 +13569,32 @@
       "place": "이순신체육관",
       "sponsor": "(재)충남콘텐츠진흥원 / 충청남도+충청남도 아산시",
       "modifiedTime": "20260901000000"
+    },
+    {
+      "id": "s74443693",
+      "title": "도농 어울림 축제",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20",
+      "sido": "경기",
+      "sigungu": "화성시",
+      "address": "경기도 화성시 동탄구 동부대로 1063-3",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-5189-6335",
+      "homepage": "",
+      "overview": "농업문화 체험+직거래 장터",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 37.19830282,
+      "lng": 127.0866204,
+      "source": "std",
+      "place": "동탄여울공원",
+      "sponsor": "화성시농업기술센터 / 경기도 화성시",
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "s093fadc5",
@@ -12590,6 +13719,32 @@
       "modifiedTime": "20260928000000"
     },
     {
+      "id": "sebd5533b",
+      "title": "제22회 쇠소깍축제",
+      "startDate": "2026-09-19",
+      "endDate": "2026-09-20",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 남원읍 하례로166번길 1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-4623",
+      "homepage": "",
+      "overview": "청소년페스티벌+검은해변보물찾기+쇠소깍음악제+쇠소깍가요제 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lat": 33.26418405,
+      "lng": 126.6243187,
+      "source": "std",
+      "place": "하효항 및 쇠소깍일원",
+      "sponsor": "효돈동연합청년회 / 효돈동주민센터",
+      "modifiedTime": "20261014000000"
+    },
+    {
       "id": "s4de9eefb",
       "title": "제2회 성남 청청 페스티벌",
       "startDate": "2026-09-19",
@@ -12641,32 +13796,6 @@
       "place": "이서면 이서커뮤니티센터 및 망향정 일원",
       "sponsor": "(재)화순군문화관광재단",
       "modifiedTime": "20260730000000"
-    },
-    {
-      "id": "s74443693",
-      "title": "제3회 도농 어울림 축제",
-      "startDate": "2026-09-19",
-      "endDate": "2026-09-20",
-      "sido": "경기",
-      "sigungu": "화성시",
-      "address": "경기도 화성시 동탄구 동부대로 1063-3",
-      "image": "",
-      "thumbnail": "",
-      "tel": "031-5189-6335",
-      "homepage": "",
-      "overview": "농업문화 체험+직거래 장터",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-09"
-      ],
-      "lat": 37.19830282,
-      "lng": 127.0866204,
-      "source": "std",
-      "place": "동탄여울공원",
-      "sponsor": "화성시농업기술센터 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
     },
     {
       "id": "sc175ae1f",
@@ -12848,30 +13977,30 @@
       "modifiedTime": "20260819000000"
     },
     {
-      "id": "sb25671d5",
-      "title": "2026경남고성공룡세계엑스포",
-      "startDate": "2026-09-23",
-      "endDate": "2026-11-01",
+      "id": "s260d61f0",
+      "title": "제20회 북천 코스모스 메밀꽃축제",
+      "startDate": "2026-09-22",
+      "endDate": "2026-10-05",
       "sido": "경남",
-      "sigungu": "고성군",
-      "address": "경상남도 고성군 회화면 당항만로 1116",
+      "sigungu": "하동군",
+      "address": "경상남도 하동군 북천면 경서대로 2446-6",
       "image": "",
       "thumbnail": "",
-      "tel": "055-670-7400",
-      "homepage": "https://www.gngsctf.or.kr/dinoexpo/index.goseong",
-      "overview": "전시+판매+공연",
+      "tel": "055-884-7416",
+      "homepage": "https://www.hadong.go.kr/02641/02652/02814.web",
+      "overview": "꽃축제+전시+공연+판매",
       "tags": [
+        "꽃/자연",
         "가을"
       ],
       "months": [
         "2026-09",
-        "2026-10",
-        "2026-11"
+        "2026-10"
       ],
       "source": "std",
-      "place": "당항포관광지",
-      "sponsor": "고성문화관광재단",
-      "modifiedTime": "20260730000000"
+      "place": "경상남도 하동군 북천면 직전리 꽃단지 일원",
+      "sponsor": "하동북천코스모스메밀꽃 영농조합법인",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s5f8a2e69",
@@ -13429,7 +14558,7 @@
       "source": "std",
       "place": "시간여행마을 일원",
       "sponsor": "전북특별자치도 군산시",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261024000000"
     },
     {
       "id": "sd2974401",
@@ -13592,7 +14721,7 @@
       "modifiedTime": "20260916000000"
     },
     {
-      "id": "s0a45b445",
+      "id": "se65a094c",
       "title": "안성맞춤 남사당 바우덕이축제",
       "startDate": "2026-10-02",
       "endDate": "2026-10-05",
@@ -13602,8 +14731,8 @@
       "image": "",
       "thumbnail": "",
       "tel": "031-678-5414",
-      "homepage": "https://www.anseong.go.kr/festival",
-      "overview": "추모제+전야제+개장식+개폐막식",
+      "homepage": "https://www.anseong.go.kr/festival/main.do",
+      "overview": "공식행사(개장식+개폐막식)+시립풍물단 상설공연+시민예술무대+바우덕이테마파크+옛 장터 운영+농특산물 홍보판매 +체험프로그램+경관조명 운영 등+전야제(길놀이)",
       "tags": [
         "문화/전통",
         "음악/공연",
@@ -13612,12 +14741,38 @@
       "months": [
         "2026-10"
       ],
-      "lat": 37.03283615,
-      "lng": 127.3078003,
+      "lat": 37.03286992,
+      "lng": 127.3078038,
       "source": "std",
-      "place": "안성맞춤랜드 및 안성천 일원",
-      "sponsor": "안성맞춤 남사당 바우덕이축제위원회 / 경기도 안성시",
-      "modifiedTime": "20260916000000"
+      "place": "안성맞춤랜드+안성천 일대(작은미술관 부근)",
+      "sponsor": "안성맞춤남사당바우덕이축제위원회 / 경기도 안성시",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "s1ff9c2fc",
+      "title": "양산삽량문화축전",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "sido": "경남",
+      "sigungu": "양산시",
+      "address": "경상남도 양산시 중앙로 39-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-380-0920",
+      "homepage": "https://www.ycf.or.kr/pages/MNLTO001000M",
+      "overview": "서제+타종+퍼레이드+축하공연+불꽃쇼+꿈방울열차+진도예술단공연+가야진용신제시연+토토즐샵량+웅상농청장원놀이+삼장수기상춤경연대회+키즈존+가족뮤지컬+박제상역사존+전시체험부스",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.33345033,
+      "lng": 129.0367575,
+      "source": "std",
+      "place": "양산천 둔치 및 양산종합운동장 일원",
+      "sponsor": "(재)양산문화재단 / (재)양산문화재단+경상남도 양산시청",
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "s2fd1374f",
@@ -13669,6 +14824,31 @@
       "place": "영천강변공원",
       "sponsor": "대구한의대학교",
       "modifiedTime": "20260929000000"
+    },
+    {
+      "id": "sa8a39b7b",
+      "title": "오산천 별밤영화제",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "sido": "경기",
+      "sigungu": "오산시",
+      "address": "경기도 오산시 경기동로 15",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-8036-7612",
+      "homepage": "",
+      "overview": "오산천을 배경으로 영화 상영",
+      "tags": [
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "source": "std",
+      "place": "오산천 일원",
+      "sponsor": "오산시영화협회",
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "se2ebc808",
@@ -13904,6 +15084,32 @@
       "modifiedTime": "20260928000000"
     },
     {
+      "id": "s5604ba46",
+      "title": "흑석산 힐링축제",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02",
+      "sido": "전남",
+      "sigungu": "해남군",
+      "address": "전남광주통합특별시 해남군 계곡면 산골길 306",
+      "image": "",
+      "thumbnail": "",
+      "tel": "061-531-3362",
+      "homepage": "",
+      "overview": "개막식+어린이 사생대회+체험프로그램 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 34.67093844,
+      "lng": 126.6169987,
+      "source": "std",
+      "place": "계곡면 흑석산 자연휴양림 일원",
+      "sponsor": "계곡면축제추진위원회",
+      "modifiedTime": "20261027000000"
+    },
+    {
       "id": "s05574bb6",
       "title": "2026 수원화성 미디어아트",
       "startDate": "2026-10-03",
@@ -13955,7 +15161,7 @@
       "source": "std",
       "place": "철산역 8차선도로",
       "sponsor": "경기도 광명시청",
-      "modifiedTime": "20260507000000"
+      "modifiedTime": "20261007000000"
     },
     {
       "id": "sd6a3bb67",
@@ -14009,32 +15215,28 @@
       "modifiedTime": "20260805000000"
     },
     {
-      "id": "sfc952024",
-      "title": "광명동굴빛축제",
+      "id": "s1e6844a0",
+      "title": "동대문페스티벌",
       "startDate": "2026-10-03",
-      "endDate": "2026-10-04",
-      "sido": "경기",
-      "sigungu": "광명시",
-      "address": "경기도 광명시 가학로85번길 134-21",
+      "endDate": "2026-10-03",
+      "sido": "서울",
+      "sigungu": "동대문구",
+      "address": "서울특별시 동대문구 무학로 44길 38",
       "image": "",
       "thumbnail": "",
-      "tel": "02-2090-1413",
+      "tel": "02-2127-4711",
       "homepage": "",
-      "overview": "드론쇼+공연+체험프로그램 등",
+      "overview": "거리예술공연, 음악공연, 도시캠핑, 시민극장 등 공연프로그램 및 기획 프로그램",
       "tags": [
-        "먹거리",
-        "불꽃/야경",
         "가을"
       ],
       "months": [
         "2026-10"
       ],
-      "lat": 37.427039,
-      "lng": 126.8654497,
       "source": "std",
-      "place": "광명동굴 일원",
-      "sponsor": "광명도시공사",
-      "modifiedTime": "20260507000000"
+      "place": "장한로 일대(우리은행 사거리~장안동사거리)",
+      "sponsor": "재단법인 동대문문화재단 / 서울특별시 동대문구청",
+      "modifiedTime": "20261012000000"
     },
     {
       "id": "s658c42e5",
@@ -14138,7 +15340,7 @@
       "source": "std",
       "place": "정조효공원+융건릉 일원",
       "sponsor": "화성시문화관광재단 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "sf768d0d4",
@@ -14324,7 +15526,7 @@
       "source": "std",
       "place": "BIFF광장일원",
       "sponsor": "(사) 부산국제영화제 / (사)부산국제영화제",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "s2dee099d",
@@ -14377,7 +15579,7 @@
       "source": "std",
       "place": "함양상림공원",
       "sponsor": "함양산삼축제위원회 / 경상남도 함양군청",
-      "modifiedTime": "20260812000000"
+      "modifiedTime": "20261012000000"
     },
     {
       "id": "sf442c0a6",
@@ -14539,6 +15741,33 @@
       "modifiedTime": "20260803000000"
     },
     {
+      "id": "sd9078384",
+      "title": "2026 구리 코스모스 축제",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "sido": "경기",
+      "sigungu": "구리시",
+      "address": "경기도 구리시 코스모스길14번길 249(토평동)",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-550-2065",
+      "homepage": "https://www.guri.go.kr/festival/index.do",
+      "overview": "무대공연+체험부스운영+먹거리 체험+꽃 관람",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.574478,
+      "lng": 127.132863,
+      "source": "std",
+      "place": "구리한강 시민공원",
+      "sponsor": "(사)구리문화원 / 경기도 구리시청",
+      "modifiedTime": "20261002000000"
+    },
+    {
       "id": "s02e1ea2c",
       "title": "2026 대장경기록문화축제",
       "startDate": "2026-10-09",
@@ -14591,7 +15820,7 @@
       "source": "std",
       "place": "샘머리+보라매공원(서구청앞) 일원",
       "sponsor": "서구축제추진위원회+대전광역시서구문화원+한국예총대전광역시연합회+한국미술협회 대전광역시지회 / 대전광역시 서구",
-      "modifiedTime": "20260810000000"
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "s2a55115c",
@@ -14618,7 +15847,7 @@
       "source": "std",
       "place": "이산리 식영정 일원",
       "sponsor": "전남광주통합특별시 무안군",
-      "modifiedTime": "20260729000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "sdf421e52",
@@ -14699,7 +15928,7 @@
       "source": "std",
       "place": "자라섬+잣고을 광장+흥농종묘 앞 삼거리+음악역1939 뮤직홀",
       "sponsor": "(사)문화현상 / 경기도 가평군청",
-      "modifiedTime": "20260522000000"
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "scb1e1afc",
@@ -14806,6 +16035,32 @@
       "modifiedTime": "20260824000000"
     },
     {
+      "id": "s362e633a",
+      "title": "삼화사국행수륙대재",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "sido": "강원",
+      "sigungu": "동해시",
+      "address": "강원특별자치도 동해시 삼화로 584",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-530-2461",
+      "homepage": "https://samhwasa.or.kr",
+      "overview": "불교의례+의식진행",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.46357478,
+      "lng": 129.0146909,
+      "source": "std",
+      "place": "삼화사",
+      "sponsor": "대한불교 조계종 삼화사 / 강원특별자치도 동해시청",
+      "modifiedTime": "20261015000000"
+    },
+    {
       "id": "s36554668",
       "title": "생거진천문화축제",
       "startDate": "2026-10-09",
@@ -14827,7 +16082,7 @@
       "source": "std",
       "place": "백곡천 둔치",
       "sponsor": "문화축제추진위원회 / 진천문화원",
-      "modifiedTime": "20260709000000"
+      "modifiedTime": "20261013000000"
     },
     {
       "id": "sa4a68f1d",
@@ -14909,6 +16164,31 @@
       "place": "세종호수공원+세종중앙공원",
       "sponsor": "세종시문화관광재단 / 세종특별자치시",
       "modifiedTime": "20260916000000"
+    },
+    {
+      "id": "s033c5342",
+      "title": "제13회 독일마을 맥주축제",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "sido": "경남",
+      "sigungu": "남해군",
+      "address": "경상남도 남해군 삼동면 독일로 89",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-860-8601",
+      "homepage": "",
+      "overview": "독일마을맥주축제",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "source": "std",
+      "place": "독일마을 광장 일원",
+      "sponsor": "독일마을맥주축제기획단 / 경상남도남해군",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s820b00a8",
@@ -15092,6 +16372,32 @@
       "place": "월정교, 봉황대",
       "sponsor": "(재)경주문화재단 / 경상북도경주시",
       "modifiedTime": "20260803000000"
+    },
+    {
+      "id": "s209b2cae",
+      "title": "제7회 양평 부추축제",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-10",
+      "sido": "경기",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 양동면 양동역길 19",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-770-3253",
+      "homepage": "https://buchoofestival.com/",
+      "overview": "대한민국 으뜸 양동 부추를 활용한 다양한 음식을 맛보고 초청가수, 주민 공연을 즐길 수 있는 축제",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.42030404,
+      "lng": 127.7544833,
+      "source": "std",
+      "place": "양동역 일원",
+      "sponsor": "양평부추축제추진위원회",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s76be5d94",
@@ -15529,7 +16835,7 @@
       "source": "std",
       "place": "자갈치시장+유라리광장",
       "sponsor": "(사)부산자갈치문화관광축제위원회",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "sb3f392b8",
@@ -15686,7 +16992,7 @@
       "source": "std",
       "place": "낙성대공원",
       "sponsor": "관악문화재단 / 서울특별시 관악구청",
-      "modifiedTime": "20260730000000"
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "s06c40b21",
@@ -15836,7 +17142,7 @@
       "thumbnail": "",
       "tel": "063-580-4777",
       "homepage": "https://www.buan.go.kr/tour/index.buan",
-      "overview": "불꽃놀이+붉은노을동요제+레드와인페스타+붉은노을체험존+먹거리는 진행",
+      "overview": "붉은노을동요제+레드와인페스타+스카이갤러리+노을엽서체험+붉은노을체험존+키즈체험+우주극장+먹거리+불꽃놀이 등",
       "tags": [
         "불꽃/야경",
         "가을"
@@ -15849,7 +17155,7 @@
       "source": "std",
       "place": "변산해수욕장 일원",
       "sponsor": "전북특별자치도 부안군",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s047b236a",
@@ -15932,6 +17238,34 @@
       "modifiedTime": "20260916000000"
     },
     {
+      "id": "sf792d9ae",
+      "title": "광명동굴빛축제",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-17",
+      "sido": "경기",
+      "sigungu": "광명시",
+      "address": "경기도 광명시 가학로85번길 134-21",
+      "image": "",
+      "thumbnail": "",
+      "tel": "02-2090-1413",
+      "homepage": "",
+      "overview": "개막식+드론쇼+공연+체험프로그램+퀴즈쇼 등",
+      "tags": [
+        "먹거리",
+        "불꽃/야경",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.427039,
+      "lng": 126.8654497,
+      "source": "std",
+      "place": "광명동굴 일원",
+      "sponsor": "광명도시공사",
+      "modifiedTime": "20261007000000"
+    },
+    {
       "id": "sa42a08ee",
       "title": "광천김토굴새우젓축제",
       "startDate": "2026-10-16",
@@ -15957,6 +17291,30 @@
       "place": "광천전통시장 일원",
       "sponsor": "광천김토굴새우젓축제추진위원회 / 충청남도 홍성군",
       "modifiedTime": "20260919000000"
+    },
+    {
+      "id": "s9ec5a920",
+      "title": "군포올래 행복축제",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-24",
+      "sido": "경기",
+      "sigungu": "군포시",
+      "address": "경기도 군포시 군포로 339",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-390-0063",
+      "homepage": "https://www.gunpo.go.kr/www/index.do",
+      "overview": "공연+전시+체험프로그램 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "source": "std",
+      "place": "군포국민체육센터+산본로데오거리+책길+문화의거리+평생학습마을 등",
+      "sponsor": "경기도 군포시",
+      "modifiedTime": "20260922000000"
     },
     {
       "id": "s3a95126c",
@@ -16038,7 +17396,7 @@
       "source": "std",
       "place": "행구동 수변공원 일원",
       "sponsor": "신월랑달빛축제추진위원회",
-      "modifiedTime": "20260703000000"
+      "modifiedTime": "20261022000000"
     },
     {
       "id": "s45ddf627",
@@ -16144,7 +17502,7 @@
       "source": "std",
       "place": "경산생활체육공원 어귀마당",
       "sponsor": "(재)경산문화관광재단",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "sb8897f0a",
@@ -16169,7 +17527,7 @@
       "source": "std",
       "place": "월드컵공원 평화광장",
       "sponsor": "마포문화원 / 서울특별시 마포구",
-      "modifiedTime": "20260720000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "s16e94678",
@@ -16197,6 +17555,58 @@
       "place": "산정호수+명성산 일대",
       "sponsor": "포천시문화관광재단 / 경기도 포천시청",
       "modifiedTime": "20260731000000"
+    },
+    {
+      "id": "s91e0b719",
+      "title": "제37회 화도진축제",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-17",
+      "sido": "인천",
+      "sigungu": "제물포구",
+      "address": "인천광역시 제물포구 참외전로 125 (동인천역 광장)",
+      "image": "",
+      "thumbnail": "",
+      "tel": "032-745-3202",
+      "homepage": "",
+      "overview": "구한말 인천 앞바다 해안 경계를 위해 설치한 화도진을 배경으로한 대표 군영축제",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.47664907,
+      "lng": 126.6324297,
+      "source": "std",
+      "place": "동인천역북광장+화도진공원 일원",
+      "sponsor": "인천광역시 제물포구청",
+      "modifiedTime": "20260929000000"
+    },
+    {
+      "id": "scf437ad1",
+      "title": "제45회 설성문화제",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-17",
+      "sido": "충북",
+      "sigungu": "음성군",
+      "address": "충청북도 음성군 음성읍 설성로 47",
+      "image": "",
+      "thumbnail": "",
+      "tel": "043-872-4084",
+      "homepage": "https://eumseong.kccf.or.kr:444/",
+      "overview": "음성군 전통문화예술의 계승발전과 군민화합을 위한 향토문화축제",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 36.93278537,
+      "lng": 127.6910226,
+      "source": "std",
+      "place": "음성 종합운동장 일원",
+      "sponsor": "설성문화제 기획실무위원회, 음성문화원 / 음성군 축제추진위원회",
+      "modifiedTime": "20261008000000"
     },
     {
       "id": "s067a12e7",
@@ -16350,12 +17760,38 @@
       "months": [
         "2026-10"
       ],
-      "lat": 37.643079,
-      "lng": 126.674778,
+      "lat": 37.6417667,
+      "lng": 126.676615,
       "source": "std",
       "place": "장기동 라베니체 일원",
       "sponsor": "경기도 김포시 / 김포문화재단",
-      "modifiedTime": "20260520000000"
+      "modifiedTime": "20261028000000"
+    },
+    {
+      "id": "s4103624d",
+      "title": "2026 유성 국화음악회",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "sido": "대전",
+      "sigungu": "유성구",
+      "address": "대전광역시 유성구 어은로 27",
+      "image": "",
+      "thumbnail": "",
+      "tel": "042-611-2080",
+      "homepage": "",
+      "overview": "야외음악회+드론라이트쇼",
+      "tags": [
+        "꽃/자연",
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "source": "std",
+      "place": "유림공원",
+      "sponsor": "대전광역시 유성구청 / 대전광역시 유성구청+유성문화원",
+      "modifiedTime": "20261016000000"
     },
     {
       "id": "see689671",
@@ -16464,30 +17900,6 @@
       "modifiedTime": "20260814000000"
     },
     {
-      "id": "s22660c55",
-      "title": "동대문페스티벌",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "sido": "서울",
-      "sigungu": "동대문구",
-      "address": "서울특별시 동대문구 답십리로 288",
-      "image": "",
-      "thumbnail": "",
-      "tel": "02-2127-4711",
-      "homepage": "",
-      "overview": "전 세대가 즐기는 이동무대극과 음악공연 및 도시공간을 새롭게 경험하는 캠핑, 정원, 마켓 등",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "source": "std",
-      "place": "장한로 일대(우리은행 사거리~장안동사거리)",
-      "sponsor": "재단법인 동대문문화재단 / 서울특별시 동대문구청",
-      "modifiedTime": "20260914000000"
-    },
-    {
       "id": "s903a32c6",
       "title": "문경사과축제",
       "startDate": "2026-10-17",
@@ -16567,6 +17979,58 @@
       "modifiedTime": "20260918000000"
     },
     {
+      "id": "se2e8619c",
+      "title": "여주선비장터축제",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
+      "sido": "경기",
+      "sigungu": "여주시",
+      "address": "경기도 여주시 가남읍 태평리 110-18번지",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-887-3835",
+      "homepage": "",
+      "overview": "농산물 직거래 판매부스, 체험부스, 문화공연 등",
+      "tags": [
+        "먹거리",
+        "문화/전통",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "source": "std",
+      "place": "대신천 전천고변 일원",
+      "sponsor": "경기도 여주시청",
+      "modifiedTime": "20261014000000"
+    },
+    {
+      "id": "s9b07c5e8",
+      "title": "영ONE(영종, young)페스티벌",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "sido": "인천",
+      "sigungu": "영종구",
+      "address": "인천광역시 영종구 하늘중앙로 201",
+      "image": "",
+      "thumbnail": "",
+      "tel": "032-760-7603",
+      "homepage": "https://www.yeongjong.go.kr/main/main.do",
+      "overview": "지역예술인공연, 놀이시설, 체험프로그램 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.47408067,
+      "lng": 126.6213397,
+      "source": "std",
+      "place": "씨사이드파크",
+      "sponsor": "인천광역시 영종구청",
+      "modifiedTime": "20261001000000"
+    },
+    {
       "id": "sa044a71f",
       "title": "제10회 해맞이마을축제",
       "startDate": "2026-10-17",
@@ -16591,6 +18055,32 @@
       "place": "신월공원 다목적운동장",
       "sponsor": "신월7동 축제추진위원회",
       "modifiedTime": "20260918000000"
+    },
+    {
+      "id": "s1bcbf1ba",
+      "title": "제13회 수영강변축제",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 중동2로 11",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-746-4061",
+      "homepage": "",
+      "overview": "주민노래자랑, 축하공연, 체험부스 먹거리장터 운영 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.16313992,
+      "lng": 129.1635303,
+      "source": "std",
+      "place": "수영강시민공원",
+      "sponsor": "(사)수영강반여발전협의회",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s37968f14",
@@ -16668,6 +18158,32 @@
       "place": "남양주시 정약용유적지 일원",
       "sponsor": "경기도 남양주시",
       "modifiedTime": "20260707000000"
+    },
+    {
+      "id": "sb1d88288",
+      "title": "제5회 반여가을축제",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-17",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 중동2로 11",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-746-4061",
+      "homepage": "",
+      "overview": "주민노래자랑, 축하공연, 체험부스 먹거리장터 운영 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.16313992,
+      "lng": 129.1635303,
+      "source": "std",
+      "place": "반여2배수지공원",
+      "sponsor": "반여가을축제추진위원회",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s7313b51a",
@@ -16824,7 +18340,7 @@
       "source": "std",
       "place": "달서아트센터",
       "sponsor": "(재)달서문화재단",
-      "modifiedTime": "20260710000000"
+      "modifiedTime": "20261006000000"
     },
     {
       "id": "sa841c1f0",
@@ -16876,7 +18392,7 @@
       "source": "std",
       "place": "간현관광지 일원",
       "sponsor": "섬강축제위원회",
-      "modifiedTime": "20260703000000"
+      "modifiedTime": "20261022000000"
     },
     {
       "id": "s8d2cba6e",
@@ -17136,6 +18652,32 @@
       "place": "철마도시농업공원 일원(철마면 개좌로 789)",
       "sponsor": "철마한우불고기축제추진위원회",
       "modifiedTime": "20260909000000"
+    },
+    {
+      "id": "sdad28d93",
+      "title": "2026 대덕대청호물결축제",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "sido": "대전",
+      "sigungu": "대덕구",
+      "address": "대전광역시 대덕구 대청로 607",
+      "image": "",
+      "thumbnail": "",
+      "tel": "042-608-6735",
+      "homepage": "",
+      "overview": "2025 대청호대덕뮤직페스티벌+주말상설공연+야관LED경관전시 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 36.47362538,
+      "lng": 127.4735679,
+      "source": "std",
+      "place": "대청공원 일원",
+      "sponsor": "대전광역시 대덕구",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s35dd7cb5",
@@ -17398,7 +18940,7 @@
       "source": "std",
       "place": "익산중앙체육공원",
       "sponsor": "익산시농업기술센터 / 전북특별자치도 익산시청",
-      "modifiedTime": "20260407000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "sfff57632",
@@ -17425,7 +18967,33 @@
       "source": "std",
       "place": "도화지도예문화원",
       "sponsor": "신전마을회+사)전북향토문화콘텐츠산업진흥회",
-      "modifiedTime": "20260720000000"
+      "modifiedTime": "20261008000000"
+    },
+    {
+      "id": "s3270a176",
+      "title": "제32회 서귀포칠십리축제",
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-25",
+      "sido": "제주",
+      "sigungu": "서귀포시",
+      "address": "제주특별자치도 서귀포시 서홍동 684",
+      "image": "",
+      "thumbnail": "",
+      "tel": "064-760-3942",
+      "homepage": "https://seogwipo.go.kr/festivals/70ni/index.htm",
+      "overview": "거리퍼레이드+칠십리가요제+청소년페스타+러닝인칠십리+체험프로그램등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 33.24390527,
+      "lng": 126.5605745,
+      "source": "std",
+      "place": "천지연폭포 주차장 일대",
+      "sponsor": "서귀포칠십리축제추진위원회 / 제주특별자치도 서귀포시 관광진흥과",
+      "modifiedTime": "20261014000000"
     },
     {
       "id": "s0771ff49",
@@ -17455,58 +19023,6 @@
       "modifiedTime": "20260730000000"
     },
     {
-      "id": "sfb4e33fa",
-      "title": "2025 화성 학생동아리 축제",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-24",
-      "sido": "경기",
-      "sigungu": "화성시",
-      "address": "경기도 화성시 동탄구 동탄지성로 121",
-      "image": "",
-      "thumbnail": "",
-      "tel": "031-898-8440",
-      "homepage": "http://www.hsscf.kr/",
-      "overview": "초중고 학생동아리 공연+전시 및 체험부스 운영",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lat": 37.20875396,
-      "lng": 127.0618814,
-      "source": "std",
-      "place": "동탄센트럴파크 일원",
-      "sponsor": "화성시 인재육성재단 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
-    },
-    {
-      "id": "s62f5a760",
-      "title": "2026 김포 선셋 페스타",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-24",
-      "sido": "경기",
-      "sigungu": "김포시",
-      "address": "경기도 김포시 대곶면 대명리 551-1",
-      "image": "",
-      "thumbnail": "",
-      "tel": "031-980-5105",
-      "homepage": "",
-      "overview": "선상다이닝 + 셀프바비큐존 + 로컬푸드 쿠킹쇼 등",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lat": 37.640391,
-      "lng": 126.539805,
-      "source": "std",
-      "place": "김포함상공원 일원",
-      "sponsor": "겸기도 김포시",
-      "modifiedTime": "20260520000000"
-    },
-    {
       "id": "s9ca8405e",
       "title": "2026 대학로 소나무길 거리예술제",
       "startDate": "2026-10-24",
@@ -17534,6 +19050,34 @@
       "modifiedTime": "20260915000000"
     },
     {
+      "id": "s41badcd6",
+      "title": "2026 비엔날레 문화콘서트1",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "sido": "광주",
+      "sigungu": "북구",
+      "address": "전남광주통합특별시 북구 비엔날레로 111",
+      "image": "",
+      "thumbnail": "",
+      "tel": "062-410-8227",
+      "homepage": "",
+      "overview": "다채로운 문화행사 운영 및 미디어파사드 콘텐츠 전시",
+      "tags": [
+        "전시/예술",
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.18309427,
+      "lng": 126.8892065,
+      "source": "std",
+      "place": "비엔날레 전시관 광장",
+      "sponsor": "전남광주통합특별시 북구",
+      "modifiedTime": "20261023000000"
+    },
+    {
       "id": "s052734d1",
       "title": "2026 제 36회 율곡문화제",
       "startDate": "2026-10-24",
@@ -17558,6 +19102,32 @@
       "place": "파주이이유적",
       "sponsor": "파주문화재단 / 경기도 파주시청",
       "modifiedTime": "20260813000000"
+    },
+    {
+      "id": "sfb4e33fa",
+      "title": "2026 화성 학생동아리 축제",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "sido": "경기",
+      "sigungu": "화성시",
+      "address": "경기도 화성시 동탄구 동탄지성로 121",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-898-8440",
+      "homepage": "http://www.hsscf.kr/",
+      "overview": "초중고 학생동아리 공연+전시 및 체험부스 운영",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.20875396,
+      "lng": 127.0618814,
+      "source": "std",
+      "place": "동탄센트럴파크 일원",
+      "sponsor": "화성시 인재육성재단 / 경기도 화성시",
+      "modifiedTime": "20261019000000"
     },
     {
       "id": "s813416fe",
@@ -17587,6 +19157,33 @@
       "place": "강진만 생태공원 일원",
       "sponsor": "강진군축제추진위원회 / 전남광주통합특별시 강진군",
       "modifiedTime": "20260728000000"
+    },
+    {
+      "id": "sbeee9dee",
+      "title": "독산성 문화제",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "sido": "경기",
+      "sigungu": "오산시",
+      "address": "경기도 오산시 수목원로 449",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-8036-7604",
+      "homepage": "",
+      "overview": "역사전통문화예술 및 초청공연",
+      "tags": [
+        "문화/전통",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.17234844,
+      "lng": 127.0489504,
+      "source": "std",
+      "place": "고인돌공원",
+      "sponsor": "경기도 오산시청 문화예술과",
+      "modifiedTime": "20261001000000"
     },
     {
       "id": "s9ce2361d",
@@ -17931,6 +19528,60 @@
       "modifiedTime": "20260918000000"
     },
     {
+      "id": "s11789949",
+      "title": "반계리 은행나무축제",
+      "startDate": "2026-10-26",
+      "endDate": "2026-11-08",
+      "sido": "강원",
+      "sigungu": "원주시",
+      "address": "강원특별자치도 원주시 문막읍 반계리 1495-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-737-5124",
+      "homepage": "",
+      "overview": "기획전시+체험프로그램 운영 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10",
+        "2026-11"
+      ],
+      "lat": 37.2942081,
+      "lng": 127.7884224,
+      "source": "std",
+      "place": "반계리 은행나무광장",
+      "sponsor": "강원특별자치도 원주시청",
+      "modifiedTime": "20261022000000"
+    },
+    {
+      "id": "sdadadd48",
+      "title": "2026 동백섬문화관광축제",
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 중동2로 11",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-746-4061",
+      "homepage": "",
+      "overview": "최치원선생 추념 헌공 다례제, 기로연 진다례",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.16313992,
+      "lng": 129.1635303,
+      "source": "std",
+      "place": "동백섬 정상",
+      "sponsor": "해운대문화예술원",
+      "modifiedTime": "20261015000000"
+    },
+    {
       "id": "sfe07a635",
       "title": "홍성글로벌바비큐페스티벌",
       "startDate": "2026-10-29",
@@ -18041,33 +19692,6 @@
       "modifiedTime": "20260915000000"
     },
     {
-      "id": "s8d758ae6",
-      "title": "반계리 은행나무축제",
-      "startDate": "2026-10-30",
-      "endDate": "2026-11-12",
-      "sido": "강원",
-      "sigungu": "원주시",
-      "address": "강원특별자치도 원주시 문막읍 반계리 1495-1",
-      "image": "",
-      "thumbnail": "",
-      "tel": "033-737-5124",
-      "homepage": "",
-      "overview": "기획전시+체험프로그램 운영 등",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10",
-        "2026-11"
-      ],
-      "lat": 37.2942081,
-      "lng": 127.7884224,
-      "source": "std",
-      "place": "반계리 은행나무광장",
-      "sponsor": "강원특별자치도 원주시청",
-      "modifiedTime": "20260703000000"
-    },
-    {
       "id": "s0d62528a",
       "title": "부산고등어축제",
       "startDate": "2026-10-30",
@@ -18120,7 +19744,7 @@
       "source": "std",
       "place": "아미르공원 및 봉래동물양장",
       "sponsor": "영도문화원 / 부산광역시 영도구청",
-      "modifiedTime": "20260709000000"
+      "modifiedTime": "20261007000000"
     },
     {
       "id": "see7c4899",
@@ -18148,6 +19772,34 @@
       "modifiedTime": "20260807000000"
     },
     {
+      "id": "s8f6ceb04",
+      "title": "진도군 보배섬 문화예술제",
+      "startDate": "2026-10-30",
+      "endDate": "2026-11-01",
+      "sido": "전남",
+      "sigungu": "진도군",
+      "address": "전남광주통합특별시 진도군 진도읍 진도대로 7197",
+      "image": "",
+      "thumbnail": "",
+      "tel": "061-540-3072",
+      "homepage": "https://www.jindo.go.kr/tour/tour/info/festival.cs?act=view&infoId=99&searchCondition=&searchKeyword=&pageIndex=1",
+      "overview": "개막공연+강강술래 한마당 잔치+진도북놀이 페스티벌 등",
+      "tags": [
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-10",
+        "2026-11"
+      ],
+      "lat": 34.47975717,
+      "lng": 126.2685772,
+      "source": "std",
+      "place": "진도향토문화회관 일원",
+      "sponsor": "(사)한국예총진도지회 / 전남광주통합특별시 진도군",
+      "modifiedTime": "20261021000000"
+    },
+    {
       "id": "s54ffce06",
       "title": "해남미남축제",
       "startDate": "2026-10-30",
@@ -18172,7 +19824,7 @@
       "source": "std",
       "place": "해남군 삼산면 두륜산도립공원 잔디구장 일원",
       "sponsor": "해남군축제추진위원회 / 전남광주통합특별시 해남군청",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
     },
     {
       "id": "sc1083fd7",
@@ -18193,12 +19845,40 @@
       "months": [
         "2026-10"
       ],
-      "lat": 37.640391,
-      "lng": 126.539805,
+      "lat": 37.64067915,
+      "lng": 126.5392694,
       "source": "std",
       "place": "김포함상공원 일원",
       "sponsor": "경기도 김포시 + 해병2사단 / 경기도 김포시 + 해병대 제2사단",
-      "modifiedTime": "20260520000000"
+      "modifiedTime": "20261028000000"
+    },
+    {
+      "id": "sf9a8e5e7",
+      "title": "2026 비엔날레 문화콘서트2",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "sido": "광주",
+      "sigungu": "북구",
+      "address": "전남광주통합특별시 북구 비엔날레로 111",
+      "image": "",
+      "thumbnail": "",
+      "tel": "062-410-8227",
+      "homepage": "",
+      "overview": "다채로운 문화행사 운영 및 미디어파사드 콘텐츠 전시",
+      "tags": [
+        "전시/예술",
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.18309427,
+      "lng": 126.8892065,
+      "source": "std",
+      "place": "비엔날레 전시관 광장",
+      "sponsor": "전남광주통합특별시 북구",
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "s4e18bb8e",
@@ -18256,34 +19936,6 @@
       "modifiedTime": "20260813000000"
     },
     {
-      "id": "sb6d1ba69",
-      "title": "거제 섬꽃축제",
-      "startDate": "2026-10-31",
-      "endDate": "2026-11-08",
-      "sido": "경남",
-      "sigungu": "거제시",
-      "address": "경상남도 거제시 거제면 거제남서로 3577",
-      "image": "",
-      "thumbnail": "",
-      "tel": "055-639-6443",
-      "homepage": "http://www.geoje.go.kr/flower/index.geoje",
-      "overview": "가을꽃 전시+농업기술 홍보+문화예술 전시 등",
-      "tags": [
-        "꽃/자연",
-        "가을"
-      ],
-      "months": [
-        "2026-10",
-        "2026-11"
-      ],
-      "lat": 34.856464,
-      "lng": 128.579127,
-      "source": "std",
-      "place": "거제시 농업기술센터 일원",
-      "sponsor": "거제시농업기술센터 농업지원과",
-      "modifiedTime": "20260707000000"
-    },
-    {
       "id": "s8f29749c",
       "title": "군위 바비큐축제",
       "startDate": "2026-10-31",
@@ -18310,6 +19962,33 @@
       "place": "삼국유사테마파크 일원",
       "sponsor": "군위문화관광재단",
       "modifiedTime": "20260821000000"
+    },
+    {
+      "id": "s4fc0d428",
+      "title": "마린시티열린음악회",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 중동2로 11",
+      "image": "",
+      "thumbnail": "",
+      "tel": "051-746-4061",
+      "homepage": "",
+      "overview": "가족참여형 음악회",
+      "tags": [
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 35.16313992,
+      "lng": 129.1635303,
+      "source": "std",
+      "place": "해운대해수욕장 이벤트광장",
+      "sponsor": "(사)마린시티발전협의회",
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "sae36c225",
@@ -18418,31 +20097,30 @@
       "modifiedTime": "20260730000000"
     },
     {
-      "id": "se9bd64fc",
-      "title": "제3회 화성 루나 빛 축제",
+      "id": "sdbf7d2ef",
+      "title": "제3회 지평전통발효축제",
       "startDate": "2026-10-31",
-      "endDate": "2026-10-31",
+      "endDate": "2026-11-01",
       "sido": "경기",
-      "sigungu": "화성시",
-      "address": "경기도 화성시 동탄구 동탄순환대로 69",
+      "sigungu": "양평군",
+      "address": "경기도 양평군 지평면 지평의병로116번길 1",
       "image": "",
       "thumbnail": "",
-      "tel": "031-5189-3835",
-      "homepage": "",
-      "overview": "빛 콘텐츠 및 루나마켓+루나쇼+문화공연",
+      "tel": "031-770-3284",
+      "homepage": "https://jipyeongfestival.com/",
+      "overview": "발효체험, 의병출정식, 경연프로그램, 부스 등 운영",
       "tags": [
-        "불꽃/야경",
+        "문화/전통",
         "가을"
       ],
       "months": [
-        "2026-10"
+        "2026-10",
+        "2026-11"
       ],
-      "lat": 37.16690281,
-      "lng": 127.1024336,
       "source": "std",
-      "place": "동탄호수공원",
-      "sponsor": "화성시문화관광재단 / 경기도 화성시",
-      "modifiedTime": "20260701000000"
+      "place": "지평면사무소 광장",
+      "sponsor": "지평축제추진위원회",
+      "modifiedTime": "20261002000000"
     },
     {
       "id": "s50d49eab",
@@ -18469,34 +20147,6 @@
       "place": "탕정면 지중해마을",
       "sponsor": "충청남도 아산시",
       "modifiedTime": "20260901000000"
-    },
-    {
-      "id": "s906cec97",
-      "title": "진도군 보배섬 문화예술제",
-      "startDate": "2026-10-31",
-      "endDate": "2026-11-02",
-      "sido": "전남",
-      "sigungu": "진도군",
-      "address": "전남광주통합특별시 진도군 진도읍 진도대로 7197",
-      "image": "",
-      "thumbnail": "",
-      "tel": "061-540-3072",
-      "homepage": "https://www.jindo.go.kr/tour/tour/info/festival.cs?act=view&infoId=99&searchCondition=&searchKeyword=&pageIndex=1",
-      "overview": "개막공연+강강술래 한마당 잔치+진도북놀이 페스티벌 등",
-      "tags": [
-        "전시/예술",
-        "가을"
-      ],
-      "months": [
-        "2026-10",
-        "2026-11"
-      ],
-      "lat": 34.47975717,
-      "lng": 126.2685772,
-      "source": "std",
-      "place": "진도향토문화회관 일원",
-      "sponsor": "(사)한국예총진도지회 / 전남광주통합특별시 진도군",
-      "modifiedTime": "20260727000000"
     },
     {
       "id": "s7463b0bd",
@@ -18527,6 +20177,33 @@
       "modifiedTime": "20260928000000"
     },
     {
+      "id": "se9bd64fc",
+      "title": "화성 루나 빛 축제",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "sido": "경기",
+      "sigungu": "화성시",
+      "address": "경기도 화성시 동탄구 동탄순환대로 69",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-5189-3835",
+      "homepage": "",
+      "overview": "빛 콘텐츠 및 루나마켓+루나쇼+문화공연",
+      "tags": [
+        "불꽃/야경",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lat": 37.16690281,
+      "lng": 127.1024336,
+      "source": "std",
+      "place": "동탄호수공원",
+      "sponsor": "화성시문화관광재단 / 경기도 화성시",
+      "modifiedTime": "20261019000000"
+    },
+    {
       "id": "s8bf513df",
       "title": "개천절 대제전",
       "startDate": "2026-11-01",
@@ -18553,30 +20230,32 @@
       "modifiedTime": "20260915000000"
     },
     {
-      "id": "s6fe0f32a",
-      "title": "치악산왕발걸음축제",
+      "id": "s49673898",
+      "title": "거제몽돌해변불꽃축제",
       "startDate": "2026-11-01",
-      "endDate": "2026-11-01",
-      "sido": "강원",
-      "sigungu": "원주시",
-      "address": "강원특별자치도 원주시 소초면 평장동길 86-16",
+      "endDate": "2026-11-30",
+      "sido": "경남",
+      "sigungu": "거제시",
+      "address": "경상남도 거제시 동부면 학동6길 18-1",
       "image": "",
       "thumbnail": "",
-      "tel": "033-734-5966",
+      "tel": "055-639-6492",
       "homepage": "",
-      "overview": "걷기행사+작은음악회 등",
+      "overview": "행사 취소",
       "tags": [
+        "불꽃/야경",
+        "꽃/자연",
         "가을"
       ],
       "months": [
         "2026-11"
       ],
-      "lat": 37.4186377,
-      "lng": 128.0031734,
+      "lat": 34.77330415,
+      "lng": 128.6402426,
       "source": "std",
-      "place": "치악산 일원(구.드림랜드 주차장)",
-      "sponsor": "치악산왕발걸음축제추진위원회",
-      "modifiedTime": "20260703000000"
+      "place": "학동흑진주몽돌해변 일원",
+      "sponsor": "학동마을회 / 동부면사무소",
+      "modifiedTime": "20260930000000"
     },
     {
       "id": "s88886046",
@@ -18815,7 +20494,61 @@
       "source": "std",
       "place": "남천강변",
       "sponsor": "(재)경산문화관광재단",
-      "modifiedTime": "20260715000000"
+      "modifiedTime": "20261008000000"
+    },
+    {
+      "id": "s059c0442",
+      "title": "2026 김포 선셋 페스타",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "sido": "경기",
+      "sigungu": "김포시",
+      "address": "경기도 김포시 대곶면 대명리 551-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "031-980-5105",
+      "homepage": "",
+      "overview": "선상다이닝 + 셀프바비큐존 + 로컬푸드 쿠킹쇼 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 37.64067915,
+      "lng": 126.5392694,
+      "source": "std",
+      "place": "김포함상공원 일원",
+      "sponsor": "겸기도 김포시",
+      "modifiedTime": "20261028000000"
+    },
+    {
+      "id": "sc252ca06",
+      "title": "2026 비엔날레 문화콘서트3",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "sido": "광주",
+      "sigungu": "북구",
+      "address": "전남광주통합특별시 북구 비엔날레로 111",
+      "image": "",
+      "thumbnail": "",
+      "tel": "062-410-8227",
+      "homepage": "",
+      "overview": "다채로운 문화행사 운영 및 미디어파사드 콘텐츠 전시",
+      "tags": [
+        "전시/예술",
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 35.18309427,
+      "lng": 126.8892065,
+      "source": "std",
+      "place": "비엔날레 전시관 광장",
+      "sponsor": "전남광주통합특별시 북구",
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "sda8552dc",
@@ -18840,34 +20573,6 @@
       "place": "대흥면 의좋은형제공원 일원",
       "sponsor": "대흥현보존회",
       "modifiedTime": "20260807000000"
-    },
-    {
-      "id": "s4f67420a",
-      "title": "거제몽돌해변불꽃축제",
-      "startDate": "2026-11-07",
-      "endDate": "2026-11-07",
-      "sido": "경남",
-      "sigungu": "거제시",
-      "address": "경상남도 거제시 동부면 학동6길 18-1",
-      "image": "",
-      "thumbnail": "",
-      "tel": "055-639-6492",
-      "homepage": "",
-      "overview": "체험행사+공연+불꽃 퍼레이드 등",
-      "tags": [
-        "불꽃/야경",
-        "꽃/자연",
-        "가을"
-      ],
-      "months": [
-        "2026-11"
-      ],
-      "lat": 34.77330415,
-      "lng": 128.6402426,
-      "source": "std",
-      "place": "학동흑진주몽돌해변 일원",
-      "sponsor": "학동마을회 / 동부면",
-      "modifiedTime": "20260707000000"
     },
     {
       "id": "sfe09cd95",
@@ -18918,7 +20623,7 @@
       "source": "std",
       "place": "광안리해수욕장",
       "sponsor": "(사)부산축제조직위원회 / 부산광역시청",
-      "modifiedTime": "20260626000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "sddbf699f",
@@ -18945,6 +20650,112 @@
       "place": "대성동 청주향교 일원",
       "sponsor": "청주시문화산업진흥재단 / 충청북도 청주시청",
       "modifiedTime": "20260928000000"
+    },
+    {
+      "id": "s69e0e9b8",
+      "title": "치악산왕발걸음축제",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "sido": "강원",
+      "sigungu": "원주시",
+      "address": "강원특별자치도 원주시 소초면 평장동길 86-16",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-748-5966",
+      "homepage": "",
+      "overview": "걷기행사+작은음악회 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 37.4186377,
+      "lng": 128.0031734,
+      "source": "std",
+      "place": "치악산 일원(구.드림랜드 주차장)",
+      "sponsor": "치악산왕발걸음축제추진위원회",
+      "modifiedTime": "20261022000000"
+    },
+    {
+      "id": "s3447d7db",
+      "title": "거제 섬꽃축제",
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-22",
+      "sido": "경남",
+      "sigungu": "거제시",
+      "address": "경상남도 거제시 거제면 거제남서로 3577",
+      "image": "",
+      "thumbnail": "",
+      "tel": "055-639-6443",
+      "homepage": "http://www.geoje.go.kr/flower/index.geoje",
+      "overview": "가을꽃 전시회(축제 축소 운영)",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 34.856464,
+      "lng": 128.579127,
+      "source": "std",
+      "place": "거제시 농업기술센터 일원",
+      "sponsor": "거제시농업기술센터 농업지원과",
+      "modifiedTime": "20260930000000"
+    },
+    {
+      "id": "sb63895e2",
+      "title": "고흥유자축제",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-15",
+      "sido": "전남",
+      "sigungu": "고흥군",
+      "address": "전남광주통합특별시 고흥군 풍양면 한동리 701-10",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "",
+      "overview": "공연+전시+체험",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "source": "std",
+      "place": "고흥군 풍양면 한동리 일원",
+      "sponsor": "전남광주통합특별시 고흥군 / 고흥군 축제위원회",
+      "modifiedTime": "20261015000000"
+    },
+    {
+      "id": "sc714dcb9",
+      "title": "2026 비엔날레 문화콘서트4",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "sido": "광주",
+      "sigungu": "북구",
+      "address": "전남광주통합특별시 북구 비엔날레로 111",
+      "image": "",
+      "thumbnail": "",
+      "tel": "062-410-8227",
+      "homepage": "",
+      "overview": "다채로운 문화행사 운영 및 미디어파사드 콘텐츠 전시",
+      "tags": [
+        "전시/예술",
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 35.18309427,
+      "lng": 126.8892065,
+      "source": "std",
+      "place": "비엔날레 전시관 광장",
+      "sponsor": "전남광주통합특별시 북구",
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "s787aa135",
@@ -19052,7 +20863,7 @@
       "source": "std",
       "place": "진안홍삼한방센터 일원",
       "sponsor": "진안YMCA / 전북특별자치도 진안군",
-      "modifiedTime": "20260728000000"
+      "modifiedTime": "20261028000000"
     },
     {
       "id": "s7218fc02",
@@ -19079,6 +20890,32 @@
       "place": "화순읍 남산공원 일원",
       "sponsor": "(재)화순군문화관광재단",
       "modifiedTime": "20260730000000"
+    },
+    {
+      "id": "sd2eb3beb",
+      "title": "제6회 무안YD페스티벌",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-22",
+      "sido": "전남",
+      "sigungu": "무안군",
+      "address": "전남광주통합특별시 무안군 삼향읍 대죽서로16번길 16",
+      "image": "",
+      "thumbnail": "",
+      "tel": "061-450-5474",
+      "homepage": "http://tour.muan.go.kr/",
+      "overview": "공연+경연+체험프로그램",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 34.81114286,
+      "lng": 126.4628109,
+      "source": "std",
+      "place": "남악중앙공원 및 김대중광장 일원",
+      "sponsor": "전남광주통합특별시 무안군",
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "sdf43a8c0",
@@ -19108,6 +20945,32 @@
       "modifiedTime": "20260929000000"
     },
     {
+      "id": "se7e96acb",
+      "title": "묵호 도째비페스타",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "sido": "강원",
+      "sigungu": "동해시",
+      "address": "강원특별자치도 동해시 일출로22",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-530-2412",
+      "homepage": "https://dhfesta.or.kr/dmdf/",
+      "overview": "개막식+공연행사+먹거리+체험거리부스운영",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lat": 37.55030922,
+      "lng": 129.1125062,
+      "source": "std",
+      "place": "묵호항 여객선터미널 일대",
+      "sponsor": "동해문화관광재단 / 강원특별자치도 동해시청",
+      "modifiedTime": "20261015000000"
+    },
+    {
       "id": "s00dac5af",
       "title": "순창KOREA 떡볶이 페스타",
       "startDate": "2026-11-21",
@@ -19133,6 +20996,33 @@
       "place": "순창전통고추장민속마을 일원",
       "sponsor": "순창발효관광재단 / 전북특별자치도 순창군청",
       "modifiedTime": "20260723000000"
+    },
+    {
+      "id": "s0ceff2e3",
+      "title": "빛으로 만나는 문화축제",
+      "startDate": "2026-11-25",
+      "endDate": "2027-01-31",
+      "sido": "경남",
+      "sigungu": "고성군",
+      "address": "경상남도 고성군 고성읍 동외리 312-34",
+      "image": "",
+      "thumbnail": "",
+      "tel": "",
+      "homepage": "",
+      "overview": "전시",
+      "tags": [
+        "불꽃/야경",
+        "가을"
+      ],
+      "months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+      ],
+      "source": "std",
+      "place": "동외광장",
+      "sponsor": "고성군트리축제위원회",
+      "modifiedTime": "20261030000000"
     },
     {
       "id": "s39123d76",
@@ -19322,7 +21212,7 @@
       "source": "std",
       "place": "광복로 및 중구 관내 일원",
       "sponsor": "부산광역시 중구청",
-      "modifiedTime": "20260727000000"
+      "modifiedTime": "20261023000000"
     },
     {
       "id": "s01dac163",
@@ -19380,58 +21270,6 @@
       "modifiedTime": "20260907000000"
     },
     {
-      "id": "s3abd8183",
-      "title": "빛으로 만나는 문화축제",
-      "startDate": "2026-12-24",
-      "endDate": "2027-01-31",
-      "sido": "경남",
-      "sigungu": "고성군",
-      "address": "경상남도 고성군 고성읍 동외리 312-34",
-      "image": "",
-      "thumbnail": "",
-      "tel": "",
-      "homepage": "",
-      "overview": "전시",
-      "tags": [
-        "불꽃/야경",
-        "겨울"
-      ],
-      "months": [
-        "2026-12",
-        "2027-01"
-      ],
-      "source": "std",
-      "place": "동외광장",
-      "sponsor": "고성군트리축제위원회",
-      "modifiedTime": "20260730000000"
-    },
-    {
-      "id": "se6c3f55f",
-      "title": "산타축제",
-      "startDate": "2026-12-24",
-      "endDate": "2026-12-27",
-      "sido": "전북",
-      "sigungu": "임실군",
-      "address": "전북특별자치도 임실군 성수면 도인2길 50",
-      "image": "",
-      "thumbnail": "",
-      "tel": "063-643-8850",
-      "homepage": "https://www.cheesepark.kr",
-      "overview": "산타 및 겨울 관련 공연 이벤트 체험행사 등",
-      "tags": [
-        "겨울"
-      ],
-      "months": [
-        "2026-12"
-      ],
-      "lat": 35.63310329,
-      "lng": 127.3012599,
-      "source": "std",
-      "place": "임실치즈테마파크",
-      "sponsor": "(재)임실치즈테마파크",
-      "modifiedTime": "20260720000000"
-    },
-    {
       "id": "sb17b8dd1",
       "title": "제8회 수성빛예술제",
       "startDate": "2026-12-24",
@@ -19461,6 +21299,59 @@
       "modifiedTime": "20260730000000"
     },
     {
+      "id": "se5c3f3cc",
+      "title": "산타축제",
+      "startDate": "2026-12-25",
+      "endDate": "2026-12-27",
+      "sido": "전북",
+      "sigungu": "임실군",
+      "address": "전북특별자치도 임실군 성수면 도인2길 50",
+      "image": "",
+      "thumbnail": "",
+      "tel": "063-643-8850",
+      "homepage": "https://www.cheesepark.kr",
+      "overview": "산타 및 겨울 관련 공연 이벤트 체험행사 등",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lat": 35.63310329,
+      "lng": 127.3012599,
+      "source": "std",
+      "place": "임실치즈테마파크",
+      "sponsor": "(재)임실치즈테마파크",
+      "modifiedTime": "20261008000000"
+    },
+    {
+      "id": "sc56d5c3c",
+      "title": "2026년 변산해넘이축제",
+      "startDate": "2026-12-31",
+      "endDate": "2026-12-31",
+      "sido": "전북",
+      "sigungu": "부안군",
+      "address": "전북특별자치도 부안군 변산면 변산로 2100",
+      "image": "",
+      "thumbnail": "",
+      "tel": "063-580-4738",
+      "homepage": "https://www.buan.go.kr/tour/index.buan",
+      "overview": "공연프로그램+먹거리부스+체험프로그램+불꽃놀이 등",
+      "tags": [
+        "불꽃/야경",
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lat": 35.679491,
+      "lng": 126.530171,
+      "source": "std",
+      "place": "변산해수욕장 일원",
+      "sponsor": "전북특별자치도 부안군",
+      "modifiedTime": "20261015000000"
+    },
+    {
       "id": "s2beec2a7",
       "title": "부산시민의종 타종식",
       "startDate": "2026-12-31",
@@ -19470,7 +21361,7 @@
       "address": "부산광역시 중구 용두산길 37-55(광복동2가)",
       "image": "",
       "thumbnail": "",
-      "tel": "051-888-5224",
+      "tel": "051-888-5221",
       "homepage": "https://festivalbusan.com/",
       "overview": "시민의종 타종+문화공연",
       "tags": [
@@ -19484,7 +21375,7 @@
       "source": "std",
       "place": "용두산공원",
       "sponsor": "(사)부산축제조직위원회 / 부산광역시청",
-      "modifiedTime": "20260626000000"
+      "modifiedTime": "20261015000000"
     },
     {
       "id": "s22a1bd1b",
@@ -19536,7 +21427,7 @@
       "source": "std",
       "place": "장승포항 수변공원 일원",
       "sponsor": "거제해양관광개발공사",
-      "modifiedTime": "20260707000000"
+      "modifiedTime": "20260930000000"
     },
     {
       "id": "s5bdf3029",
@@ -19589,7 +21480,7 @@
       "source": "std",
       "place": "땅끝마을일원",
       "sponsor": "전남광주통합특별시 해남군청",
-      "modifiedTime": "20260701000000"
+      "modifiedTime": "20261027000000"
     },
     {
       "id": "sf6f55c63",
@@ -19640,7 +21531,7 @@
       "source": "std",
       "place": "하늘공원 동측 정상",
       "sponsor": "서울특별시 마포구",
-      "modifiedTime": "20260720000000"
+      "modifiedTime": "20261020000000"
     },
     {
       "id": "sc10ba697",
@@ -19748,6 +21639,59 @@
       "place": "금정구민 운동장",
       "sponsor": "(사)금정문화원 / 부산광역시 금정구",
       "modifiedTime": "20260914000000"
+    },
+    {
+      "id": "sab1546ef",
+      "title": "제21회 철원 화강 다슬기축제",
+      "startDate": "2027-08-05",
+      "endDate": "2027-08-07",
+      "sido": "강원",
+      "sigungu": "철원군",
+      "address": "강원특별자치도 철원군 김화읍 청양로 649",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-450-3600",
+      "homepage": "https://gcwcf.or.kr",
+      "overview": "개막행사, 황금다슬기잡기 등 체험프로그램, 축하공연 등",
+      "tags": [
+        "먹거리",
+        "여름"
+      ],
+      "months": [
+        "2027-08"
+      ],
+      "lat": 38.249835,
+      "lng": 127.4136594,
+      "source": "std",
+      "place": "김화생활체육공원 및 화강 일원",
+      "sponsor": "(재)철원문화재단 / 강원특별자치도 철원군",
+      "modifiedTime": "20261013000000"
+    },
+    {
+      "id": "sd48ad487",
+      "title": "제45회 태봉제",
+      "startDate": "2027-10-01",
+      "endDate": "2027-10-02",
+      "sido": "강원",
+      "sigungu": "철원군",
+      "address": "강원특별자치도 철원군 갈말읍 갈말로 53-1",
+      "image": "",
+      "thumbnail": "",
+      "tel": "033-450-3600",
+      "homepage": "https://gcwcf.or.kr",
+      "overview": "태봉제례, 군민한마음체육대회 등",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2027-10"
+      ],
+      "lat": 38.15937036,
+      "lng": 127.2996847,
+      "source": "std",
+      "place": "철원 종합운동장 일원",
+      "sponsor": "(재)철원문화재단 / 강원특별자치도 철원군",
+      "modifiedTime": "20261013000000"
     }
   ]
 }
