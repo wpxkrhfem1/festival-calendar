@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-03T01:27:44.428Z",
+    "fetchedAt": "2026-11-03T23:52:51.751Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 847,
+    "count": 850,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -1020,48 +1020,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/11/3588411_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/12/3588412_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/13/3588413_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "386053",
-      "title": "평창송어축제",
-      "startDate": "2026-01-09",
-      "endDate": "2026-02-09",
-      "sido": "강원",
-      "sigungu": "평창군",
-      "address": "강원특별자치도 평창군 진부면 경강로 3562",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/81/4002581_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/81/4002581_image3_1.jpg",
-      "tel": "033-336-4000",
-      "homepage": "https://www.festival700.or.kr",
-      "overview": "우리 조상들은 매년 겨울이 되면 눈이 많이 내려 옆집까지 서로 줄을 메어놓고, 그 줄을 따라 눈 터널을 만들어 왕래를 하였고, 차가운 강바람에 개여울이 일찍 합강(合江)되면 강속의 큰 바위를 망치로 두드려 겨울 물고기를 사냥해서 한끼니를 때우던 그 어렵던 시절이 있었다. 바로 이곳에 우리 선조들의 삶의 핍박을 축제로 승화시켜 눈과, 얼음, 송어가 함께하는 겨울이야기 라는 주제로\n매년 12월말부터 1월말까지 평창송어축제가 한마당 펼쳐진다. 얼음 위에서 보면 오대천에서 노니는 어류가 투명하게 보이는 가운데 송어낚시의 짜릿한 손맛을 느끼며 다양한 겨울체험 행사와 함께 진정한 겨울축제의 즐거움을 함께 느낄 수 있다.",
-      "tags": [
-        "먹거리",
-        "겨울"
-      ],
-      "months": [
-        "2026-01",
-        "2026-02"
-      ],
-      "lng": 128.556991232543,
-      "lat": 37.6331795130163,
-      "modifiedTime": "20260225134218",
-      "place": "평창송어축제장",
-      "playtime": "09:00 ~ 17:00",
-      "fee": "유료",
-      "sponsor": "평창송어축제위원회",
-      "program": "얼음낚시, 텐트낚시, 어린이낚시터, 황금송어맨손잡기, 얼음광장체험놀이(눈썰매, 스노우래프팅, 얼음자전거, 아르고탑승체험, 스케이트등)\n* 이용요금\n텐트낚시(종합권) 49,000원 / 텐트낚시 초등학생(종합권) 43,000원\n텐트낚시 39,000원 / 텐트낚시 초등학생 30,000원\n얼음낚시(종합권) 43,000원 / 얼음낚시 초등학생(종합권) 35,000원\n얼음낚시 25,000원 / 얼음낚시 초등학생 20,000원\n실내낚시 20,000원 / 맨손잡기 20,000원\n놀이시설(종합권) 30,000원 / 산송어 20,000원",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/61/3590461_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/76/4002576_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/77/4002577_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/78/4002578_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/79/4002579_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/80/4002580_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/82/4002582_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/83/4002583_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/84/4002584_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/85/4002585_image2_1.jpg"
       ]
     },
     {
@@ -11478,40 +11436,6 @@
       ]
     },
     {
-      "id": "1032770",
-      "title": "부산국제매직페스티벌",
-      "startDate": "2026-06-26",
-      "endDate": "2026-06-26",
-      "sido": "부산",
-      "sigungu": "해운대구",
-      "address": "부산광역시 해운대구 수영강변대로 120 (우동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/20/4064420_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/20/4064420_image3_1.jpg",
-      "tel": "051-626-7002",
-      "homepage": "https://www.instagram.com/busanmagicfestival",
-      "overview": "부산국제매직페스티벌은 2006년부터 시작되어 문화콘텐츠 산업의 떠오르는 블루오션인 ‘매직’을 테마로 한 국내 100만 매직 매니아의 꿈의 축제인 국내 유일 세계 최대 규모의 마술 페스티벌이다. 올해 제21회 부산국제매직페스티벌에는 매직 컨벤션, 제8회 버스킹 챔피언십, 크리스마스 특집 매직 갈라쇼 등 다양한 행사들이 준비되어 있다.",
-      "tags": [
-        "여름"
-      ],
-      "months": [
-        "2026-06"
-      ],
-      "lng": 129.127084511585,
-      "lat": 35.1710365257136,
-      "modifiedTime": "20260514093246",
-      "place": "영화의전당 / 해운대 해수욕장 등",
-      "playtime": "프로그램별 상이",
-      "fee": "프로그램별 상이",
-      "sponsor": "(사)부산국제매직페스티벌 조직위원회",
-      "program": "1. 매직 컨벤션\n- 기간 : 2026년 6월 26일(금) ~ 6월 28일(일)\n- 장소 : 영화의전당 (부산 해운대구 수영강변대로 120)\n- 프로그램 : FISM QC BIMF 국제마술대회(대회) / 매직 갈라쇼(공연) / 렉쳐(강연) / 워크숍 / 딜러부스 / 시상식 등\n- 주최/주관 : (사)부산국제매직페스티벌조직위원회, (재)영화의전당\n- 후원/협찬 : 부산광역시, 해운대구, 부산예술대학교\n- 예매처 : YES24 티켓 / 네이버 / 인터파크 티켓 / 놀이의발견 / 클립서비스 등\n\n2. 제8회 버스킹 챔피언십\n- 기간 : 2026년 6월 26일(금) ~ 6월 27일(토)\n- 장소 : 해운대 해수욕장 일원 (부산 해운대구 해운대해변로)\n- 프로그램 : 버스킹챔피언십(대회) 등\n- 주최 : (사)부산국제매직페스티벌조직위원회\n- 주관 : (사)부산국제매직페스티벌조직위원회\n- 후원/협찬 : 부산광역시, 해운대구, 부산예술대학교\n\n3. 크리스마스특집 매직갈라쇼\n- 기간 : 2026년 12월 12일(토) ~ 12월 13일(일) / 12월 25일(금)~12월 26일(토)\n- 장소 : 영화의전당 (부산 해운대구 수영강변대로 120) / 시민회관 소극장(예정)\n- 프로그램 : 기획공연 / 현장이벤트 등\n- 주최 : (사)부산국제매직페스티벌조직위원회, (재)영화의전당\n- 주관 : (사)부산국제매직페스티벌조직위원회\n- 후원/협찬 : 부산광역시, 해운대구, 부산예술대학교\n- 예매처 : YES24 티켓 / 네이버 / 인터파크 티켓 / 놀이의발견 / 클립서비스 등",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/15/4064415_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/16/4064416_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/17/4064417_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/18/4064418_image2_1.jpg"
-      ]
-    },
-    {
       "id": "2550263",
       "title": "세미원 연꽃문화제",
       "startDate": "2026-06-26",
@@ -11654,6 +11578,46 @@
       "fee": "입장료 무료 (환경수호대 참가비 10,000원)",
       "sponsor": "제주특별자치도 / 제주관광공사",
       "program": "1. 메인프로그램 : 제 6기 환경수호대, 어린이 플리마켓\n2. 공연 프로그램 : 초청 인플루언서 강연 및 시연, DJ 퍼포먼스, 어린이 합창, 넌버벌 공연, 뮤지컬+동화 토크쇼, 연주\n3. 체험 프로그램 : 곤충 전시와 체험, 버섯 키우기 체험, 자연 그림 그리기, 종이 비행기 만들기, 연날리기, LED팽이 만들기, 보리새싹 키우기, 페이스 페인팅, 동화 구연, 다육이 체험\n4. 놀이, 이벤트 프로그램 : 잔디밭 놀이, 온가족 OX퀴즈, 숲오라 나들이, 캐릭터 퍼레이드, 네컷 사진기, 지역상권 이벤트\n5. 협업 프로그램: 한라도서관, 이니스프리 모음재단, 희망나래, 제주곶자왈공유화재단"
+    },
+    {
+      "id": "1032770",
+      "title": "부산국제매직페스티벌",
+      "startDate": "2026-06-28",
+      "endDate": "2026-12-26",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 수영강변대로 120 (우동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/20/4064420_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/20/4064420_image3_1.jpg",
+      "tel": "051-626-7002",
+      "homepage": "https://www.instagram.com/busanmagicfestival",
+      "overview": "부산국제매직페스티벌은 2006년부터 시작되어 문화콘텐츠 산업의 떠오르는 블루오션인 ‘매직’을 테마로 한 국내 100만 매직 매니아의 꿈의 축제인 국내 유일 세계 최대 규모의 마술 페스티벌이다. 올해 제21회 부산국제매직페스티벌에는 매직 컨벤션, 제8회 버스킹 챔피언십, 크리스마스 특집 매직 갈라쇼 등 다양한 행사들이 준비되어 있다.",
+      "tags": [
+        "여름"
+      ],
+      "months": [
+        "2026-06",
+        "2026-07",
+        "2026-08",
+        "2026-09",
+        "2026-10",
+        "2026-11",
+        "2026-12"
+      ],
+      "lng": 129.1270845116,
+      "lat": 35.1710365257,
+      "modifiedTime": "20261103143055",
+      "place": "영화의전당 / 해운대 해수욕장 등",
+      "playtime": "프로그램별 상이",
+      "fee": "프로그램별 상이",
+      "sponsor": "(사)부산국제매직페스티벌 조직위원회",
+      "program": "1. 매직 컨벤션\n- 기간 : 2026년 6월 26일(금) ~ 6월 28일(일)\n- 장소 : 영화의전당 (부산 해운대구 수영강변대로 120)\n- 프로그램 : FISM QC BIMF 국제마술대회(대회) / 매직 갈라쇼(공연) / 렉쳐(강연) / 워크숍 / 딜러부스 / 시상식 등\n- 주최/주관 : (사)부산국제매직페스티벌조직위원회, (재)영화의전당\n- 후원/협찬 : 부산광역시, 해운대구, 부산예술대학교\n- 예매처 : YES24 티켓 / 네이버 / 인터파크 티켓 / 놀이의발견 / 클립서비스 등\n\n2. 제8회 버스킹 챔피언십\n- 기간 : 2026년 6월 26일(금) ~ 6월 27일(토)\n- 장소 : 해운대 해수욕장 일원 (부산 해운대구 해운대해변로)\n- 프로그램 : 버스킹챔피언십(대회) 등\n- 주최 : (사)부산국제매직페스티벌조직위원회\n- 주관 : (사)부산국제매직페스티벌조직위원회\n- 후원/협찬 : 부산광역시, 해운대구, 부산예술대학교\n\n3. 크리스마스특집 매직갈라쇼\n- 기간 : 2026년 12월 12일(토) ~ 12월 13일(일) / 12월 25일(금)~12월 26일(토)\n- 장소 : 영화의전당 (부산 해운대구 수영강변대로 120) / 시민회관 소극장(예정)\n- 프로그램 : 기획공연 / 현장이벤트 등\n- 주최 : (사)부산국제매직페스티벌조직위원회, (재)영화의전당\n- 주관 : (사)부산국제매직페스티벌조직위원회\n- 후원/협찬 : 부산광역시, 해운대구, 부산예술대학교\n- 예매처 : YES24 티켓 / 네이버 / 인터파크 티켓 / 놀이의발견 / 클립서비스 등",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/18/4064418_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/17/4064417_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/16/4064416_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/15/4064415_image2_1.jpg"
+      ]
     },
     {
       "id": "1801011",
@@ -16447,7 +16411,7 @@
       ],
       "lng": 126.997353,
       "lat": 37.512861,
-      "modifiedTime": "20261102180946",
+      "modifiedTime": "20261103180656",
       "place": "잠수교 및 반포한강공원 일원",
       "playtime": "14:00~22:00",
       "fee": "무료(일부 프로그램 유료)",
@@ -17627,6 +17591,42 @@
         "https://tong.visitkorea.or.kr/cms/resource/02/4105302_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/03/4105303_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/04/4105304_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "2034167",
+      "title": "평택호 물빛축제",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-12",
+      "sido": "경기",
+      "sigungu": "평택시",
+      "address": "경기도 평택시 현덕면 평택호길 159",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/4107416_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/16/4107416_image3_1.jpg",
+      "tel": "031-669-0964",
+      "homepage": "https://www.pccf.or.kr/festival/festivalView.do?evntSn=2606180001&pageIndex=1&sw=&sc_tharAreaCd=&orderBy=deadline",
+      "overview": "‘평택호 물빛축제’는 아름다운 평택호의 자연경관을 배경으로 ‘물’과 ‘빛’을 주제로 펼쳐지는 평택시의 대표 축제다. 남녀노소 누구나 즐길 수 있는 다채로운 공연과 체험 프로그램, 먹거리 등 풍성한 즐길 거리가 마련되며, 평택호의 매력을 느낄 수 있는 다양한 콘텐츠를 선보인다. 특히 축제의 밤에는 밤하늘을 화려하게 수놓는 불꽃놀이가 펼쳐져 관람객들에게 특별한 볼거리를 선사한다. 낮부터 밤까지 이어지는 축제를 즐기며 가족, 연인, 친구들과 함께 평택호의 풍경 속에서 관람객들만의 특별한 추억과 낭만을 만들 수 있다. 또한 지역 주민과 지역 예술인이 참여하는 공연을 통해 지역의 문화적 매력을 소개하고, 방문객이 함께 즐기고 교류할 수 있는 열린 축제의 장을 마련한다.",
+      "tags": [
+        "불꽃/야경",
+        "가을"
+      ],
+      "months": [
+        "2026-09"
+      ],
+      "lng": 126.9222261083,
+      "lat": 36.9214412612,
+      "modifiedTime": "20261103140637",
+      "place": "평택호 관광단지 일원 (한국소리터, 모래톱공원)",
+      "playtime": "11:00~21:00",
+      "fee": "무료",
+      "sponsor": "평택시 / 평택호 물빛축제 추진위원회, 평택시문화재단, 평택예총",
+      "program": "1. 상설공연 : 주민자치 및 예술인공연\n2. 물빛콘서트 : 초청가수 축하공연, 불꽃놀이 등\n3. 체험 프로그램 : 지역작가 체험 프로그램, 체험부스 등\n4. 푸드트럭 : 관람객 만족도 제고를 위한 인기 있는 음식/음료로 구성된 푸드트럭 및 휴게공간 운영",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/17/4107417_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/18/4107418_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/14/4107414_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/13/4107413_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/15/4107415_image2_1.jpg"
       ]
     },
     {
@@ -20430,8 +20430,8 @@
       "sido": "충남",
       "sigungu": "천안시",
       "address": "충청남도 천안시 서북구 번영로 208 (백석동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/35/4056635_image2_1.JPG",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/35/4056635_image3_1.JPG",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/82/4143382_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/82/4143382_image3_1.jpg",
       "tel": "041-900-7021",
       "homepage": "https://cheonanfestival.com/ko/",
       "overview": "천안흥타령춤축제는 2003년 첫 개최 이후 23년의 역사를 이어온 축제이다. 문화체육관광부 지정 문화관광축제 총 8회 선정 및 6년 연속 지역대표공연예술제로 선정된 바 있다. 또한 2020년부터 명예 문화관광축제로 지정되었으며, 충청남도 '1시군 1품 축제' 평가에서 2년 연속 최고 등급인 '일품축제'로 선정되었다. 『천안흥타령춤축제 2026』은 2026년 10월 1일부터 10월 5일까지 5일간 개최된다. 축제 기간 동안 전국춤경연대회, 세계춤전국경연대회, 거리댄스퍼레이드 등 다양한 춤 관련 프로그램이 진행된다. 도심 공간인 천안종합운동장 및 천안삼거리공원 일대를 무대로 운영되는 도심형 글로벌 댄스 페스티벌이다.",
@@ -20444,23 +20444,20 @@
       ],
       "lng": 127.1114520361,
       "lat": 36.8194430336,
-      "modifiedTime": "20261014155501",
+      "modifiedTime": "20261103145258",
       "place": "천안종합운동장 및 천안삼거리공원",
       "playtime": "10:00~22:00",
       "fee": "무료",
       "sponsor": "(재)천안문화재단",
       "program": "1. 메인프로그램\n- 전국춤경연대회, 국제춤대회, 거리댄스 퍼레이드\n2. 부대프로그램\n- 국제스트릿댄스챔피언쉽(CIDC), 펌프잇업 월드 챔피언쉽, 2026 대한민국 무용대상\n3. 소비자 참여 프로그램\n- 체험부스, 먹거리존 및 푸드트럭, 어린이 직업체험존\n4. 기타 내용\n- 해외팀 퍼레이드, 랜덤플레이댄스, 천안고유설화 , 프린지 공연",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/30/4056630_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/31/4056631_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/32/4056632_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/33/4056633_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/34/4056634_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/36/4056636_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/37/4056637_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/38/4056638_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/39/4056639_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/40/4056640_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/40/4056640_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/83/4143383_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/86/4143386_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/84/4143384_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/85/4143385_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/80/4143380_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/81/4143381_image2_1.jpg"
       ]
     },
     {
@@ -20708,8 +20705,8 @@
       "sido": "부산",
       "sigungu": "사상구",
       "address": "부산광역시 사상구 삼락동 29-50",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/06/4040606_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/06/4040606_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/02/4143402_image2_1.jpeg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/02/4143402_image3_1.jpeg",
       "tel": "051-713-5000",
       "homepage": "https://busanrockfestival.com/",
       "overview": "부산국제록페스티벌은 2000년 첫 개최 이래, 27년 동안 명맥을 꾸준히 지켜온 국내 최초·최장수 국제록페스티벌이다. 2026년에는 10월 2일(금)부터 10월 4일(일)까지 3일간, 삼락생태공원에서 개최되며, 다양한 국내외 아티스트가 참여할 예정이다. 삼락생태공원 곳곳에 조성된 무대에서 신진 아티스트부터 글로벌 최정상급 헤드라이너까지 취향에 따라 다양한 공연을 관람할 수 있으며, 무료 개방형 무대에서 진행되는 관람객 참여형 게임 이벤트와 노래자랑, 부산의 로컬 음식을 담은 푸드코트 라운지, 삼락 오토 캠핑존 등 다양한 부대 이벤트도 즐길 수 있다.",
@@ -20722,21 +20719,23 @@
       ],
       "lng": 128.9681914,
       "lat": 35.1728573,
-      "modifiedTime": "20261014145223",
+      "modifiedTime": "20261103150547",
       "place": "삼락생태공원",
       "playtime": "10:00~22:00",
       "fee": "유료",
       "sponsor": "부산광역시 / 부산축제조직위원회",
       "program": "1. 메인프로그램 : 부산국제록페스티벌\n2. 부대프로그램 : Rookies on the BU-ROCK, Road to BU-ROCK 등\n3. 기타 : MD부스, 푸드코트 라운지, 캠핑존 등",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/05/4040605_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/08/4040608_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/09/4040609_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/10/4040610_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/11/4040611_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/12/4040612_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/90/4071290_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/32/4077032_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/32/4077032_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/00/4143400_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/01/4143401_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/03/4143403_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/04/4143404_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/05/4143405_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/06/4143406_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/08/4143408_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/07/4143407_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/09/4143409_image2_1.jpeg"
       ]
     },
     {
@@ -27149,6 +27148,43 @@
       ]
     },
     {
+      "id": "2867300",
+      "title": "평택 원평나루 억새축제",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "sido": "경기",
+      "sigungu": "평택시",
+      "address": "경기도 평택시 평택동 238-2",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/4116771_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/71/4116771_image3_1.jpg",
+      "tel": "031-669-0965",
+      "homepage": "https://www.pccf.or.kr/",
+      "overview": "2026 평택 원평나루 억새축제는 군문교 아래 억새밭 일대에서 열리는 가을 축제이다. 행사일은 10월 24일이며, 운영시간은 오전 11시부터 오후 9시까지이다. 원평나루의 억새 경관을 배경으로 공연과 체험 프로그램을 운영하는 행사이다. 주요 프로그램은 억새콘서트와 체험부스이며, 억새밭을 배경으로 사진 촬영용 포토존도 마련되는 축제이다. 먹거리를 판매하는 푸드트럭도 운영하는 행사이다. 낮부터 저녁까지 이어지는 일정으로 억새밭 관람과 공연 관람, 체험 참여가 가능한 축제이다. 원평나루의 풍경과 문화 프로그램, 먹거리를 한자리에서 만날 수 있는 축제이다.",
+      "tags": [
+        "꽃/자연",
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 127.0810967851,
+      "lat": 36.9842467192,
+      "modifiedTime": "20261103141124",
+      "place": "군문교 아래 억새밭(노을생태문화공원)",
+      "playtime": "11:00~21:00",
+      "fee": "무료",
+      "sponsor": "평택시 / 평택 원평나루 억새축제 추진위원회, 평택시문화재단, 평택예총",
+      "program": "1. 공연프로그램\n- 억새콘서트, 주민자치&예술인 공연\n2. 체험프로그램\n- 가족친화형 체험부스 운영\n3. 먹거리프로그램\n- 푸드트럭 운영\n4. 전시프로그램\n- 억새길 포토존",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/75/4116775_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/76/4116776_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/72/4116772_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/68/3534768_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/73/4116773_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/74/4116774_image2_1.jpg"
+      ]
+    },
+    {
       "id": "3547712",
       "title": "한미친선 문화 한마당",
       "startDate": "2026-10-24",
@@ -28253,7 +28289,7 @@
       ],
       "lng": 127.7865237323,
       "lat": 36.8145153033,
-      "modifiedTime": "20261102174701",
+      "modifiedTime": "20261103091443",
       "place": "괴산유기농엑스포광장 일원",
       "playtime": "10:00~20:00",
       "fee": "무료 (일부 체험비 부분유료 5,000원)",
@@ -28440,6 +28476,35 @@
         "https://tong.visitkorea.or.kr/cms/resource/48/3546548_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/53/3546553_image2_1.jpg"
       ]
+    },
+    {
+      "id": "4143368",
+      "title": "부락페스타",
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-08",
+      "sido": "부산",
+      "sigungu": "금정구",
+      "address": "부산광역시 금정구 장전로12번길 55 (장전동) 부산대역 1번출구 앞 차없는거리 일원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/69/4143369_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/69/4143369_image3_1.jpg",
+      "tel": "051-714-1469",
+      "homepage": "",
+      "overview": "부락페스타는 부산대학교 자율상권 구역 일원에서 개최되는 레트로 테마 축제이다. 1990년대부터 2000년대까지의 음악과 패션, 골목문화를 현대적으로 재해석한 행사로, 부산대학교 자율상권의 활성화와 지역 방문객 유입을 목적으로 한다. 축제는 2026년 11월 6일부터 11월 8일까지 3일간 진행되며, 부락 가요제와 댄스배틀, 특별공연, DJ부스 등 다양한 공연 프로그램을 운영한다. 또한 골목대장 선발대회와 놀이공방, 골목대장 패션스타 등 참여형 프로그램과 부락 문방구, 부락 야장, 지역 상권 연계 먹거리 부스를 마련하여 방문객에게 다양한 체험과 즐길 거리를 제공한다. 음악과 춤, 패션, 놀이, 먹거리를 통해 과거의 추억과 낭만을 공유하고, 지역 상권과 축제 방문객이 함께 어우러지는 문화 행사이다.",
+      "tags": [
+        "음악/공연",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 129.0881148708,
+      "lat": 35.2301056519,
+      "modifiedTime": "20261103160145",
+      "place": "부산대역 1번출구 앞 차없는거리 일원",
+      "playtime": "15:00 ~ 21:00 (금 17:00 ~ 21:00)",
+      "fee": "무료",
+      "sponsor": "금정구, 부산대자율상권구역",
+      "program": "1. 메인프로그램\n- 부락 가요제\n- 부락 댄스배틀\n- 부락 리와인드 특별공연\n- 골목대장 선발대회\n- 부락 야장\n\n2. 부대프로그램\n- 골목대장 놀이공방\n- 골목대장 패션스타\n- 지역 상권 연계 F&B 부스\n- 그때 그 DJ부스\n\n3. 소비자 참여 프로그램\n- 부락 문방구\n- 구매 영수증 이벤트\n- 스티커 찾기 이벤트"
     },
     {
       "id": "3492576",
@@ -29059,7 +29124,7 @@
       ],
       "lng": 127.236500949,
       "lat": 37.9234466507,
-      "modifiedTime": "20261102135330",
+      "modifiedTime": "20261103154832",
       "place": "포천 아트밸리",
       "playtime": "10:00~ 18:00",
       "fee": "유료(아트밸리 입장료 참고)",
@@ -29067,7 +29132,7 @@
       "program": "1. 메인 프로그램\n- 댕댕이 도전! 미션 멍-파서블, 설채현 수의사 토크콘서트, 포천 펫트립(아트밸리 힐링숲 트레킹)\n\n2. 체험 프로그램\n- 펫림픽, 도그 필라테스, 피크닉 공연\n\n3. 부대 프로그램\n- 반려동물 참여형 이벤트 및 현장 체험 프로그램",
       "photos": [
         "https://tong.visitkorea.or.kr/cms/resource/09/4133509_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/10/4133510_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/79/4143379_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/08/4133508_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/06/4133506_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/05/4133505_image2_1.jpg",
@@ -29789,6 +29854,47 @@
       "fee": "무료",
       "sponsor": "문화체육관광부 / 한국방문의해위원회",
       "program": "1. 웰컴센터\n- 기간 : 2026년 12월 23일(수)~2027년 2월 13일(토), 53일간 / 매일 11:00~20:00\n- 장소 : 서울 명동 눈스퀘어 1층 로비\n- 내용 : 행사 소개 및 쇼핑관광 정보 제공 / 체험 프로그램 / 지역상권 연계 프로그램(영수증 리워드 등) / 럭키드로우 이벤트 / 참여기업 혜택 홍보 등\n\n2. 이동형 웰컴센터\n- 기간 : 각 지역별 운영기간 상이\n- 지역 : 강원권·경남권 등 전국 순회 예정\n- 내용 : 체험 프로그램 / 지역상권 연계 프로그램(영수증 리워드 등) / 럭키드로우 이벤트 등\n\n3. 스페셜 프로모션\n- 기간 : 2026년 10월 중~ / 각 프로모션별 기간 상이\n- 내용 : 항공·OTA·쇼핑 등 다양한 분야의 인기 한국 브랜드 할인 혜택 제공"
+    },
+    {
+      "id": "386053",
+      "title": "평창송어축제",
+      "startDate": "2027-01-01",
+      "endDate": "2027-01-31",
+      "sido": "강원",
+      "sigungu": "평창군",
+      "address": "강원특별자치도 평창군 진부면 경강로 3562",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/81/4002581_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/81/4002581_image3_1.jpg",
+      "tel": "033-336-4000",
+      "homepage": "https://www.festival700.or.kr",
+      "overview": "*하기 축제 내용은 2026년 축제 내용으로, 2027년도 축제 내용은 업데이트 중에 있습니다*우리 조상들은 매년 겨울이 되면 눈이 많이 내려 옆집까지 서로 줄을 메어놓고, 그 줄을 따라 눈 터널을 만들어 왕래를 하였고, 차가운 강바람에 개여울이 일찍 합강(合江)되면 강속의 큰 바위를 망치로 두드려 겨울 물고기를 사냥해서 한끼니를 때우던 그 어렵던 시절이 있었다. 바로 이곳에 우리 선조들의 삶의 핍박을 축제로 승화시켜 눈과, 얼음, 송어가 함께하는 겨울이야기 라는 주제로 매년 12월말부터 1월말까지 평창송어축제가 한마당 펼쳐진다. 얼음 위에서 보면 오대천에서 노니는 어류가 투명하게 보이는 가운데 송어낚시의 짜릿한 손맛을 느끼며 다양한 겨울체험 행사와 함께 진정한 겨울축제의 즐거움을 함께 느낄 수 있다.",
+      "tags": [
+        "먹거리",
+        "겨울"
+      ],
+      "months": [
+        "2027-01"
+      ],
+      "lng": 128.5569912325,
+      "lat": 37.633179513,
+      "modifiedTime": "20261103102721",
+      "place": "평창송어축제장",
+      "playtime": "09:00 ~ 17:00",
+      "fee": "유료",
+      "sponsor": "평창송어축제위원회",
+      "program": "얼음낚시, 텐트낚시, 어린이낚시터, 황금송어맨손잡기, 얼음광장체험놀이(눈썰매, 스노우래프팅, 얼음자전거, 아르고탑승체험, 스케이트등)\n* 이용요금\n텐트낚시(종합권) 49,000원 / 텐트낚시 초등학생(종합권) 43,000원\n텐트낚시 39,000원 / 텐트낚시 초등학생 30,000원\n얼음낚시(종합권) 43,000원 / 얼음낚시 초등학생(종합권) 35,000원\n얼음낚시 25,000원 / 얼음낚시 초등학생 20,000원\n실내낚시 20,000원 / 맨손잡기 20,000원\n놀이시설(종합권) 30,000원 / 산송어 20,000원",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/61/3590461_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/82/4002582_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/84/4002584_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/85/4002585_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/83/4002583_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/80/4002580_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/79/4002579_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/76/4002576_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/77/4002577_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/78/4002578_image2_1.jpg"
+      ]
     },
     {
       "id": "507599",
