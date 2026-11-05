@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-03T23:52:51.751Z",
+    "fetchedAt": "2026-11-05T00:11:36.243Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 850,
+    "count": 853,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -9076,8 +9076,8 @@
       "sido": "경북",
       "sigungu": "영주시",
       "address": "경상북도 영주시 풍기읍 삼가로 509 영주시 소백산 일원 및 풍기인삼문화팝업공원",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/10/4010210_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/10/4010210_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/39/4144339_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/39/4144339_image3_1.jpg",
       "tel": "054-630-8703",
       "homepage": "https://yctf.or.kr/azalea/",
       "overview": "영주 소백산철쭉제는 영주의 대표 자연자원인 소백산을 무대로 펼쳐지는 산악형 자연축제로, 철쭉이 만개하는 봄의 절정 속에서 소백산의 생태적 가치와 장엄한 산세를 오롯이 체험할 수 있는 축제이다. 철쭉 개화 시기에 맞춘 트레킹 프로그램과 전문 생태해설, 자연 체험 콘텐츠를 운영하여 방문객 참여형 산악축제를 선보인다. 능선을 따라 펼쳐지는 철쭉 군락과 탁 트인 전망은 소백산만의 압도적인 자연 경관을 선사한다. 또한 지역 농특산물과 연계한 먹거리·체험 프로그램을 통해 여행의 즐거움을 더하고, 관광 소비가 지역 농가와 소상공인으로 이어지는 선순환 구조를 만들어 지역경제 활성화에도 기여한다. 영주 소백산철쭉제는 자연과 사람이 함께 호흡하는 산에서의 하루를 통해, 일상에서 벗어나 진정한 쉼과 자연의 가치를 다시 만나는 특별한 봄 여행을 할 수 있다.",
@@ -9088,24 +9088,23 @@
       "months": [
         "2026-05"
       ],
-      "lng": 128.502257343827,
-      "lat": 36.9263237388638,
-      "modifiedTime": "20260521105511",
+      "lng": 128.5022573438,
+      "lat": 36.9263237389,
+      "modifiedTime": "20261104133013",
       "place": "영주시 소백산 일원 및 풍기인삼문화팝업공원",
       "playtime": "10:00~21:00",
       "fee": "무료",
       "sponsor": "영주시 / (재)영주문화관광재단",
       "program": "1. 메인프로그램 : 소백산 트레킹 및 산악대회\n2. 부대프로그램 : 죽죽제의, 죽령옛길걷기, 숲속 음악회\n3. 소비자 참여 프로그램 : 지역농특산물 판매장\n4. 기타 내용 : 산악안전 캠페인 홍보 등",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/07/4010207_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/08/4010208_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/09/4010209_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/11/4010211_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/12/4010212_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/13/4010213_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/14/4010214_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/15/4010215_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/53/4055753_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/53/4055753_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/38/4144338_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/40/4144340_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/37/4144337_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/41/4144341_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/42/4144342_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/10/4010210_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/15/4010215_image2_1.jpg"
       ]
     },
     {
@@ -13610,8 +13609,8 @@
       "sido": "경북",
       "sigungu": "영주시",
       "address": "경상북도 영주시 가흥로 109 (가흥동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/30/4084230_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/30/4084230_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/32/4144332_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/32/4144332_image3_1.jpg",
       "tel": "054-630-8707",
       "homepage": "",
       "overview": "'2026 영주 시원나잇페스타'는 공연과 로컬 먹거리, 감성 야장, 참여형 콘텐츠가 어우러진 영주의 대표 여름 야간축제로, 무더운 여름철 시민과 관광객이 도심 속에서 시원한 여름밤의 낭만을 즐길 수 있는 체류형 축제를 구현한다. 다양한 장르의 공연과 지역 먹거리, 감성적인 야장 공간, 세대가 함께 참여할 수 있는 체험 프로그램을 운영하여 방문객 만족도를 높이고, 지역 상권과 연계한 축제 운영으로 지역경제 활성화와 원도심 활력 제고에 기여한다. 또한 야간경관과 휴식공간을 조성해 체류시간을 확대하고, 다양한 콘텐츠를 통해 영주만의 차별화된 여름 야간축제 브랜드를 구축하고자 한다.",
@@ -13625,7 +13624,7 @@
       ],
       "lng": 128.607719578,
       "lat": 36.8084573763,
-      "modifiedTime": "20260729134852",
+      "modifiedTime": "20261104131946",
       "place": "영주시민운동장",
       "playtime": "16:00~22:00",
       "fee": "무료",
@@ -13633,10 +13632,11 @@
       "program": "1. 공연프로그램 : 싱싱콘서트, 시원뮤직페스타, 제3회 영주 서천 강변가요제 등\n2. 먹거리프로그램 : 비 내리는 낭만 야장, 영주 로컬 먹거리존, 푸드트럭 운영 등\n3. 체험프로그램 : 캐리커쳐, 키캡만들기, 패션타투 등 체험 프로그램 운영\n4. 기타프로그램 : 포토존 및 경관조명 운영, 휴게공간 조성, 방문객 참여 프로그램 등",
       "photos": [
         "https://tong.visitkorea.or.kr/cms/resource/26/4084226_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/27/4084227_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/28/4084228_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/29/4084229_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/31/4084231_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/33/4144333_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/34/4144334_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/35/4144335_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/36/4144336_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/31/4144331_image2_1.JPG"
       ]
     },
     {
@@ -18343,7 +18343,7 @@
       "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/44/4108744_image3_1.png",
       "tel": "1670-1188",
       "homepage": "https://www.instagram.com/jeju_ghost/",
-      "overview": "귀몽은 제주신화월드 테마파크에서 운영되는 야외 공포 체험 콘텐르로, 주요 프로그램은 공포체험의 고스트존과 다양한 체험의 세이브존, 야간 놀이시설 체험으로 그성된다. 공포체험은 실제 자연지형을 배경으로 하며, 참가자는 어둠 속을 따라 이동하며 다양한 공포 연출과 마주하게 된다. 귀몽은 자연의 어둠과 사운드, 시각효과를 활용해 긴장감을 높이고, 공포 뿐만 아니라 남녀노소가 즐기는 호러 파티도 함께 진행된다. 또한, 테마파크 내 놀이기구인 오스카 스핀, 익스프레스, 플레이그라운드를 귀몽 버전으로 동시에 체험할 수 있다. 부대공간인 귀몽마켓에는 귀몽펍, 귀몽분장샵, 귀몽푸드 등의 휴식 및 F&B 프로그램이 운영되며, 포토존이 함께 진행된다.\n귀몽은 2026년 9월 18일부터 11월 1일까지 운영되며, 체험권 구매를 통해 입장 및 참여가 가능하다.",
+      "overview": "귀몽은 제주신화월드 테마파크에서 운영되는 야외 공포 체험 콘텐츠로, 주요 프로그램은 공포체험의 고스트존과 다양한 체험의 세이브존, 야간 놀이시설 체험으로 구성된다. 공포체험은 실제 자연지형을 배경으로 하며, 참가자는 어둠 속을 따라 이동하며 다양한 공포 연출과 마주하게 된다. 귀몽은 자연의 어둠과 사운드, 시각효과를 활용해 긴장감을 높이고, 공포 뿐만 아니라 남녀노소가 즐기는 호러 파티도 함께 진행된다. 또한, 테마파크 내 놀이기구인 오스카 스핀, 익스프레스, 플레이그라운드를 귀몽 버전으로 동시에 체험할 수 있다. 부대공간인 귀몽마켓에는 귀몽펍, 귀몽분장샵, 귀몽푸드 등의 휴식 및 F&B 프로그램이 운영되며, 포토존이 함께 진행된다.\n귀몽은 2026년 9월 18일부터 11월 1일까지 운영되며, 체험권 구매를 통해 입장 및 참여가 가능하다.",
       "tags": [
         "가을"
       ],
@@ -18354,7 +18354,7 @@
       ],
       "lng": 126.3151497973,
       "lat": 33.3049276506,
-      "modifiedTime": "20261007164343",
+      "modifiedTime": "20261104153444",
       "place": "제주신화월드 신화테마파크",
       "playtime": "- 19:00~22:30- 입장 발권 19:00- 발권 마감 22:00※ 매주 수요일 및 10/14~10/22 행사 미진행",
       "fee": "- 30,000원- 도민 30% 할인- 노인/장애인 50% 할인",
@@ -20325,7 +20325,7 @@
       ],
       "lng": 126.8522718951,
       "lat": 35.7540218787,
-      "modifiedTime": "20261013163227",
+      "modifiedTime": "20261104110202",
       "place": "김제시 일원(벽골제 중심)",
       "playtime": "09:00 ~ 21:00",
       "fee": "무료 (일부 유료)",
@@ -20333,15 +20333,14 @@
       "program": "1. 메인 프로그램\n- 대통령배 지평선 전국 농악 경연대회 : 전국 축제 경연대회 중 유일한 대통령배 경연대회로 전국 지역 농악을 대표하는 팀들이 참가하여 우리 전통 농악의 진수를 느낄 수 있는 대회\n- 벽골제 전설 쌍용놀이 : 김제지평선축제 주무대인 벽골제에 얽힌 쌍룡 설화를 바탕으로 상황극 퍼포먼스 연출과 함께 김제시 부량면 주민들이 참여하여 진행되는 대표 전통행사 문화공연\n- 풍년기원 입석줄다리기 : 정월보름 풍년을 기원하는 전통 민속놀이로 김제시 교월동 주민들이 참여하여 운영되는 대표 전통행사 문화공연\n\n2. 체험프로그램\n- 대지아트 짚라인 체험 : 벽골제에 조성된 대규모 대지아트(논 체험장) 위를 가로지르는 이색 레저스포츠 체험\n- 아궁이 쌀밥 짓기 : 가족과 함께 소형 아궁이에서 직접 가마솥밥을 지어 먹는 체험\n- 지평선 연날리기: 전국 최대 규모의 연날리기 프로젝트로 다양한 연을 동시에 날려보는 프로그램\n\n3. 부대 프로그램\n- LED 대지아트: 한복을 입은 싸리콩이가 지평선의 풍섬함과 정겨움을 담아 맞이하는 모습을 표현한 대지아트에 축제의 주제에 부합하는 조명을 설치해 야간경관 조성\n- 싸리콩이 곤포 아트전: 축제의 감성을 보여줄 수 있는 곤포 아트전으로 싸리콩이 캐릭터부터 인기 캐릭터들까지 다양한 그림들 전시\n- 지평선 파이널 판타지쇼: 화려한 축제의 밤과 대규모 야간 볼거리로 레이저, 조명, 불꽃, 멀티미디어가 결합 된 파이널 미디어 쇼\n\n4. 기타(먹거리 등)\n- 지역특화음식 부스 : 읍면동 대표 음식뿐만 아니라, 지역 축제의 부실 먹거리를 근절하기 위한 김제 대표 맛집 선정 프로젝트 '맛보자고 컴페티션'을 통해 선정된 관내 대표음식점 음식 판매\n- 지평선 마중거리 : 젊은 층이 즐길 수 있는 간식 판매 부스 운영\n- 농특산품 직거래장터 : 김제에서 생산된 농축수산물 원물 및 가공품, 특산품 등 판매",
       "photos": [
         "https://tong.visitkorea.or.kr/cms/resource/47/3516347_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/64/4091064_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/46/4013546_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/48/3516348_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/49/3516349_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/51/3516351_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/52/3516352_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/55/3516355_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/44/4013544_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/45/4013545_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/46/4013546_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/64/4091064_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/44/4013544_image2_1.jpg"
       ]
     },
     {
@@ -20393,8 +20392,8 @@
       "sido": "충남",
       "sigungu": "계룡시",
       "address": "충청남도 계룡시 신도안면 석계리 계룡대 활주로",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/03/4091903_image2_1.JPG",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/03/4091903_image3_1.JPG",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/71/4144871_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/71/4144871_image3_1.JPG",
       "tel": "042-550-5310~2",
       "homepage": "https://armyfest.or.kr",
       "overview": "2026년 지상군페스티벌은 육군이 주최하는 대한민국 최대 군 문화축제로 국민들에게 육군의 발전과 미래정책을 홍보하고 군에 대한 신뢰도 증진과 긍정적 가치 확산 등 공익 목적의 비영리 행사이며, 10. 1.(목)부터 10. 5.(월)까지 5일간 충남 계룡대 활주로에서 개최된다. 올해로 22회를 맞이한 2026년 지상군페스티벌에서는 '국민의 일상을 지키는 대한민국 육군'을 주제로 최신 한·미 전투장비 전시 및 탑승체험, Army TIGER+와 드론봇 시범을 실시하고, AI·첨단과학기술 기반 전투체계와 변화하는 육군의 다양한 모습 등을 육군정책홍보관에서 시범·전시·체험을 통해 직접 확인할 수 있다. 또한 군악·의장대 공연, 태권도 시범, 군사경찰 MC 기동시범, 육군공연팀 퍼포먼스, 로드 퍼레이드 등 다채로운 고품격 군 문화공연을 만날 수 있다.",
@@ -20406,20 +20405,23 @@
       ],
       "lng": 127.235951,
       "lat": 36.308521,
-      "modifiedTime": "20261001102459",
+      "modifiedTime": "20261104163859",
       "place": "충남 계룡대 활주로",
       "playtime": "09:00~17:00",
       "fee": "무료",
       "sponsor": "지상군페스티벌기획단 / 육군본부",
       "program": "1. 메인프로그램\n- 개막식, 육군정책홍보관(AI기반 체계, 지능형 스마트부대 등), 기계화부대 Army TIGER+ 및 드론 유닛시범, 한·미 전투장비 전시, 로드 퍼레이드 등\n2. 부대프로그램\n- 한·미 드론경연대회, 계룡대 투어, 6·25 무공훈장 찾아주기, 의무 이동검사차량, 지상군 스탬프 투어 등\n3. 소비자 참여 프로그램\n- 전투장비 탑승체험, 군 모터사이클 탑승체험, 현궁 모의사격, 스페셜 육군과 한 컷, KCTC 마일즈 체험, 서바이벌 체험, 가족사진촬영 등\n4. 기타 내용\n- K-방산 국방일보 사진 공모전, 육군상징 헤나, 계룡이 순환열차, 에어바운스, 턱걸이 왕 선발 등",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/98/4091898_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/99/4091899_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/00/4091900_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/01/4091901_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/02/4091902_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/04/4091904_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/85/4113085_image2_1.jpeg"
+        "https://tong.visitkorea.or.kr/cms/resource/85/4113085_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/72/4144872_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/73/4144873_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/74/4144874_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/75/4144875_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/76/4144876_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/77/4144877_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/78/4144878_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/79/4144879_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/70/4144870_image2_1.JPG"
       ]
     },
     {
@@ -21475,18 +21477,21 @@
       ],
       "lng": 128.521518,
       "lat": 36.868718,
-      "modifiedTime": "20261014152046",
+      "modifiedTime": "20261104125608",
       "place": "영주시 풍기읍 남원천 및 풍기인삼공원 일원",
       "playtime": "10:00~20:00",
       "fee": "무료(일부 체험프로그램 유료)",
       "sponsor": "영주문화관광재단",
       "program": "1. 메인프로그램\n- 개삼터 고유제, 인삼대제, 주세붕군수 행차재현, 우량인삼 선발대회 및 전시 등\n2. 부대프로그램\n- 개폐막식 및 축하공연, 청소년 문화공연, 환경 노래자랑, 덴동어미 화전놀이 마당극, 소백산 풍기인삼가요제, 한마음 체육대회 등\n3. 소비자 참여 프로그램\n- 인삼깎기 경연대회, 인삼 인절미 떡메치기 등\n4. 기타 내용\n- 지역상생마켓 판매장 운영 등",
       "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/52/4110452_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/27/4144327_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/28/4144328_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/29/4144329_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/30/4144330_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/26/4144326_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/95/4106595_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/96/4106596_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/97/4106597_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/98/4106598_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/52/4110452_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/98/4106598_image2_1.jpg"
       ]
     },
     {
@@ -23952,8 +23957,8 @@
       "sido": "울산",
       "sigungu": "남구",
       "address": "울산광역시 남구 장생포고래로 244 (매암동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/98/3572398_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/98/3572398_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/73/4144373_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/73/4144373_image3_1.jpg",
       "tel": "052-270-9324",
       "homepage": "https://www.ulsanwhale.com/",
       "overview": "제30회 울산고래축제는 울산광역시 남구가 주최하고 (재)고래문화재단이 주관하는 울산의 대표적인 문화관광 축제이다. 과거 포경의 중심지였던 장생포가 고래와 인간이 공존하는 생태도시로 전환된 역사를 배경으로 하며, 2026년 축제 30주년을 맞아 '고래의 초대, 서른살 파티!'라는 주제와 '함께할 고래'라는 슬로건 아래 개최된다. 본 축제는 2026년 10월 15일(목)부터 10월 18일(일)까지 4일간 장생포 고래문화특구 일원에서 진행된다. 주요 행사 공간은 메인무대인 고래극장을 비롯해 새우마당, 고래 체험마당, 버스킹존, 소상공인 전용 플리마켓존 등으로 구성된다. 방문객 접근 편의를 위해 태화강역 광장 일원에는 환승형 웰컴 게이트가 운영된다. 축제 기간 동안 개·폐막식, 스페셜 불꽃쇼, 주제공연, 300인 시민대합창, 고래 퍼레이드 등 다양한 대표 프로그램이 운영된다. 또한 고래나라 키즈페스타, 도전! 고래 라이더 챌린지, 소원고래 프로젝트, AR 및 반응형 미디어 체험(고래의 꿈 AI존), 고래가족 댄싱스타 및 가족가요제 등 전 세대가 참여할 수 있는 다채로운 문화 체험과 경연이 펼쳐진다. 이외에도 30주년 기념 아카이브 전시 '고래의 시간'을 비롯해 먹거리 존(고래밥상), 고래 플리마켓, 연계 관광시설(고래바다여행선, 고래생태체험관, 장생포문화창고 등)을 운영하여 관람객에게 다양한 볼거리와 즐길 거리를 제공한다.",
@@ -23965,7 +23970,7 @@
       ],
       "lng": 129.3808069186,
       "lat": 35.503161519,
-      "modifiedTime": "20261027134218",
+      "modifiedTime": "20261104135829",
       "place": "장생포 고래문화특구",
       "playtime": "10:00~21:00",
       "fee": "무료",
@@ -24563,6 +24568,41 @@
         "https://tong.visitkorea.or.kr/cms/resource/92/4111092_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/88/4111088_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/89/4111089_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "3532971",
+      "title": "부산 서구 의료관광축제",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-17",
+      "sido": "부산",
+      "sigungu": "서구",
+      "address": "부산광역시 서구 송도해변로 36 (암남동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/04/4109704_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/04/4109704_image3_1.jpg",
+      "tel": "051-240-4017",
+      "homepage": "https://www.bsseogu.go.kr",
+      "overview": "제5회 부산 서구 의료관광축제가 오는 10월 16일과 17일 이틀간 송도오션파크 일원에서 서구, 부산대학교병원·동아대학교병원·고신대학교복음병원·삼육부산병원 공동 주관으로 개최된다. 이 축제는 부·울·경 최초 ‘의료관광특구’인 서구를 널리 알리는 것은 물론, '비즈니스 상담·바이어 팸투어' 등을 통해 외국인환자 유치 활성화 기반을 마련하고, 주민·관광객들에게 올바른 건강 정보와 다양한 의료 체험 기회를 제공하기 위한 것이다. 올해는 60여 개 부스에서 건강 관련 상담과 전시·홍보·체험행사가 진행된다. 공동주관 병원과 보건소, 국민건강보험공단 등 여러 의료 관련 기관이 참여해 관람객들에게 신체 검사, 스트레스 진단, 한의학 약침 진료, 올바른 약 복용 상담 등 다양한 건강 서비스와 정보를 제공한다. 또한 부산테크노파크와 함께 '의료·헬스케어 산업 홍보관'을 운영하여 서구의 의료R&D지식산업센터, 인큐베이터, 시군구연고산업, 의료실증사업 등 의료특구 서구의 핵심사업을 집중 홍보하고 사업에 참여하는 혁신기업들의 다채로운 의료헬스케어 기기도 선보인다. 현장에서는 건강 웰니스 컨셉에 맞춘 '슬로우 조깅', '사일런트 명상 요가', '크로스핏', '점핑 피트니스' 등 남녀노소가 다함께 참여할 수 있는 웰니스 체험 프로그램과 '키즈 닥터 체험관', '에어스포츠' 등 어린이 건강놀이터 및 가족단위 맞춤형 체험부스 운영으로 축제 볼거리와 즐길거리가 풍성하다. 부대행사로 고신대학교복음병원 성형외과 전문의와 함께하는 ‘건강 토크 콘서트’를 비롯해 '어린이 마술·벌룬쇼', 대형 보드게임 등 다양한 행사가 진행된다. 축제 개막식은 16일 오후 3시에 있을 예정이며, 개막 축하 무대에는 ‘미스터트롯2 진’의 '안성훈'을 비롯해 국악비보이 '라스트릿크루', 팝플룻 '서가비'가 출연해 흥겨운 무대를 선보일 예정이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 129.0174476417,
+      "lat": 35.0727182661,
+      "modifiedTime": "20261104130754",
+      "place": "송도오션파크",
+      "playtime": "10:00~18:00",
+      "fee": "무료",
+      "sponsor": "부산광역시 서구 / 부산광역시 서구, 부산대학교병원, 동아대학교병원, 고신대학교복음병원, 삼육부산병원",
+      "program": "1. 메인프로그램\n- 개막식, 특구 전시관, 의료·헬스케어 산업 홍보관\n2. 부대프로그램\n- 어린이 마술&벌룬쇼, 명의 건강토크 콘서트, 서구마블 대형 보드게임\n3. 건강 상담·체험부스\n- 병원, 보건소 및 의료기관의 신체기능검사, 스트레스 검사, 맞춤형 건강상담, 한방 진단, 약 복용 상담 등\n4. 소비자 참여 프로그램\n- 웰니스 체험 클래스(슬로우 조깅, 사일런트 명상 요가, 크로스핏 체험&미니경연대회, 점핑 피트니스), 어린이 대상(키즈닥터체험관, 에어스포츠, 친환경 나무놀이터), 기타 체험부스 (페이스페인팅, 네일아트, 키캡꾸미기, 비누슬랑이·슈링클스·키링 만들기 등)\n5. 먹거리\n- 푸드트럭(9대)",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/03/4109703_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/05/4109705_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/01/4109701_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/00/4109700_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/02/4109702_image2_1.jpg"
       ]
     },
     {
@@ -28196,7 +28236,7 @@
       ],
       "lng": 129.0521130873,
       "lat": 36.4340985891,
-      "modifiedTime": "20261026154949",
+      "modifiedTime": "20261104163920",
       "place": "청송군 청송읍 용전천 현비암 일원",
       "playtime": "09:00~20:00",
       "fee": "무료(일부 체험 프로그램 유료)",
@@ -28692,40 +28732,6 @@
       "program": "- 주요 프로그램 : 실내 공연 / 야외 버스킹 공연 / 놀이형 체험 부스 / 아트마켓 / 버블쇼 ㄷ등\n\n1. 감각을 깨우는 달콤한 무대 “라이브 컬러 스테이지”\n- 11:00~11:10 = 동심 속 사랑스러운 아이들의 공연! “아이세움 국악예술단”\n- 11:30~12:30 = 마술,버블,레이져! 모두 모여라! “매직벌룬버블쇼1”\n- 13:00~13:40 = 어린이들의 동심 속 환상의 나라! “뮤지컬 갈라쇼”\n- 14:00~15:00 = 마술,버블,레이져! 모두 모여라! “매직벌룬버블쇼2”\n\n2. 일상 속에서 만나는 공연 “도심 공감 사운드 스테이지”\n- 11:00~16:00 = 통기타 버스킹 & 버스킹 공연\n\n3. 예술로 연결되는 시민 참여 공간\n- 11:00~16:00 상시운영\n- 톡톡 감정 인형 키링 만들기_(사)안성미술협회\n- 행운의 구슬 팔찌 만들기_(사)안성국악협회\n- 닮안닮 캐리커쳐_(사)안성연극협회\n- 나만의 악기 만들기_(사)안성음악협회\n- 퍼즐놀이, 해적왕 나왔다_(사)안성문인협회\n- 글라스데코 만들기_(사)안성사진작가협회\n- 텅드럼 연주하기_계절담은 수제청\n- 수제 손도장 만들기_글소리\n- 볼펜꾸미기_더몬드리안\n- 비즈 키링 만들기_해롸별공방\n- 고양이&강아지 네임택 만들기_하늘정원\n- 꽃가지 헤어핀 만들기_베체르아\n\n※ 세부 내용은 상황에 따라 변경될 수 있음"
     },
     {
-      "id": "3401306",
-      "title": "김포 해병대 문화축제 in 대명항",
-      "startDate": "2026-11-07",
-      "endDate": "2026-11-07",
-      "sido": "경기",
-      "sigungu": "김포시",
-      "address": "경기도 김포시 대곶면 대명항1로 110-36 김포함상공원 및 대명항 일원",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/71/4131171_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/71/4131171_image3_1.jpg",
-      "tel": "031-980-5110",
-      "homepage": "https://www.gimpo.go.kr/u/53850",
-      "overview": "김포 해병대 문화축제 in 대명항은 해병대 제2사단 주둔지라는 지역적 특성을 살려 해병대의 강인한 정신과 전통을 기리는 축제이다. 해병대 장비 전시와 군악대·의장대 공연을 비롯해 강철근육 선발대회, 군번줄·팔각모 만들기 등 다양한 프로그램이 펼쳐지며, 시민들이 해병대 문화를 직접 보고 느끼며 소통할 수 있는 자리가 마련된다. 또한 수산물직판장 옥상 광장에서는 제철 수산물과 로컬푸드, 셀프 바비큐 등 김포의 먹거리를 즐길 수 있는 '선셋야장'이 함께 운영된다. 해 질 무렵 대명항의 노을을 배경으로 야시장 분위기의 먹거리장터와 버스킹이 이어진다. 낮에는 해병대 문화를, 밤에는 노을과 먹거리를 즐기는 두 가지 테마의 축제를 한 공간에서 모두 만날 수 있는 특별한 시간이다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-11"
-      ],
-      "lng": 126.539451725,
-      "lat": 37.6400140918,
-      "modifiedTime": "20261020145457",
-      "place": "김포함상공원 및 대명항 일원",
-      "playtime": "11:00~19:00",
-      "fee": "무료",
-      "sponsor": "김포시",
-      "program": "1. 주요 프로그램\n- 해병대 장비 전시 및 체험, 군악대·의장대 공연, 선셋야장(대명항 직판장 옥상) 등\n2. 부대 행사 및 프로그램\n- 군복체험, 군번줄 만들기, 팔각모 만들기, 레이저 사격 체험 등",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/70/4131170_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/72/4131172_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/73/4131173_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/74/4131174_image2_1.jpg"
-      ]
-    },
-    {
       "id": "4127761",
       "title": "마산야외도서관 [오롯이 마도로]",
       "startDate": "2026-11-07",
@@ -28897,6 +28903,38 @@
       "program": "1. 체험프로그램 : 꾸꾸의 평화선수단, 꾸꾸의 평화여행 게이트, 꾸꾸의 평화 방탈출, 평화 화랑 훈련소, 꾸꾸의 천년의 평화미소 등\n2. 공연프로그램 : 서라벌농악단(사물놀이), 어반피크닉(보컬), 여름밤잔디(어쿠스틱), 영천오페라단(오페라), 마술극단 다채(마술·연극), 청청(국악·타악)\n3. 이벤트 : 평화 터지는 에밀레종, 첨성대 스톱워치 챌린지, 평화온:담 꾸꾸네컷, 꾸꾸의 평화알 뽑기 등"
     },
     {
+      "id": "4144229",
+      "title": "MATERIALISM｜비야케 잉겔스 그룹 기획 전시",
+      "startDate": "2026-11-07",
+      "endDate": "2027-02-28",
+      "sido": "서울",
+      "sigungu": "중구",
+      "address": "서울특별시 중구 세종대로 119 (태평로1가)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/31/4144231_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/31/4144231_image3_1.jpg",
+      "tel": "070-7178-5840",
+      "homepage": "https://sca.seoul.go.kr/",
+      "overview": "국내 최초 세계적인 건축설계그룹 BIG 기획전이 서울도시건축전시관에서 진행된다. 독특하고 실험적인 동시에 사용자의 목적과 경험을 함께 고려하는 건축 스타일로 유명한 BIG 설립자인 비야케 잉겔스. 그의 창의성을 엿볼 수 있는 이번 전시는 돌·흙·콘크리트·금속·목재 등 10가지 건축 재료를 중심으로 전시물과 모형이 구성된다. 세계적인 건축설계그룹 BIG가 제시하는 건축의 과거와 현재를 살펴보고 지속 가능한 미래 도시 건축에 대한 방향성을 확인해 볼 수 있다. 기획전시 외에도 미래 도시건축을 주제로 BIG 설립자인 비야케 엥겔스의 특별강연 등 시민참여 프로그램이 진행될 예정이다.",
+      "tags": [
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-11",
+        "2026-12",
+        "2027-01",
+        "2027-02"
+      ],
+      "lng": 126.9767024196,
+      "lat": 37.5668837502,
+      "modifiedTime": "20261104110619",
+      "place": "서울도시건축전시관",
+      "playtime": "10:00~18:00",
+      "fee": "무료",
+      "sponsor": "서울특별시 / BIG, Maker, Wayd",
+      "program": "1. [기획전시] MATERIALISM｜머티리얼리즘\n- 돌·흙·콘크리트·금속·목재 등 10가지 건축 재료를 중심으로 전시물과 모형이 구성된 전시\n\n2. 특별강연｜미래도시건축 이야기 (2026.11.05 목)\n- BIG 창립자 비야케 잉겔스의 관점으로 보는 미래도시건축이야기"
+    },
+    {
       "id": "4142164",
       "title": "양동 백투더 장(BACK TO THE 장) 홍탁페스타",
       "startDate": "2026-11-12",
@@ -29044,6 +29082,35 @@
       "fee": "무료",
       "sponsor": "국민건강보험공단 대전세종충청지역본부",
       "program": "- 주요 프로그램 : 걷기 행사\n- 부대 행사 및 프로그램 : 공연 프로그램 (바이올린·차노을 초등래퍼) / 풍선 활용 무료 이벤트 / 캘리그라피 퍼포먼스 / 체험 프로그램 (자살예방 체험 부스·상담전화 인증 이벤트) / 홍보 부스 운영 등\n\n※ 부대 프로그램은 걷기 프로그램 미참여 방문객도 관람 가능"
+    },
+    {
+      "id": "3557873",
+      "title": "2026 은행나무길 거리예술제 〈아트 스트리트：Art Street〉",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
+      "sido": "충남",
+      "sigungu": "아산시",
+      "address": "충청남도 아산시 염치읍 은행나무길 293",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/37/4144137_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/37/4144137_image3_1.jpg",
+      "tel": "041-540-2428",
+      "homepage": "https://culture.asan.go.kr/",
+      "overview": "2026 은행나무길 거리예술제는 아산시 대표 가을 명소인 은행나무길 일원에서 열리는 시민 참여형 거리예술 축제이다. 올해는 「예술·놀이·쉼」을 주제로, 가을 정취 속에서 서커스·마임·저글링·타악 퍼포먼스 등 남녀노소 누구나 즐길 수 있는 넌버벌 공연과 다채로운 체험 프로그램을 선보인다. 행사 기간 동안 거리공연존, 체험존, 로컬존, 휴게존을 중심으로 전문 예술단체와 지역예술인이 함께 무대를 꾸미며, 어린이를 위한 서커스 체험공간과 가족 단위 체험 부스를 통해 관람객의 적극적인 참여를 유도한다. 또한 지역 농특산물 판매와 연계된 프로그램을 운영하여 지역 농가 소득 증대와 판로 확대에도 기여하고자 한다. 본 축제는 예술성과 대중성을 동시에 갖춘 거리예술 콘텐츠로서 시민과 관광객에게 풍성한 문화 향유 기회를 제공하고, 아산시를 대표하는 문화관광 브랜드로 자리매김할 것으로 기대된다.",
+      "tags": [
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 127.0187977731,
+      "lat": 36.8005410219,
+      "modifiedTime": "20261104094631",
+      "place": "아산 은행나무길 (아산시이순신관광체험센터 앞)",
+      "playtime": "13:00~17:00",
+      "fee": "무료",
+      "sponsor": "아산시 / 재단법인 아산문화재단",
+      "program": "- 주요 프로그램 : 서커스 퍼포먼스 / 거리 퍼레이드 / 이동형 공연 / 지역예술인 참여공연\n- 부대 행사 및 프로그램 : 체험프로그램(은행나무길 컨셉을 활용한 프로그램) / 로컬 아트마켓 / K-한복 포토 스튜디오 / 세계 전통의상 패션쇼 / 장애 예술인 패션소품 제작·판매 / 지역예술인 작품 전시 등"
     },
     {
       "id": "4115096",
@@ -29610,6 +29677,35 @@
       "fee": "무료",
       "sponsor": "(사)강릉단오제위원회 / 강원특별자치도, 강릉시",
       "program": "- 기간 : 11/26 18:30\n- 주요 프로그램 : 안예은, 추다혜차지스\n\n- 기간 : 11/27 10:30\n- 주요 프로그램 : 어울림전통연희한마당\n\n- 기간 : 11/27 18:30\n- 주요 프로그램 : 연합공연 (태극, 최혜선da 댄스컴퍼니, 국악밴드해랑, 갯마당)\n\n- 기간 : 11/28 16:30\n- 주요 프로그램 : 영산홍콘서트"
+    },
+    {
+      "id": "3396705",
+      "title": "울산문화박람회",
+      "startDate": "2026-11-26",
+      "endDate": "2026-11-29",
+      "sido": "울산",
+      "sigungu": "울주군",
+      "address": "울산광역시 울주군 삼남읍 울산역로 255",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/24/4144124_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/24/4144124_image3_1.jpg",
+      "tel": "052-255-1946",
+      "homepage": "https://www.uce.or.kr/",
+      "overview": "2026 울산문화박람회는 「나의 울산, 우리의 도시」를 슬로건으로, 시민 한 사람 한 사람의 일상과 이야기가 모여 도시의 문화가 되는 과정을 함께 나누는 종합 문화축제이다. 2025년 7월 「반구천의 암각화」가 유네스코 세계유산에 등재되면서 울산은 오랜 역사와 현대 문화가 공존하는 도시로 주목받고 있다. 선사시대 사람들이 바위에 자신들의 삶을 새겼듯, 오늘의 울산 사람들도 각자의 자리에서 저마다의 방식으로 도시의 문화를 새겨 가고 있다. 올해 박람회는 「나의 울산」에서 출발한 개개인의 문화가 「우리의 도시」라는 공동의 자산으로 이어지는 흐름에 주목한다. 이번 박람회의 핵심 가치는 「함께 성장하는 문화 거버넌스」이다. 시민과 지역 문화예술인, 문화기업, 대학, 공공기관이 기획부터 운영까지 함께 참여해, 일방적으로 보여주는 전시를 넘어 모두가 함께 만들어 가는 문화의 장을 펼친다. 아울러 전국 문화도시 관계자들과의 교류 프로그램을 통해 울산의 문화도시 경험을 나누고 지역 간 협력의 폭을 넓혀 간다. 2026 울산문화박람회는 시민이 문화의 주체로서 도시의 내일을 그려 가는 문화도시 울산의 대표 문화 플랫폼으로 자리매김하고자 한다.",
+      "tags": [
+        "전시/예술",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 129.1316552505,
+      "lat": 35.5556181512,
+      "modifiedTime": "20261104092934",
+      "place": "유에코(UECO)",
+      "playtime": "10:00~18:00",
+      "fee": "무료(일부 유료)",
+      "sponsor": "(재)울산문화관광재단",
+      "program": "- 주요프로그램 : 문화콘텐츠관 전시(미래도시관 / 지역문화관 등)\n- 부대 행사 및 프로그램 : 문화도시 울산 포럼 / 비즈니스 매칭 프로그램 / 시민 참여형 프로그램(5개 구·군 대표 콘텐츠) / 이벤트 존 / 문화공연 등"
     },
     {
       "id": "3437916",
