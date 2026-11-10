@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-08T22:41:08.033Z",
+    "fetchedAt": "2026-11-10T01:54:16.461Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 856,
+    "count": 858,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -29259,6 +29259,47 @@
       "program": "- 주요 프로그램 : 로컬희망창업 3기 오픈 기념 현판 수여식 / 원도심 상점가 구매금액별 페이백 이벤트\n- 부대 행사 및 프로그램 : 원도심 점포 방문 온라인 스탬프투어 / 버스킹·외국인 등 문화공연 / 럭키드로우 경품 추첨 / 창업점포 QR 보물찾기 / 달고나 만들기·네잎클로버 키링 만들기·볼펜 꾸미기 체험 / 타임편지 작성 체험 / 로컬희망창업 3기 신규 창업점포 홍보존 / 원도심 상인회 및 국가별 먹거리 홍보존"
     },
     {
+      "id": "2646950",
+      "title": "진안고원 김치보쌈축제",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-15",
+      "sido": "전북",
+      "sigungu": "진안군",
+      "address": "전북특별자치도 진안군 진안읍 진무로 1166 진안로컬푸드진안점",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/78/4149678_image2_1.jpeg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/78/4149678_image3_1.jpeg",
+      "tel": "063-433-6613",
+      "homepage": "https://www.jinankimchi.kr",
+      "overview": "진안고원 김치보쌈축제는 전북특별자치도 진안군에서 개최되는 지역축제로, 우리나라 고유의 전통문화인 김장문화를 축제와 접목하여 가족과 이웃이 함께하는 공동체 문화를 확산하기 위해 마련된 축제이다. 핵가족화와 1인 가구 증가 등으로 점차 변화하는 식생활 환경 속에서 김장문화의 전통적 가치를 되새기고, 김치를 함께 담그고 나누는 과정을 통해 이웃 간 정을 나누는 데 목적이 있다. 진안고원의 청정 자연환경에서 생산된 지역 농산물을 활용한 김장 체험과 김치 및 보쌈 먹거리 프로그램 등 다양한 체험·참여 행사가 운영되며, 지역 농특산물의 우수성을 알리고 지역 농산물 소비를 촉진하는 역할도 하고 있다. 전통 김장문화의 계승과 지역 농산물의 가치를 함께 경험할 수 있는 축제이다.",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 127.4339300277,
+      "lat": 35.7953163124,
+      "modifiedTime": "20261109171214",
+      "place": "진안로컬푸드진안점",
+      "playtime": "10:30~17:00",
+      "fee": "무료 (일부 체험 프로그램 유료 - 우리집 김장담그기 체험)",
+      "sponsor": "진안군 / 진안YMCA",
+      "program": "- 개막행사\n- 무대 이벤트\n- 신나는 예술버스\n- 김장골든벨\n- SHOW ME THE 김장\n- 가을음악콘서트\n- 홍삼칵테일 이벤트\n- 트롯콘서트\n- 밴드콘서트\n- 상설운영 : 김치마을 팝업존, 플리마켓, 고원구이존, 먹거리부스\n- 우리집 김장담그기 체험 : 1일 3타임\n체험비 : 185,000원(1세트 절임배추 20kg + 양념 10kg)\n모집기간 : 선착순마감시까지",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/86/4149686_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/89/4149689_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/87/4149687_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/85/4149685_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/84/4149684_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/83/4149683_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/81/4149681_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/79/4149679_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/80/4149680_image2_1.jpeg",
+        "https://tong.visitkorea.or.kr/cms/resource/77/4149677_image2_1.jpeg"
+      ]
+    },
+    {
       "id": "4115275",
       "title": "쿼드, 연극의 질문들：〈화염〉",
       "startDate": "2026-11-14",
@@ -29493,12 +29534,12 @@
       ],
       "lng": 127.0095547691,
       "lat": 37.5660539726,
-      "modifiedTime": "20261026101847",
+      "modifiedTime": "20261109130039",
       "place": "동대문디자인플라자 아트홀 1·2관",
       "playtime": "[11/20~11/21]- 10:00~19:00- 입장 마감 18:30[11/22]- 10:00~18:00- 입장 마감 17:30",
       "fee": "무료",
       "sponsor": "문화체육관광부 / 한국관광공사",
-      "program": "- 기간 : 11.20.(금)~11.21.(토) 10:00~19:00 / 11.22.(일) 10:00~18:00\n- 주요 프로그램 : 관광기념품 전시 및 판매 / 2026 대한민국 관광공모전 기념품 부문 시상식 / 수상작 25점 전시 / 온·오프라인 B2B 상담\n- 부대 행사 및 프로그램 : K-굿즈 수집 미션 / 수상작 엽서 배포 / 산타대감 캐릭터 퀴즈 및 기념촬영 / 키캡 키링 만들기 체험/ 무대 프로그램"
+      "program": "- 기간 : 11.20.(금)~11.21.(토) 10:00~19:00 / 11.22.(일) 10:00~18:00\n- 주요 프로그램 : 관광기념품 전시 및 판매 / 2026 대한민국 관광공모전 기념품 부문 시상식 / 수상작 25점 전시 / 온·오프라인 B2B 상담\n- 부대 행사 및 프로그램 : 레이어드 스탬프 투어 / 브랜드 이야기 강연 / K-굿즈 글로벌 PICK / 무대 프로그램"
     },
     {
       "id": "1129018",
@@ -29567,6 +29608,41 @@
         "https://tong.visitkorea.or.kr/cms/resource/96/4101396_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/97/4101397_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/98/4101398_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "3301415",
+      "title": "무안 YD 페스티벌",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-22",
+      "sido": "전남",
+      "sigungu": "무안군",
+      "address": "전남광주통합특별시 무안군 삼향읍 대죽서로16번길 16 남악중앙공원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/08/4131308_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/08/4131308_image3_1.JPG",
+      "tel": "061-450-5474",
+      "homepage": "https://tour.muan.go.kr/tour/festival/yd_festival/introduce",
+      "overview": "무안YD페스티벌은 청년들의 문화 참여와 소통을 위해 무안군에서 개최하는 청년문화 축제이다. 2026년 제6회 무안YD페스티벌은 11월 20일부터 22일까지 3일간 무안군 삼향읍 남악중앙공원에서 개최되며, 올해 주제는 ‘PLAY YD’이다. 청년들이 다양한 문화 콘텐츠를 직접 즐기고 참여할 수 있도록 공연, 체험, 참여형 프로그램 등으로 구성하며, 청년들의 꿈과 끼를 펼칠 수 있는 기회와 청년 간 교류·소통의 장을 제공한다. 지역 청년을 비롯해 군민과 관광객이 함께 참여할 수 있는 프로그램을 운영하고, 청년문화에 대한 관심과 참여 기회를 확대하는 행사이다. 또한 청년도시 무안의 청년문화와 지역의 다양한 매력을 알리고, 청년들이 함께 어울리며 문화를 즐길 수 있는 공간을 마련하기 위해 추진하는 축제이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 126.4628109019,
+      "lat": 34.8111428583,
+      "modifiedTime": "20261109095851",
+      "place": "남악중앙공원",
+      "playtime": "09:00~22:00",
+      "fee": "무료(일부 프로그램 유료)",
+      "sponsor": "무안군 / 무안군 축제추진위원회",
+      "program": "1. 메인프로그램 : 개막퍼레이드, 축하콘서트, 길거리 농구대회 등\n2. 부대프로그램 : 국화 전시, 농수특산물 판매, 청년 참여 프로그램 등\n3. 소비자 참여 프로그램 : 드론조종, 뷰티, AI게임 등 체험 프로그램\n4. 기타 내용 : 거리퍼레이드, 버스킹 등 공연 행사 및 각종 홍보",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/05/4131305_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/06/4131306_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/07/4131307_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/03/4131303_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/04/4131304_image2_1.jpg"
       ]
     },
     {
@@ -29761,7 +29837,7 @@
       "image": "https://tong.visitkorea.or.kr/cms/resource/49/4130849_image2_1.png",
       "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/49/4130849_image3_1.png",
       "tel": "070-4680-1718",
-      "homepage": "https://litt.ly/christmasvillagebusan",
+      "homepage": "https://marketchango.com",
       "overview": "11월 26일부터 12월 25일까지 부산 영화의전당에서 '1년에 한 번, 부산에 나타나는 크리스마스 마을' ‘크리스마스 빌리지 부산 2026’이 펼쳐진다. 지난해 45만 명이 찾은 크리스마스 빌리지 부산이 올해는 걷고, 보고, 맛보고, 경험하는 머무는 크리스마스 테마파크로 돌아온다. 산타와 우편배달부, 산장 주인 등 마을 사람들이 반겨주는 살아있는 마을에서 눈 내리는 광장과 퍼레이드, 성가대 공연, 강레오 셰프와 부산 로컬 브랜드의 크리스마스 한정 메뉴, 선물 상점과 시즌 한정 팝업까지 즐길 수 있다. 올해는 유료 티켓제로 운영해 웨이팅과 혼잡을 줄이고 더 여유롭게 즐길 수 있도록 했다. 크리스마스의 설렘으로 가득한 크리스마스 빌리지 부산은 11월 26일부터 12월 25일까지 영화의전당에서 만날 수 있다.",
       "tags": [
         "가을"
@@ -29772,7 +29848,7 @@
       ],
       "lng": 129.1270422473,
       "lat": 35.1709631305,
-      "modifiedTime": "20261020091925",
+      "modifiedTime": "20261109104906",
       "place": "영화의전당",
       "playtime": "- 평일 16:00~22:00- 주말/크리스마스시즌 11:00~22:00",
       "fee": "유료",
