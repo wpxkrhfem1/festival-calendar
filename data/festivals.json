@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-10T01:54:16.461Z",
+    "fetchedAt": "2026-11-10T23:55:58.541Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 858,
+    "count": 859,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -12179,21 +12179,21 @@
       ],
       "lng": 126.9811749103,
       "lat": 37.2665289945,
-      "modifiedTime": "20260617154816",
+      "modifiedTime": "20261111084802",
       "place": "경기아트센터 소극장 / 경기아트센터 컨벤션홀 / 경기문화재단 예술인의집(다목적홀)",
       "playtime": "10:30~17:00",
       "fee": "- 20,000원- 얼리버드 할인가 14,000원",
       "sponsor": "사단법인 경기인형극진흥회 / 경기인형극제 행사위원회",
       "program": "- 주요 프로그램 : 극단 공연 ( 극단 영의 / 극단 문(門) / 극단 목동 / 극단 Dazuma(체코) )\n- 부대 행사 및 프로그램 : 각 공연장 별 포토존 및 출연진과 사진 촬영",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/44/4076544_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/45/4076545_image2_1.PNG",
         "https://tong.visitkorea.or.kr/cms/resource/46/4076546_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/48/4076548_image2_1.PNG",
         "https://tong.visitkorea.or.kr/cms/resource/49/4076549_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/48/4076548_image2_1.PNG",
+        "https://tong.visitkorea.or.kr/cms/resource/45/4076545_image2_1.PNG",
+        "https://tong.visitkorea.or.kr/cms/resource/52/4076552_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/50/4076550_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/51/4076551_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/52/4076552_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/44/4076544_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/51/4076551_image2_1.JPG"
       ]
     },
     {
@@ -21975,8 +21975,8 @@
       "sido": "광주",
       "sigungu": "동구",
       "address": "전남광주통합특별시 동구 금남로3가",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/71/3584471_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/71/3584471_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/15/4151215_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/15/4151215_image3_1.jpg",
       "tel": "062-608-4672",
       "homepage": "http://recollection.kr/index.php",
       "overview": "광주 추억의 충장축제는 전남광주통합특별시 최고의 상권인 전남광주 동구 '충장로'에서 시작된 전남광주통합특별시 최대 규모의 광주대표 축제이다. 이 축제는 '추억'이라는 보편적 소재를 통해 세대와 계층을 아우르는 '국내 최초의 추억 테마 축제'로서 특별한 의미를 지닌다. 누구나 간직하고 있는 소중한 추억을 공유하며, 다양한 연령대와 배경을 가진 사람들이 하나로 어우러지는 새로운 추억을 만들어내는 추억생산의 공간을 만들어낸다.\n특히 축제의 핵심 공간인 금남로와 5·18민주광장이라는 세계 민주주의 역사 속 의미 깊은 공간을 중심으로 펼쳐진다는 점에서, 단순한 지역축제를 넘어선 역사적·문화적 가치를 담고 있다. 민주화의 성지에서 열리는 축제로서 과거의 아픔을 딛고 희망찬 미래를 향한 시민들의 의지를 보여주는 상징적 의미를 지닌다.\n충장축제는 그 우수성을 대외적으로 인정받아 2024년 문화체육관광부 명예 문화관광축제로 최초 지정된 이후, 2026~2027년 명예 문화관광축제로 재선정되며 4년 연속(2024년~2027년) 명예 문화관광축제 자리를 지켰다. 또한 2026년 대한민국축제콘텐츠대상에서 ‘글로벌 명품 부문 대상’을 수상하여 광주 추억의 충장축제가 10년 연속 대상을 차지하는 성과를 거두어 대한민국을 대표하는 글로벌 명품 축제로서의 위상을 다시 한번 입증했다.\n향후 국립아시아문화전당과의 협력을 통해 지역을 넘어 아시아 전체의 문화와 추억을 아우르는 국제적 축제로 발전하는 큰 포부를 가지고 있으며, 광주가 아시아 문화중심도시로서의 위상을 높이는 동시에 문화를 통한 소통과 화합의 장을 제공하는 소중한 역할을 수행하고 있다.",
@@ -21988,22 +21988,22 @@
       ],
       "lng": 126.91587,
       "lat": 35.150241,
-      "modifiedTime": "20260930172414",
+      "modifiedTime": "20261111084803",
       "place": "금남로, 충장로, 5.18민주광장, 예술의거리 일원",
       "playtime": "14:00~22:00",
       "fee": "무료",
       "sponsor": "전남광주통합특별시 동구, 광주특별시문화관광재단, 충장축제위원회",
       "program": "1. 일자별 금남로 메인 프로그램\n- 1일차 : 개막쇼\n- 2일차 : 충장 꿈나무 축제, 젊음의 행진, 충장 발광 나이트\n- 3일차 : K-뷰티&한복쇼, 아시아 컬처쇼, 충장 W(world) 퍼레이드\n- 4일차 : 광주 주먹밥 콘테스트, 충장 K(korea) 퍼레이드, 충장 O(original) 퍼레이드\n- 5일차 : 주민자치 페스티벌 본선, 충장 골든 퍼레이드, 폐막 퍼포먼스\n\n2. 금남로 부대 프로그램\n- 푸드트럭&힐링쉼터, 행정동 퍼레이드 상징물 전시, 복싱대회, 렛츠GO! 저스트 댄스! 등\n\n3. 신서석로 프로그램\n- 추억의 노래 테마거리, 추억 유랑단 등\n\n4. 충장로 및 예술의 거리 프로그램\n- 판판판(춤판,놀판,노래판), 인생 최고의 대로 등\n\n5. 협력 행사\n- 제5회 광주 버스킹월드컵 등",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/72/3584472_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/73/3584473_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/74/3584474_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/75/3584475_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/76/3584476_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/77/3584477_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/78/3584478_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/79/3584479_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/55/4107055_image2_1.JPG"
+        "https://tong.visitkorea.or.kr/cms/resource/55/4107055_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/18/4151218_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/19/4151219_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/16/4151216_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/17/4151217_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/14/4151214_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/13/4151213_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/11/4151211_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/12/4151212_image2_1.jpg"
       ]
     },
     {
@@ -22514,8 +22514,8 @@
       "sido": "전북",
       "sigungu": "군산시",
       "address": "전북특별자치도 군산시 장미동 13-1",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/49/4107749_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/49/4107749_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/31/4150731_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/31/4150731_image3_1.JPG",
       "tel": "063-454-3912, 3913",
       "homepage": "https://jjambbong.kr/",
       "overview": "군산짬뽕페스티벌은 군산의 대표 음식인 짬뽕을 활용한 대표 미식 축제로 바다의 신선한 해산물과 풍부한 지역 농산물이 가득 담긴 군산짬뽕의 맛을 즐길 수 있는 축제이다. 군산짬뽕은 1970년대 초까지 화교들이 돼지·소·닭 뼈 육수로 만들던 ‘초마면’이라는 음식에 항구도시 특유의 신선한 해산물과 한국인의 입맛에 맞는 얼큰한 고춧가루가 더해지면서 오늘날 우리가 즐기는 짬뽕이 되었다. 행사장에는 중식 부스, 먹거리 부스뿐만 아니라 짬뽕을 주제로 한 다양한 체험 프로그램, 다채로운 무대 공연까지 준비되어 있어 방문객들에게 특별한 맛과 즐거움을 선사할 예정이다.",
@@ -22528,19 +22528,20 @@
       ],
       "lng": 126.7139462,
       "lat": 35.9896779,
-      "modifiedTime": "20261020100736",
+      "modifiedTime": "20261111084803",
       "place": "군산시 백년광장 일원",
       "playtime": "12:00~22:00",
       "fee": "무료",
       "sponsor": "군산시",
       "program": "1. 메인프로그램\n- 중식 판매부스\n2. 부대프로그램\n- 먹거리 부스\n3. 소비자 참여 프로그램\n- 보글보글 소원 짬뽕탕, K-관광섬을 이겨라\n4. 기타 내용\n- 초청 셰프 부스, 공연 프로그램(밴드, 마술 등)",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/03/3568603_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/04/3568604_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/05/3568605_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/06/3568606_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/35/4107735_image2_1.jpeg",
-        "https://tong.visitkorea.or.kr/cms/resource/48/4107748_image2_1.jpg"
+        "https://tong.visitkorea.or.kr/cms/resource/33/4150733_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/34/4150734_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/32/4150732_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/30/4150730_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/29/4150729_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/28/4150728_image2_1.JPG"
       ]
     },
     {
@@ -24974,34 +24975,6 @@
       "fee": "무료",
       "sponsor": "UNICA 세계 연맹 / 사단법인 영화로 세상을 아름답게",
       "program": "- 주요 프로그램 : 영화제\n- 부대 행사 및 프로그램 : 캘리그라피 휘호 / 영화 리뷰마당 / 심사평 및 토론 / 포토존 운영 / 폐막식(선착순 20명) / 관객이 뽑는 인기상 등\n\n1. 국제 단편영화\n- Humanity\n- 페이퍼 하트\n- A Taste of Love\n- 시계꽃\n\n2. 국제 장편영화\n- 꽃자리에 앉아\n- 미래의 내일\n- 부흥의 방식"
-    },
-    {
-      "id": "3315407",
-      "title": "2026 제3차 제물포웨이브마켓",
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-18",
-      "sido": "인천",
-      "sigungu": "제물포구",
-      "address": "인천광역시 제물포구 월미로 33 (북성동1가)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/65/4120465_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/65/4120465_image3_1.jpg",
-      "tel": "010-9265-3796",
-      "homepage": "https://www.instagram.com/jemulpowav_official",
-      "overview": "2026 제물포 웨이브 마켓은 10월 17일부터 18일까지 이틀간 인천 제물포구 상상플랫폼 웨이브홀에서 열리는 가을 피크닉형 로컬 마켓 행사이다. 운영 시간은 오전 11시부터 오후 6시까지이며, 실내 공간에서 진행되는 행사이다. 인천 지역 로컬 브랜드 56팀이 참여하며 도시락과 핫푸드, 수제 음료, 제철 농산물, 공예품, 패션·문화 상품 등을 판매하는 마켓으로 구성된다. 행사 기간에는 마술공연과 버블쇼, 풍선아트, 폴라로이드 촬영 프로그램이 운영되며 패션 페인팅, 핸드크림 만들기, 가죽 팔찌 만들기, 키캡 키링 만들기, 마리모 만들기, 슬라임 만들기 등 체험 프로그램도 진행된다. 보물찾기, 링 토스, 주사위, 컵 스택, 10초 맞히기 등 참여형 놀이 이벤트도 함께 운영되는 행사이다. 또한 마켓 이용권 할인, 구매 스탬프 쿠폰, 제물포구 영수증 인증, 인천e지 스탬프 투어, 리유저블백 증정 등 구매 연계 혜택이 마련되어 있다. 인천광역시가 주최하고 인천관광공사가 주관하며 제물포구가 후원하는 행사이다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-10"
-      ],
-      "lng": 126.6146527143,
-      "lat": 37.4760834131,
-      "modifiedTime": "20261012144115",
-      "place": "상상플랫폼",
-      "playtime": "11:00~18:00",
-      "fee": "무료",
-      "sponsor": "인천광역시 / 인천관광공사",
-      "program": "- 주요 프로그램 : 인천 로컬브랜드 56팀 마켓 운영 / 가을 피크닉 캠핑존 운영 / 도시락·핫푸드·수제음료·제철 농산물·로컬 공예·패션·문화상품 판매\n\n- 부대 행사 및 프로그램 : 마술공연 / 버블쇼 / 삐에로 풍선아트 / 폴라로이드 촬영 / 보물찾기 / 링 토스 / 행운의 주사위 / 컵 스택 / 10초를 잡아라 / 패션 페인팅 / 핸드크림 만들기 / 가죽 팔찌 만들기 / 키캡 키링 만들기 / 마리모 만들기 / 슬라임 만들기\n\n- 1만원 마켓 이용권 20% 할인 판매\n- 구매 스탬프 3개 적립 시 3,000원 쿠폰 제공\n- 제물포구 3만원 이상 영수증 인증 시 3,000원 쿠폰 제공\n- 인천e지 스탬프 투어 연계 혜택\n- 5만원 이상 구매 시 리유저블백 증정\n- 놀이 이벤트 회차별 1등 마켓 이용권 제공"
     },
     {
       "id": "3530139",
@@ -27933,6 +27906,43 @@
       "program": "1. 메인프로그램 : 전문가 메이커, 일반 메이커, 중고등메이커, 자체협력기관, 오픈마이크, 만들레 경진대회, 마차극장(공연)\n2. 부대프로그램 : 스템프 투어, 어트랙션, 경품추첨\n3. 소비자 참여 프로그램 : 35개부스 체험 및 전시, 고카트 드라이빙, 물로켓 등\n4. 기타 : 푸드트럭, 플레이포토존, 휴게공간 등"
     },
     {
+      "id": "3348362",
+      "title": "성북거리문화축제 다다페스타",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "sido": "서울",
+      "sigungu": "성북구",
+      "address": "서울특별시 성북구 장월로 149 (장위동) 꿈의숲아이파크-래미안장위퍼스트하이 사이길",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/37/4113337_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/37/4113337_image3_1.JPG",
+      "tel": "02-6906-9298",
+      "homepage": "https://dadafesta.github.io/",
+      "overview": "제3회 성북거리문화축제 다다페스타는 성북구의 거리와 그 거리문화를 특색있게 소개하고 즐기는 행사로 다양한 주민들과 함께 만들어가는 지역밀착형 축제이다. 올해는 특별히 성북구의 장위뉴타운 일대에서 개최되어 신규 입주민과 기존 지역 주민들이 함께 즐기는 축제를 만들어나갈 예정이다. 성북거리문화축제 다다페스타에서는 다양한 무대와 거리 공연, 한국예술종합학교를 비롯한 지역 대학생들의 창작 활동, 어린이 플리마켓, 성북구에 위치한 지역 단체와 유관 기관의 홍보, 지역가게들과 함께하는 부스, 성북축제학교 참여자들이 만드는 체험과 이벤트 등 다양한 콘텐츠를 만날 수 있다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-10"
+      ],
+      "lng": 127.0510932378,
+      "lat": 37.6182190963,
+      "modifiedTime": "20261111084802",
+      "place": "꿈의숲아이파크-래미안장위퍼스트하이 사이길",
+      "playtime": "11:00~17:00",
+      "fee": "무료",
+      "sponsor": "성북구 / 성북문화재단",
+      "program": "1. 공연다다\n- 대학생, 지역 청년예술가, 지역주민, 동아리들이 선보이는 다양한 무대와 거리 공연\n2. K-ARTS MARKET\n- 한국예술종합학교 학생들의 창작물을 전시하고 판매하며 창작활동 소개\n3. 다다핸드마켓\n- 지역의 공방 커뮤니티 및 인근 지역가게들이 참여하는 수공예품 마켓\n4. 다다푸드마켓\n- 다양한 먹거리를 즐기는 음식 부스\n5. 다다어린이마켓\n- 어린이들이 직접 만들어나가는 플리마켓\n6. 로컬인다다\n- 지역단체와 유관기관, 주민모임의 활동 소개와 체험\n7. 다다랜드\n- 성북축제학교 참여자들과 함께하는 놀이 및 체험 프로그램",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/31/4113331_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/38/4113338_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/36/4113336_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/33/4113333_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/35/4113335_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/34/4113334_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/32/4113332_image2_1.JPG"
+      ]
+    },
+    {
       "id": "2874909",
       "title": "여수밤바다 불꽃축제",
       "startDate": "2026-10-31",
@@ -28215,7 +28225,7 @@
       ],
       "lng": 129.0521130873,
       "lat": 36.4340985891,
-      "modifiedTime": "20261105085539",
+      "modifiedTime": "20261111084803",
       "place": "청송군 청송읍 용전천 현비암 일원",
       "playtime": "09:00~20:00",
       "fee": "무료(일부 체험 프로그램 유료)",
@@ -28553,42 +28563,6 @@
       "fee": "- 성인/청소년 11,000원 - 국가유공자 5,500 - 장애인/아동 무료 - 슈퍼 얼리버드 할인(성인/청소년) 6,000원 ※ 한정 수량 소진 시, 조기 마감 ※ 국가유공자/장애인 증빙서류 지참 필수",
       "sponsor": "오씨메이커스",
       "program": "- 주요 프로그램 : 공모전 수상작 특별전시\n- 부대 행사 및 프로그램 : 키캡 전시존 / 스탬프 투어 / 포토존 / 드로잉월\n※ 프로그램은 추후 업데이트 예정이며 상황에 따라 변동될 수 있음"
-    },
-    {
-      "id": "3400809",
-      "title": "어부장터X포트빌리지 통영",
-      "startDate": "2026-11-06",
-      "endDate": "2026-11-08",
-      "sido": "경남",
-      "sigungu": "통영시",
-      "address": "경상남도 통영시 도남동 650-3",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/15/4107915_image2_1.JPG",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/15/4107915_image3_1.JPG",
-      "tel": "070-4680-1718",
-      "homepage": "http://xn--or3b13mug43d97vxwa.kr/main/main.php",
-      "overview": "2026 어부장터 X 포트빌리지 통영은 통영 어부장터와 항구 미식 축제 포트빌리지가 협업하여 선보이는 지역 미식 축제이다. 2026년 11월 6일부터 11월 8일까지 3일간 통영시 도남동 트라이애슬론광장에서 개최되며, 굴·장어·멍게·홍가리비 등 통영의 대표 수산물과 지역 식재료를 활용한 다양한 미식 콘텐츠를 선보이는 행사이다. 주요 프로그램은 일반 먹거리와 퍼포먼스 부스를 비롯해 체험 부스 10개, 라이프스타일 부스 9개, 홍보 팝업 6개, 통영수산식품대전 20개 부스 등으로 구성된다. 또한 오이스터바와 로바다야끼, 통영막걸리 팝업, DJ 부스가 운영되며, NPC 퍼레이드는 하루 3회(12:30·15:30·18:30) 진행된다. 축제는 통영의 수산물과 미식 문화를 다양한 체험 및 현장 콘텐츠로 연결하고, 지역 브랜드와 생산자가 방문객을 만나는 기회를 제공하는 행사이다. 또한 축제 전후의 홍보와 콘텐츠, 브랜드 성과를 연계하여 일회성 행사에 그치지 않고 통영의 관광 및 지역 브랜드와 연결하는 미식 플랫폼으로 운영하는 것을 주요 방향으로 한다.",
-      "tags": [
-        "먹거리",
-        "가을"
-      ],
-      "months": [
-        "2026-11"
-      ],
-      "lng": 128.433803,
-      "lat": 34.825576,
-      "modifiedTime": "20261027172422",
-      "place": "트라이애슬론 광장",
-      "playtime": "10:00~21:00 (라스트오더 20:00)",
-      "fee": "무료",
-      "sponsor": "통영시 / 푸드트래블",
-      "program": "1. 메인프로그램 : 로컬 F&B 및 지역 음식 콘텐츠\n- 굴·장어·멍게·홍가리비 등 통영의 대표 수산물과 지역 음식\n- 통영 로컬 브랜드 및 지역 식재료를 활용한 미식 콘텐츠\n- 통영수산식품대전 SEAFOOD MARKET 20개 부스\n- 오이스터바·로바다야끼 등 현장 체험 미식 공간\n- 통영막걸리 팝업 진행\n\n2. 부대프로그램 : 체험·공연·브랜드 콘텐츠\n- 바다·공예 등 체험 부스 10개\n- NPC 퍼레이드 (1일 3회, 12:30·15:30·18:30)\n- 라이프스타일 부스 9개\n- 통영 브랜드 홍보 팝업 6개\n- DJ 부스 및 현장 공연 콘텐츠",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/47/4101147_image2_1.png",
-        "https://tong.visitkorea.or.kr/cms/resource/16/4107916_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/13/4107913_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/17/4107917_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/14/4107914_image2_1.JPG"
-      ]
     },
     {
       "id": "2997830",
@@ -29044,42 +29018,6 @@
       "program": "- 주요 프로그램 : 우리술품평회 / 무대프로그램(칵테일쇼,한식페어링쇼,스탠드업코미디쇼 등)\n- 부대 행사 및 프로그램 : 우리술 클래스(맞걸리빚기 및 와인담그기 체험) / 한과 만들기 체험 / 나만의 술잔 만들기 체험 / 이벤트 (미션빙고, 구매영수증, 만족도 조사 참여, 소비자 품평회) / 푸드트럭 운영 등"
     },
     {
-      "id": "2995190",
-      "title": "누들대전축제",
-      "startDate": "2026-11-13",
-      "endDate": "2026-11-15",
-      "sido": "대전",
-      "sigungu": "중구",
-      "address": "대전광역시 중구 계룡로904번길 30 (문화동) 대전 한빛탑광장",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/35/4138635_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/35/4138635_image3_1.jpg",
-      "tel": "042-251-3801",
-      "homepage": "https://noodle-dj.com/",
-      "overview": "누들대전축제는 대전일보사가 주최하고 대전광역시가 후원하는 대전의 대표 미식축제이다. 대전의 새로운 관광자원 발굴을 위해 기획된 이 축제는 전국 최대 규모를 자랑하는 칼국수, 그리고 세대를 이어온 원조의 맛까지 다양한 면요리를 한자리에서 즐길 수 있는 특별한 장으로 마련된다. 올해 축제에서는 세계 각국의 면요리를 맛볼 수 있는 ‘글로벌 누들존’, 지역 조리학과 학생들의 창의적 도전을 확인할 수 있는 ‘누들마스터경연대회’, 역대 누들축제 주제관, 그리고 유명 셰프들이 선보이는 화려한 ‘스타셰프 쿠킹쇼’ 와 모두가 즐길수 있는 다채로운 프로그램이 마련되어 있다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-11"
-      ],
-      "lng": 127.4119234684,
-      "lat": 36.3209285835,
-      "modifiedTime": "20261028145044",
-      "place": "대전 서대전시민광장",
-      "playtime": "16:00~21:00 / 14~15일 12:00~21:00",
-      "fee": "무료 (먹거리존 및 일부 소상공인 연계 체험프로그램 유료)",
-      "sponsor": "대전일보사",
-      "program": "1. 메인프로그램\n- 글로벌 누들존\n2. 부대프로그램\n- 스타셰프쿠킹쇼, 누들주제관, 누들마스터경연대회, 푸드트럭존\n3. 소비자 참여 프로그램\n- 무대 레크레이션(라면 맞추기, 누들컵쌓기 등) 및 전연령 체험형 프로그램 (페이스페인팅, 누들컵 만들기, 나만의 젓가락 만들기, 누들네컷(인생네컷), 주제관 퀴즈크레인 등)",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/33/4138633_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/46/4138646_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/34/4138634_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/99/3547499_image2_1.png",
-        "https://tong.visitkorea.or.kr/cms/resource/98/3547498_image2_1.png",
-        "https://tong.visitkorea.or.kr/cms/resource/00/3547500_image2_1.png"
-      ]
-    },
-    {
       "id": "2613615",
       "title": "영주 사과축제",
       "startDate": "2026-11-13",
@@ -29280,12 +29218,12 @@
       ],
       "lng": 127.4339300277,
       "lat": 35.7953163124,
-      "modifiedTime": "20261109171214",
+      "modifiedTime": "20261111084802",
       "place": "진안로컬푸드진안점",
       "playtime": "10:30~17:00",
       "fee": "무료 (일부 체험 프로그램 유료 - 우리집 김장담그기 체험)",
       "sponsor": "진안군 / 진안YMCA",
-      "program": "- 개막행사\n- 무대 이벤트\n- 신나는 예술버스\n- 김장골든벨\n- SHOW ME THE 김장\n- 가을음악콘서트\n- 홍삼칵테일 이벤트\n- 트롯콘서트\n- 밴드콘서트\n- 상설운영 : 김치마을 팝업존, 플리마켓, 고원구이존, 먹거리부스\n- 우리집 김장담그기 체험 : 1일 3타임\n체험비 : 185,000원(1세트 절임배추 20kg + 양념 10kg)\n모집기간 : 선착순마감시까지",
+      "program": "1. 개막행사\n\n2. 무대 이벤트\n\n3. 신나는 예술버스\n\n4. 김장골든벨\n\n5. SHOW ME THE 김장\n\n6. 가을음악콘서트\n\n7. 홍삼칵테일 이벤트\n\n8. 트롯콘서트\n\n9. 밴드콘서트\n\n10. 상설운영\n- 김치마을 팝업존\n- 플리마켓\n- 고원구이존\n- 먹거리부스\n\n11. 우리집 김장담그기 체험\n- 1일 3타임\n- 체험비 : 185,000원(1세트 절임배추 20kg + 양념 10kg)\n- 모집기간 : 선착순마감시까지",
       "photos": [
         "https://tong.visitkorea.or.kr/cms/resource/86/4149686_image2_1.jpeg",
         "https://tong.visitkorea.or.kr/cms/resource/89/4149689_image2_1.png",
@@ -29571,6 +29509,34 @@
       "program": "- 주요 프로그램 : 전시(캐릭터전, 로컬 작가 콜라보전, 국제교류전, 예비디자이너전, 우수사례 전시 등)\n- 부대 행사 및 프로그램 : 디자인 버스킹 / K-디자인 콘서트 등"
     },
     {
+      "id": "4151221",
+      "title": "2026 제1회 강원 도시재생 집수리의 날",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-21",
+      "sido": "강원",
+      "sigungu": "원주시",
+      "address": "강원특별자치도 원주시 남산로218번길 7 (학성동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/22/4151222_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/22/4151222_image3_1.jpg",
+      "tel": "033-250-2987",
+      "homepage": "https://gwurc.or.kr/",
+      "overview": "「2026 제1회 강원 도시재생 집수리의 날」은 도시재생사업 안에서 추진되는 집수리 지원사업과 지역 집수리 인력의 활동을 소개하고, 생활 속 집수리 방법과 주거관리 정보를 나누는 참여형 행사이다. 2026년 11월 20일부터 21일까지 원주시 학성갤러리에서 개최하는 행사이다. 강원특별자치도 내 도시재생사업에서는 노후주택을 보수하여 주거환경을 개선하는 집수리 지원사업과 함께, 지역 여건에 따라 주민이 개선된 환경을 스스로 유지·관리할 수 있도록 집수리 기술교육과 자격 취득 과정을 운영하고 있다. 이번 행사는 이러한 교육을 통해 배운 기술로 이웃의 주거환경을 개선하고 지역에서 나눔을 실천하는 인력을 ‘강원 도시재생 집수리 술사’로 소개하는 자리이다. 주요 프로그램은 집수리 술사와 전문 교육업체가 진행하는 생활 집수리·목공 체험, 집수리 준비 특강, 빈집관리 강연, 생활청소 시연교육, 집수리 상담이다. 홍보존은 강원특별자치도 내 도시재생사업 현황과 집수리 지원사업의 내용, 지역 집수리 인력의 교육·활동 사례를 소개하는 공간이다. 지역 경제주체가 참여하는 프리마켓과 스탬프·SNS 참여 이벤트도 함께 운영하는 행사이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 127.9437145394,
+      "lat": 37.3548373317,
+      "modifiedTime": "20261111084803",
+      "place": "학성갤러리 / 원주시도시재생지원센터",
+      "playtime": "10:00~17:00",
+      "fee": "무료",
+      "sponsor": "강원특별자치도 / 강원연구원, 강원특별자치도 도시재생지원센터",
+      "program": "- 주요 프로그램 : 전문 집수리 체험 (페인트·타일셀프시공·타일커팅 시공) / 생활 집수리 체험 (방충망·문고리·조명·수도부품·몰딩 교체) / 교육 및 특강 (집수리 준비 특강·빈집관리 교육·생활청소 교육·집수리Q&A)\n- 부대 행사 및 프로그램 : 도시재생 퀴즈쇼 / 도시재생 기반 지역 경제주체 참여 프리마켓 (도시재생 경제주체 지역 특화제품 판매) / 체험 스탬프 이벤트 / SNS 참여 이벤트 / 설문조사 참여 이벤트"
+    },
+    {
       "id": "4101384",
       "title": "20세기 사진 거장전 - 빛, 시간을 멈추다",
       "startDate": "2026-11-20",
@@ -29702,6 +29668,34 @@
       "program": "- 주요 프로그램 : 보드게임 체험\n- 부대 행사 및 프로그램 : 보드게임 신작 전시 (출시 예정작 포함) / 보드게임 작가들의 신작 체험존 운영 / 보드게임 대회 (루미큐브 외) / 보드게임 할인 판매존 운영 / 참가업체 이벤트(신작 게임 굿즈제공 이벤트 등) 등"
     },
     {
+      "id": "3315407",
+      "title": "2026 제4차 제물포웨이브마켓",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "sido": "인천",
+      "sigungu": "제물포구",
+      "address": "인천광역시 제물포구 월미로 33 (북성동1가)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/10/4151210_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/10/4151210_image3_1.jpg",
+      "tel": "010-9265-3796",
+      "homepage": "https://www.instagram.com/jemulpowav_official",
+      "overview": "2026 제물포웨이브마켓 「파머스마켓」이 11월 21일(토)과 22일(일) 이틀간 인천 제물포구 상상플랫폼 웨이브홀에서 열린다. 실내에서 진행되어 날씨 걱정 없이 방문할 수 있으며 이번 마켓에서는 강화의 들판과 인천 곳곳의 농가, 마을기업, 로컬 브랜드가 정성껏 준비한 제철 식재료와 상품을 만나볼 수 있다. 파머스마켓 19팀과 웨이브마켓 36팀이 참여하며, 갓 구운 빵과 수제 디저트, 로컬 주류, 공예품, 패션 및 문화 상품까지 다양하게 준비될 예정이다. 농협과 축협이 함께하는 특가 장터도 열릴 예정이다. 대파와 귀리, 고춧가루, 과일 등 제철 농산물을 특가로 판매된다. 축협 한우 트럭에서는 한우 1+등급 등심, 채끝, 양지 등을 직판하며 강화 교동의 고구마와 감자로 만든 수제 칩 브랜드 송화칩스의 특별 팝업에서는 5가지 맛을 직접 시식해 볼 수 있다. 웨이브데크에서는 다양한 체험 프로그램도 함께 즐길 수 있으며, 알뜰한 장보기를 위한 혜택도 준비되어 있다. 트립닷컴에서 마켓 이용권을 20% 할인된 가격으로 구매할 수 있고, 매일 13시와 16시에는 30분 동안 마켓 타임 특가와 구매 스탬프 쿠폰, 리유저블 장바구니 증정, 제물포구 영수증 인증, 인천e지 스탬프 투어 등 구매 연계 혜택도 함께 운영된다. 이번 행사는 인천광역시가 주최하고 인천관광공사가 주관하며 제물포구가 후원한다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 126.6146527143,
+      "lat": 37.4760834131,
+      "modifiedTime": "20261111084802",
+      "place": "상상플랫폼",
+      "playtime": "11:00~18:00",
+      "fee": "무료",
+      "sponsor": "인천광역시 / 인천관광공사",
+      "program": "- 주요 프로그램 : 파머스마켓 19팀, 웨이브마켓 36팀 운영 / 농협·축협 제철 농산물 특가 장터 / 축협 한우트럭 / 송화칩스 특별 팝업 / 갓 구운 빵·수제 디저트·로컬 주류·로컬 공예·패션·문화상품 판매\n- 부대 행사 및 프로그램 : 고구마 무게 맞혀 담기 / 장바구니 가격 맞히기 / 사과 껍질 길게 깎기 / 블라인드 농산물 맞히기 / 한우 부위 맞히기 / 유리잔 만들기 / 수제청 만들기 / 다육이 미니화분 / 과일 샤베트 슬라임 만들기 / 수제 비누 만들기 / 과일 머리장식 참 만들기\n\n- 트립닷컴 마켓 이용권 20% 할인 판매\n- 마켓 타임 특가 운영 (매일 13:00, 16:00, 30분간 한정 수량)\n- 1만원 이상 구매 시 스탬프 1개, 3개 적립 시 3,000원 쿠폰 제공\n- 5만원 이상 구매 시 리유저블 장바구니 증정 (선착순)\n- 제물포구 3만원 이상 영수증 인증 시 3,000원 쿠폰 제공\n- 인천e지 스탬프 투어 개항장 일대 4곳 완주 시 5,000원 쿠폰 제공\n- 농산물 게임 성공 시 제철 식재료 증정"
+    },
+    {
       "id": "3368470",
       "title": "경기미 디저트 페스타",
       "startDate": "2026-11-21",
@@ -29768,6 +29762,34 @@
         "https://tong.visitkorea.or.kr/cms/resource/38/3515038_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/44/3515044_image2_1.jpg"
       ]
+    },
+    {
+      "id": "4151224",
+      "title": "역사랑께 배우랑께",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-21",
+      "sido": "전북",
+      "sigungu": "전주시",
+      "address": "전북특별자치도 전주시 완산구 전라감영로 55 (중앙동4가)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/25/4151225_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/25/4151225_image3_1.jpg",
+      "tel": "063-232-9938",
+      "homepage": "https://www.instagram.com/culture__art/?hl=ko",
+      "overview": "「역사랑께 배우랑께」는 조선시대 전라관찰사 서유구가 전라감영에서의 업무와 일상을 기록한 『완영일록』을 소재로, 전주의 역사문화유산을 가족과 함께 탐방하고 체험하는 참여형 역사문화 프로그램이다. 전라감영을 비롯해 호남권역 예담고, 완판본문화관, 전동성당, 풍남문 등 주요 역사문화 공간을 방문하여 전문 해설과 함께 역사적 배경을 살펴보고, 유물 관람 및 발굴 체험, 목판 인쇄 체험, 판소리 공연 관람 등을 통해 전주의 역사와 문화를 다채롭게 경험한다. 또한 탐방 장소별 기념사진과 역사적 이야기, 소감을 기록하여 가족만의 『오늘의 완영일록』을 완성함으로써 과거의 역사 기록을 오늘날의 특별한 추억으로 이어가고, 가족이 함께 지역 역사문화유산의 가치를 공유하는 계기를 마련하고자 한다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 127.1458864053,
+      "lat": 35.8165952746,
+      "modifiedTime": "20261111084803",
+      "place": "전라감영",
+      "playtime": "12:30~20:30",
+      "fee": "무료",
+      "sponsor": "전북특별자치도, 전주시 / 문화예술공작소",
+      "program": "- 주요 프로그램 : 전주 역사문화 투어\n- 부대 행사 및 프로그램\n전시(완판본·역사 유물 등 전시 관람) / 해설(전라감영 등 전주 역사 해설) / 탐방(전주 주요 역사문화유산 탐방) / 공연 (연극·판소리 공연 관람) / 체험(유물 발굴·목판 인쇄·조선 직업 체험) / 놀이(주판·고누·활쏘기 등 전통 놀이)\n\n[참가자 모집]\n- 2026년 11월 19일(목) 17시까지\n- 문화예술공작소 SNS 신청\n- 참가비 : 무료"
     },
     {
       "id": "2853386",
