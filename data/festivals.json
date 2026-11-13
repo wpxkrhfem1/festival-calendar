@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-12T01:20:15.762Z",
+    "fetchedAt": "2026-11-12T23:59:18.431Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 861,
+    "count": 863,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -183,48 +183,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/07/4010707_image2_1.JPG",
         "https://tong.visitkorea.or.kr/cms/resource/08/4010708_image2_1.JPG",
         "https://tong.visitkorea.or.kr/cms/resource/09/4010709_image2_1.JPG"
-      ]
-    },
-    {
-      "id": "2048902",
-      "title": "해운대 빛축제",
-      "startDate": "2025-11-29",
-      "endDate": "2026-01-18",
-      "sido": "부산",
-      "sigungu": "해운대구",
-      "address": "부산광역시 해운대구 해운대해변로 280 (중동) 해운대 해수욕장",
-      "image": "http://tong.visitkorea.or.kr/cms/resource/12/3576412_image2_1.jpg",
-      "thumbnail": "http://tong.visitkorea.or.kr/cms/resource/12/3576412_image3_1.jpg",
-      "tel": "051-749-4062",
-      "homepage": "https://www.haeundae.go.kr/tour/index.do?menuCd=DOM_000000309006000000&utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=1344207247310791_v2_s02_e1002&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4CGNhbGxzaXRlAjE1AAGnXyK7aX8cyXm0u5KX16jwl_ZRy3DWyhX8ta671R_fWV5zhx3_yKNZoGKMjPM_aem_HbTLaOkJ8RfrBv17__xb-g",
-      "overview": "해운대 빛축제는 해운대 해수욕장과 구남로 일원에서 펼쳐지며 겨울철 부산을 대표하는 축제로 12회를 맞이하였다. 2025년 11월 29일부터 2026년 1월 18일까지 'STELLAR HAEUNDAE : 별의 물결이 밀려오다'라는 주제로 빛을 이용한 조형물 및 미디어아트 연출, 각종 체험프로그램 및 이벤트를 운영함으로써 해운대구를 찾는 관광객과 구민들에게 다양한 즐길 거리 제공한다.",
-      "tags": [
-        "불꽃/야경",
-        "가을"
-      ],
-      "months": [
-        "2025-11",
-        "2025-12",
-        "2026-01"
-      ],
-      "lng": 129.1626049105,
-      "lat": 35.1595354549,
-      "modifiedTime": "20251231135120",
-      "place": "해운대 해수욕장",
-      "playtime": "18:00~23:00",
-      "fee": "무료",
-      "sponsor": "부산광역시 해운대구청",
-      "photos": [
-        "http://tong.visitkorea.or.kr/cms/resource/10/3570110_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/76/3590576_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/77/3590577_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/78/3590578_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/79/3590579_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/80/3590580_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/81/3590581_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/83/3590583_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/84/3590584_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/82/3590582_image2_1.jpg"
       ]
     },
     {
@@ -29271,42 +29229,6 @@
       "program": "〈2026 쿼드, 연극의 질문들 : 진화하는 텍스트〉\n본 프로젝트는 연극의 본질인 '텍스트'에 주목하며, 시대를 초월해 끊임없이 새롭게 해석되는 희곡의 힘을 통해 동시대 연극의 현재와 미래를 탐색한다. 윌리엄 셰익스피어부터 현대 희곡, 그리고 동시대 한국 연극 텍스트에 이르기까지, 다섯 편의 작품은 한국 연극의 황금기를 이끈 김아라, 김광보, 김우옥, 이성열, 한태숙 다섯 명의 거장 연출가를 통해 새롭게 진화한다.\n\n〈화염〉\n〈화염〉은 전쟁과 학살의 역사 속에서 쌍둥이 남매가 진실을 추적하는 여정을 그린다. 이 과정에서 반복되는 증오의 구조를 드러내고, 이를 끊어내는 힘으로써 '의지로서의 사랑'에 주목한다. 그리스 비극 〈오이디푸스〉 신화를 현대의 신화로 절묘하게 되살린 이 작품은 동시대 관객이 폭력과 책임을 직시하게 하며, 개인의 비극을 넘어 인간의 존엄성 문제로 관점을 확장한다."
     },
     {
-      "id": "3545306",
-      "title": "포천펫스타",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-14",
-      "sido": "경기",
-      "sigungu": "포천시",
-      "address": "경기도 포천시 신북면 아트밸리로 234 포천 아트밸리",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/07/4133507_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/07/4133507_image3_1.jpg",
-      "tel": "0502-1949-0514",
-      "homepage": "https://p-petstar.imweb.me/",
-      "overview": "2026 포천 펫스타 in 아트밸리는 반려가족과 시민이 함께 즐기고 소통하는 참여형 반려동물 문화축제이다.\n아름다운 자연경관과 예술이 어우러진 포천아트밸리를 배경으로 반려견과 함께 도전하는 '멍파서블', 반려견과 함께 걷는 '아트밸리 힐링숲 트레킹', 도그 필라테스, 반려견 올림픽, 펫티켓 골든벨 등 다채로운 참여형 프로그램을 운영한다. 또한 반려견 놀이터와 다양한 체험부스, 문화공연 및 이벤트를 통해 반려인과 비반려인 모두가 즐길 수 있는 특별한 축제의 장을 마련한다.\n이번 축제는 반려견과 함께하는 다양한 활동을 통해 일상에서 벗어난 특별한 추억과 즐거움을 선사하는 동시에, 반려동물에 대한 올바른 이해와 책임 있는 반려문화의 중요성을 알리고 생명존중과 동물복지의 가치를 확산하는 데 목적이 있다.\n나아가 반려인과 비반려인이 서로 공감하고 소통할 수 있는 기회를 제공함으로써 반려동물에 대한 긍정적인 인식을 높이고, 사람과 동물이 조화롭게 공존하는 성숙한 반려문화 정착에 기여하고자 한다.",
-      "tags": [
-        "가을"
-      ],
-      "months": [
-        "2026-11"
-      ],
-      "lng": 127.236500949,
-      "lat": 37.9234466507,
-      "modifiedTime": "20261111180116",
-      "place": "포천 아트밸리",
-      "playtime": "10:00~ 18:00",
-      "fee": "유료(아트밸리 입장료 참고)",
-      "sponsor": "포천시",
-      "program": "1. 메인 프로그램\n- 댕댕이 도전! 미션 멍-파서블, 설채현 수의사 토크콘서트, 포천 펫트립(아트밸리 힐링숲 트레킹)\n\n2. 체험 프로그램\n- 펫림픽, 도그 필라테스, 피크닉 공연\n\n3. 부대 프로그램\n- 반려동물 참여형 이벤트 및 현장 체험 프로그램",
-      "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/09/4133509_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/79/4143379_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/08/4133508_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/06/4133506_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/05/4133505_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/04/4133504_image2_1.jpg"
-      ]
-    },
-    {
       "id": "4115201",
       "title": "2026 대전 세계태양광총회 개최 기념 온시민에너지걷기한마당",
       "startDate": "2026-11-15",
@@ -29540,6 +29462,38 @@
       "program": "- 주요 프로그램 : 전문 집수리 체험 (페인트·타일셀프시공·타일커팅 시공) / 생활 집수리 체험 (방충망·문고리·조명·수도부품·몰딩 교체) / 교육 및 특강 (집수리 준비 특강·빈집관리 교육·생활청소 교육·집수리Q&A)\n- 부대 행사 및 프로그램 : 도시재생 퀴즈쇼 / 도시재생 기반 지역 경제주체 참여 프리마켓 (도시재생 경제주체 지역 특화제품 판매) / 체험 스탬프 이벤트 / SNS 참여 이벤트 / 설문조사 참여 이벤트"
     },
     {
+      "id": "4151220",
+      "title": "2026년 제7회 김치의 날 X 제4회 위킴 페스티벌",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20",
+      "sido": "서울",
+      "sigungu": "서초구",
+      "address": "서울특별시 서초구 강남대로 27 (양재동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/59/4155259_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/59/4155259_image3_1.jpg",
+      "tel": "02-6405-3641",
+      "homepage": "https://www.instagram.com/kimchiday_1122/",
+      "overview": "「2026년 제7회 김치의 날 기념행사」는 법정기념일인 김치의 날(11월 22일)을 기념하여 개최하는 행사이다. 김치의 날은 「김치산업 진흥법」에 따라 지정된 기념일로, 김치 소재 하나하나(11)가 모여 22가지 효능(22)을 나타낸다는 의미를 담고 있다. 행사는 농림축산식품부가 주최하고 한국농수산식품유통공사(aT), 세계김치연구소, (사)대한민국김치협회가 주관하며, 2026년 11월 20일 서울 aT센터 제1전시장에서 열린다. 1부 김치의 날 기념식은 추진 경과보고, VIP 퍼포먼스, 유공자 및 김치 품평회 시상식으로 진행된다. 2부는 세계김치연구소의 제4회 위킴 페스티벌로, 우리의 발효과학, 모두의 김치를 주제로 공모전 시상식, 주제 강연, 경품 추첨이 진행된다. 행사장에서는 김치 연구성과 전시, 스타트업 아이디어 제품 시식, 김장문화 퍼포먼스, 김치 판매 장터, 김치 품평회 및 김치요리 경연대회 수상작 전시, 푸드트럭이 함께 운영된다.",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 127.0391364334,
+      "lat": 37.4682787075,
+      "modifiedTime": "20261112193037",
+      "place": "aT센터 제1전시장",
+      "playtime": "10:00~18:00",
+      "fee": "무료",
+      "sponsor": "농림축산식품부 / 한국농수산식품유통공사(aT), 세계김치연구소, (사)대한민국김치협회",
+      "program": "- 주요 프로그램 : 김치의 날 기념식 / 추진 경과보고 / VIP 퍼포먼스 / 유공자 및 김치 품평회 시상식 / 위킴 페스티벌 / 공모전 시상식 / 주제 강연 / 경품 추첨(세계김치연구소 유튜브 WiKimTV 생중계 예정)\n- 부대 행사 및 프로그램 : 통합 전시(김치 과학·문화·산업 연구성과, 글로벌 김치 앰배서더 성과, 어린이 김치 콘텐츠 공모전 수상작) / 김치 품평회 및 김치요리 경연대회 수상작 전시 / 김장문화 퍼포먼스 / 스타트업 아이디어 제품 시식·평가 / 김치 판매 장터 / 2부 경품 추첨 / 푸드트럭 운영",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/60/4155260_image2_1.jpg"
+      ]
+    },
+    {
       "id": "4101384",
       "title": "20세기 사진 거장전 - 빛, 시간을 멈추다",
       "startDate": "2026-11-20",
@@ -29691,7 +29645,7 @@
       ],
       "lng": 126.6146527143,
       "lat": 37.4760834131,
-      "modifiedTime": "20261111084802",
+      "modifiedTime": "20261112113745",
       "place": "상상플랫폼",
       "playtime": "11:00~18:00",
       "fee": "무료",
@@ -29939,6 +29893,113 @@
       "program": "- 주요프로그램 : 크리스마스 마켓 운영\n- 부대 행사 및 프로그램 : 회전목마 / 스노우존 / 산타의 집 / 버스킹 공연 / 체험 부스 / 먹거리 부스 등"
     },
     {
+      "id": "2048902",
+      "title": "해운대 빛축제",
+      "startDate": "2026-11-28",
+      "endDate": "2027-01-10",
+      "sido": "부산",
+      "sigungu": "해운대구",
+      "address": "부산광역시 해운대구 중동 1411-14 구남로, 해운대해수욕장 일원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/12/3576412_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/12/3576412_image3_1.jpg",
+      "tel": "051-749-4062",
+      "homepage": "https://www.haeundae.go.kr/tour/index.do?menuCd=DOM_000000309006000000",
+      "overview": "해운대구(구청장 김성수)는 11월 28일 점등식을 시작으로 내년 1월 10일까지 제13회 해운대빛축제를 연다.\n올해 축제의 주제는 ‘딥 다이브 해운대(Deep Dive Haeundae)’로 수면에서 심해로 깊이 들어갈수록 더 밝아지는 빛의 여정을 선보인다.\n해운대스퀘어(구남로)와 해수욕장 백사장까지 이어지는 공간에 바다, 항해, 심해를 테마로 한 다채로운 빛 조형물과 미디어아트를 설치해 방문객들에게 바닷속을 직접 탐험하는 듯한 몰입형 경험을 선사할 예정이다.\n\n축제 기간 해운대스퀘어는 깊은 바다를 향해 떠나는 역동적인 항해의 공간으로 꾸며진다.\n크루즈의 출항을 알리는 ‘크루즈 게이트’와 30m 규모의 빛의 터널이 관람객을 맞이한다. 파도를 모티브로 한 포토존과 크루즈 선상파티를 연상시키는 빛 조형물이 이어지고, 대형 다이버 조형물에 설치된 LED패널에서는 바다 탐험 미디어아트가 상영돼 시선을 사로잡을 예정이다.\n해운대스퀘어를 밝히는 크리스마스 트리도 한층 특별하게 꾸민다. 최대 높이 6m를 비롯해 모두 11개로 풍성한 ‘크리스마스 트리 숲’을 조성해 동화 같은 겨울 풍경을 연출한다. 크리스마스에는 스노우 머신을 가동해 눈 내리는 화이트 크리스마스의 낭만을 더한다.\n\n백사장으로 들어서면 본격적인 ‘심해 탐험’이 시작된다.\n백사장 중심에는 축제의 랜드마크인 길이 12m의 배 조형물이 서 있다. 그 주변으로 다양한 해양생물과 대형 고래, 잠수함 조형물, 바다거북 아치 등이 깊은 바닷속 풍경을 그려낸다.\n빛의 여정 끝자락에서는 영롱한 빛을 내뿜는 대형 진주 조개 조형물과 황금빛 보물상자를 마주하게 된다. 수면에서 시작된 탐험이 깊은 바다의 보석 숲으로 완성되며 감동을 선사한다.\n\n올해 축제는 단순히 감상하는 데 그치지 않고 방문객이 함께 완성하는 체험형 콘텐츠를 대폭 강화한 것이 특징이다.\n축제장 곳곳에는 관람객의 손길에 따라 색이 변하는 ‘인터랙티브 조명’을 설치해 누구나 직접 빛을 움직이고 변화시키는 즐거움을 느낄 수 있다. 해수욕장 끝자락 등대 조형물에는 새해 소망을 남길 수 있는 '위시 메시지존'과 2027년 새해를 기념하는 포토존이 운영된다.\n축제 기간 주말에는 야광 바다팔찌, 어항램프 무드등 만들기 등 다채로운 체험 프로그램이 열려 방문객들은 특별한 겨울 추억을 간직할 수 있다.",
+      "tags": [
+        "불꽃/야경",
+        "가을"
+      ],
+      "months": [
+        "2026-11",
+        "2026-12",
+        "2027-01"
+      ],
+      "lng": 129.1615365475,
+      "lat": 35.1592056511,
+      "modifiedTime": "20261112153023",
+      "place": "구남로, 해운대해수욕장 일원",
+      "playtime": "18:00~23:00",
+      "fee": "무료",
+      "sponsor": "해운대구",
+      "program": "1. 빛 조형물 전시\n- 해운대스퀘어(구남로): 크루즈게이트, 터널게이트, 달포토존, 분수포토존, 크루즈 페스타, 대형 다이버 벌룬, 크리스마스트리 등\n- 해운대해수욕장: 대형 배 조형물, 심해탐사기지(잠수함), 미지의 서식지(닻 조형물), 심해 라운지(대형 거북 조형물), 심해의 보물(보물상자, 대형 조개 조형물) 등\n\n2. 체험프로그램\n- 야광 바다팔찌 만들기, 보석십자수 무드등 만들기\n\n3. 점등행사\n- 불꽃쇼 및 공연",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/84/3590584_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/26/4154426_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/83/3590583_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/76/3590576_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/77/3590577_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/78/3590578_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/79/3590579_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/80/3590580_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/81/3590581_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/82/3590582_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "3545306",
+      "title": "포천펫스타",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "sido": "경기",
+      "sigungu": "포천시",
+      "address": "경기도 포천시 신북면 아트밸리로 234 포천 아트밸리",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/07/4133507_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/07/4133507_image3_1.jpg",
+      "tel": "0502-1949-0514",
+      "homepage": "https://p-petstar.imweb.me/",
+      "overview": "2026 포천 펫스타 in 아트밸리는 반려가족과 시민이 함께 즐기고 소통하는 참여형 반려동물 문화축제이다.\n아름다운 자연경관과 예술이 어우러진 포천아트밸리를 배경으로 반려견과 함께 도전하는 '멍파서블', 반려견과 함께 걷는 '아트밸리 힐링숲 트레킹', 도그 필라테스, 반려견 올림픽, 펫티켓 골든벨 등 다채로운 참여형 프로그램을 운영한다. 또한 반려견 놀이터와 다양한 체험부스, 문화공연 및 이벤트를 통해 반려인과 비반려인 모두가 즐길 수 있는 특별한 축제의 장을 마련한다.\n이번 축제는 반려견과 함께하는 다양한 활동을 통해 일상에서 벗어난 특별한 추억과 즐거움을 선사하는 동시에, 반려동물에 대한 올바른 이해와 책임 있는 반려문화의 중요성을 알리고 생명존중과 동물복지의 가치를 확산하는 데 목적이 있다.\n나아가 반려인과 비반려인이 서로 공감하고 소통할 수 있는 기회를 제공함으로써 반려동물에 대한 긍정적인 인식을 높이고, 사람과 동물이 조화롭게 공존하는 성숙한 반려문화 정착에 기여하고자 한다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 127.236500949,
+      "lat": 37.9234466507,
+      "modifiedTime": "20261112133755",
+      "place": "포천 아트밸리",
+      "playtime": "10:00~ 18:00",
+      "fee": "유료(아트밸리 입장료 참고)",
+      "sponsor": "포천시",
+      "program": "1. 메인 프로그램\n- 댕댕이 도전! 미션 멍-파서블, 설채현 수의사 토크콘서트, 포천 펫트립(아트밸리 힐링숲 트레킹)\n\n2. 체험 프로그램\n- 펫림픽, 도그 필라테스, 피크닉 공연\n\n3. 부대 프로그램\n- 반려동물 참여형 이벤트 및 현장 체험 프로그램",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/09/4133509_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/83/4154683_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/08/4133508_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/06/4133506_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/05/4133505_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/04/4133504_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "4153641",
+      "title": "2026 럭키칠곡 크리스마스 마켓",
+      "startDate": "2026-12-01",
+      "endDate": "2027-01-10",
+      "sido": "경북",
+      "sigungu": "칠곡군",
+      "address": "경상북도 칠곡군 왜관읍 중앙로8길 10",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/43/4153643_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/43/4153643_image3_1.jpg",
+      "tel": "054-979-3211",
+      "homepage": "https://www.chilgokctf.or.kr/",
+      "overview": "왜관역에서 열리는 럭키칠곡 크리스마스 마켓은 주변 일대를 시즌 분위기에 맞추어 조성하고 지역 상인과의 협력을 통해 다양한 크리스마스 소품 판매와 체험을 운영한다. 철도역 앞에서 만나는 럭키칠곡 크리스마스 마켓을 통해 지역 주민은 물론 열차를 타고 칠곡군을 방문한 관광객도 수월하게 크리스마스의 분위기를 느낄 수 있다.",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2026-12",
+        "2027-01"
+      ],
+      "lng": 128.4000113993,
+      "lat": 35.9918930704,
+      "modifiedTime": "20261112085809",
+      "place": "왜관역 광장 및 1번 도로 일원",
+      "playtime": "12:00~20:00",
+      "fee": "무료(일부 체험 유료)",
+      "sponsor": "칠곡문화관광재단 / 칠곡군, 경상북도"
+    },
+    {
       "id": "3522322",
       "title": "오슬로우 빈티지 크리스마스 마켓",
       "startDate": "2026-12-04",
@@ -30041,7 +30102,7 @@
       "address": "서울특별시 종로구 세종대로 지하172 (세종로)",
       "image": "https://tong.visitkorea.or.kr/cms/resource/78/4153378_image2_1.png",
       "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/78/4153378_image3_1.png",
-      "tel": "02-3788-8105",
+      "tel": "02-3788-8168",
       "homepage": "https://www.stolantern.com/",
       "overview": "서울의 겨울밤을 밝히는 「광화문 마켓」이 올해도 광화문광장을 찾아온다. 5회차를 맞이한 올해는 「시간이 멈춘 산타마을」을 주제로, 바쁜 일상 속 잠시 머물러 크리스마스의 설렘을 만끽할 수 있는 특별한 겨울 풍경을 선보인다. 대형 트리와 마켓 빌리지를 중심으로 크리스마스 시즌 소품과 따뜻한 먹거리를 한자리에서 만나볼 수 있으며, 오감을 자극하는 몰입형 포토존과 다채로운 체험 프로그램도 곳곳에 마련 될 예정이다. 크리스마스의 설렘이 머무는 곳, 올 겨울 광화문 마켓에서 특별한 겨울밤을 만날 수 있다.",
       "tags": [
@@ -30053,7 +30114,7 @@
       ],
       "lng": 126.9767679222,
       "lat": 37.5716249337,
-      "modifiedTime": "20261111181114",
+      "modifiedTime": "20261112161205",
       "place": "광화문광장 및 세종로공원 일대",
       "playtime": "[일요일~목요일]- 17:30~22:00[금요일~토요일]- 17:30~22:30",
       "fee": "무료",
@@ -30088,7 +30149,7 @@
       ],
       "lng": 126.977633,
       "lat": 37.569204,
-      "modifiedTime": "20261106130715",
+      "modifiedTime": "20261112110014",
       "place": "청계천(청계광장 ~ 삼일교)",
       "playtime": "18:00~23:00",
       "fee": "무료",
@@ -30096,7 +30157,7 @@
       "program": "전통한지 등(燈), 미디어아트 중심의 빛 조형물 전시, 체험 프로그램 운영",
       "photos": [
         "https://tong.visitkorea.or.kr/cms/resource/39/4147239_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/40/4147240_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/82/4154282_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/36/4147236_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/34/4147234_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/33/4147233_image2_1.jpg",
@@ -30125,7 +30186,7 @@
       ],
       "lng": 126.977599239,
       "lat": 37.5690771533,
-      "modifiedTime": "20261111153251",
+      "modifiedTime": "20261112104650",
       "place": "서울특별시 중구 청계천 청계광장 일대",
       "playtime": "18:00~22:00",
       "fee": "무료",
