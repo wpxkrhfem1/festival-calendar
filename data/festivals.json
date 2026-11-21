@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-20T01:04:14.566Z",
+    "fetchedAt": "2026-11-21T00:39:35.718Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 866,
+    "count": 870,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -29953,6 +29953,35 @@
       ]
     },
     {
+      "id": "4144190",
+      "title": "2026 인천공항 온-아트 페스티벌",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "sido": "인천",
+      "sigungu": "영종구",
+      "address": "인천광역시 영종구 공항로 271 (운서동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/92/4144192_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/92/4144192_image3_1.jpg",
+      "tel": "02-2138-0094",
+      "homepage": "https://www.instagram.com/onartschoolofficial/",
+      "overview": "〈2026 인천공항 온-아트 페스티벌〉은 문화예술을 통해 전 세대가 소통하고, 다채롭고 활기찬 지역사회를 만들어가고자 기획된 인천국제공항공사의 특별한 문화교육 행사이다. '꿈을 향한 비행, 함께하는 여정'이라는 주제 아래, 올해에도 세대와 지역을 아우르는 감동의 무대로 찾아온다.\n오는 12월 5일, 영종도 지역의 초·중학생들로 구성된 「온-아트 유스 오케스트라」와 중·장년 주민들이 함께하는 「온-아트 하모니 합창단」, 그리고 바이올리니스트 「대니 구」가 만나 하나의 아름다운 연주를 선보인다. 특히 이번 공연은 세계적인 바이올리니스트 대니 구와 한국예술종합학교의 전문적인 교육협력이 더해져, 세대를 잇는 깊이 있는 선율을 선사한다.",
+      "tags": [
+        "전시/예술",
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lng": 126.4521719249,
+      "lat": 37.4476713343,
+      "modifiedTime": "20261120131831",
+      "place": "인천공항 제1터미널 K-컬처 뮤지엄",
+      "playtime": "16:00~17:30",
+      "fee": "무료",
+      "sponsor": "인천국제공항공사 / 한국메세나협회",
+      "program": "- 주요 프로그램 : 클래식 연주회 / 실내 공연 / 오케스트라 공연 / 합창단 공연 / 바이올리니스트 대니 구 공연"
+    },
+    {
       "id": "4108260",
       "title": "2026 HUG RUN 허그런",
       "startDate": "2026-12-05",
@@ -30147,6 +30176,47 @@
         "https://tong.visitkorea.or.kr/cms/resource/82/4140182_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/84/4140184_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/81/4140181_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "1139979",
+      "title": "논산양촌곶감축제",
+      "startDate": "2026-12-11",
+      "endDate": "2026-12-13",
+      "sido": "충남",
+      "sigungu": "논산시",
+      "address": "충청남도 논산시 양촌면 양촌리 454 양촌면 양촌리 체육공원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/26/4167626_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/26/4167626_image3_1.JPG",
+      "tel": "041-730-2982, 2952, 2928",
+      "homepage": "https://www.nonsan.go.kr",
+      "overview": "2026 제24회 논산양촌곶감축제는 2026년 12월 11일(금)부터 13일(일)까지 3일간 충청남도 논산시 양촌면 양촌리 체육공원 일원에서 개최되는 겨울 축제이다. '양촌곶감, 고향을 잇다'를 주제로 열리는 이번 축제는 청정한 자연환경과 지역 농가의 정성으로 만들어진 양촌곶감의 우수한 품질과 깊은 풍미를 널리 알리기 위해 마련된 행사이다. 양촌곶감은 지역의 자연환경과 전통적인 생산 과정을 바탕으로 만들어지는 논산의 대표 특산물이며, 지역 농업과 고유한 먹거리 문화를 보여주는 중요한 자원이다. 축제에서는 양촌곶감의 다양한 매력과 지역 특산물의 가치를 만나볼 수 있으며, 양촌 지역의 특색을 담은 축제 프로그램도 함께 경험할 수 있는 자리이다. 운영시간은 행사 기간 매일 오전 10시부터 오후 6시까지이며, 겨울철 양촌의 풍경과 지역의 문화를 함께 즐길 수 있는 지역 대표 축제이다.",
+      "tags": [
+        "먹거리",
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lng": 127.2473630035,
+      "lat": 36.1292554317,
+      "modifiedTime": "20261120132327",
+      "place": "양촌면 양촌리 체육공원",
+      "playtime": "10:00~18:00",
+      "fee": "무료 (일부 체험 프로그램 유료)",
+      "sponsor": "논산시 / (재)논산문화관광재단",
+      "program": "- 여유롭게 고르고 편안하게 즐기는 「양촌곶감마켓」\n- 개.폐막식 축하공연\n- 양촌곶감의 설렘을 전하는 「곶감쇼」\n- 곶감으로 밝히는 「LED 경관 포토존」\n- 추위는 덜고, 겨울의 맛은 더하는 「양촌곶감 다이닝 존」\n- 먹고 쉬며 즐기는 「곶감 피크닉 존」\n- 골라먹는 즐거움이 더해지는 「곶감 푸드트럭 존」\n- 다채로운 상품과 체험을 만나는 「기타 상설부스 존」",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/33/4167633_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/34/4167634_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/35/4167635_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/32/4167632_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/31/4167631_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/30/4167630_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/29/4167629_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/28/4167628_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/27/4167627_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/25/4167625_image2_1.JPG"
       ]
     },
     {
@@ -30352,6 +30422,68 @@
       "fee": "무료",
       "sponsor": "문화체육관광부 / 한국방문의해위원회",
       "program": "1. 웰컴센터\n- 기간 : 2026년 12월 23일(수)~2027년 2월 13일(토), 53일간 / 매일 11:00~20:00\n- 장소 : 서울 명동 눈스퀘어 1층 로비\n- 내용 : 행사 소개 및 쇼핑관광 정보 제공 / 체험 프로그램 / 지역상권 연계 프로그램(영수증 리워드 등) / 럭키드로우 이벤트 / 참여기업 혜택 홍보 등\n\n2. 이동형 웰컴센터\n- 기간 : 각 지역별 운영기간 상이\n- 지역 : 강원권·경남권 등 전국 순회 예정\n- 내용 : 체험 프로그램 / 지역상권 연계 프로그램(영수증 리워드 등) / 럭키드로우 이벤트 등\n\n3. 스페셜 프로모션\n- 기간 : 2026년 10월 중~ / 각 프로모션별 기간 상이\n- 내용 : 항공·OTA·쇼핑 등 다양한 분야의 인기 한국 브랜드 할인 혜택 제공"
+    },
+    {
+      "id": "2933428",
+      "title": "울산 성남동 눈꽃축제",
+      "startDate": "2026-12-24",
+      "endDate": "2026-12-27",
+      "sido": "울산",
+      "sigungu": "중구",
+      "address": "울산광역시 중구 젊음의거리 15 (성남동) 젊음의거리 일원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/64/3586264_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/64/3586264_image3_1.jpg",
+      "tel": "010-4825-0560",
+      "homepage": "https://ulsansnow.com/",
+      "overview": "성남동 눈꽃축제는 눈을 보기 어려운 울산 원도심에서 겨울 분위기를 즐길 수 있도록 기획된 도심형 겨울 축제이다. 2006년에 시작해 2026년 제20회를 맞이하며, 청춘문화기획단이 주최·주관하고 울산 중구가 후원한다. 축제는 2026년 12월 24일부터 12월 27일까지 울산 중구 성남동 젊음의거리 일원에서 무료로 운영된다. 행사 기간 동안 젊음의거리를 중심으로 인공눈 연출과 트리숲이 조성되며, 눈사람 체험장과 포토존, 크리스마스 합창대회, 무대공연, 퍼레이드, 윈터 버블쇼 등 다양한 프로그램이 진행된다. 또한 먹거리마켓과 프리마켓이 함께 운영되어 방문객에게 볼거리와 즐길 거리를 제공한다.",
+      "tags": [
+        "꽃/자연",
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lng": 129.3173082015,
+      "lat": 35.5535380301,
+      "modifiedTime": "20261120161246",
+      "place": "울산 중구 성남동 젊음의거리 일원",
+      "playtime": "14:00~20:00 *공연시간은 상황에 따라 변경할 수 있습니다",
+      "fee": "무료",
+      "sponsor": "청춘문화기획단",
+      "program": "1. 메인프로그램\n- 개막식\n- 퍼레이드\n- 윈터버블쇼\n- 눈꽃연출\n- 트리숲\n\n2. 부대프로그램\n- 눈사람체험\n- 크리스마스합창대회\n- 무대공연\n- 거리공연\n- 마술공연\n- 포토존\n\n3. 소비자 참여 프로그램\n- 먹거리마켓\n\n4. 기타 내용\n- 프리마켓",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/61/3586261_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/80/4168480_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/63/3586263_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "3420072",
+      "title": "2027 선양 맨몸마라톤",
+      "startDate": "2027-01-01",
+      "endDate": "2027-01-01",
+      "sido": "대전",
+      "sigungu": "유성구",
+      "address": "대전광역시 유성구 대덕대로 480 (도룡동)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/49/4169049_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/49/4169049_image3_1.jpg",
+      "tel": "042-580-1827",
+      "homepage": "https://www.djmmrun.co.kr/",
+      "overview": "선양 맨몸마라톤은 2015년 1월 1일 대전 갑천변에서 시작된 새해맞이 이색 행사로, 추운 겨울 맨몸으로 자연을 느끼며 건강하고 활기찬 새해를 맞이하자는 취지로 기획되었다. 2016년부터 공식 마라톤 대회로 발전해 매년 1월 1일 개최되는 대표적인 새해맞이 축제로 자리 잡았다. 참가자들은 새해 첫날 함께 달리며 건강과 도전 정신을 다지고, 다양한 이벤트와 교류를 통해 즐거움과 공동체의 에너지를 나눈다. 2027년 대회는 더욱 풍성한 프로그램과 체계적인 안전 관리를 통해 모두가 함께 즐기고 새로운 희망을 다지는 특별한 축제의 장으로 운영될 예정이다.",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2027-01"
+      ],
+      "lng": 127.3797537407,
+      "lat": 36.3760605845,
+      "modifiedTime": "20261120174254",
+      "place": "엑스포 과학공원",
+      "playtime": "10:00~15:00",
+      "fee": "- 일반 30,000원- 미성년자 20,000원- 어린이 무료",
+      "sponsor": "㈜선양소주",
+      "program": "- 주요 프로그램 : 마라톤\n- 부대 행사 및 프로그램 : 선양오페라단 공연 / 떡국 나눔 / 박 깨기 이벤트 / 체험 프로그램 / 포토존 등"
     },
     {
       "id": "386053",
