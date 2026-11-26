@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-25T02:56:50.348Z",
+    "fetchedAt": "2026-11-26T02:04:15.961Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 870,
+    "count": 869,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -248,120 +248,6 @@
         "http://tong.visitkorea.or.kr/cms/resource/52/3579652_image2_1.jpg",
         "http://tong.visitkorea.or.kr/cms/resource/53/3579653_image2_1.jpg",
         "http://tong.visitkorea.or.kr/cms/resource/55/3579655_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "3434800",
-      "title": "온천천 빛 축제",
-      "startDate": "2025-12-19",
-      "endDate": "2026-02-01",
-      "sido": "부산",
-      "sigungu": "동래구",
-      "address": "부산광역시 동래구 중앙대로 1324 (온천동) 부산 온천천 (도시철도 동래역 4번출구 하부 ~ 큰나무 쉼터 일원)",
-      "image": "http://tong.visitkorea.or.kr/cms/resource/72/3574272_image2_1.jpg",
-      "thumbnail": "http://tong.visitkorea.or.kr/cms/resource/72/3574272_image3_1.jpg",
-      "tel": "051-550-6642",
-      "homepage": "https://www.dongnae.go.kr/index.dongnae?menuCd=DOM_000000403007000000",
-      "overview": "부산 동래구의 겨울을 아름답게 밝힐 '제3회 온천천 빛 축제'가 2025년 12월 19일(금)부터 2026년 2월 1일(일)까지 45일간 열린다.\n이번 축제는 '온천천 연가(戀歌)'를 주제로, 온천천 일원 약 1.1km 구간에 걸쳐 다채로운 빛 조형물을 선보인다.\n빛 조형물은 매일 17:00부터 23:00까지 점등되어 방문객들에게 특별한 야경을 선사한다.\n\n축제는 '빛의 서곡', '계절의 노래', '환상곡', '온천천 연가', '맛있는 하모니', '등불의 노래' 등 여섯 가지 테마 구역으로 나뉘어\n전통문화, 시즌 테마, 미래라는 흐름에 맞춰 특색 있는 볼거리를 제공한다.\n\n빛 전시 외에도 시민들이 함께 즐길 수 있는 다양한 참여 프로그램이 마련되어 있다.\n축제 개막을 알리는 점등식은 12월 19일(금) 17:00에 수안초등학교 앞 온천천에서 열리며\n이후 12월 31일(수)까지 13일간 동래역 4번 출구 하부 눈꽃광장에서 인공눈 체험 , 버스킹 공연 , 그리고 미디어 소원쓰기 등 풍성한 프로그램이 운영된다.\n또한, 큰나무 쉼터 일원에서는 푸드트럭 존이 운영되어 다양한 먹거리를 즐기며 축제의 낭만을 더할 수 있다.\n가족, 연인, 친구와 함께 온천천에서 잊지 못할 겨울밤의 추억을 만들어 볼 수 있다.",
-      "tags": [
-        "불꽃/야경",
-        "겨울"
-      ],
-      "months": [
-        "2025-12",
-        "2026-01",
-        "2026-02"
-      ],
-      "lng": 129.0785081817,
-      "lat": 35.2056537329,
-      "modifiedTime": "20251126140452",
-      "place": "부산 온천천 (도시철도 동래역 4번출구 하부 ~ 큰나무 쉼터 일원)",
-      "playtime": "17:00~23:00",
-      "fee": "무료 (푸드트럭 제외)",
-      "sponsor": "동래구",
-      "photos": [
-        "http://tong.visitkorea.or.kr/cms/resource/66/3574266_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/67/3574267_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/68/3574268_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/69/3574269_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/70/3574270_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/71/3574271_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/73/3574273_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/74/3574274_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "2802702",
-      "title": "포천백운계곡 동장군축제",
-      "startDate": "2025-12-20",
-      "endDate": "2026-02-22",
-      "sido": "경기",
-      "sigungu": "포천시",
-      "address": "경기도 포천시 포화로 236-11 포천 백운계곡 국민관광지 일원",
-      "image": "http://tong.visitkorea.or.kr/cms/resource/21/3580521_image2_1.jpg",
-      "thumbnail": "http://tong.visitkorea.or.kr/cms/resource/21/3580521_image3_1.jpg",
-      "tel": "031-536-9917",
-      "homepage": "https://www.dongjangkun.com/",
-      "overview": "서울에서 1시간, 포천 백운계곡 동장군 축제는 2025. 12.20~2026.2.22일까지 65일간 백운계곡 일원에서 개최된다.\n눈썰매, 얼음썰매, 어린이 놀이시설(6종), 얼음낚시(빙상), 실내 낚시, 대형 얼음 트리 포토존 등 대부분의 프로그램이 육상에서 운영되어 온가족이 안전하게 즐길 수 있는 축제이다. 축제 프로그램과 함께 백운계곡의 환상적인 설경을 즐길수 있고, 직접 조리하는 20여 가지의 다양한 먹거리가 저렴하게 제공된다.",
-      "tags": [
-        "꽃/자연",
-        "겨울"
-      ],
-      "months": [
-        "2025-12",
-        "2026-01",
-        "2026-02"
-      ],
-      "lng": 127.4095586709,
-      "lat": 38.0730419918,
-      "modifiedTime": "20251224174423",
-      "place": "포천 백운계곡 국민관광지 일원",
-      "playtime": "09:00~17:00",
-      "fee": "입장료 유료 3,000원 (2,000원 식음료권 제공)",
-      "sponsor": "백운계곡상인협동조합",
-      "photos": [
-        "http://tong.visitkorea.or.kr/cms/resource/15/3580515_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/16/3580516_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/17/3580517_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/20/3580520_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/32/3586432_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/33/3586433_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/34/3586434_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/35/3586435_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/46/3586446_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "674023",
-      "title": "병오년 해맞이 행사",
-      "startDate": "2025-12-31",
-      "endDate": "2026-01-01",
-      "sido": "강원",
-      "sigungu": "강릉시",
-      "address": "강원특별자치도 강릉시 경포로 515 (안현동) 경포해변 및 정동진 모래시계공원",
-      "image": "http://tong.visitkorea.or.kr/cms/resource/40/3588540_image2_1.jpg",
-      "thumbnail": "http://tong.visitkorea.or.kr/cms/resource/40/3588540_image3_1.jpg",
-      "tel": "033-640-5130",
-      "homepage": "https://www.gn.go.kr/www/selectBbsNttView.do?key=258&bbsNo=12&nttNo=201011&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
-      "overview": "동해안 해맞이 명소 경포해변과 정동진 모래시계공원에서 만나는 2026년의 첫번째 해돋이. 해넘이와 해맞이를 강릉에서 만날 수 있다.",
-      "tags": [
-        "겨울"
-      ],
-      "months": [
-        "2025-12",
-        "2026-01"
-      ],
-      "lng": 128.9067724937,
-      "lat": 37.8052793467,
-      "modifiedTime": "20251224132726",
-      "place": "경포해변 및 정동진 모래시계공원",
-      "playtime": "20:00~00:30( 2026. 1. 1. 06:00~08:00)",
-      "fee": "무료",
-      "sponsor": "강릉시",
-      "photos": [
-        "http://tong.visitkorea.or.kr/cms/resource/39/3588539_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/41/3588541_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/42/3588542_image2_1.jpg"
       ]
     },
     {
@@ -25907,8 +25793,8 @@
       "sido": "광주",
       "sigungu": "서구",
       "address": "전남광주통합특별시 서구 내방로 111 (치평동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/32/3545732_image2_1.JPG",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/32/3545732_image3_1.JPG",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/83/4173983_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/83/4173983_image3_1.jpg",
       "tel": "062-613-3955",
       "homepage": "https://kimchi.gwangju.go.kr",
       "overview": "대한민국 김치문화를 대표하는 광주김치축제가 33년의 역사를 이어 올해도 10월 23일부터 10월 25일까지 3일동안 전남광주통합특별시 광주청사에서 개최된다. 김치의 전통과 가치를 지켜온 김치 종주도시 전남광주에서 펼쳐지는 광주김치축제는 전통 김장문화부터 새로운 김치콘텐츠까지 김치의 과거와 현재, 미래를 한자리에서 만나는 축제다. 대한민국 김치경연대회, 김치만들기체험, 김치마켓과 천인의 밥상(문화공연과 함께 즐기는 식음공간) 등 다채로운 프로그램을 통해 우리 고유의 음식문화와 이야기를 경험할 수 있다. 특히 지역의 식문화와 예술, 관광콘텐츠를 김치와 연결하고 시민이 함께 참여하는 광주만의 색깔을 가진 음식문화축제로 만들어가고 있다.",
@@ -25921,23 +25807,23 @@
       ],
       "lng": 126.8530264839,
       "lat": 35.1590033102,
-      "modifiedTime": "20261020160415",
+      "modifiedTime": "20261125091536",
       "place": "전남광주통합특별시 광주청사 광장 일원",
       "playtime": "10:00~20:00",
       "fee": "무료(김치체험학교 유료)",
       "sponsor": "전남광주통합특별시 / 광주김치축제위원회",
       "program": "1. 메인프로그램\n- 천인의밥상(먹거리 부스), 김치파티, 김치명인 마스터 클래스, 김치마켓\n2. 부대프로그램\n- 전시, 판매, 체험, 문화공연 등\n3. 소비자 참여 프로그램\n- 김치체험관, 김치놀이터, 소금체험관 등\n4. 기타 내용\n- 도시농부축제",
       "photos": [
-        "https://tong.visitkorea.or.kr/cms/resource/23/3545723_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/24/3545724_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/71/4115371_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/72/4115372_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/73/4115373_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/74/4115374_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/75/4115375_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/76/4115376_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/77/4115377_image2_1.jpg",
-        "https://tong.visitkorea.or.kr/cms/resource/39/4131339_image2_1.png"
+        "https://tong.visitkorea.or.kr/cms/resource/39/4131339_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/78/4173978_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/87/4173987_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/79/4173979_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/80/4173980_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/81/4173981_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/82/4173982_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/84/4173984_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/86/4173986_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/77/4173977_image2_1.jpg"
       ]
     },
     {
@@ -30423,6 +30309,80 @@
         "https://tong.visitkorea.or.kr/cms/resource/61/3586261_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/80/4168480_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/63/3586263_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "2802702",
+      "title": "포천백운계곡 동장군축제",
+      "startDate": "2026-12-24",
+      "endDate": "2027-02-09",
+      "sido": "경기",
+      "sigungu": "포천시",
+      "address": "경기도 포천시 이동면 포화로 259 백운계곡관광단지",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/21/3580521_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/21/3580521_image3_1.jpg",
+      "tel": "031-536-9917",
+      "homepage": "https://dongjangkun.com/index.php",
+      "overview": "서울에서 약 1시간 거리에 위치한 포천 백운계곡 동장군축제가 2026년 12월 24일부터 2027년 2월 9일까지 백운계곡 일원에서 개최된다. 겨울철 아름다운 자연경관을 배경으로 펼쳐지는 이번 축제는 온 가족이 함께 겨울의 즐거움을 만끽할 수 있는 대표적인 겨울 체험 축제이다. 축제장에서는 신나는 눈썰매와 얼음썰매를 비롯해 어린이 놀이시설, 얼음낚시(빙상), 실내 낚시 등 남녀노소 누구나 즐길 수 있는 다채로운 체험 프로그램이 운영된다. 특히 대형 얼음 트리 포토존은 겨울 축제만의 특별한 분위기를 더해 방문객들에게 잊지 못할 추억과 인생 사진을 선사한다. 대부분의 프로그램이 육상에서 운영되어 어린아이부터 어른까지 온 가족이 함께 즐기기에 좋다. 또한 축제 프로그램뿐만 아니라 겨울철 백운계곡의 아름답고 환상적인 설경을 감상할 수 있어 자연 속에서 특별한 겨울 추억을 만들 수 있다. 추운 겨울 몸과 마음을 따뜻하게 채워줄 먹거리도 풍성하게 준비되어 있으며, 현장에서 직접 조리하는 20여 가지의 다양한 음식을 저렴한 가격으로 맛볼 수 있다. 다채로운 겨울 체험과 아름다운 자연, 맛있는 먹거리가 함께하는 포천 백운계곡 동장군축제에서 가족, 연인, 친구들과 특별하고 즐거운 겨울날을 보낼 수 있다.",
+      "tags": [
+        "꽃/자연",
+        "겨울"
+      ],
+      "months": [
+        "2026-12",
+        "2027-01",
+        "2027-02"
+      ],
+      "lng": 127.4120415644,
+      "lat": 38.0734785425,
+      "modifiedTime": "20261125173553",
+      "place": "백운계곡 일원",
+      "playtime": "09:00~17:00",
+      "fee": "유료",
+      "sponsor": "백운계곡상인협동조합",
+      "program": "- 송어낚시\n- 빙어 뜰채낚시\n- 튜브 눈썰매\n- 어린이 눈썰매\n- 회전썰매\n- 바이킹\n- 유로번지\n- 에어바운스\n- 4D라이더\n- 전통썰매\n- 전통 팽이치기\n- 실내 빙어 낚시\n- 실내 송어 낚시\n- 모닥불 체험구이\n- 음식체험",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/17/3580517_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/78/4175778_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/20/3580520_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/16/3580516_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/33/3586433_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/34/3586434_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/35/3586435_image2_1.jpg"
+      ]
+    },
+    {
+      "id": "674023",
+      "title": "정미년 해맞이 행사 with 주문진 도깨비 불꽃 축제",
+      "startDate": "2026-12-31",
+      "endDate": "2027-01-01",
+      "sido": "강원",
+      "sigungu": "강릉시",
+      "address": "강원특별자치도 강릉시 경포로 515 (안현동) 주문진 도깨비 방파제, 경포해변, 정동진 모래시계공원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/77/4175077_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/77/4175077_image3_1.jpg",
+      "tel": "033-640-5130",
+      "homepage": "",
+      "overview": "2027년 정미년, 강릉의 겨울 바다가 화려하고 특별한 축제의 무대로 변신한다. 주문진·경포·정동진에서 펼쳐지는 해맞이 행사는 신나는 공연부터 화려한 불꽃놀이, 새해 소원을 담는 체험까지 즐길 거리가 많이 준비되어있다. 올해 새롭게 선보이는 메인 이벤트 ‘주문진 도깨비 불꽃 축제’는 칠흑 같은 밤바다에 드론과 조명으로 신비로운 도깨비불이 나타나고, 자정 카운트다운이 끝나면 주문진도깨비 방파제에서 약 20분간 대형 불꽃이 밤하늘을 수놓는 이벤트이다. 경포해변에서는 귀여운 양을 테마로 한 조명 포토존과 소원나무가 기다리고, 정동진에서는 모래시계 회전식과 함께 낭만적인 새해맞이가 펼쳐진다.",
+      "tags": [
+        "불꽃/야경",
+        "겨울"
+      ],
+      "months": [
+        "2026-12",
+        "2027-01"
+      ],
+      "lng": 128.9067457491,
+      "lat": 37.8052239456,
+      "modifiedTime": "20261125144646",
+      "place": "주문진 도깨비 방파제, 경포해변, 정동진 모래시계공원",
+      "playtime": "21:00~00:30(07:00~08:00)",
+      "fee": "무료",
+      "sponsor": "강릉시",
+      "program": "1. 메인프로그램\n- 특설무대 공연 및 모래시계회전식(정동진)\n2. 부대프로그램\n- 양의 해 테마 체험 프로그램, 소원쓰기\n3. 주요 이벤트\n- 주문진 도깨비 불꽃 축제(주문진 도깨비 방파제)\n\n[주차 안내]\n1. 주문진 : 주문진항관광지공영주차장(주문진읍 신리제방2길 40)\n2. 경포 : 경포공영주차장(경포로475번길 5), 경포호수광장주차장(강문동 263)\n3. 정동진 : 정동초등학교 운동장(강동면 헌화로 1055, 31일 18시 이후 이용 가능 임시주차장)",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/79/4175079_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/78/4175078_image2_1.jpg"
       ]
     },
     {
