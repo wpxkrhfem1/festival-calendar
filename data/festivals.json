@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-26T02:04:15.961Z",
+    "fetchedAt": "2026-11-27T02:03:28.312Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 869,
+    "count": 870,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -248,42 +248,6 @@
         "http://tong.visitkorea.or.kr/cms/resource/52/3579652_image2_1.jpg",
         "http://tong.visitkorea.or.kr/cms/resource/53/3579653_image2_1.jpg",
         "http://tong.visitkorea.or.kr/cms/resource/55/3579655_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "141375",
-      "title": "울주 간절곶 해맞이",
-      "startDate": "2025-12-31",
-      "endDate": "2026-01-01",
-      "sido": "울산",
-      "sigungu": "울주군",
-      "address": "울산광역시 울주군 서생면 대송리 간절곶",
-      "image": "http://tong.visitkorea.or.kr/cms/resource/79/3588879_image2_1.jpg",
-      "thumbnail": "http://tong.visitkorea.or.kr/cms/resource/79/3588879_image2_1.jpg",
-      "tel": "052-980-2232",
-      "homepage": "https://www.ucf.or.kr:478/culturearts/pe_detail.html?pfmIng=1&p_idx=1518&s_idx=&p_kind=event&b_id=",
-      "overview": "새해 한반도에서 가장 먼저 해가 뜨는 간절곶에서 열리는 해맞이 행사이다. 25년 12월 31일 송년콘서트를 시작으로 1월 1일 새벽 폭죽쇼, 드론쇼를 비롯해 다양한 전시와 체험을 경험할 수 있다.",
-      "tags": [
-        "겨울"
-      ],
-      "months": [
-        "2025-12",
-        "2026-01"
-      ],
-      "lng": 129.3619181517,
-      "lat": 35.3591723598,
-      "modifiedTime": "20251229094204",
-      "place": "간절곶",
-      "playtime": "10:00~10:00(24시간)",
-      "fee": "무료",
-      "sponsor": "(재)울주문화재단, 울산문화방송",
-      "photos": [
-        "http://tong.visitkorea.or.kr/cms/resource/74/3588874_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/75/3588875_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/76/3588876_image2_1.jpg",
-        "http://tong.visitkorea.or.kr/cms/resource/77/3588877_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/78/3588878_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/80/3588880_image2_1.png"
       ]
     },
     {
@@ -29931,6 +29895,46 @@
       "program": "- 주요 프로그램 : 풀코스 마라톤 대회 / 10㎞ 로드레이스 대회\n- 부대 행사 및 프로그램 : 협찬사 이벤트 / 사전 웜업 퍼포먼스 / 개회식 / 포토존 운영 등"
     },
     {
+      "id": "4178037",
+      "title": "서울한국춤페스티벌",
+      "startDate": "2026-12-07",
+      "endDate": "2026-12-08",
+      "sido": "서울",
+      "sigungu": "중구",
+      "address": "서울특별시 중구 퇴계로34길 28 (필동2가) 남산골한옥마을",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/40/4178040_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/40/4178040_image3_1.JPG",
+      "tel": "1800-4746",
+      "homepage": "https://www.moveseoul.kr/",
+      "overview": "2026 서울 한국춤 페스티벌은 전통에서 컨템포러리까지 한국춤의 흐름을 시민과 함께 즐기는 서울형 한국춤 축제로, 12월 7일부터 8일까지 서울남산국악당과 천우각 일대에서 개최된다.방문객들은 공연·전시·체험·원데이클래스 등의 프로그램을 통해 한국춤의 어제와 오늘, 그리고 내일을 한자리에서 만날 수 있다. 중견 무용수들의 깊이 있는 무대로 전통춤의 계보를 잇는 개막공연 〈잇는 춤〉, 새내기 춤꾼부터 동시대 창작무대까지 만나는 〈다음 춤〉, 시민의 참여로 완성하는 〈함께 춤〉, 신무용 100년의 발자취를 전시와 도슨트&공연으로 조명하는 〈보는 춤〉 네 개의 프로그램으로 구성된다. 다채로운 프로그램들을 통해 방문객은 보고 배우고 직접 따라 추며 한국춤의 흥과 아름다움을 가까이에서 경험할 수 있다.",
+      "tags": [
+        "음악/공연",
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lng": 126.9947387353,
+      "lat": 37.55954227,
+      "modifiedTime": "20261126170204",
+      "place": "서울남산국악당, 남산골한옥마을 천우각 일대",
+      "playtime": "11:00~20:30",
+      "fee": "무료",
+      "sponsor": "서울특별시 문화본부 문화예술과 / 주식회사 예술숲",
+      "program": "1. 잇는 춤(개막공연)\n- ‘잇는 춤’은 중견 무용수들의 깊이 있는 춤사위를 통해 전통춤에 깃든 정신과 풍류, 한국춤의 다채로운 멋과 예술적 가치를 조명하는 무대이다.\n\n2. 다음 춤(창작공연)\n- 다음 춤은 대학 무용 전공자들의 전통춤 공연 〈춤·새〉와 전통의 선 위에 오늘의 감각과 창의적인 해석을 더한 창작공연 〈춤·씬〉으로 진행된다.\n\n3. 함께 춤(시민참여프로그램)\n- 함께 춤에서는 기본무, 부채춤, 탈춤 등 한국 전통춤의 다양한 춤사위를 직접 배워보는 원데이 클래스 〈시민 춤방〉과, 한국춤 동호인들의 무대 전통 부채·전통 머리 장식·미니 국악기 만들기, 무용 소품 체험 등 한국춤의 문화를 체험하는 상설체험이 운영된다.\n\n4. 보는 춤(전시·도슨트&공연)\n- 보는 춤은 신무용 1세대부터 2세대까지의 흐름을 사진·영상·문헌으로 소개하는 아카이브 전시와, 해설과 함께 신무용 작품 실연을 감상하는 도슨트&공연 프로그램으로 구성된다.\n\n5. 부대행사(먹거리·플리마켓)\n- 부대행사로는 옛 추억을 떠올리게 하는 간식을 맛볼 수 있는 레트로 먹거리와, 전통공예품과 수공예 소품을 전시·판매하는 플리마켓이 운영된다.",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/39/4178039_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/41/4178041_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/42/4178042_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/44/4178044_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/43/4178043_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/45/4178045_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/46/4178046_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/47/4178047_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/48/4178048_image2_1.JPG"
+      ]
+    },
+    {
       "id": "2515174",
       "title": "2026 전국민 AI 페스티벌",
       "startDate": "2026-12-11",
@@ -30139,6 +30143,38 @@
       "program": "〈2026 쿼드, 연극의 질문들 : 진화하는 텍스트〉\n본 프로젝트는 연극의 본질인 '텍스트'에 주목하며, 시대를 초월해 끊임없이 새롭게 해석되는 희곡의 힘을 통해 동시대 연극의 현재와 미래를 탐색한다. 윌리엄 셰익스피어부터 현대 희곡, 그리고 동시대 한국 연극 텍스트에 이르기까지, 다섯 편의 작품은 한국 연극의 황금기를 이끈 김아라, 김광보, 김우옥, 이성열, 한태숙 다섯 명의 거장 연출가를 통해 새롭게 진화한다.\n\n〈서안화차〉는 한태숙이 직접 쓰고 연출한 작품으로 2003년 정미소 소극장에서 초연되었다. 초연 당시 동아연극상 작품상, 연출상, 무대미술상, 연기상을 휩쓸었을 만큼 평단의 주목을 받았다.\n〈서안화차〉는 한태숙 연출의 작품 중에서도 비교적 재공연이 많은 편에 속하는데, 2005년 제 12회 베세토연극제 초청작에 선정 공연, 2008년 극단 물리 창단 10주년 기념 공연, 2015년 재공연에 이르기까지 시대의 변화 속에서도 꾸준히 관객과 평단의 주목을 받아온 작품이다. 당시만 해도 '파격적'이라 할 수 있었던 '동성애적 인물'인 상곤을 중심으로 한 인간의 욕망에서 출발한 연극이 시간과 기억은 물론 공간까지도 무한히 확장될 수 있다는 연극 특유의 힘을 밀도 있게 그려냈다."
     },
     {
+      "id": "4178087",
+      "title": "제3회 익산 크리스마스 마켓",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-25",
+      "sido": "전북",
+      "sigungu": "익산시",
+      "address": "전북특별자치도 익산시 중앙로 12-151 (중앙동2가)",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/91/4178091_image2_1.png",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/91/4178091_image3_1.png",
+      "tel": "063-853-6783",
+      "homepage": "https://www.instagram.com/culturecity_iksan",
+      "overview": "제3회 익산 크리스마스 마켓은 크리스마스 시즌을 맞아 익산 지역에서 개최되는 겨울철 문화행사이다. 크리스마스를 주제로 한 다양한 상품과 볼거리, 체험 콘텐츠를 통해 시민과 관광객이 함께 계절의 문화를 경험할 수 있도록 구성된 행사이다. 주요 콘텐츠는 크리스마스 분위기를 반영한 마켓과 계절 소품, 장식 상품 등을 중심으로 한 판매 프로그램 및 참여형 체험 프로그램이다. 대형 크리스마스트리와 야간경관 조성, 트리 점등식, 눈 내리는 퍼포먼스, 이리오숍 플리마켓 등이 운영된 바 있다. 또한 크리스마스 리스와 트리 등 계절 장식품을 직접 제작하는 체험 프로그램을 통해 가족 단위 방문객을 비롯한 다양한 연령층이 참여할 수 있는 문화 콘텐츠를 선보인 행사이다. 익산의 문화공간과 지역 상권을 연계하는 도심형 계절 행사로서 지역 문화자원의 활용과 원도심 방문 활성화에 의미를 두는 행사이다.",
+      "tags": [
+        "겨울"
+      ],
+      "months": [
+        "2026-12"
+      ],
+      "lng": 126.948006124,
+      "lat": 35.9381102381,
+      "modifiedTime": "20261126172749",
+      "place": "익산근대역사관",
+      "playtime": "14:00~20:00",
+      "fee": "무료",
+      "sponsor": "익산시 / 익산시문화도시지원센터",
+      "program": "1. 눈 내리는 점등식\n- 기간 : 12월 18일 19:00\n- 장소 : 익산근대역사관 야외광장\n\n2. 이리오숍 플리마켓\n- 기간 : 12월 18일 / 19일 / 20일 / 24일 / 25일 14:00~20:00\n- 장소 : 익산근대역사관 앞 원도심 일부 일원\n\n3. 체험 프로그램\n- 기간 : 12월 19일 / 20일 / 24일 / 25일 / 15시 ~19시\n- 장소 : 익산근대역사관 앞 원도심 일부 일원\n\n* 트리점등 : 행사 기간 내 17:00~22:00",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/90/4178090_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/89/4178089_image2_1.jpg"
+      ]
+    },
+    {
       "id": "3432658",
       "title": "함평 겨울빛축제",
       "startDate": "2026-12-18",
@@ -30187,8 +30223,8 @@
       "sido": "서울",
       "sigungu": "강남구",
       "address": "서울특별시 강남구 테헤란로7길 22 (역삼동)",
-      "image": "https://tong.visitkorea.or.kr/cms/resource/12/4165112_image2_1.jpg",
-      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/12/4165112_image3_1.jpg",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/16/4176716_image2_1.jpg",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/16/4176716_image3_1.jpg",
       "tel": "02-559-3887",
       "homepage": "https://sgf.kosac.re.kr/sgf2026",
       "overview": "2026 과학영재교육 페스티벌이 12월 23일 과학기술컨벤션센터에서 개최된다. 어린이부터 청소년, 학부모까지 누구나 함께 즐길 수 있는 과학 체험부스를 비롯해 다양한 과학기술 분야를 만나볼 수 있는 전시관, 행사장 곳곳을 둘러보며 참여하는 스탬프 이벤트 등 다채로운 즐길 거리가 마련된다. 평소 접하기 어려웠던 과학의 세계를 직접 경험하고, 다양한 과학기술의 가능성을 발견할 수 있다. 크리스마스를 앞둔 12월, 가족과 함께 특별한 과학 나들이를 경험할 수 있다.",
@@ -30200,7 +30236,7 @@
       ],
       "lng": 127.030740311,
       "lat": 37.5007217702,
-      "modifiedTime": "20261118173353",
+      "modifiedTime": "20261126132127",
       "place": "한국과학기술회관 B1F~1F",
       "playtime": "10:00~17:00",
       "fee": "무료",
@@ -30261,7 +30297,7 @@
       ],
       "lng": 128.6205782501,
       "lat": 35.8293753137,
-      "modifiedTime": "20261124173810",
+      "modifiedTime": "20261126105335",
       "place": "수성못",
       "playtime": "17:00~22:00",
       "fee": "무료",
@@ -30269,7 +30305,7 @@
       "program": "1. 메인프로그램\n- 수성빛예술학교, 작가의 빛정원, 드론아트쇼\n2. 부대프로그램\n- 화이트크리스마스 in 수성(눈빛정원 스노우, DJ쇼)\n3. 소비자 참여 프로그램\n- 연말 소원지작성, 도슨트 프로그램 운영",
       "photos": [
         "https://tong.visitkorea.or.kr/cms/resource/53/4173753_image2_1.JPG",
-        "https://tong.visitkorea.or.kr/cms/resource/59/4173759_image2_1.jpg",
+        "https://tong.visitkorea.or.kr/cms/resource/64/4176364_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/57/4173757_image2_1.JPG",
         "https://tong.visitkorea.or.kr/cms/resource/56/4173756_image2_1.JPG",
         "https://tong.visitkorea.or.kr/cms/resource/55/4173755_image2_1.JPG",
@@ -30335,7 +30371,7 @@
       ],
       "lng": 127.4120415644,
       "lat": 38.0734785425,
-      "modifiedTime": "20261125173553",
+      "modifiedTime": "20261126102844",
       "place": "백운계곡 일원",
       "playtime": "09:00~17:00",
       "fee": "유료",
