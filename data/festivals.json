@@ -1,9 +1,9 @@
 {
   "meta": {
-    "fetchedAt": "2026-11-27T02:03:28.312Z",
+    "fetchedAt": "2026-11-28T01:47:31.037Z",
     "rangeStart": "2026-01-01",
     "rangeEnd": "2027-12-31",
-    "count": 870,
+    "count": 871,
     "source": "한국관광공사 TourAPI 4.0 (KorService2/searchFestival2)"
   },
   "festivals": [
@@ -142,45 +142,6 @@
         "https://tong.visitkorea.or.kr/cms/resource/86/3496286_image2_1.JPG",
         "https://tong.visitkorea.or.kr/cms/resource/31/4054431_image2_1.jpg",
         "https://tong.visitkorea.or.kr/cms/resource/37/3491537_image2_1.jpg"
-      ]
-    },
-    {
-      "id": "3576410",
-      "title": "광복로 겨울빛 트리축제",
-      "startDate": "2025-12-05",
-      "endDate": "2026-02-22",
-      "sido": "부산",
-      "sigungu": "중구",
-      "address": "부산광역시 중구 광복로 72-1 (광복동2가) 부산 광복로, 광복중앙로 일원",
-      "image": "http://tong.visitkorea.or.kr/cms/resource/05/3576405_image2_1.JPG",
-      "thumbnail": "http://tong.visitkorea.or.kr/cms/resource/05/3576405_image3_1.JPG",
-      "tel": "051-714-4758",
-      "homepage": "https://litt.ly/gwangbok_treefestival",
-      "overview": "부산의 겨울을 밝히는 대표 트리축제가 K-문화를 담은 찬란한 겨울빛으로 찾아온다.\n2025년 12월 5일 올해 단 한번의 하이라이트, 카운트다운과 함께 광복로가 빛으로 깨어나는 점등식을 시작으로 26년 2월 22일까지 '2025 광복로 겨울빛 트리축제'를 만나볼 수 있다.\n축제 기간 동안 부산 지역 뮤지션들의 버스킹 공연, 시민이 직접 트리 불빛을 켜볼 수 있는 참여형 점등식 등 다채로운 거리 이벤트가 준비되어 있다. 12월 20일~21일 주말에는 크리스마스 쿠킹클래스, 미니 트리만들기 등 다양한 체험프로그램도 펼쳐지니 빠짐없이 즐겨볼 수 있다.",
-      "tags": [
-        "불꽃/야경",
-        "겨울"
-      ],
-      "months": [
-        "2025-12",
-        "2026-01",
-        "2026-02"
-      ],
-      "lng": 129.0327400915,
-      "lat": 35.0986398717,
-      "modifiedTime": "20251128171805",
-      "place": "부산 광복로, 광복중앙로 일원",
-      "playtime": "17:30~22:00",
-      "fee": "무료",
-      "sponsor": "부산 중구청",
-      "photos": [
-        "http://tong.visitkorea.or.kr/cms/resource/02/3576402_image2_1.JPG",
-        "http://tong.visitkorea.or.kr/cms/resource/03/3576403_image2_1.JPG",
-        "http://tong.visitkorea.or.kr/cms/resource/04/3576404_image2_1.JPG",
-        "http://tong.visitkorea.or.kr/cms/resource/06/3576406_image2_1.JPG",
-        "http://tong.visitkorea.or.kr/cms/resource/07/3576407_image2_1.png",
-        "http://tong.visitkorea.or.kr/cms/resource/08/3576408_image2_1.JPG",
-        "http://tong.visitkorea.or.kr/cms/resource/09/3576409_image2_1.jpg"
       ]
     },
     {
@@ -28089,7 +28050,7 @@
     },
     {
       "id": "3028462",
-      "title": "구미라면 축제",
+      "title": "구미라면축제",
       "startDate": "2026-11-06",
       "endDate": "2026-11-08",
       "sido": "경북",
@@ -28109,7 +28070,7 @@
       ],
       "lng": 128.3323188678,
       "lat": 36.1309792684,
-      "modifiedTime": "20261030111745",
+      "modifiedTime": "20261127102927",
       "place": "경상북도 구미시 역전로",
       "playtime": "10:00~21:00",
       "fee": "무료",
@@ -29195,6 +29156,41 @@
       ]
     },
     {
+      "id": "3301415",
+      "title": "무안 YD 페스티벌",
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-22",
+      "sido": "전남",
+      "sigungu": "무안군",
+      "address": "전남광주통합특별시 무안군 삼향읍 대죽서로16번길 16 남악중앙공원",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/08/4131308_image2_1.JPG",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/08/4131308_image3_1.JPG",
+      "tel": "061-450-5474",
+      "homepage": "https://tour.muan.go.kr/tour/festival/yd_festival/introduce",
+      "overview": "무안YD페스티벌은 청년들의 문화 참여와 소통을 위해 무안군에서 개최하는 청년문화 축제이다. 2026년 제6회 무안YD페스티벌은 11월 20일부터 22일까지 3일간 무안군 삼향읍 남악중앙공원에서 개최되며, 올해 주제는 ‘PLAY YD’이다. 청년들이 다양한 문화 콘텐츠를 직접 즐기고 참여할 수 있도록 공연, 체험, 참여형 프로그램 등으로 구성하며, 청년들의 꿈과 끼를 펼칠 수 있는 기회와 청년 간 교류·소통의 장을 제공한다. 지역 청년을 비롯해 군민과 관광객이 함께 참여할 수 있는 프로그램을 운영하고, 청년문화에 대한 관심과 참여 기회를 확대하는 행사이다. 또한 청년도시 무안의 청년문화와 지역의 다양한 매력을 알리고, 청년들이 함께 어울리며 문화를 즐길 수 있는 공간을 마련하기 위해 추진하는 축제이다.",
+      "tags": [
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 126.4628109019,
+      "lat": 34.8111428583,
+      "modifiedTime": "20261127133443",
+      "place": "남악중앙공원",
+      "playtime": "09:00~22:00",
+      "fee": "무료(일부 프로그램 유료)",
+      "sponsor": "무안군 / 무안군 축제추진위원회",
+      "program": "1. 메인프로그램\n- 개막퍼레이드, 축하콘서트, 길거리 농구대회 등\n2. 부대프로그램\n- 국화 전시, 농수특산물 판매, 청년 참여 프로그램 등\n3. 소비자 참여 프로그램\n- 드론조종, 뷰티, AI게임 등 체험 프로그램\n4. 기타 내용\n- 거리퍼레이드, 버스킹 등 공연 행사 및 각종 홍보",
+      "photos": [
+        "https://tong.visitkorea.or.kr/cms/resource/05/4131305_image2_1.png",
+        "https://tong.visitkorea.or.kr/cms/resource/06/4131306_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/07/4131307_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/03/4131303_image2_1.JPG",
+        "https://tong.visitkorea.or.kr/cms/resource/04/4131304_image2_1.jpg"
+      ]
+    },
+    {
       "id": "3470738",
       "title": "2026 런트립 남해! FALL & FUN",
       "startDate": "2026-11-21",
@@ -29489,6 +29485,35 @@
       "program": "- 주요 프로그램 : 크리스마스 미식 연회장 / 큐레이션 상점 / 산타 퍼레이드 / 버스킹 / 성가대 공연 등\n\n1) 강레오 셰프와 부산 로컬 브랜드가 선보이는 크리스마스 미식 '연회장'\n- 로컬 브랜드의 크리스마스 시즌 한정 메뉴\n- 공식 앰배서더 강레오 셰프 X 크리스마스 빌리지 부산 특별 메뉴\n\n2) 크리스마스 마을에서만 만날 수 있는 선물 '상점'\n- 특별한 선물을 위한 큐레이션 상점\n- 시즌 한정 굿즈\n\n3) 종소리로 이어지는 마을의 하루, 크리스마스 몰입 체험\n- 대형 트리와 종탑이 있는 광장에서 펼쳐지는 눈 내리는 시간, 산타 퍼레이드, 성가대 공연, 다 함께 건배하는 시간\n- 산타, 우편배달부, 산장 주인, 벨보이 등 마을 사람(NPC)과의 만남\n\n4) 눈사람과 아이 놀이터가 있는 '눈 덮인 숲', 불가에서 쉬며 버스킹을 즐기는 '산장'"
     },
     {
+      "id": "4179229",
+      "title": "거제 K-푸드로드 92데이",
+      "startDate": "2026-11-27",
+      "endDate": "2026-11-29",
+      "sido": "경남",
+      "sigungu": "거제시",
+      "address": "경상남도 거제시 옥포로6길 16 (옥포동) 옥포 삼겹살 거리",
+      "image": "https://tong.visitkorea.or.kr/cms/resource/39/4179239_image2_1.png",
+      "thumbnail": "https://tong.visitkorea.or.kr/cms/resource/39/4179239_image3_1.png",
+      "tel": "0507-1312-9577",
+      "homepage": "https://litt.ly/salmgyeoproad",
+      "overview": "'제1회 거제 K-푸드로드 92데이 - 삶겹로드 2026'은 거제시가 문화체육관광부, 거제시관광협의회와 함께 추진하는 ‘거제 삼겹살 거리’ 축제이다. 조선업 노동자들의 삶과 삼겹살에 얽힌 이야기를 바탕으로, 거제의 음식문화와 지역 상권을 연결하는 행사이다.\n2026년 11월 27일부터 29일까지 3일간 개최되며, 행사 기간에는 차량을 통제한 차 없는 거리를 조성하여 다양한 체험 및 문화 프로그램을 운영한다. 주요 프로그램으로는 드럼통 삼겹살 굽기 퍼포먼스, 야외 테이블 취식 공간, 미니 버스킹 공연, 포토월 등이 마련된다. 특히 11월 27일에는 거리 조명 및 트리 점등식이 진행되어 축제 분위기를 더할 예정이다. 방문객들이 삼겹살을 중심으로 먹거리와 공연, 다양한 즐길 거리를 함께 경험할 수 있도록 구성한 지역 상권 활성화 축제이다.",
+      "tags": [
+        "먹거리",
+        "가을"
+      ],
+      "months": [
+        "2026-11"
+      ],
+      "lng": 128.6953285292,
+      "lat": 34.8907759762,
+      "modifiedTime": "20261127135536",
+      "place": "옥포 삼겹살 거리",
+      "playtime": "15:00~20:00",
+      "fee": "무료",
+      "sponsor": "(사)거제시관광협의회, 거제시",
+      "program": "1. 메인프로그램\n- 대형화로장터 퍼포먼스, 야장 테이블 취식, 거리조명·대형트리 점등식\n\n2. 부대프로그램\n- 보이는 라디오, 미니 버스킹\n\n3. 소비자 참여 프로그램\n- 삼겹쿠폰, 삼겹살 LAB(나만의 소스 만들기, 마구찍는 포토부스), 그 시절 돼지고기 쿠폰을 찾습니다 등"
+    },
+    {
       "id": "3578130",
       "title": "울산 크리스마스 마켓",
       "startDate": "2026-11-27",
@@ -29649,7 +29674,7 @@
       ],
       "lng": 127.236500949,
       "lat": 37.9234466507,
-      "modifiedTime": "20261112133755",
+      "modifiedTime": "20261127153912",
       "place": "포천 아트밸리",
       "playtime": "10:00~ 18:00",
       "fee": "유료(아트밸리 입장료 참고)",
@@ -30018,7 +30043,7 @@
       ],
       "lng": 127.2473630035,
       "lat": 36.1292554317,
-      "modifiedTime": "20261120132327",
+      "modifiedTime": "20261127175527",
       "place": "양촌면 양촌리 체육공원",
       "playtime": "10:00~18:00",
       "fee": "무료 (일부 체험 프로그램 유료)",
